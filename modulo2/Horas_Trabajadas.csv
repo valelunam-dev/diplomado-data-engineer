@@ -1,0 +1,507 @@
+Nombre;Ciudad;Region;HorasDia;HorasNoche
+Leonardo DiCaprio;Santiago;Metropolitana;38;14
+Scarlett Johansson;Valparaíso;Valparaíso;32;11
+Tom Hanks;Viña del Mar;Valparaíso;29;9
+Meryl Streep;Concepción;Biobío;35;13
+Denzel Washington;Antofagasta;Antofagasta;31;10
+Jennifer Lawrence;La Serena;Coquimbo;27;8
+Robert Downey Jr.;Iquique;Tarapacá;40;16
+Emma Watson;Temuco;La Araucanía;33;12
+Brad Pitt;Rancagua;Libertador Bernardo O'Higgins;28;7
+Natalie Portman;Puerto Montt;Los Lagos;36;15
+Chris Evans;Arica;Arica y Parinacota;25;6
+Margot Robbie;Talca;Maule;34;14
+Will Smith;Calama;Antofagasta;30;10
+Anne Hathaway;Osorno;Los Lagos;32;11
+Ryan Reynolds;Copiapó;Atacama;29;9
+Charlize Theron;Quilpué;Valparaíso;37;15
+Johnny Depp;Valdivia;Los Ríos;26;8
+Gal Gadot;Chillán;Ñuble;31;12
+Dwayne Johnson;Coquimbo;Coquimbo;39;17
+Cate Blanchett;Punta Arenas;Magallanes;28;9
+Joaquin Phoenix;Curicó;Maule;30;11
+Emma Stone;Los Ángeles;Biobío;33;13
+Matt Damon;Ovalle;Coquimbo;27;8
+Nicole Kidman;Quillota;Valparaíso;35;14
+Tom Cruise;San Antonio;Valparaíso;40;18
+Viola Davis;Linares;Maule;32;12
+Samuel L. Jackson;Melipilla;Metropolitana;29;10
+Sandra Bullock;Caldera;Atacama;34;13
+Javier Bardem;Angol;La Araucanía;31;11
+Idris Elba;Vallenar;Atacama;28;9
+Lupita Nyong'o;San Felipe;Valparaíso;36;15
+Michael B. Jordan;Lautaro;La Araucanía;30;10
+Zendaya;Victoria;La Araucanía;33;12
+Kevin Hart;Castro;Los Lagos;27;8
+Chris Hemsworth;Ancud;Los Lagos;38;16
+Tom Hardy;Pichilemu;Libertador Bernardo O'Higgins;32;11
+Jessica Chastain;Parral;Maule;29;9
+Mahershala Ali;Illapel;Coquimbo;35;14
+Florence Pugh;La Ligua;Valparaíso;31;10
+Timothée Chalamet;Lampa;Metropolitana;34;13
+Adam Driver;San Fernando;Libertador Bernardo O'Higgins;28;8
+Amy Adams;Buín;Metropolitana;37;15
+Ryan Gosling;Peñaflor;Metropolitana;30;11
+Jennifer Aniston;Puerto Varas;Los Lagos;33;12
+Jake Gyllenhaal;Limache;Valparaíso;29;9
+Reese Witherspoon;Villa Alemana;Valparaíso;36;14
+Mark Ruffalo;Colina;Metropolitana;32;10
+Octavia Spencer;Paine;Metropolitana;35;13
+Rami Malek;Lo Prado;Metropolitana;31;11
+Rachel McAdams;Maipú;Metropolitana;28;9
+Christian Bale;La Reina;Metropolitana;39;17
+Hugh Jackman;Providencia;Metropolitana;34;12
+Emily Blunt;Las Condes;Metropolitana;30;10
+Daniel Kaluuya;Ñuñoa;Metropolitana;33;13
+Tilda Swinton;Vitacura;Metropolitana;27;8
+Eddie Redmayne;La Florida;Metropolitana;37;15
+Brie Larson;Puente Alto;Metropolitana;32;11
+Jude Law;Recoleta;Metropolitana;29;9
+Catherine Zeta-Jones;Independencia;Metropolitana;36;14
+Keanu Reeves;Estación Central;Metropolitana;31;10
+Jamie Foxx;Cerro Navia;Metropolitana;35;13
+Halle Berry;Conchalí;Metropolitana;28;8
+Russell Crowe;El Bosque;Metropolitana;40;18
+Kate Winslet;La Granja;Metropolitana;34;12
+Morgan Freeman;La Pintana;Metropolitana;30;10
+Anthony Hopkins;Pedro Aguirre Cerda;Metropolitana;33;13
+Gary Oldman;San Miguel;Metropolitana;27;8
+Helen Mirren;San Joaquín;Metropolitana;38;16
+Ian McKellen;La Cisterna;Metropolitana;32;11
+Patrick Stewart;Lo Espejo;Metropolitana;29;9
+Judi Dench;Pudahuel;Metropolitana;36;15
+Al Pacino;Cerrillos;Metropolitana;31;10
+Robert De Niro;Quilicura;Metropolitana;35;13
+Jack Nicholson;Huechuraba;Metropolitana;28;8
+Marlon Brando;Renca;Metropolitana;39;17
+Audrey Hepburn;Penco;Biobío;34;12
+Humphrey Bogart;Coronel;Biobío;30;10
+Marilyn Monroe;Lota;Biobío;33;13
+James Dean;Tomé;Biobío;27;8
+Elizabeth Taylor;Talcahuano;Biobío;37;15
+Paul Newman;Chiguayante;Biobío;32;11
+Grace Kelly;Hualpén;Biobío;29;9
+Steve McQueen;San Pedro de la Paz;Biobío;36;14
+Marlene Dietrich;Arauco;Biobío;31;10
+Cary Grant;Cañete;Biobío;35;13
+Katharine Hepburn;Los Álamos;Biobío;28;8
+Bette Davis;Curanilahue;Biobío;40;18
+Clark Gable;Lebu;Biobío;34;12
+James Stewart;Yumbel;Biobío;30;10
+Sophia Loren;Cabrero;Biobío;33;13
+Sean Connery;Yungay;Ñuble;27;8
+Clint Eastwood;Chillán Viejo;Ñuble;38;16
+John Wayne;Bulnes;Ñuble;32;11
+Mae West;Quirihue;Ñuble;29;9
+Rita Hayworth;Coelemu;Ñuble;36;15
+Gregory Peck;San Carlos;Ñuble;31;10
+Vivien Leigh;Ñiquén;Ñuble;35;13
+Lauren Bacall;San Fabián;Ñuble;28;8
+Fred Astaire;San Nicolás;Ñuble;39;17
+Ginger Rogers;Pemuco;Ñuble;34;12
+Gene Kelly;Portezuelo;Ñuble;30;10
+Frank Sinatra;Ranquil;Ñuble;33;13
+Judy Garland;Treguaco;Ñuble;27;8
+Elvis Presley;Cobquecura;Ñuble;37;15
+Marlon Brando;Quillón;Ñuble;32;11
+James Cagney;Coihueco;Ñuble;29;9
+Kirk Douglas;Ñuble;Ñuble;36;14
+Burt Lancaster;San Ignacio;Ñuble;31;10
+Sidney Poitier;El Carmen;Ñuble;35;13
+Henry Fonda;Pinto;Ñuble;28;8
+Charlton Heston;Antuco;Biobío;40;18
+Paul Newman;Santa Bárbara;Biobío;34;12
+Steve McQueen;Quilaco;Biobío;30;10
+Grace Kelly;Tucapel;Biobío;33;13
+Marlene Dietrich;Alto Biobío;Biobío;27;8
+Cary Grant;Mulchén;Biobío;38;16
+Katharine Hepburn;Nacimiento;Biobío;32;11
+Bette Davis;Negrete;Biobío;29;9
+Clark Gable;San Rosendo;Biobío;36;15
+James Stewart;Santa Juana;Biobío;31;10
+Sophia Loren;Laja;Biobío;35;13
+Sean Connery;Monte Águila;Biobío;28;8
+Clint Eastwood;Cabrero;Biobío;39;17
+John Wayne;Gualqui;Biobío;34;12
+Mae West;Florida;Biobío;30;10
+Rita Hayworth;Hualqui;Biobío;33;13
+Gregory Peck;Coronel;Biobío;27;8
+Vivien Leigh;Penco;Biobío;37;15
+Lauren Bacall;Talcahuano;Biobío;32;11
+Fred Astaire;Chiguayante;Biobío;29;9
+Ginger Rogers;Hualpén;Biobío;36;14
+Gene Kelly;San Pedro de la Paz;Biobío;31;10
+Frank Sinatra;Lota;Biobío;35;13
+Judy Garland;Arauco;Biobío;28;8
+Elvis Presley;Cañete;Biobío;40;18
+Marlon Brando;Los Álamos;Biobío;34;12
+James Cagney;Curanilahue;Biobío;30;10
+Kirk Douglas;Lebu;Biobío;33;13
+Burt Lancaster;Yumbel;Biobío;27;8
+Sidney Poitier;Cabrero;Biobío;38;16
+Henry Fonda;Yungay;Ñuble;32;11
+Charlton Heston;Chillán Viejo;Ñuble;29;9
+Paul Newman;Bulnes;Ñuble;36;15
+Steve McQueen;Quirihue;Ñuble;31;10
+Grace Kelly;Coelemu;Ñuble;35;13
+Marlene Dietrich;San Carlos;Ñuble;28;8
+Cary Grant;Ñiquén;Ñuble;39;17
+Katharine Hepburn;San Fabián;Ñuble;34;12
+Bette Davis;San Nicolás;Ñuble;30;10
+Clark Gable;Pemuco;Ñuble;33;13
+James Stewart;Portezuelo;Ñuble;27;8
+Sophia Loren;Ranquil;Ñuble;37;15
+Sean Connery;Treguaco;Ñuble;32;11
+Clint Eastwood;Cobquecura;Ñuble;29;9
+John Wayne;Quillón;Ñuble;36;14
+Mae West;Coihueco;Ñuble;31;10
+Rita Hayworth;Ñuble;Ñuble;35;13
+Gregory Peck;San Ignacio;Ñuble;28;8
+Vivien Leigh;El Carmen;Ñuble;40;18
+Lauren Bacall;Pinto;Ñuble;34;12
+Fred Astaire;Antuco;Biobío;30;10
+Ginger Rogers;Santa Bárbara;Biobío;33;13
+Gene Kelly;Quilaco;Biobío;27;8
+Frank Sinatra;Tucapel;Biobío;38;16
+Judy Garland;Alto Biobío;Biobío;32;11
+Elvis Presley;Mulchén;Biobío;29;9
+Marlon Brando;Nacimiento;Biobío;36;15
+James Cagney;Negrete;Biobío;31;10
+Kirk Douglas;San Rosendo;Biobío;35;13
+Burt Lancaster;Santa Juana;Biobío;28;8
+Sidney Poitier;Laja;Biobío;39;17
+Henry Fonda;Monte Águila;Biobío;34;12
+Charlton Heston;Cabrero;Biobío;30;10
+Paul Newman;Gualqui;Biobío;33;13
+Steve McQueen;Florida;Biobío;27;8
+Grace Kelly;Hualqui;Biobío;37;15
+Marlene Dietrich;Coronel;Biobío;32;11
+Cary Grant;Penco;Biobío;29;9
+Katharine Hepburn;Talcahuano;Biobío;36;14
+Bette Davis;Chiguayante;Biobío;31;10
+Clark Gable;Hualpén;Biobío;35;13
+James Stewart;San Pedro de la Paz;Biobío;28;8
+Sophia Loren;Lota;Biobío;40;18
+Sean Connery;Arauco;Biobío;34;12
+Clint Eastwood;Cañete;Biobío;30;10
+John Wayne;Los Álamos;Biobío;33;13
+Mae West;Curanilahue;Biobío;27;8
+Rita Hayworth;Lebu;Biobío;38;16
+Gregory Peck;Yumbel;Biobío;32;11
+Vivien Leigh;Cabrero;Biobío;29;9
+Lauren Bacall;Yungay;Ñuble;36;15
+Fred Astaire;Chillán Viejo;Ñuble;31;10
+Ginger Rogers;Bulnes;Ñuble;35;13
+Gene Kelly;Quirihue;Ñuble;28;8
+Frank Sinatra;Coelemu;Ñuble;39;17
+Judy Garland;San Carlos;Ñuble;34;12
+Elvis Presley;Ñiquén;Ñuble;30;10
+Marlon Brando;San Fabián;Ñuble;33;13
+James Cagney;San Nicolás;Ñuble;27;8
+Kirk Douglas;Pemuco;Ñuble;37;15
+Burt Lancaster;Portezuelo;Ñuble;32;11
+Sidney Poitier;Ranquil;Ñuble;29;9
+Henry Fonda;Treguaco;Ñuble;36;14
+Charlton Heston;Cobquecura;Ñuble;31;10
+Paul Newman;Quillón;Ñuble;35;13
+Steve McQueen;Coihueco;Ñuble;28;8
+Grace Kelly;Ñuble;Ñuble;40;18
+Marlene Dietrich;San Ignacio;Ñuble;34;12
+Cary Grant;El Carmen;Ñuble;30;10
+Katharine Hepburn;Pinto;Ñuble;33;13
+Bette Davis;Antuco;Biobío;27;8
+Clark Gable;Santa Bárbara;Biobío;38;16
+James Stewart;Quilaco;Biobío;32;11
+Sophia Loren;Tucapel;Biobío;29;9
+Sean Connery;Alto Biobío;Biobío;36;15
+Clint Eastwood;Mulchén;Biobío;31;10
+John Wayne;Nacimiento;Biobío;35;13
+Mae West;Negrete;Biobío;28;8
+Rita Hayworth;San Rosendo;Biobío;39;17
+Gregory Peck;Santa Juana;Biobío;34;12
+Vivien Leigh;Laja;Biobío;30;10
+Lauren Bacall;Monte Águila;Biobío;33;13
+Fred Astaire;Cabrero;Biobío;27;8
+Ginger Rogers;Gualqui;Biobío;37;15
+Gene Kelly;Florida;Biobío;32;11
+Frank Sinatra;Hualqui;Biobío;29;9
+Judy Garland;Coronel;Biobío;36;14
+Elvis Presley;Penco;Biobío;31;10
+Marlon Brando;Talcahuano;Biobío;35;13
+James Cagney;Chiguayante;Biobío;28;8
+Kirk Douglas;Hualpén;Biobío;40;18
+Burt Lancaster;San Pedro de la Paz;Biobío;34;12
+Sidney Poitier;Lota;Biobío;30;10
+Henry Fonda;Arauco;Biobío;33;13
+Charlton Heston;Cañete;Biobío;27;8
+Paul Newman;Los Álamos;Biobío;38;16
+Steve McQueen;Curanilahue;Biobío;32;11
+Grace Kelly;Lebu;Biobío;29;9
+Marlene Dietrich;Yumbel;Biobío;36;15
+Cary Grant;Cabrero;Biobío;31;10
+Katharine Hepburn;Yungay;Ñuble;35;13
+Bette Davis;Chillán Viejo;Ñuble;28;8
+Clark Gable;Bulnes;Ñuble;39;17
+James Stewart;Quirihue;Ñuble;34;12
+Sophia Loren;Coelemu;Ñuble;30;10
+Sean Connery;San Carlos;Ñuble;33;13
+Clint Eastwood;Ñiquén;Ñuble;27;8
+John Wayne;San Fabián;Ñuble;37;15
+Mae West;San Nicolás;Ñuble;32;11
+Rita Hayworth;Pemuco;Ñuble;29;9
+Gregory Peck;Portezuelo;Ñuble;36;14
+Vivien Leigh;Ranquil;Ñuble;31;10
+Lauren Bacall;Treguaco;Ñuble;35;13
+Fred Astaire;Cobquecura;Ñuble;28;8
+Ginger Rogers;Quillón;Ñuble;40;18
+Gene Kelly;Coihueco;Ñuble;34;12
+Frank Sinatra;Ñuble;Ñuble;30;10
+Judy Garland;San Ignacio;Ñuble;33;13
+Elvis Presley;El Carmen;Ñuble;27;8
+Marlon Brando;Pinto;Ñuble;38;16
+James Cagney;Antuco;Biobío;32;11
+Kirk Douglas;Santa Bárbara;Biobío;29;9
+Burt Lancaster;Quilaco;Biobío;36;15
+Sidney Poitier;Tucapel;Biobío;31;10
+Henry Fonda;Alto Biobío;Biobío;35;13
+Charlton Heston;Mulchén;Biobío;28;8
+Paul Newman;Nacimiento;Biobío;39;17
+Steve McQueen;Negrete;Biobío;34;12
+Grace Kelly;San Rosendo;Biobío;30;10
+Marlene Dietrich;Santa Juana;Biobío;33;13
+Cary Grant;Laja;Biobío;27;8
+Katharine Hepburn;Monte Águila;Biobío;37;15
+Bette Davis;Cabrero;Biobío;32;11
+Clark Gable;Gualqui;Biobío;29;9
+James Stewart;Florida;Biobío;36;14
+Sophia Loren;Hualqui;Biobío;31;10
+Sean Connery;Coronel;Biobío;35;13
+Clint Eastwood;Penco;Biobío;28;8
+John Wayne;Talcahuano;Biobío;40;18
+Mae West;Chiguayante;Biobío;34;12
+Rita Hayworth;Hualpén;Biobío;30;10
+Gregory Peck;San Pedro de la Paz;Biobío;33;13
+Vivien Leigh;Lota;Biobío;27;8
+Lauren Bacall;Arauco;Biobío;38;16
+Fred Astaire;Cañete;Biobío;32;11
+Ginger Rogers;Los Álamos;Biobío;29;9
+Gene Kelly;Curanilahue;Biobío;36;15
+Frank Sinatra;Lebu;Biobío;31;10
+Judy Garland;Yumbel;Biobío;35;13
+Elvis Presley;Cabrero;Biobío;28;8
+Marlon Brando;Yungay;Ñuble;39;17
+James Cagney;Chillán Viejo;Ñuble;34;12
+Kirk Douglas;Bulnes;Ñuble;30;10
+Burt Lancaster;Quirihue;Ñuble;33;13
+Sidney Poitier;Coelemu;Ñuble;27;8
+Henry Fonda;San Carlos;Ñuble;37;15
+Charlton Heston;Ñiquén;Ñuble;32;11
+Paul Newman;San Fabián;Ñuble;29;9
+Steve McQueen;San Nicolás;Ñuble;36;14
+Grace Kelly;Pemuco;Ñuble;31;10
+Marlene Dietrich;Portezuelo;Ñuble;35;13
+Cary Grant;Ranquil;Ñuble;28;8
+Katharine Hepburn;Treguaco;Ñuble;40;18
+Bette Davis;Cobquecura;Ñuble;34;12
+Clark Gable;Quillón;Ñuble;30;10
+James Stewart;Coihueco;Ñuble;33;13
+Sophia Loren;Ñuble;Ñuble;27;8
+Sean Connery;San Ignacio;Ñuble;38;16
+Clint Eastwood;El Carmen;Ñuble;32;11
+John Wayne;Pinto;Ñuble;29;9
+Mae West;Antuco;Biobío;36;15
+Rita Hayworth;Santa Bárbara;Biobío;31;10
+Gregory Peck;Quilaco;Biobío;35;13
+Vivien Leigh;Tucapel;Biobío;28;8
+Lauren Bacall;Alto Biobío;Biobío;39;17
+Fred Astaire;Mulchén;Biobío;34;12
+Ginger Rogers;Nacimiento;Biobío;30;10
+Gene Kelly;Negrete;Biobío;33;13
+Frank Sinatra;San Rosendo;Biobío;27;8
+Judy Garland;Santa Juana;Biobío;37;15
+Elvis Presley;Laja;Biobío;32;11
+Marlon Brando;Monte Águila;Biobío;29;9
+James Cagney;Cabrero;Biobío;36;14
+Kirk Douglas;Gualqui;Biobío;31;10
+Burt Lancaster;Florida;Biobío;35;13
+Sidney Poitier;Hualqui;Biobío;28;8
+Henry Fonda;Coronel;Biobío;40;18
+Charlton Heston;Penco;Biobío;34;12
+Paul Newman;Talcahuano;Biobío;30;10
+Steve McQueen;Chiguayante;Biobío;33;13
+Grace Kelly;Hualpén;Biobío;27;8
+Marlene Dietrich;San Pedro de la Paz;Biobío;38;16
+Cary Grant;Lota;Biobío;32;11
+Katharine Hepburn;Arauco;Biobío;29;9
+Bette Davis;Cañete;Biobío;36;15
+Clark Gable;Los Álamos;Biobío;31;10
+James Stewart;Curanilahue;Biobío;35;13
+Sophia Loren;Lebu;Biobío;28;8
+Sean Connery;Yumbel;Biobío;39;17
+Clint Eastwood;Cabrero;Biobío;34;12
+John Wayne;Yungay;Ñuble;30;10
+Mae West;Chillán Viejo;Ñuble;33;13
+Rita Hayworth;Bulnes;Ñuble;27;8
+Gregory Peck;Quirihue;Ñuble;37;15
+Vivien Leigh;Coelemu;Ñuble;32;11
+Lauren Bacall;San Carlos;Ñuble;29;9
+Fred Astaire;Ñiquén;Ñuble;36;14
+Ginger Rogers;San Fabián;Ñuble;31;10
+Gene Kelly;San Nicolás;Ñuble;35;13
+Frank Sinatra;Pemuco;Ñuble;28;8
+Judy Garland;Portezuelo;Ñuble;40;18
+Elvis Presley;Ranquil;Ñuble;34;12
+Marlon Brando;Treguaco;Ñuble;30;10
+James Cagney;Cobquecura;Ñuble;33;13
+Kirk Douglas;Quillón;Ñuble;27;8
+Burt Lancaster;Coihueco;Ñuble;38;16
+Sidney Poitier;Ñuble;Ñuble;32;11
+Henry Fonda;San Ignacio;Ñuble;29;9
+Charlton Heston;El Carmen;Ñuble;36;15
+Paul Newman;Pinto;Ñuble;31;10
+Steve McQueen;Antuco;Biobío;35;13
+Grace Kelly;Santa Bárbara;Biobío;28;8
+Marlene Dietrich;Quilaco;Biobío;39;17
+Cary Grant;Tucapel;Biobío;34;12
+Katharine Hepburn;Alto Biobío;Biobío;30;10
+Bette Davis;Mulchén;Biobío;33;13
+Clark Gable;Nacimiento;Biobío;27;8
+James Stewart;Negrete;Biobío;37;15
+Sophia Loren;San Rosendo;Biobío;32;11
+Sean Connery;Santa Juana;Biobío;29;9
+Clint Eastwood;Laja;Biobío;36;14
+John Wayne;Monte Águila;Biobío;31;10
+Mae West;Cabrero;Biobío;35;13
+Rita Hayworth;Gualqui;Biobío;28;8
+Gregory Peck;Florida;Biobío;40;18
+Vivien Leigh;Hualqui;Biobío;34;12
+Lauren Bacall;Coronel;Biobío;30;10
+Fred Astaire;Penco;Biobío;33;13
+Ginger Rogers;Talcahuano;Biobío;27;8
+Gene Kelly;Chiguayante;Biobío;38;16
+Frank Sinatra;Hualpén;Biobío;32;11
+Judy Garland;San Pedro de la Paz;Biobío;29;9
+Elvis Presley;Lota;Biobío;36;15
+Marlon Brando;Arauco;Biobío;31;10
+James Cagney;Cañete;Biobío;35;13
+Kirk Douglas;Los Álamos;Biobío;28;8
+Burt Lancaster;Curanilahue;Biobío;39;17
+Sidney Poitier;Lebu;Biobío;34;12
+Henry Fonda;Yumbel;Biobío;30;10
+Charlton Heston;Cabrero;Biobío;33;13
+Paul Newman;Yungay;Ñuble;27;8
+Steve McQueen;Chillán Viejo;Ñuble;37;15
+Grace Kelly;Bulnes;Ñuble;32;11
+Marlene Dietrich;Quirihue;Ñuble;29;9
+Cary Grant;Coelemu;Ñuble;36;14
+Katharine Hepburn;San Carlos;Ñuble;31;10
+Bette Davis;Ñiquén;Ñuble;35;13
+Clark Gable;San Fabián;Ñuble;28;8
+James Stewart;San Nicolás;Ñuble;40;18
+Sophia Loren;Pemuco;Ñuble;34;12
+Sean Connery;Portezuelo;Ñuble;30;10
+Clint Eastwood;Ranquil;Ñuble;33;13
+John Wayne;Treguaco;Ñuble;27;8
+Mae West;Cobquecura;Ñuble;38;16
+Rita Hayworth;Quillón;Ñuble;32;11
+Gregory Peck;Coihueco;Ñuble;29;9
+Vivien Leigh;Ñuble;Ñuble;36;15
+Lauren Bacall;San Ignacio;Ñuble;31;10
+Fred Astaire;El Carmen;Ñuble;35;13
+Ginger Rogers;Pinto;Ñuble;28;8
+Gene Kelly;Antuco;Biobío;39;17
+Frank Sinatra;Santa Bárbara;Biobío;34;12
+Judy Garland;Quilaco;Biobío;30;10
+Elvis Presley;Tucapel;Biobío;33;13
+Marlon Brando;Alto Biobío;Biobío;27;8
+James Cagney;Mulchén;Biobío;37;15
+Kirk Douglas;Nacimiento;Biobío;32;11
+Burt Lancaster;Negrete;Biobío;29;9
+Sidney Poitier;San Rosendo;Biobío;36;14
+Henry Fonda;Santa Juana;Biobío;31;10
+Charlton Heston;Laja;Biobío;35;13
+Paul Newman;Monte Águila;Biobío;28;8
+Steve McQueen;Cabrero;Biobío;40;18
+Grace Kelly;Gualqui;Biobío;34;12
+Marlene Dietrich;Florida;Biobío;30;10
+Cary Grant;Hualqui;Biobío;33;13
+Katharine Hepburn;Coronel;Biobío;27;8
+Bette Davis;Penco;Biobío;38;16
+Clark Gable;Talcahuano;Biobío;32;11
+James Stewart;Chiguayante;Biobío;29;9
+Sophia Loren;Hualpén;Biobío;36;15
+Sean Connery;San Pedro de la Paz;Biobío;31;10
+Clint Eastwood;Lota;Biobío;35;13
+John Wayne;Arauco;Biobío;28;8
+Mae West;Cañete;Biobío;39;17
+Rita Hayworth;Los Álamos;Biobío;34;12
+Gregory Peck;Curanilahue;Biobío;30;10
+Vivien Leigh;Lebu;Biobío;33;13
+Lauren Bacall;Yumbel;Biobío;27;8
+Fred Astaire;Cabrero;Biobío;37;15
+Ginger Rogers;Yungay;Ñuble;32;11
+Gene Kelly;Chillán Viejo;Ñuble;29;9
+Frank Sinatra;Bulnes;Ñuble;36;14
+Judy Garland;Quirihue;Ñuble;31;10
+Elvis Presley;Coelemu;Ñuble;35;13
+Marlon Brando;San Carlos;Ñuble;28;8
+James Cagney;Ñiquén;Ñuble;40;18
+Kirk Douglas;San Fabián;Ñuble;34;12
+Burt Lancaster;San Nicolás;Ñuble;30;10
+Sidney Poitier;Pemuco;Ñuble;33;13
+Henry Fonda;Portezuelo;Ñuble;27;8
+Charlton Heston;Ranquil;Ñuble;38;16
+Paul Newman;Treguaco;Ñuble;32;11
+Steve McQueen;Cobquecura;Ñuble;29;9
+Grace Kelly;Quillón;Ñuble;36;15
+Marlene Dietrich;Coihueco;Ñuble;31;10
+Cary Grant;Ñuble;Ñuble;35;13
+Katharine Hepburn;San Ignacio;Ñuble;28;8
+Bette Davis;El Carmen;Ñuble;39;17
+Clark Gable;Pinto;Ñuble;34;12
+James Stewart;Antuco;Biobío;30;10
+Sophia Loren;Santa Bárbara;Biobío;33;13
+Sean Connery;Quilaco;Biobío;27;8
+Clint Eastwood;Tucapel;Biobío;37;15
+John Wayne;Alto Biobío;Biobío;32;11
+Mae West;Mulchén;Biobío;29;9
+Rita Hayworth;Nacimiento;Biobío;36;14
+Gregory Peck;Negrete;Biobío;31;10
+Vivien Leigh;San Rosendo;Biobío;35;13
+Lauren Bacall;Santa Juana;Biobío;28;8
+Fred Astaire;Laja;Biobío;40;18
+Ginger Rogers;Monte Águila;Biobío;34;12
+Gene Kelly;Cabrero;Biobío;30;10
+Frank Sinatra;Gualqui;Biobío;33;13
+Judy Garland;Florida;Biobío;27;8
+Elvis Presley;Hualqui;Biobío;38;16
+Marlon Brando;Coronel;Biobío;32;11
+James Cagney;Penco;Biobío;29;9
+Kirk Douglas;Talcahuano;Biobío;36;15
+Burt Lancaster;Chiguayante;Biobío;31;10
+Sidney Poitier;Hualpén;Biobío;35;13
+Henry Fonda;San Pedro de la Paz;Biobío;28;8
+Charlton Heston;Lota;Biobío;39;17
+Paul Newman;Arauco;Biobío;34;12
+Steve McQueen;Cañete;Biobío;30;10
+Grace Kelly;Los Álamos;Biobío;33;13
+Marlene Dietrich;Curanilahue;Biobío;27;8
+Cary Grant;Lebu;Biobío;37;15
+Katharine Hepburn;Yumbel;Biobío;32;11
+Bette Davis;Cabrero;Biobío;29;9
+Clark Gable;Yungay;Ñuble;36;14
+James Stewart;Chillán Viejo;Ñuble;31;10
+Sophia Loren;Bulnes;Ñuble;35;13
+Sean Connery;Quirihue;Ñuble;28;8
+Clint Eastwood;Coelemu;Ñuble;40;18
+John Wayne;San Carlos;Ñuble;34;12
+Mae West;Ñiquén;Ñuble;30;10
+Rita Hayworth;San Fabián;Ñuble;33;13
+Gregory Peck;San Nicolás;Ñuble;27;8
+Vivien Leigh;Pemuco;Ñuble;38;16
+Lauren Bacall;Portezuelo;Ñuble;32;11
+Fred Astaire;Ranquil;Ñuble;29;9
+Ginger Rogers;Treguaco;Ñuble;36;15
+Gene Kelly;Cobquecura;Ñuble;31;10
+Frank Sinatra;Quillón;Ñuble;35;13
+Judy Garland;Coihueco;Ñuble;28;8
