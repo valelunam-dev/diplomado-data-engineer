@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<facturacion>
+    <factura id="1001">
+        <cliente>Empresa Alpha</cliente>
+        <monto moneda="CLP">500000</monto>
+        <fecha>2023-10-01</fecha>
+    </factura>
+    <factura id="1002">
+        <cliente>Tech Beta</cliente>
+        <monto moneda="CLP">750000</monto>
+        <fecha>2023-10-01</fecha>
+    </factura>
+</facturacion>

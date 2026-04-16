@@ -1,0 +1,6 @@
+Primera línea del archivo
+Segunda línea con texto de prueba
+Tercera línea con números: 123 456 789
+Cuarta línea con un nombre: Ana
+Quinta línea con otro nombre: Juan
+Sexta línea con una frase: Python es genial
