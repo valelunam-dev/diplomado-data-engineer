@@ -1,0 +1,36 @@
+<mxfile host="app.diagrams.net" modified="2026-05-10T22:30:00.000Z" agent="ChatGPT" version="24.7.17">
+  <diagram id="modeloRelacional" name="Modelo Relacional">
+    <mxGraphModel dx="1600" dy="900" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1920" pageHeight="1080" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+
+        <!-- VEHICULO -->
+        <mxCell id="vehiculo" value="&lt;b&gt;Vehiculo&lt;/b&gt;&lt;hr&gt;&lt;b&gt;PK&lt;/b&gt; idVehiculo : UUID&lt;br&gt;patente : VARCHAR&lt;br&gt;marca : VARCHAR&lt;br&gt;modelo : VARCHAR&lt;br&gt;anio : INTEGER" style="shape=table;whiteSpace=wrap;html=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="120" y="220" width="280" height="180" as="geometry"/>
+        </mxCell>
+
+        <!-- CONDUCTOR -->
+        <mxCell id="conductor" value="&lt;b&gt;Conductor&lt;/b&gt;&lt;hr&gt;&lt;b&gt;PK&lt;/b&gt; idConductor : UUID&lt;br&gt;nombre : VARCHAR&lt;br&gt;rut : VARCHAR&lt;br&gt;licencia : VARCHAR" style="shape=table;whiteSpace=wrap;html=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="920" y="220" width="280" height="170" as="geometry"/>
+        </mxCell>
+
+        <!-- VIAJE -->
+        <mxCell id="viaje" value="&lt;b&gt;Viaje&lt;/b&gt;&lt;hr&gt;&lt;b&gt;PK&lt;/b&gt; idViaje : UUID&lt;br&gt;fechaInicio : TIMESTAMP&lt;br&gt;fechaFin : TIMESTAMP&lt;br&gt;distanciaKm : DECIMAL&lt;br&gt;duracionSeg : INTEGER&lt;br&gt;&lt;b&gt;FK&lt;/b&gt; idVehiculo : UUID&lt;br&gt;&lt;b&gt;FK&lt;/b&gt; idConductor : UUID" style="shape=table;whiteSpace=wrap;html=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="470" y="180" width="340" height="260" as="geometry"/>
+        </mxCell>
+
+        <!-- RELACION VEHICULO VIAJE -->
+        <mxCell id="r1" value="1 : N" style="endArrow=ERmany;startArrow=ERone;startFill=1;endFill=1;html=1;strokeWidth=2;" edge="1" parent="1" source="vehiculo" target="viaje">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <!-- RELACION CONDUCTOR VIAJE -->
+        <mxCell id="r2" value="1 : N" style="endArrow=ERmany;startArrow=ERone;startFill=1;endFill=1;html=1;strokeWidth=2;" edge="1" parent="1" source="conductor" target="viaje">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

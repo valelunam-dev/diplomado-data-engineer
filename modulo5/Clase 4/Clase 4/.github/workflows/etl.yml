@@ -1,0 +1,44 @@
+name: ETL diario
+
+on:
+  schedule:
+    - cron: '0 9 * * *'        # 09:00 UTC = 05:00 Chile (verano) / 06:00 Chile (invierno)
+  workflow_dispatch:            # permite gatillarlo a mano desde la pestaña Actions
+
+# Si una corrida se demora y llega la siguiente, cancela la anterior en vez de solaparlas
+concurrency:
+  group: etl-diario
+  cancel-in-progress: false
+
+jobs:
+  run-etl:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30         # corta si se cuelga (los runners gratis permiten hasta 360)
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'           # cachea ~/.cache/pip para acelerar instalaciones
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run ETL
+        run: python etl.py
+        env:
+          DB_PASS: ${{ secrets.DB_PASS }}
+          AWS_KEY: ${{ secrets.AWS_KEY }}
+          TZ: America/Santiago   # para que datetime.now() dentro del script sea hora Chile
+
+      - name: Upload logs
+        if: always()             # sube logs incluso si el ETL falló
+        uses: actions/upload-artifact@v4
+        with:
+          name: logs-${{ github.run_id }}
+          path: '*.log'
+          retention-days: 30

@@ -1,0 +1,451 @@
+fecha,sku,producto,cantidad,precio_unitario,total,cliente_id,region,canal
+2026-03-01,SKU-009,Almendras 200g,9,5490,49410,C-1351,Coquimbo,tienda
+2026-03-01,SKU-007,Aceite oliva 500ml,8,7990,63920,C-1054,Maule,marketplace
+2026-03-01,SKU-003,Yerba mate 500g,7,2990,20930,C-1445,Coquimbo,tienda
+2026-03-01,SKU-005,Galletas integrales,9,1290,11610,C-1063,Maule,marketplace
+2026-03-01,SKU-004,Chocolate amargo 70%,5,1990,9950,C-1484,Valparaíso,tienda
+2026-03-01,SKU-009,Almendras 200g,3,5490,16470,C-1208,Coquimbo,telefono
+2026-03-02,SKU-007,Aceite oliva 500ml,12,7990,95880,C-1173,O'Higgins,web
+2026-03-02,SKU-009,Almendras 200g,4,5490,21960,C-1469,O'Higgins,web
+2026-03-02,SKU-005,Galletas integrales,7,1290,9030,C-1167,Valparaíso,telefono
+2026-03-02,SKU-001,Café molido 250g,9,4990,44910,C-1149,Coquimbo,tienda
+2026-03-02,SKU-001,Café molido 250g,5,4990,24950,C-1252,Metropolitana,web
+2026-03-02,SKU-007,Aceite oliva 500ml,5,7990,39950,C-1097,Metropolitana,telefono
+2026-03-02,SKU-006,Miel de abeja 500g,4,5990,23960,C-1064,O'Higgins,tienda
+2026-03-02,SKU-008,Quinoa 500g,7,4490,31430,C-1218,Coquimbo,web
+2026-03-02,SKU-006,Miel de abeja 500g,5,5990,29950,C-1039,Coquimbo,web
+2026-03-02,SKU-005,Galletas integrales,4,1290,5160,C-1022,O'Higgins,tienda
+2026-03-02,SKU-005,Galletas integrales,7,1290,9030,C-1442,Antofagasta,telefono
+2026-03-02,SKU-001,Café molido 250g,5,4990,24950,C-1253,Antofagasta,telefono
+2026-03-03,SKU-008,Quinoa 500g,2,4490,8980,C-1389,Antofagasta,tienda
+2026-03-03,SKU-006,Miel de abeja 500g,1,5990,5990,C-1301,Antofagasta,tienda
+2026-03-03,SKU-004,Chocolate amargo 70%,3,1990,5970,C-1208,Maule,telefono
+2026-03-03,SKU-009,Almendras 200g,4,5490,21960,C-1259,Biobío,tienda
+2026-03-03,SKU-007,Aceite oliva 500ml,5,7990,39950,C-1022,Metropolitana,marketplace
+2026-03-03,SKU-004,Chocolate amargo 70%,11,1990,21890,C-1158,Valparaíso,tienda
+2026-03-03,SKU-007,Aceite oliva 500ml,7,7990,55930,C-1169,Antofagasta,telefono
+2026-03-03,SKU-007,Aceite oliva 500ml,3,7990,23970,C-1443,Maule,tienda
+2026-03-03,SKU-004,Chocolate amargo 70%,2,1990,3980,C-1236,Metropolitana,tienda
+2026-03-03,SKU-008,Quinoa 500g,5,4490,22450,C-1173,Antofagasta,telefono
+2026-03-03,SKU-008,Quinoa 500g,6,4490,26940,C-1300,Biobío,telefono
+2026-03-03,SKU-005,Galletas integrales,6,1290,7740,C-1382,Maule,tienda
+2026-03-03,SKU-004,Chocolate amargo 70%,11,1990,21890,C-1327,Antofagasta,web
+2026-03-03,SKU-009,Almendras 200g,4,5490,21960,C-1300,Valparaíso,tienda
+2026-03-03,SKU-002,Té verde 50 bolsas,2,3490,6980,C-1047,Maule,web
+2026-03-03,SKU-009,Almendras 200g,4,5490,21960,C-1192,Maule,telefono
+2026-03-03,SKU-006,Miel de abeja 500g,2,5990,11980,C-1285,Coquimbo,telefono
+2026-03-03,SKU-006,Miel de abeja 500g,11,5990,65890,C-1151,Biobío,telefono
+2026-03-03,SKU-001,Café molido 250g,11,4990,54890,C-1394,Antofagasta,marketplace
+2026-03-04,SKU-002,Té verde 50 bolsas,7,3490,24430,C-1049,Biobío,marketplace
+2026-03-04,SKU-005,Galletas integrales,11,1290,14190,C-1307,O'Higgins,web
+2026-03-04,SKU-004,Chocolate amargo 70%,6,1990,11940,C-1061,Coquimbo,tienda
+2026-03-04,SKU-004,Chocolate amargo 70%,5,1990,9950,C-1116,Biobío,tienda
+2026-03-04,SKU-009,Almendras 200g,4,5490,21960,C-1331,Valparaíso,marketplace
+2026-03-04,SKU-001,Café molido 250g,11,4990,54890,C-1311,O'Higgins,tienda
+2026-03-04,SKU-002,Té verde 50 bolsas,8,3490,27920,C-1085,Coquimbo,marketplace
+2026-03-04,SKU-004,Chocolate amargo 70%,8,1990,15920,C-1012,Antofagasta,marketplace
+2026-03-04,SKU-006,Miel de abeja 500g,9,5990,53910,C-1461,Coquimbo,marketplace
+2026-03-04,SKU-002,Té verde 50 bolsas,11,3490,38390,C-1333,O'Higgins,tienda
+2026-03-04,SKU-010,Avena tradicional,9,1690,15210,C-1108,Valparaíso,telefono
+2026-03-04,SKU-005,Galletas integrales,10,1290,12900,C-1115,O'Higgins,telefono
+2026-03-04,SKU-005,Galletas integrales,11,1290,14190,C-1347,Antofagasta,telefono
+2026-03-04,SKU-005,Galletas integrales,8,1290,10320,C-1126,Valparaíso,web
+2026-03-05,SKU-003,Yerba mate 500g,11,2990,32890,C-1216,Antofagasta,web
+2026-03-05,SKU-008,Quinoa 500g,9,4490,40410,C-1084,Biobío,telefono
+2026-03-05,SKU-004,Chocolate amargo 70%,5,1990,9950,C-1111,Metropolitana,web
+2026-03-05,SKU-001,Café molido 250g,1,4990,4990,C-1125,Maule,web
+2026-03-05,SKU-003,Yerba mate 500g,10,2990,29900,C-1485,Biobío,web
+2026-03-05,SKU-009,Almendras 200g,5,5490,27450,C-1408,Valparaíso,web
+2026-03-05,SKU-007,Aceite oliva 500ml,9,7990,71910,C-1058,Coquimbo,web
+2026-03-05,SKU-003,Yerba mate 500g,3,2990,8970,C-1425,Coquimbo,tienda
+2026-03-05,SKU-001,Café molido 250g,6,4990,29940,C-1279,Biobío,tienda
+2026-03-05,SKU-010,Avena tradicional,11,1690,18590,C-1400,Maule,web
+2026-03-05,SKU-002,Té verde 50 bolsas,4,3490,13960,C-1398,Coquimbo,marketplace
+2026-03-05,SKU-006,Miel de abeja 500g,11,5990,65890,C-1037,Maule,telefono
+2026-03-05,SKU-005,Galletas integrales,10,1290,12900,C-1273,Metropolitana,tienda
+2026-03-05,SKU-005,Galletas integrales,12,1290,15480,C-1187,O'Higgins,telefono
+2026-03-05,SKU-002,Té verde 50 bolsas,7,3490,24430,C-1191,O'Higgins,marketplace
+2026-03-05,SKU-004,Chocolate amargo 70%,1,1990,1990,C-1293,Coquimbo,web
+2026-03-05,SKU-002,Té verde 50 bolsas,10,3490,34900,C-1379,Antofagasta,tienda
+2026-03-06,SKU-006,Miel de abeja 500g,6,5990,35940,C-1107,Coquimbo,marketplace
+2026-03-06,SKU-008,Quinoa 500g,7,4490,31430,C-1138,Coquimbo,tienda
+2026-03-06,SKU-010,Avena tradicional,10,1690,16900,C-1493,Coquimbo,web
+2026-03-06,SKU-001,Café molido 250g,7,4990,34930,C-1230,Coquimbo,telefono
+2026-03-06,SKU-003,Yerba mate 500g,2,2990,5980,C-1312,O'Higgins,telefono
+2026-03-06,SKU-010,Avena tradicional,1,1690,1690,C-1345,Metropolitana,marketplace
+2026-03-06,SKU-008,Quinoa 500g,8,4490,35920,C-1386,Antofagasta,telefono
+2026-03-06,SKU-006,Miel de abeja 500g,12,5990,71880,C-1115,Biobío,marketplace
+2026-03-06,SKU-008,Quinoa 500g,7,4490,31430,C-1247,Maule,tienda
+2026-03-07,SKU-007,Aceite oliva 500ml,1,7990,7990,C-1084,Maule,web
+2026-03-07,SKU-004,Chocolate amargo 70%,12,1990,23880,C-1247,Biobío,marketplace
+2026-03-07,SKU-003,Yerba mate 500g,9,2990,26910,C-1448,Biobío,marketplace
+2026-03-07,SKU-008,Quinoa 500g,8,4490,35920,C-1486,Valparaíso,marketplace
+2026-03-07,SKU-003,Yerba mate 500g,10,2990,29900,C-1078,O'Higgins,web
+2026-03-07,SKU-004,Chocolate amargo 70%,3,1990,5970,C-1079,Metropolitana,marketplace
+2026-03-07,SKU-003,Yerba mate 500g,8,2990,23920,C-1263,Maule,telefono
+2026-03-07,SKU-001,Café molido 250g,8,4990,39920,C-1160,Maule,tienda
+2026-03-07,SKU-004,Chocolate amargo 70%,9,1990,17910,C-1138,Antofagasta,marketplace
+2026-03-08,SKU-003,Yerba mate 500g,12,2990,35880,C-1052,Coquimbo,web
+2026-03-08,SKU-009,Almendras 200g,10,5490,54900,C-1013,Antofagasta,tienda
+2026-03-08,SKU-002,Té verde 50 bolsas,1,3490,3490,C-1440,Biobío,web
+2026-03-08,SKU-008,Quinoa 500g,7,4490,31430,C-1097,Metropolitana,web
+2026-03-08,SKU-004,Chocolate amargo 70%,4,1990,7960,C-1274,Maule,tienda
+2026-03-08,SKU-005,Galletas integrales,7,1290,9030,C-1067,Coquimbo,marketplace
+2026-03-08,SKU-007,Aceite oliva 500ml,12,7990,95880,C-1078,Coquimbo,tienda
+2026-03-08,SKU-002,Té verde 50 bolsas,9,3490,31410,C-1391,Maule,tienda
+2026-03-08,SKU-007,Aceite oliva 500ml,1,7990,7990,C-1162,Coquimbo,telefono
+2026-03-08,SKU-008,Quinoa 500g,11,4490,49390,C-1130,Maule,marketplace
+2026-03-08,SKU-009,Almendras 200g,3,5490,16470,C-1198,Maule,marketplace
+2026-03-08,SKU-002,Té verde 50 bolsas,6,3490,20940,C-1432,Antofagasta,marketplace
+2026-03-08,SKU-007,Aceite oliva 500ml,10,7990,79900,C-1205,Antofagasta,web
+2026-03-08,SKU-008,Quinoa 500g,8,4490,35920,C-1268,Antofagasta,tienda
+2026-03-08,SKU-009,Almendras 200g,4,5490,21960,C-1158,O'Higgins,telefono
+2026-03-08,SKU-001,Café molido 250g,6,4990,29940,C-1476,Metropolitana,marketplace
+2026-03-08,SKU-005,Galletas integrales,2,1290,2580,C-1024,Valparaíso,telefono
+2026-03-08,SKU-010,Avena tradicional,7,1690,11830,C-1095,Coquimbo,web
+2026-03-08,SKU-002,Té verde 50 bolsas,10,3490,34900,C-1376,O'Higgins,marketplace
+2026-03-08,SKU-007,Aceite oliva 500ml,5,7990,39950,C-1232,Metropolitana,web
+2026-03-08,SKU-003,Yerba mate 500g,6,2990,17940,C-1478,Antofagasta,marketplace
+2026-03-08,SKU-001,Café molido 250g,11,4990,54890,C-1463,Antofagasta,tienda
+2026-03-09,SKU-003,Yerba mate 500g,4,2990,11960,C-1490,O'Higgins,marketplace
+2026-03-09,SKU-003,Yerba mate 500g,12,2990,35880,C-1055,Maule,web
+2026-03-09,SKU-002,Té verde 50 bolsas,8,3490,27920,C-1009,Coquimbo,web
+2026-03-09,SKU-010,Avena tradicional,12,1690,20280,C-1450,Biobío,web
+2026-03-09,SKU-008,Quinoa 500g,2,4490,8980,C-1420,Metropolitana,telefono
+2026-03-09,SKU-001,Café molido 250g,10,4990,49900,C-1442,Coquimbo,web
+2026-03-09,SKU-004,Chocolate amargo 70%,9,1990,17910,C-1058,Biobío,telefono
+2026-03-09,SKU-001,Café molido 250g,6,4990,29940,C-1403,Metropolitana,marketplace
+2026-03-09,SKU-002,Té verde 50 bolsas,6,3490,20940,C-1223,Maule,telefono
+2026-03-09,SKU-001,Café molido 250g,2,4990,9980,C-1343,Coquimbo,telefono
+2026-03-09,SKU-005,Galletas integrales,12,1290,15480,C-1228,Valparaíso,marketplace
+2026-03-10,SKU-003,Yerba mate 500g,8,2990,23920,C-1426,Antofagasta,marketplace
+2026-03-10,SKU-006,Miel de abeja 500g,1,5990,5990,C-1460,Biobío,tienda
+2026-03-10,SKU-001,Café molido 250g,12,4990,59880,C-1273,Valparaíso,marketplace
+2026-03-10,SKU-001,Café molido 250g,4,4990,19960,C-1147,Coquimbo,marketplace
+2026-03-10,SKU-007,Aceite oliva 500ml,9,7990,71910,C-1018,Maule,web
+2026-03-10,SKU-006,Miel de abeja 500g,6,5990,35940,C-1220,Valparaíso,tienda
+2026-03-10,SKU-005,Galletas integrales,12,1290,15480,C-1436,Coquimbo,tienda
+2026-03-10,SKU-007,Aceite oliva 500ml,3,7990,23970,C-1304,Coquimbo,web
+2026-03-10,SKU-009,Almendras 200g,7,5490,38430,C-1329,O'Higgins,marketplace
+2026-03-10,SKU-003,Yerba mate 500g,4,2990,11960,C-1174,O'Higgins,telefono
+2026-03-10,SKU-002,Té verde 50 bolsas,3,3490,10470,C-1139,Maule,tienda
+2026-03-10,SKU-006,Miel de abeja 500g,1,5990,5990,C-1443,Coquimbo,marketplace
+2026-03-10,SKU-009,Almendras 200g,1,5490,5490,C-1433,Metropolitana,telefono
+2026-03-10,SKU-002,Té verde 50 bolsas,10,3490,34900,C-1346,Antofagasta,telefono
+2026-03-10,SKU-001,Café molido 250g,5,4990,24950,C-1489,Coquimbo,web
+2026-03-11,SKU-006,Miel de abeja 500g,9,5990,53910,C-1041,Valparaíso,tienda
+2026-03-11,SKU-006,Miel de abeja 500g,7,5990,41930,C-1142,O'Higgins,telefono
+2026-03-11,SKU-001,Café molido 250g,8,4990,39920,C-1435,Biobío,tienda
+2026-03-11,SKU-005,Galletas integrales,6,1290,7740,C-1059,O'Higgins,telefono
+2026-03-11,SKU-009,Almendras 200g,5,5490,27450,C-1420,Metropolitana,marketplace
+2026-03-11,SKU-009,Almendras 200g,9,5490,49410,C-1193,Maule,marketplace
+2026-03-11,SKU-003,Yerba mate 500g,10,2990,29900,C-1001,Biobío,tienda
+2026-03-11,SKU-005,Galletas integrales,6,1290,7740,C-1488,Valparaíso,telefono
+2026-03-11,SKU-003,Yerba mate 500g,6,2990,17940,C-1159,Coquimbo,marketplace
+2026-03-11,SKU-002,Té verde 50 bolsas,10,3490,34900,C-1339,Valparaíso,marketplace
+2026-03-11,SKU-010,Avena tradicional,3,1690,5070,C-1160,O'Higgins,marketplace
+2026-03-11,SKU-010,Avena tradicional,6,1690,10140,C-1083,Maule,marketplace
+2026-03-11,SKU-003,Yerba mate 500g,8,2990,23920,C-1467,Antofagasta,marketplace
+2026-03-12,SKU-005,Galletas integrales,4,1290,5160,C-1114,Metropolitana,tienda
+2026-03-12,SKU-009,Almendras 200g,7,5490,38430,C-1347,O'Higgins,marketplace
+2026-03-12,SKU-006,Miel de abeja 500g,7,5990,41930,C-1310,Antofagasta,web
+2026-03-12,SKU-007,Aceite oliva 500ml,2,7990,15980,C-1485,Coquimbo,marketplace
+2026-03-12,SKU-008,Quinoa 500g,5,4490,22450,C-1156,Biobío,tienda
+2026-03-12,SKU-003,Yerba mate 500g,4,2990,11960,C-1052,Valparaíso,marketplace
+2026-03-12,SKU-006,Miel de abeja 500g,5,5990,29950,C-1198,Maule,marketplace
+2026-03-12,SKU-009,Almendras 200g,12,5490,65880,C-1347,Valparaíso,web
+2026-03-12,SKU-007,Aceite oliva 500ml,10,7990,79900,C-1016,Antofagasta,tienda
+2026-03-12,SKU-009,Almendras 200g,10,5490,54900,C-1188,Maule,tienda
+2026-03-12,SKU-001,Café molido 250g,7,4990,34930,C-1026,Antofagasta,tienda
+2026-03-12,SKU-009,Almendras 200g,5,5490,27450,C-1037,Maule,telefono
+2026-03-12,SKU-006,Miel de abeja 500g,11,5990,65890,C-1056,Maule,marketplace
+2026-03-12,SKU-008,Quinoa 500g,11,4490,49390,C-1131,Coquimbo,telefono
+2026-03-13,SKU-005,Galletas integrales,8,1290,10320,C-1325,O'Higgins,marketplace
+2026-03-13,SKU-008,Quinoa 500g,3,4490,13470,C-1135,Valparaíso,tienda
+2026-03-13,SKU-007,Aceite oliva 500ml,10,7990,79900,C-1239,Antofagasta,marketplace
+2026-03-13,SKU-005,Galletas integrales,8,1290,10320,C-1146,Maule,telefono
+2026-03-13,SKU-002,Té verde 50 bolsas,10,3490,34900,C-1126,Antofagasta,web
+2026-03-13,SKU-006,Miel de abeja 500g,5,5990,29950,C-1442,Metropolitana,marketplace
+2026-03-13,SKU-010,Avena tradicional,4,1690,6760,C-1130,Metropolitana,telefono
+2026-03-13,SKU-009,Almendras 200g,1,5490,5490,C-1155,Biobío,tienda
+2026-03-13,SKU-006,Miel de abeja 500g,11,5990,65890,C-1347,O'Higgins,telefono
+2026-03-13,SKU-004,Chocolate amargo 70%,10,1990,19900,C-1260,Coquimbo,tienda
+2026-03-13,SKU-008,Quinoa 500g,2,4490,8980,C-1121,Maule,marketplace
+2026-03-13,SKU-010,Avena tradicional,9,1690,15210,C-1150,Maule,telefono
+2026-03-13,SKU-007,Aceite oliva 500ml,12,7990,95880,C-1048,Biobío,telefono
+2026-03-13,SKU-001,Café molido 250g,7,4990,34930,C-1009,Maule,web
+2026-03-13,SKU-005,Galletas integrales,12,1290,15480,C-1173,Valparaíso,marketplace
+2026-03-13,SKU-008,Quinoa 500g,1,4490,4490,C-1325,Maule,marketplace
+2026-03-14,SKU-003,Yerba mate 500g,5,2990,14950,C-1236,Valparaíso,web
+2026-03-14,SKU-010,Avena tradicional,10,1690,16900,C-1335,Biobío,telefono
+2026-03-14,SKU-001,Café molido 250g,4,4990,19960,C-1426,Maule,telefono
+2026-03-14,SKU-001,Café molido 250g,4,4990,19960,C-1265,Biobío,telefono
+2026-03-14,SKU-008,Quinoa 500g,4,4490,17960,C-1211,Biobío,telefono
+2026-03-14,SKU-004,Chocolate amargo 70%,7,1990,13930,C-1256,O'Higgins,telefono
+2026-03-15,SKU-001,Café molido 250g,12,4990,59880,C-1448,Coquimbo,marketplace
+2026-03-15,SKU-009,Almendras 200g,8,5490,43920,C-1061,Valparaíso,tienda
+2026-03-15,SKU-009,Almendras 200g,2,5490,10980,C-1025,Coquimbo,web
+2026-03-15,SKU-006,Miel de abeja 500g,2,5990,11980,C-1004,Maule,web
+2026-03-15,SKU-008,Quinoa 500g,11,4490,49390,C-1109,Antofagasta,telefono
+2026-03-15,SKU-007,Aceite oliva 500ml,11,7990,87890,C-1294,Valparaíso,telefono
+2026-03-15,SKU-003,Yerba mate 500g,8,2990,23920,C-1341,Antofagasta,marketplace
+2026-03-15,SKU-005,Galletas integrales,4,1290,5160,C-1430,Coquimbo,marketplace
+2026-03-15,SKU-002,Té verde 50 bolsas,12,3490,41880,C-1146,Valparaíso,marketplace
+2026-03-15,SKU-007,Aceite oliva 500ml,12,7990,95880,C-1303,Biobío,marketplace
+2026-03-15,SKU-001,Café molido 250g,2,4990,9980,C-1150,Valparaíso,telefono
+2026-03-15,SKU-002,Té verde 50 bolsas,10,3490,34900,C-1020,Maule,marketplace
+2026-03-15,SKU-002,Té verde 50 bolsas,3,3490,10470,C-1386,Valparaíso,telefono
+2026-03-15,SKU-009,Almendras 200g,4,5490,21960,C-1484,Antofagasta,web
+2026-03-15,SKU-007,Aceite oliva 500ml,8,7990,63920,C-1310,Maule,telefono
+2026-03-15,SKU-005,Galletas integrales,5,1290,6450,C-1302,Metropolitana,marketplace
+2026-03-15,SKU-010,Avena tradicional,11,1690,18590,C-1096,Biobío,telefono
+2026-03-15,SKU-010,Avena tradicional,5,1690,8450,C-1385,Coquimbo,telefono
+2026-03-15,SKU-005,Galletas integrales,7,1290,9030,C-1257,Antofagasta,telefono
+2026-03-15,SKU-001,Café molido 250g,12,4990,59880,C-1445,Biobío,telefono
+2026-03-15,SKU-003,Yerba mate 500g,12,2990,35880,C-1227,Metropolitana,marketplace
+2026-03-16,SKU-007,Aceite oliva 500ml,4,7990,31960,C-1075,Coquimbo,web
+2026-03-16,SKU-001,Café molido 250g,6,4990,29940,C-1152,O'Higgins,telefono
+2026-03-16,SKU-004,Chocolate amargo 70%,5,1990,9950,C-1223,Maule,web
+2026-03-16,SKU-004,Chocolate amargo 70%,6,1990,11940,C-1408,Biobío,marketplace
+2026-03-16,SKU-009,Almendras 200g,4,5490,21960,C-1353,Maule,telefono
+2026-03-16,SKU-009,Almendras 200g,9,5490,49410,C-1176,Maule,marketplace
+2026-03-16,SKU-008,Quinoa 500g,8,4490,35920,C-1174,Valparaíso,web
+2026-03-16,SKU-002,Té verde 50 bolsas,10,3490,34900,C-1322,Coquimbo,web
+2026-03-16,SKU-009,Almendras 200g,11,5490,60390,C-1226,Biobío,tienda
+2026-03-16,SKU-006,Miel de abeja 500g,7,5990,41930,C-1170,Biobío,web
+2026-03-16,SKU-005,Galletas integrales,9,1290,11610,C-1361,Biobío,telefono
+2026-03-16,SKU-001,Café molido 250g,3,4990,14970,C-1257,Antofagasta,marketplace
+2026-03-16,SKU-008,Quinoa 500g,6,4490,26940,C-1262,Antofagasta,web
+2026-03-16,SKU-008,Quinoa 500g,2,4490,8980,C-1460,Metropolitana,marketplace
+2026-03-16,SKU-007,Aceite oliva 500ml,3,7990,23970,C-1066,Maule,tienda
+2026-03-16,SKU-009,Almendras 200g,5,5490,27450,C-1328,Biobío,telefono
+2026-03-16,SKU-006,Miel de abeja 500g,9,5990,53910,C-1478,O'Higgins,marketplace
+2026-03-16,SKU-004,Chocolate amargo 70%,5,1990,9950,C-1164,Biobío,web
+2026-03-17,SKU-008,Quinoa 500g,2,4490,8980,C-1386,Metropolitana,web
+2026-03-17,SKU-003,Yerba mate 500g,9,2990,26910,C-1467,Metropolitana,marketplace
+2026-03-17,SKU-004,Chocolate amargo 70%,5,1990,9950,C-1342,Maule,tienda
+2026-03-17,SKU-009,Almendras 200g,3,5490,16470,C-1029,Antofagasta,web
+2026-03-17,SKU-008,Quinoa 500g,5,4490,22450,C-1463,O'Higgins,web
+2026-03-17,SKU-005,Galletas integrales,11,1290,14190,C-1209,Biobío,telefono
+2026-03-17,SKU-004,Chocolate amargo 70%,2,1990,3980,C-1123,Coquimbo,telefono
+2026-03-17,SKU-007,Aceite oliva 500ml,10,7990,79900,C-1349,O'Higgins,tienda
+2026-03-17,SKU-005,Galletas integrales,1,1290,1290,C-1112,Maule,web
+2026-03-17,SKU-009,Almendras 200g,11,5490,60390,C-1412,Biobío,web
+2026-03-17,SKU-009,Almendras 200g,4,5490,21960,C-1463,O'Higgins,marketplace
+2026-03-17,SKU-002,Té verde 50 bolsas,5,3490,17450,C-1236,Maule,web
+2026-03-17,SKU-003,Yerba mate 500g,1,2990,2990,C-1230,Metropolitana,marketplace
+2026-03-17,SKU-006,Miel de abeja 500g,4,5990,23960,C-1197,Metropolitana,marketplace
+2026-03-17,SKU-006,Miel de abeja 500g,2,5990,11980,C-1488,Antofagasta,web
+2026-03-17,SKU-007,Aceite oliva 500ml,7,7990,55930,C-1421,Antofagasta,web
+2026-03-17,SKU-009,Almendras 200g,2,5490,10980,C-1163,Valparaíso,telefono
+2026-03-17,SKU-008,Quinoa 500g,4,4490,17960,C-1110,Antofagasta,marketplace
+2026-03-17,SKU-001,Café molido 250g,1,4990,4990,C-1019,Valparaíso,marketplace
+2026-03-18,SKU-001,Café molido 250g,11,4990,54890,C-1369,Metropolitana,marketplace
+2026-03-18,SKU-003,Yerba mate 500g,12,2990,35880,C-1478,Antofagasta,telefono
+2026-03-18,SKU-007,Aceite oliva 500ml,9,7990,71910,C-1004,Metropolitana,web
+2026-03-18,SKU-002,Té verde 50 bolsas,12,3490,41880,C-1433,Antofagasta,web
+2026-03-18,SKU-010,Avena tradicional,9,1690,15210,C-1216,Metropolitana,marketplace
+2026-03-18,SKU-006,Miel de abeja 500g,3,5990,17970,C-1101,Antofagasta,telefono
+2026-03-18,SKU-006,Miel de abeja 500g,11,5990,65890,C-1244,Antofagasta,telefono
+2026-03-18,SKU-006,Miel de abeja 500g,11,5990,65890,C-1395,O'Higgins,marketplace
+2026-03-18,SKU-005,Galletas integrales,4,1290,5160,C-1482,Biobío,marketplace
+2026-03-19,SKU-007,Aceite oliva 500ml,1,7990,7990,C-1015,Metropolitana,tienda
+2026-03-19,SKU-004,Chocolate amargo 70%,12,1990,23880,C-1035,Metropolitana,tienda
+2026-03-19,SKU-004,Chocolate amargo 70%,1,1990,1990,C-1036,Coquimbo,web
+2026-03-19,SKU-009,Almendras 200g,3,5490,16470,C-1220,Valparaíso,web
+2026-03-19,SKU-005,Galletas integrales,1,1290,1290,C-1055,Antofagasta,telefono
+2026-03-19,SKU-004,Chocolate amargo 70%,8,1990,15920,C-1358,Biobío,marketplace
+2026-03-19,SKU-007,Aceite oliva 500ml,11,7990,87890,C-1416,Maule,web
+2026-03-19,SKU-005,Galletas integrales,12,1290,15480,C-1151,Metropolitana,telefono
+2026-03-19,SKU-006,Miel de abeja 500g,1,5990,5990,C-1089,Biobío,web
+2026-03-19,SKU-007,Aceite oliva 500ml,2,7990,15980,C-1072,Coquimbo,web
+2026-03-19,SKU-003,Yerba mate 500g,9,2990,26910,C-1187,Maule,marketplace
+2026-03-19,SKU-010,Avena tradicional,3,1690,5070,C-1087,Coquimbo,marketplace
+2026-03-19,SKU-006,Miel de abeja 500g,9,5990,53910,C-1424,Antofagasta,telefono
+2026-03-20,SKU-005,Galletas integrales,1,1290,1290,C-1373,Maule,web
+2026-03-20,SKU-006,Miel de abeja 500g,8,5990,47920,C-1009,Metropolitana,marketplace
+2026-03-20,SKU-002,Té verde 50 bolsas,7,3490,24430,C-1336,Antofagasta,marketplace
+2026-03-20,SKU-009,Almendras 200g,1,5490,5490,C-1341,O'Higgins,marketplace
+2026-03-20,SKU-003,Yerba mate 500g,4,2990,11960,C-1442,Valparaíso,tienda
+2026-03-20,SKU-006,Miel de abeja 500g,11,5990,65890,C-1434,Metropolitana,marketplace
+2026-03-20,SKU-003,Yerba mate 500g,4,2990,11960,C-1064,Maule,web
+2026-03-20,SKU-002,Té verde 50 bolsas,4,3490,13960,C-1320,Valparaíso,marketplace
+2026-03-20,SKU-010,Avena tradicional,5,1690,8450,C-1224,Metropolitana,telefono
+2026-03-20,SKU-005,Galletas integrales,1,1290,1290,C-1046,Valparaíso,web
+2026-03-20,SKU-004,Chocolate amargo 70%,8,1990,15920,C-1467,Antofagasta,tienda
+2026-03-20,SKU-007,Aceite oliva 500ml,5,7990,39950,C-1016,Coquimbo,marketplace
+2026-03-20,SKU-003,Yerba mate 500g,2,2990,5980,C-1064,Biobío,marketplace
+2026-03-20,SKU-005,Galletas integrales,1,1290,1290,C-1092,Biobío,marketplace
+2026-03-20,SKU-010,Avena tradicional,9,1690,15210,C-1196,Maule,web
+2026-03-20,SKU-009,Almendras 200g,1,5490,5490,C-1323,Antofagasta,tienda
+2026-03-20,SKU-003,Yerba mate 500g,9,2990,26910,C-1150,Biobío,web
+2026-03-20,SKU-007,Aceite oliva 500ml,3,7990,23970,C-1353,Maule,marketplace
+2026-03-20,SKU-002,Té verde 50 bolsas,2,3490,6980,C-1158,Maule,telefono
+2026-03-20,SKU-008,Quinoa 500g,4,4490,17960,C-1490,Valparaíso,marketplace
+2026-03-21,SKU-002,Té verde 50 bolsas,1,3490,3490,C-1379,Biobío,tienda
+2026-03-21,SKU-008,Quinoa 500g,12,4490,53880,C-1078,Maule,tienda
+2026-03-21,SKU-008,Quinoa 500g,2,4490,8980,C-1446,Metropolitana,marketplace
+2026-03-21,SKU-008,Quinoa 500g,1,4490,4490,C-1104,Biobío,tienda
+2026-03-21,SKU-002,Té verde 50 bolsas,6,3490,20940,C-1436,Coquimbo,telefono
+2026-03-21,SKU-005,Galletas integrales,4,1290,5160,C-1382,Metropolitana,telefono
+2026-03-21,SKU-004,Chocolate amargo 70%,10,1990,19900,C-1128,Coquimbo,tienda
+2026-03-21,SKU-002,Té verde 50 bolsas,11,3490,38390,C-1330,Metropolitana,marketplace
+2026-03-21,SKU-007,Aceite oliva 500ml,9,7990,71910,C-1185,Metropolitana,marketplace
+2026-03-21,SKU-010,Avena tradicional,8,1690,13520,C-1032,Metropolitana,telefono
+2026-03-21,SKU-005,Galletas integrales,4,1290,5160,C-1491,Metropolitana,web
+2026-03-21,SKU-004,Chocolate amargo 70%,10,1990,19900,C-1213,Antofagasta,web
+2026-03-21,SKU-004,Chocolate amargo 70%,1,1990,1990,C-1051,Maule,marketplace
+2026-03-22,SKU-006,Miel de abeja 500g,1,5990,5990,C-1117,O'Higgins,web
+2026-03-22,SKU-007,Aceite oliva 500ml,6,7990,47940,C-1216,Maule,telefono
+2026-03-22,SKU-004,Chocolate amargo 70%,11,1990,21890,C-1052,Biobío,telefono
+2026-03-22,SKU-007,Aceite oliva 500ml,11,7990,87890,C-1383,Valparaíso,marketplace
+2026-03-22,SKU-006,Miel de abeja 500g,2,5990,11980,C-1259,Coquimbo,marketplace
+2026-03-22,SKU-002,Té verde 50 bolsas,3,3490,10470,C-1122,Valparaíso,web
+2026-03-22,SKU-001,Café molido 250g,8,4990,39920,C-1461,Biobío,tienda
+2026-03-22,SKU-005,Galletas integrales,10,1290,12900,C-1195,O'Higgins,marketplace
+2026-03-22,SKU-009,Almendras 200g,7,5490,38430,C-1300,Coquimbo,tienda
+2026-03-22,SKU-001,Café molido 250g,3,4990,14970,C-1007,Biobío,tienda
+2026-03-22,SKU-002,Té verde 50 bolsas,7,3490,24430,C-1181,O'Higgins,telefono
+2026-03-22,SKU-010,Avena tradicional,11,1690,18590,C-1325,Antofagasta,marketplace
+2026-03-22,SKU-010,Avena tradicional,1,1690,1690,C-1404,Coquimbo,marketplace
+2026-03-22,SKU-006,Miel de abeja 500g,10,5990,59900,C-1067,Antofagasta,telefono
+2026-03-22,SKU-008,Quinoa 500g,6,4490,26940,C-1190,Maule,web
+2026-03-22,SKU-006,Miel de abeja 500g,12,5990,71880,C-1033,Antofagasta,marketplace
+2026-03-22,SKU-009,Almendras 200g,6,5490,32940,C-1065,O'Higgins,tienda
+2026-03-23,SKU-009,Almendras 200g,7,5490,38430,C-1112,Maule,marketplace
+2026-03-23,SKU-002,Té verde 50 bolsas,10,3490,34900,C-1325,Valparaíso,tienda
+2026-03-23,SKU-005,Galletas integrales,7,1290,9030,C-1343,Coquimbo,marketplace
+2026-03-23,SKU-006,Miel de abeja 500g,4,5990,23960,C-1351,Coquimbo,marketplace
+2026-03-23,SKU-005,Galletas integrales,9,1290,11610,C-1065,Valparaíso,telefono
+2026-03-23,SKU-004,Chocolate amargo 70%,5,1990,9950,C-1339,Antofagasta,marketplace
+2026-03-23,SKU-008,Quinoa 500g,2,4490,8980,C-1351,Valparaíso,marketplace
+2026-03-23,SKU-005,Galletas integrales,12,1290,15480,C-1206,Biobío,telefono
+2026-03-23,SKU-003,Yerba mate 500g,5,2990,14950,C-1282,Metropolitana,telefono
+2026-03-23,SKU-007,Aceite oliva 500ml,7,7990,55930,C-1339,O'Higgins,tienda
+2026-03-23,SKU-005,Galletas integrales,8,1290,10320,C-1432,Biobío,tienda
+2026-03-23,SKU-007,Aceite oliva 500ml,5,7990,39950,C-1058,Maule,web
+2026-03-23,SKU-002,Té verde 50 bolsas,9,3490,31410,C-1330,Valparaíso,web
+2026-03-23,SKU-003,Yerba mate 500g,12,2990,35880,C-1240,Maule,web
+2026-03-23,SKU-003,Yerba mate 500g,5,2990,14950,C-1219,Metropolitana,marketplace
+2026-03-23,SKU-008,Quinoa 500g,6,4490,26940,C-1473,O'Higgins,marketplace
+2026-03-23,SKU-008,Quinoa 500g,4,4490,17960,C-1062,Valparaíso,web
+2026-03-23,SKU-010,Avena tradicional,5,1690,8450,C-1243,O'Higgins,web
+2026-03-23,SKU-004,Chocolate amargo 70%,12,1990,23880,C-1360,Maule,marketplace
+2026-03-23,SKU-008,Quinoa 500g,2,4490,8980,C-1348,O'Higgins,tienda
+2026-03-24,SKU-009,Almendras 200g,9,5490,49410,C-1134,Coquimbo,telefono
+2026-03-24,SKU-006,Miel de abeja 500g,1,5990,5990,C-1025,Antofagasta,telefono
+2026-03-24,SKU-009,Almendras 200g,3,5490,16470,C-1139,Biobío,tienda
+2026-03-24,SKU-003,Yerba mate 500g,8,2990,23920,C-1470,Valparaíso,web
+2026-03-24,SKU-009,Almendras 200g,11,5490,60390,C-1138,Antofagasta,telefono
+2026-03-24,SKU-005,Galletas integrales,10,1290,12900,C-1296,Coquimbo,telefono
+2026-03-24,SKU-009,Almendras 200g,5,5490,27450,C-1234,Coquimbo,web
+2026-03-24,SKU-006,Miel de abeja 500g,3,5990,17970,C-1284,Metropolitana,marketplace
+2026-03-24,SKU-008,Quinoa 500g,1,4490,4490,C-1210,Biobío,tienda
+2026-03-24,SKU-003,Yerba mate 500g,8,2990,23920,C-1265,Maule,web
+2026-03-24,SKU-006,Miel de abeja 500g,7,5990,41930,C-1066,O'Higgins,marketplace
+2026-03-24,SKU-001,Café molido 250g,10,4990,49900,C-1245,Valparaíso,telefono
+2026-03-25,SKU-005,Galletas integrales,2,1290,2580,C-1437,Valparaíso,web
+2026-03-25,SKU-006,Miel de abeja 500g,2,5990,11980,C-1150,Maule,tienda
+2026-03-25,SKU-003,Yerba mate 500g,9,2990,26910,C-1488,O'Higgins,web
+2026-03-25,SKU-003,Yerba mate 500g,11,2990,32890,C-1134,Valparaíso,telefono
+2026-03-25,SKU-009,Almendras 200g,8,5490,43920,C-1320,Valparaíso,marketplace
+2026-03-25,SKU-001,Café molido 250g,4,4990,19960,C-1102,O'Higgins,web
+2026-03-25,SKU-003,Yerba mate 500g,5,2990,14950,C-1055,Antofagasta,web
+2026-03-25,SKU-008,Quinoa 500g,10,4490,44900,C-1312,Coquimbo,telefono
+2026-03-25,SKU-009,Almendras 200g,7,5490,38430,C-1230,Maule,marketplace
+2026-03-25,SKU-005,Galletas integrales,10,1290,12900,C-1020,O'Higgins,tienda
+2026-03-25,SKU-004,Chocolate amargo 70%,10,1990,19900,C-1410,Biobío,tienda
+2026-03-25,SKU-010,Avena tradicional,10,1690,16900,C-1043,Metropolitana,tienda
+2026-03-25,SKU-005,Galletas integrales,5,1290,6450,C-1167,Metropolitana,web
+2026-03-25,SKU-003,Yerba mate 500g,2,2990,5980,C-1261,Coquimbo,web
+2026-03-25,SKU-003,Yerba mate 500g,7,2990,20930,C-1257,O'Higgins,web
+2026-03-25,SKU-009,Almendras 200g,5,5490,27450,C-1422,Antofagasta,web
+2026-03-26,SKU-001,Café molido 250g,3,4990,14970,C-1357,Maule,marketplace
+2026-03-26,SKU-006,Miel de abeja 500g,7,5990,41930,C-1137,Metropolitana,tienda
+2026-03-26,SKU-007,Aceite oliva 500ml,11,7990,87890,C-1442,Coquimbo,tienda
+2026-03-26,SKU-003,Yerba mate 500g,11,2990,32890,C-1043,Biobío,marketplace
+2026-03-26,SKU-010,Avena tradicional,1,1690,1690,C-1177,Antofagasta,telefono
+2026-03-26,SKU-010,Avena tradicional,11,1690,18590,C-1411,Valparaíso,telefono
+2026-03-26,SKU-008,Quinoa 500g,1,4490,4490,C-1296,Biobío,tienda
+2026-03-26,SKU-003,Yerba mate 500g,3,2990,8970,C-1019,Biobío,telefono
+2026-03-26,SKU-003,Yerba mate 500g,2,2990,5980,C-1366,O'Higgins,telefono
+2026-03-26,SKU-002,Té verde 50 bolsas,12,3490,41880,C-1217,Metropolitana,telefono
+2026-03-26,SKU-006,Miel de abeja 500g,9,5990,53910,C-1114,Metropolitana,tienda
+2026-03-26,SKU-003,Yerba mate 500g,4,2990,11960,C-1404,Maule,web
+2026-03-26,SKU-008,Quinoa 500g,9,4490,40410,C-1233,Valparaíso,tienda
+2026-03-26,SKU-001,Café molido 250g,10,4990,49900,C-1242,Biobío,tienda
+2026-03-27,SKU-009,Almendras 200g,10,5490,54900,C-1101,Valparaíso,marketplace
+2026-03-27,SKU-009,Almendras 200g,8,5490,43920,C-1459,Valparaíso,telefono
+2026-03-27,SKU-003,Yerba mate 500g,2,2990,5980,C-1030,Valparaíso,marketplace
+2026-03-27,SKU-008,Quinoa 500g,8,4490,35920,C-1124,Maule,tienda
+2026-03-27,SKU-003,Yerba mate 500g,5,2990,14950,C-1467,O'Higgins,telefono
+2026-03-27,SKU-006,Miel de abeja 500g,2,5990,11980,C-1223,O'Higgins,web
+2026-03-27,SKU-003,Yerba mate 500g,11,2990,32890,C-1359,O'Higgins,web
+2026-03-27,SKU-007,Aceite oliva 500ml,2,7990,15980,C-1484,Valparaíso,telefono
+2026-03-27,SKU-008,Quinoa 500g,12,4490,53880,C-1245,Coquimbo,tienda
+2026-03-27,SKU-009,Almendras 200g,8,5490,43920,C-1129,Metropolitana,tienda
+2026-03-27,SKU-002,Té verde 50 bolsas,9,3490,31410,C-1078,Biobío,tienda
+2026-03-27,SKU-010,Avena tradicional,1,1690,1690,C-1422,O'Higgins,web
+2026-03-28,SKU-001,Café molido 250g,11,4990,54890,C-1334,Coquimbo,web
+2026-03-28,SKU-003,Yerba mate 500g,2,2990,5980,C-1304,Metropolitana,tienda
+2026-03-28,SKU-008,Quinoa 500g,4,4490,17960,C-1102,O'Higgins,telefono
+2026-03-28,SKU-007,Aceite oliva 500ml,9,7990,71910,C-1382,Coquimbo,tienda
+2026-03-28,SKU-004,Chocolate amargo 70%,2,1990,3980,C-1142,Maule,tienda
+2026-03-28,SKU-010,Avena tradicional,7,1690,11830,C-1156,Antofagasta,web
+2026-03-28,SKU-003,Yerba mate 500g,6,2990,17940,C-1210,Coquimbo,telefono
+2026-03-28,SKU-009,Almendras 200g,1,5490,5490,C-1336,O'Higgins,telefono
+2026-03-28,SKU-002,Té verde 50 bolsas,5,3490,17450,C-1395,O'Higgins,telefono
+2026-03-28,SKU-003,Yerba mate 500g,8,2990,23920,C-1275,Maule,marketplace
+2026-03-28,SKU-004,Chocolate amargo 70%,12,1990,23880,C-1122,Antofagasta,telefono
+2026-03-28,SKU-002,Té verde 50 bolsas,8,3490,27920,C-1051,Antofagasta,telefono
+2026-03-28,SKU-009,Almendras 200g,1,5490,5490,C-1316,Metropolitana,tienda
+2026-03-28,SKU-001,Café molido 250g,5,4990,24950,C-1307,Biobío,marketplace
+2026-03-28,SKU-009,Almendras 200g,10,5490,54900,C-1314,Coquimbo,web
+2026-03-28,SKU-006,Miel de abeja 500g,10,5990,59900,C-1219,Antofagasta,telefono
+2026-03-28,SKU-006,Miel de abeja 500g,3,5990,17970,C-1225,Metropolitana,telefono
+2026-03-28,SKU-002,Té verde 50 bolsas,9,3490,31410,C-1394,Antofagasta,web
+2026-03-28,SKU-005,Galletas integrales,1,1290,1290,C-1328,Maule,marketplace
+2026-03-28,SKU-002,Té verde 50 bolsas,5,3490,17450,C-1100,Coquimbo,marketplace
+2026-03-28,SKU-001,Café molido 250g,12,4990,59880,C-1070,Antofagasta,tienda
+2026-03-29,SKU-010,Avena tradicional,7,1690,11830,C-1185,Valparaíso,tienda
+2026-03-29,SKU-005,Galletas integrales,4,1290,5160,C-1029,Valparaíso,web
+2026-03-29,SKU-007,Aceite oliva 500ml,1,7990,7990,C-1091,Coquimbo,marketplace
+2026-03-29,SKU-002,Té verde 50 bolsas,7,3490,24430,C-1112,Valparaíso,telefono
+2026-03-29,SKU-010,Avena tradicional,12,1690,20280,C-1010,O'Higgins,telefono
+2026-03-29,SKU-001,Café molido 250g,1,4990,4990,C-1166,O'Higgins,web
+2026-03-29,SKU-007,Aceite oliva 500ml,11,7990,87890,C-1050,O'Higgins,telefono
+2026-03-29,SKU-004,Chocolate amargo 70%,6,1990,11940,C-1347,Antofagasta,telefono
+2026-03-29,SKU-006,Miel de abeja 500g,1,5990,5990,C-1212,Metropolitana,telefono
+2026-03-29,SKU-002,Té verde 50 bolsas,1,3490,3490,C-1131,Valparaíso,tienda
+2026-03-29,SKU-001,Café molido 250g,6,4990,29940,C-1477,Biobío,telefono
+2026-03-29,SKU-007,Aceite oliva 500ml,6,7990,47940,C-1498,Valparaíso,telefono
+2026-03-29,SKU-005,Galletas integrales,3,1290,3870,C-1364,Coquimbo,tienda
+2026-03-29,SKU-005,Galletas integrales,8,1290,10320,C-1011,Metropolitana,telefono
+2026-03-29,SKU-007,Aceite oliva 500ml,6,7990,47940,C-1488,O'Higgins,tienda
+2026-03-30,SKU-007,Aceite oliva 500ml,2,7990,15980,C-1282,Biobío,marketplace
+2026-03-30,SKU-010,Avena tradicional,12,1690,20280,C-1161,Valparaíso,telefono
+2026-03-30,SKU-005,Galletas integrales,4,1290,5160,C-1342,Coquimbo,marketplace
+2026-03-30,SKU-006,Miel de abeja 500g,2,5990,11980,C-1450,Valparaíso,marketplace
+2026-03-30,SKU-002,Té verde 50 bolsas,3,3490,10470,C-1135,Metropolitana,web
+2026-03-30,SKU-007,Aceite oliva 500ml,10,7990,79900,C-1288,Coquimbo,web
+2026-03-30,SKU-005,Galletas integrales,10,1290,12900,C-1346,Maule,telefono
+2026-03-30,SKU-005,Galletas integrales,8,1290,10320,C-1450,Coquimbo,telefono
+2026-03-30,SKU-010,Avena tradicional,12,1690,20280,C-1254,O'Higgins,marketplace
+2026-03-30,SKU-010,Avena tradicional,4,1690,6760,C-1331,Metropolitana,telefono
+2026-03-30,SKU-005,Galletas integrales,11,1290,14190,C-1209,Metropolitana,tienda
+2026-03-30,SKU-006,Miel de abeja 500g,6,5990,35940,C-1003,Valparaíso,tienda
+2026-03-30,SKU-002,Té verde 50 bolsas,11,3490,38390,C-1293,Valparaíso,web
+2026-03-30,SKU-003,Yerba mate 500g,7,2990,20930,C-1451,O'Higgins,tienda
+2026-03-30,SKU-001,Café molido 250g,7,4990,34930,C-1403,Maule,tienda
+2026-03-30,SKU-005,Galletas integrales,1,1290,1290,C-1004,Biobío,web
+2026-03-31,SKU-004,Chocolate amargo 70%,9,1990,17910,C-1386,Coquimbo,tienda
+2026-03-31,SKU-003,Yerba mate 500g,9,2990,26910,C-1018,O'Higgins,marketplace
+2026-03-31,SKU-001,Café molido 250g,2,4990,9980,C-1449,Biobío,tienda
+2026-03-31,SKU-008,Quinoa 500g,10,4490,44900,C-1417,Coquimbo,telefono
+2026-03-31,SKU-006,Miel de abeja 500g,4,5990,23960,C-1332,Metropolitana,web
+2026-03-31,SKU-004,Chocolate amargo 70%,2,1990,3980,C-1303,Coquimbo,tienda
+2026-03-31,SKU-006,Miel de abeja 500g,11,5990,65890,C-1367,O'Higgins,telefono
+2026-03-31,SKU-005,Galletas integrales,12,1290,15480,C-1445,Biobío,web
+2026-03-31,SKU-009,Almendras 200g,6,5490,32940,C-1046,O'Higgins,telefono
+2026-03-31,SKU-006,Miel de abeja 500g,3,5990,17970,C-1410,Antofagasta,telefono
+2026-03-31,SKU-003,Yerba mate 500g,4,2990,11960,C-1410,Antofagasta,tienda

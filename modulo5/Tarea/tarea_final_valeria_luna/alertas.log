@@ -1,0 +1,4 @@
+[ALERTA] run_id=d88cc10f etapa=run timestamp=2026-05-21T23:32:41.081265-04:00 error='total_venta'
+[ALERTA] run_id=b13033ae etapa=run timestamp=2026-05-21T23:34:17.343625-04:00 error='total_venta'
+[ALERTA] run_id=fda4fd7a etapa=run timestamp=2026-05-21T23:46:26.032530-04:00 error=table resumen has no column named venta_promedio
+[ALERTA] run_id=261a7f17 etapa=run timestamp=2026-05-23T22:19:55.301546-04:00 error=Fallo provocado manualmente

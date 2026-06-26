@@ -1,0 +1,1186 @@
+{"timestamp": "2026-05-18T06:00:00", "level": "INFO", "message": "run_inicio", "run_id": "f8eb6411"}
+{"timestamp": "2026-05-18T06:00:00.386613", "level": "INFO", "message": "etapa_inicio", "run_id": "f8eb6411", "etapa": "extract"}
+{"timestamp": "2026-05-18T06:00:13.900390", "level": "INFO", "message": "etapa_fin", "run_id": "f8eb6411", "etapa": "extract", "duracion_ms": 13513.8, "filas": 848, "status": "OK"}
+{"timestamp": "2026-05-18T06:00:01.207297", "level": "INFO", "message": "etapa_inicio", "run_id": "f8eb6411", "etapa": "transform"}
+{"timestamp": "2026-05-18T06:00:03.071853", "level": "INFO", "message": "etapa_fin", "run_id": "f8eb6411", "etapa": "transform", "duracion_ms": 1864.6, "filas": 276, "status": "OK"}
+{"timestamp": "2026-05-18T06:00:00.923927", "level": "INFO", "message": "etapa_inicio", "run_id": "f8eb6411", "etapa": "load"}
+{"timestamp": "2026-05-18T06:00:01.307754", "level": "INFO", "message": "etapa_fin", "run_id": "f8eb6411", "etapa": "load", "duracion_ms": 383.8, "filas": 969, "status": "OK"}
+{"timestamp": "2026-05-18T06:00:03.295553", "level": "INFO", "message": "run_completado", "run_id": "f8eb6411", "duracion_ms": 3295.6, "status": "OK"}
+{"timestamp": "2026-05-18T06:15:00", "level": "INFO", "message": "run_inicio", "run_id": "9af746eb"}
+{"timestamp": "2026-05-18T06:15:01.900154", "level": "INFO", "message": "etapa_inicio", "run_id": "9af746eb", "etapa": "extract"}
+{"timestamp": "2026-05-18T06:15:04.476719", "level": "INFO", "message": "etapa_fin", "run_id": "9af746eb", "etapa": "extract", "duracion_ms": 2576.6, "filas": 226, "status": "OK"}
+{"timestamp": "2026-05-18T06:15:01.196496", "level": "INFO", "message": "etapa_inicio", "run_id": "9af746eb", "etapa": "transform"}
+{"timestamp": "2026-05-18T06:15:02.291517", "level": "INFO", "message": "etapa_fin", "run_id": "9af746eb", "etapa": "transform", "duracion_ms": 1095.0, "filas": 195, "status": "OK"}
+{"timestamp": "2026-05-18T06:15:01.157663", "level": "INFO", "message": "etapa_inicio", "run_id": "9af746eb", "etapa": "load"}
+{"timestamp": "2026-05-18T06:15:01.617473", "level": "INFO", "message": "etapa_fin", "run_id": "9af746eb", "etapa": "load", "duracion_ms": 459.8, "filas": 1207, "status": "OK"}
+{"timestamp": "2026-05-18T06:15:03.588961", "level": "INFO", "message": "run_completado", "run_id": "9af746eb", "duracion_ms": 3589.0, "status": "OK"}
+{"timestamp": "2026-05-18T06:30:00", "level": "INFO", "message": "run_inicio", "run_id": "6870ddac"}
+{"timestamp": "2026-05-18T06:30:01.650640", "level": "INFO", "message": "etapa_inicio", "run_id": "6870ddac", "etapa": "extract"}
+{"timestamp": "2026-05-18T06:30:03.102456", "level": "INFO", "message": "etapa_fin", "run_id": "6870ddac", "etapa": "extract", "duracion_ms": 1451.8, "filas": 1408, "status": "OK"}
+{"timestamp": "2026-05-18T06:30:00.456955", "level": "INFO", "message": "etapa_inicio", "run_id": "6870ddac", "etapa": "transform"}
+{"timestamp": "2026-05-18T06:30:01.103101", "level": "INFO", "message": "etapa_fin", "run_id": "6870ddac", "etapa": "transform", "duracion_ms": 646.1, "filas": 1255, "status": "OK"}
+{"timestamp": "2026-05-18T06:30:00.213242", "level": "INFO", "message": "etapa_inicio", "run_id": "6870ddac", "etapa": "load"}
+{"timestamp": "2026-05-18T06:30:00.760392", "level": "INFO", "message": "etapa_fin", "run_id": "6870ddac", "etapa": "load", "duracion_ms": 547.2, "filas": 975, "status": "OK"}
+{"timestamp": "2026-05-18T06:30:06.886144", "level": "INFO", "message": "run_completado", "run_id": "6870ddac", "duracion_ms": 6886.1, "status": "OK"}
+{"timestamp": "2026-05-18T06:45:00", "level": "INFO", "message": "run_inicio", "run_id": "7f3b5a88"}
+{"timestamp": "2026-05-18T06:45:01.854539", "level": "INFO", "message": "etapa_inicio", "run_id": "7f3b5a88", "etapa": "extract"}
+{"timestamp": "2026-05-18T06:45:03.758495", "level": "INFO", "message": "etapa_fin", "run_id": "7f3b5a88", "etapa": "extract", "duracion_ms": 1904.0, "filas": 468, "status": "OK"}
+{"timestamp": "2026-05-18T06:45:01.428089", "level": "INFO", "message": "etapa_inicio", "run_id": "7f3b5a88", "etapa": "transform"}
+{"timestamp": "2026-05-18T06:45:02.294234", "level": "INFO", "message": "etapa_fin", "run_id": "7f3b5a88", "etapa": "transform", "duracion_ms": 866.1, "filas": 1175, "status": "OK"}
+{"timestamp": "2026-05-18T06:45:01.040721", "level": "INFO", "message": "etapa_inicio", "run_id": "7f3b5a88", "etapa": "load"}
+{"timestamp": "2026-05-18T06:45:01.752892", "level": "INFO", "message": "etapa_fin", "run_id": "7f3b5a88", "etapa": "load", "duracion_ms": 712.2, "filas": 1347, "status": "OK"}
+{"timestamp": "2026-05-18T06:45:07.900874", "level": "INFO", "message": "run_completado", "run_id": "7f3b5a88", "duracion_ms": 7900.9, "status": "OK"}
+{"timestamp": "2026-05-18T07:00:00", "level": "INFO", "message": "run_inicio", "run_id": "3a138b2c"}
+{"timestamp": "2026-05-18T07:00:00.894433", "level": "INFO", "message": "etapa_inicio", "run_id": "3a138b2c", "etapa": "extract"}
+{"timestamp": "2026-05-18T07:00:03.787285", "level": "INFO", "message": "etapa_fin", "run_id": "3a138b2c", "etapa": "extract", "duracion_ms": 2892.9, "filas": 1101, "status": "OK"}
+{"timestamp": "2026-05-18T07:00:00.901227", "level": "INFO", "message": "etapa_inicio", "run_id": "3a138b2c", "etapa": "transform"}
+{"timestamp": "2026-05-18T07:00:11.067742", "level": "INFO", "message": "etapa_fin", "run_id": "3a138b2c", "etapa": "transform", "duracion_ms": 10166.5, "filas": 1716, "status": "OK"}
+{"timestamp": "2026-05-18T07:00:01.763408", "level": "INFO", "message": "etapa_inicio", "run_id": "3a138b2c", "etapa": "load"}
+{"timestamp": "2026-05-18T07:00:02.439905", "level": "INFO", "message": "etapa_fin", "run_id": "3a138b2c", "etapa": "load", "duracion_ms": 676.5, "filas": 1317, "status": "OK"}
+{"timestamp": "2026-05-18T07:00:05.483374", "level": "INFO", "message": "run_completado", "run_id": "3a138b2c", "duracion_ms": 5483.4, "status": "OK"}
+{"timestamp": "2026-05-18T07:15:00", "level": "INFO", "message": "run_inicio", "run_id": "0dc3be2d"}
+{"timestamp": "2026-05-18T07:15:00.230650", "level": "INFO", "message": "etapa_inicio", "run_id": "0dc3be2d", "etapa": "extract"}
+{"timestamp": "2026-05-18T07:15:01.464640", "level": "INFO", "message": "etapa_fin", "run_id": "0dc3be2d", "etapa": "extract", "duracion_ms": 1234.0, "filas": 1527, "status": "OK"}
+{"timestamp": "2026-05-18T07:15:01.361889", "level": "INFO", "message": "etapa_inicio", "run_id": "0dc3be2d", "etapa": "transform"}
+{"timestamp": "2026-05-18T07:15:01.952893", "level": "INFO", "message": "etapa_fin", "run_id": "0dc3be2d", "etapa": "transform", "duracion_ms": 591.0, "filas": 1425, "status": "OK"}
+{"timestamp": "2026-05-18T07:15:01.198098", "level": "INFO", "message": "etapa_inicio", "run_id": "0dc3be2d", "etapa": "load"}
+{"timestamp": "2026-05-18T07:15:02.315583", "level": "INFO", "message": "etapa_fin", "run_id": "0dc3be2d", "etapa": "load", "duracion_ms": 1117.5, "filas": 1567, "status": "OK"}
+{"timestamp": "2026-05-18T07:15:04.928957", "level": "INFO", "message": "run_completado", "run_id": "0dc3be2d", "duracion_ms": 4929.0, "status": "OK"}
+{"timestamp": "2026-05-18T07:30:00", "level": "INFO", "message": "run_inicio", "run_id": "a8852f78"}
+{"timestamp": "2026-05-18T07:30:00.142870", "level": "INFO", "message": "etapa_inicio", "run_id": "a8852f78", "etapa": "extract"}
+{"timestamp": "2026-05-18T07:30:02.297108", "level": "INFO", "message": "etapa_fin", "run_id": "a8852f78", "etapa": "extract", "duracion_ms": 2154.2, "filas": 339, "status": "OK"}
+{"timestamp": "2026-05-18T07:30:01.038017", "level": "INFO", "message": "etapa_inicio", "run_id": "a8852f78", "etapa": "transform"}
+{"timestamp": "2026-05-18T07:30:01.865329", "level": "INFO", "message": "etapa_fin", "run_id": "a8852f78", "etapa": "transform", "duracion_ms": 827.3, "filas": 1612, "status": "OK"}
+{"timestamp": "2026-05-18T07:30:00.570468", "level": "INFO", "message": "etapa_inicio", "run_id": "a8852f78", "etapa": "load"}
+{"timestamp": "2026-05-18T07:30:01.339608", "level": "INFO", "message": "etapa_fin", "run_id": "a8852f78", "etapa": "load", "duracion_ms": 769.1, "filas": 265, "status": "OK"}
+{"timestamp": "2026-05-18T07:30:03.831831", "level": "INFO", "message": "run_completado", "run_id": "a8852f78", "duracion_ms": 3831.8, "status": "OK"}
+{"timestamp": "2026-05-18T07:45:00", "level": "INFO", "message": "run_inicio", "run_id": "fc98f2c4"}
+{"timestamp": "2026-05-18T07:45:00.627894", "level": "INFO", "message": "etapa_inicio", "run_id": "fc98f2c4", "etapa": "extract"}
+{"timestamp": "2026-05-18T07:45:01.970209", "level": "INFO", "message": "etapa_fin", "run_id": "fc98f2c4", "etapa": "extract", "duracion_ms": 1342.3, "filas": 1226, "status": "OK"}
+{"timestamp": "2026-05-18T07:45:00.629000", "level": "INFO", "message": "etapa_inicio", "run_id": "fc98f2c4", "etapa": "transform"}
+{"timestamp": "2026-05-18T07:45:01.751945", "level": "INFO", "message": "etapa_fin", "run_id": "fc98f2c4", "etapa": "transform", "duracion_ms": 1122.9, "filas": 1910, "status": "OK"}
+{"timestamp": "2026-05-18T07:45:00.822838", "level": "INFO", "message": "etapa_inicio", "run_id": "fc98f2c4", "etapa": "load"}
+{"timestamp": "2026-05-18T07:45:01.399740", "level": "INFO", "message": "etapa_fin", "run_id": "fc98f2c4", "etapa": "load", "duracion_ms": 576.9, "filas": 409, "status": "OK"}
+{"timestamp": "2026-05-18T07:45:04.159784", "level": "INFO", "message": "run_completado", "run_id": "fc98f2c4", "duracion_ms": 4159.8, "status": "OK"}
+{"timestamp": "2026-05-18T08:00:00", "level": "INFO", "message": "run_inicio", "run_id": "254c9ab4"}
+{"timestamp": "2026-05-18T08:00:01.021429", "level": "INFO", "message": "etapa_inicio", "run_id": "254c9ab4", "etapa": "extract"}
+{"timestamp": "2026-05-18T08:00:03.494238", "level": "INFO", "message": "etapa_fin", "run_id": "254c9ab4", "etapa": "extract", "duracion_ms": 2472.8, "filas": 108, "status": "OK"}
+{"timestamp": "2026-05-18T08:00:00.376785", "level": "INFO", "message": "etapa_inicio", "run_id": "254c9ab4", "etapa": "transform"}
+{"timestamp": "2026-05-18T08:00:01.678671", "level": "INFO", "message": "etapa_fin", "run_id": "254c9ab4", "etapa": "transform", "duracion_ms": 1301.9, "filas": 752, "status": "OK"}
+{"timestamp": "2026-05-18T08:00:01.910886", "level": "INFO", "message": "etapa_inicio", "run_id": "254c9ab4", "etapa": "load"}
+{"timestamp": "2026-05-18T08:00:03.039478", "level": "INFO", "message": "etapa_fin", "run_id": "254c9ab4", "etapa": "load", "duracion_ms": 1128.6, "filas": 1364, "status": "OK"}
+{"timestamp": "2026-05-18T08:00:06.274832", "level": "INFO", "message": "run_completado", "run_id": "254c9ab4", "duracion_ms": 6274.8, "status": "OK"}
+{"timestamp": "2026-05-18T08:15:00", "level": "INFO", "message": "run_inicio", "run_id": "e1f45f64"}
+{"timestamp": "2026-05-18T08:15:00.967623", "level": "INFO", "message": "etapa_inicio", "run_id": "e1f45f64", "etapa": "extract"}
+{"timestamp": "2026-05-18T08:15:04.145072", "level": "INFO", "message": "etapa_fin", "run_id": "e1f45f64", "etapa": "extract", "duracion_ms": 3177.4, "filas": 1493, "status": "OK"}
+{"timestamp": "2026-05-18T08:15:01.615959", "level": "INFO", "message": "etapa_inicio", "run_id": "e1f45f64", "etapa": "transform"}
+{"timestamp": "2026-05-18T08:15:02.704527", "level": "INFO", "message": "etapa_fin", "run_id": "e1f45f64", "etapa": "transform", "duracion_ms": 1088.6, "filas": 312, "status": "OK"}
+{"timestamp": "2026-05-18T08:15:01.014893", "level": "INFO", "message": "etapa_inicio", "run_id": "e1f45f64", "etapa": "load"}
+{"timestamp": "2026-05-18T08:15:01.795424", "level": "INFO", "message": "etapa_fin", "run_id": "e1f45f64", "etapa": "load", "duracion_ms": 780.5, "filas": 527, "status": "OK"}
+{"timestamp": "2026-05-18T08:15:05.203134", "level": "INFO", "message": "run_completado", "run_id": "e1f45f64", "duracion_ms": 5203.1, "status": "OK"}
+{"timestamp": "2026-05-18T08:30:00", "level": "INFO", "message": "run_inicio", "run_id": "58dc49a6"}
+{"timestamp": "2026-05-18T08:30:01.241382", "level": "INFO", "message": "etapa_inicio", "run_id": "58dc49a6", "etapa": "extract"}
+{"timestamp": "2026-05-18T08:30:02.497331", "level": "INFO", "message": "etapa_fin", "run_id": "58dc49a6", "etapa": "extract", "duracion_ms": 1255.9, "filas": 1198, "status": "OK"}
+{"timestamp": "2026-05-18T08:30:00.292782", "level": "INFO", "message": "etapa_inicio", "run_id": "58dc49a6", "etapa": "transform"}
+{"timestamp": "2026-05-18T08:30:07.085187", "level": "INFO", "message": "etapa_fin", "run_id": "58dc49a6", "etapa": "transform", "duracion_ms": 6792.4, "filas": 1357, "status": "OK"}
+{"timestamp": "2026-05-18T08:30:00.814836", "level": "INFO", "message": "etapa_inicio", "run_id": "58dc49a6", "etapa": "load"}
+{"timestamp": "2026-05-18T08:30:01.876127", "level": "INFO", "message": "etapa_fin", "run_id": "58dc49a6", "etapa": "load", "duracion_ms": 1061.3, "filas": 1333, "status": "OK"}
+{"timestamp": "2026-05-18T08:30:04.820817", "level": "INFO", "message": "run_completado", "run_id": "58dc49a6", "duracion_ms": 4820.8, "status": "OK"}
+{"timestamp": "2026-05-18T08:45:00", "level": "INFO", "message": "run_inicio", "run_id": "f86630e0"}
+{"timestamp": "2026-05-18T08:45:01.712980", "level": "INFO", "message": "etapa_inicio", "run_id": "f86630e0", "etapa": "extract"}
+{"timestamp": "2026-05-18T08:45:05.195737", "level": "INFO", "message": "etapa_fin", "run_id": "f86630e0", "etapa": "extract", "duracion_ms": 3482.8, "filas": 1090, "status": "OK"}
+{"timestamp": "2026-05-18T08:45:00.692519", "level": "INFO", "message": "etapa_inicio", "run_id": "f86630e0", "etapa": "transform"}
+{"timestamp": "2026-05-18T08:45:01.408695", "level": "INFO", "message": "etapa_fin", "run_id": "f86630e0", "etapa": "transform", "duracion_ms": 716.2, "filas": 1616, "status": "OK"}
+{"timestamp": "2026-05-18T08:45:00.603038", "level": "INFO", "message": "etapa_inicio", "run_id": "f86630e0", "etapa": "load"}
+{"timestamp": "2026-05-18T08:45:01.897664", "level": "INFO", "message": "etapa_fin", "run_id": "f86630e0", "etapa": "load", "duracion_ms": 1294.6, "filas": 147, "status": "OK"}
+{"timestamp": "2026-05-18T08:45:04.026075", "level": "INFO", "message": "run_completado", "run_id": "f86630e0", "duracion_ms": 4026.1, "status": "OK"}
+{"timestamp": "2026-05-18T09:00:00", "level": "INFO", "message": "run_inicio", "run_id": "91575d9f"}
+{"timestamp": "2026-05-18T09:00:00.787330", "level": "INFO", "message": "etapa_inicio", "run_id": "91575d9f", "etapa": "extract"}
+{"timestamp": "2026-05-18T09:00:03.512499", "level": "INFO", "message": "etapa_fin", "run_id": "91575d9f", "etapa": "extract", "duracion_ms": 2725.2, "filas": 1652, "status": "OK"}
+{"timestamp": "2026-05-18T09:00:01.103408", "level": "INFO", "message": "etapa_inicio", "run_id": "91575d9f", "etapa": "transform"}
+{"timestamp": "2026-05-18T09:00:03.071160", "level": "INFO", "message": "etapa_fin", "run_id": "91575d9f", "etapa": "transform", "duracion_ms": 1967.8, "filas": 1525, "status": "OK"}
+{"timestamp": "2026-05-18T09:00:01.706350", "level": "INFO", "message": "etapa_inicio", "run_id": "91575d9f", "etapa": "load"}
+{"timestamp": "2026-05-18T09:00:02.628426", "level": "INFO", "message": "etapa_fin", "run_id": "91575d9f", "etapa": "load", "duracion_ms": 922.1, "filas": 828, "status": "OK"}
+{"timestamp": "2026-05-18T09:00:06.859690", "level": "INFO", "message": "run_completado", "run_id": "91575d9f", "duracion_ms": 6859.7, "status": "OK"}
+{"timestamp": "2026-05-18T09:15:00", "level": "INFO", "message": "run_inicio", "run_id": "a1a7cc20"}
+{"timestamp": "2026-05-18T09:15:01.580204", "level": "INFO", "message": "etapa_inicio", "run_id": "a1a7cc20", "etapa": "extract"}
+{"timestamp": "2026-05-18T09:15:03.404366", "level": "INFO", "message": "etapa_fin", "run_id": "a1a7cc20", "etapa": "extract", "duracion_ms": 1824.2, "filas": 1761, "status": "OK"}
+{"timestamp": "2026-05-18T09:15:01.597959", "level": "INFO", "message": "etapa_inicio", "run_id": "a1a7cc20", "etapa": "transform"}
+{"timestamp": "2026-05-18T09:15:03.235443", "level": "INFO", "message": "etapa_fin", "run_id": "a1a7cc20", "etapa": "transform", "duracion_ms": 1637.5, "filas": 590, "status": "OK"}
+{"timestamp": "2026-05-18T09:15:01.654833", "level": "INFO", "message": "etapa_inicio", "run_id": "a1a7cc20", "etapa": "load"}
+{"timestamp": "2026-05-18T09:15:02.842681", "level": "INFO", "message": "etapa_fin", "run_id": "a1a7cc20", "etapa": "load", "duracion_ms": 1187.8, "filas": 1160, "status": "OK"}
+{"timestamp": "2026-05-18T09:15:05.463909", "level": "INFO", "message": "run_completado", "run_id": "a1a7cc20", "duracion_ms": 5463.9, "status": "OK"}
+{"timestamp": "2026-05-18T09:30:00", "level": "INFO", "message": "run_inicio", "run_id": "7167d730"}
+{"timestamp": "2026-05-18T09:30:01.980247", "level": "INFO", "message": "etapa_inicio", "run_id": "7167d730", "etapa": "extract"}
+{"timestamp": "2026-05-18T09:30:04.955532", "level": "INFO", "message": "etapa_fin", "run_id": "7167d730", "etapa": "extract", "duracion_ms": 2975.3, "filas": 496, "status": "OK"}
+{"timestamp": "2026-05-18T09:30:01.415792", "level": "INFO", "message": "etapa_inicio", "run_id": "7167d730", "etapa": "transform"}
+{"timestamp": "2026-05-18T09:30:03.350565", "level": "INFO", "message": "etapa_fin", "run_id": "7167d730", "etapa": "transform", "duracion_ms": 1934.8, "filas": 1580, "status": "OK"}
+{"timestamp": "2026-05-18T09:30:01.977272", "level": "INFO", "message": "etapa_inicio", "run_id": "7167d730", "etapa": "load"}
+{"timestamp": "2026-05-18T09:30:03.423273", "level": "INFO", "message": "etapa_fin", "run_id": "7167d730", "etapa": "load", "duracion_ms": 1446.0, "filas": 551, "status": "OK"}
+{"timestamp": "2026-05-18T09:30:03.510786", "level": "INFO", "message": "run_completado", "run_id": "7167d730", "duracion_ms": 3510.8, "status": "OK"}
+{"timestamp": "2026-05-18T09:45:00", "level": "INFO", "message": "run_inicio", "run_id": "1f89edbf"}
+{"timestamp": "2026-05-18T09:45:00.741701", "level": "INFO", "message": "etapa_inicio", "run_id": "1f89edbf", "etapa": "extract"}
+{"timestamp": "2026-05-18T09:45:02.948334", "level": "INFO", "message": "etapa_fin", "run_id": "1f89edbf", "etapa": "extract", "duracion_ms": 2206.6, "filas": 1349, "status": "OK"}
+{"timestamp": "2026-05-18T09:45:01.696828", "level": "INFO", "message": "etapa_inicio", "run_id": "1f89edbf", "etapa": "transform"}
+{"timestamp": "2026-05-18T09:45:02.916038", "level": "INFO", "message": "etapa_fin", "run_id": "1f89edbf", "etapa": "transform", "duracion_ms": 1219.2, "filas": 1737, "status": "OK"}
+{"timestamp": "2026-05-18T09:45:01.321953", "level": "INFO", "message": "etapa_inicio", "run_id": "1f89edbf", "etapa": "load"}
+{"timestamp": "2026-05-18T09:45:02.623532", "level": "INFO", "message": "etapa_fin", "run_id": "1f89edbf", "etapa": "load", "duracion_ms": 1301.6, "filas": 895, "status": "OK"}
+{"timestamp": "2026-05-18T09:45:06.911514", "level": "INFO", "message": "run_completado", "run_id": "1f89edbf", "duracion_ms": 6911.5, "status": "OK"}
+{"timestamp": "2026-05-18T10:00:00", "level": "INFO", "message": "run_inicio", "run_id": "ec88567d"}
+{"timestamp": "2026-05-18T10:00:01.008262", "level": "INFO", "message": "etapa_inicio", "run_id": "ec88567d", "etapa": "extract"}
+{"timestamp": "2026-05-18T10:00:02.454566", "level": "INFO", "message": "etapa_fin", "run_id": "ec88567d", "etapa": "extract", "duracion_ms": 1446.3, "filas": 780, "status": "OK"}
+{"timestamp": "2026-05-18T10:00:00.264825", "level": "INFO", "message": "etapa_inicio", "run_id": "ec88567d", "etapa": "transform"}
+{"timestamp": "2026-05-18T10:00:02.184073", "level": "INFO", "message": "etapa_fin", "run_id": "ec88567d", "etapa": "transform", "duracion_ms": 1919.2, "filas": 1048, "status": "OK"}
+{"timestamp": "2026-05-18T10:00:00.862635", "level": "INFO", "message": "etapa_inicio", "run_id": "ec88567d", "etapa": "load"}
+{"timestamp": "2026-05-18T10:00:02.298791", "level": "INFO", "message": "etapa_fin", "run_id": "ec88567d", "etapa": "load", "duracion_ms": 1436.2, "filas": 448, "status": "OK"}
+{"timestamp": "2026-05-18T10:00:07.965562", "level": "INFO", "message": "run_completado", "run_id": "ec88567d", "duracion_ms": 7965.6, "status": "OK"}
+{"timestamp": "2026-05-18T10:15:00", "level": "INFO", "message": "run_inicio", "run_id": "91e42936"}
+{"timestamp": "2026-05-18T10:15:01.819219", "level": "INFO", "message": "etapa_inicio", "run_id": "91e42936", "etapa": "extract"}
+{"timestamp": "2026-05-18T10:15:04.835474", "level": "INFO", "message": "etapa_fin", "run_id": "91e42936", "etapa": "extract", "duracion_ms": 3016.3, "filas": 1792, "status": "OK"}
+{"timestamp": "2026-05-18T10:15:01.232153", "level": "INFO", "message": "etapa_inicio", "run_id": "91e42936", "etapa": "transform"}
+{"timestamp": "2026-05-18T10:15:02.443688", "level": "INFO", "message": "etapa_fin", "run_id": "91e42936", "etapa": "transform", "duracion_ms": 1211.5, "filas": 419, "status": "OK"}
+{"timestamp": "2026-05-18T10:15:01.142454", "level": "INFO", "message": "etapa_inicio", "run_id": "91e42936", "etapa": "load"}
+{"timestamp": "2026-05-18T10:15:01.969914", "level": "ERROR", "message": "etapa_fin", "run_id": "91e42936", "etapa": "load", "duracion_ms": 827.5, "filas": 0, "status": "ERROR", "error": "Connection refused"}
+{"timestamp": "2026-05-18T10:15:01.969914", "level": "ERROR", "message": "run_fallido", "run_id": "91e42936", "duracion_ms": 827.5, "status": "ERROR"}
+{"timestamp": "2026-05-18T10:30:00", "level": "INFO", "message": "run_inicio", "run_id": "a0d9ce88"}
+{"timestamp": "2026-05-18T10:30:01.480103", "level": "INFO", "message": "etapa_inicio", "run_id": "a0d9ce88", "etapa": "extract"}
+{"timestamp": "2026-05-18T10:30:02.737033", "level": "INFO", "message": "etapa_fin", "run_id": "a0d9ce88", "etapa": "extract", "duracion_ms": 1256.9, "filas": 385, "status": "OK"}
+{"timestamp": "2026-05-18T10:30:00.924238", "level": "INFO", "message": "etapa_inicio", "run_id": "a0d9ce88", "etapa": "transform"}
+{"timestamp": "2026-05-18T10:30:02.731852", "level": "INFO", "message": "etapa_fin", "run_id": "a0d9ce88", "etapa": "transform", "duracion_ms": 1807.6, "filas": 532, "status": "OK"}
+{"timestamp": "2026-05-18T10:30:00.153188", "level": "INFO", "message": "etapa_inicio", "run_id": "a0d9ce88", "etapa": "load"}
+{"timestamp": "2026-05-18T10:30:00.708524", "level": "INFO", "message": "etapa_fin", "run_id": "a0d9ce88", "etapa": "load", "duracion_ms": 555.3, "filas": 1664, "status": "OK"}
+{"timestamp": "2026-05-18T10:30:05.932186", "level": "INFO", "message": "run_completado", "run_id": "a0d9ce88", "duracion_ms": 5932.2, "status": "OK"}
+{"timestamp": "2026-05-18T10:45:00", "level": "INFO", "message": "run_inicio", "run_id": "313ae671"}
+{"timestamp": "2026-05-18T10:45:00.896124", "level": "INFO", "message": "etapa_inicio", "run_id": "313ae671", "etapa": "extract"}
+{"timestamp": "2026-05-18T10:45:02.223808", "level": "INFO", "message": "etapa_fin", "run_id": "313ae671", "etapa": "extract", "duracion_ms": 1327.7, "filas": 824, "status": "OK"}
+{"timestamp": "2026-05-18T10:45:01.805638", "level": "INFO", "message": "etapa_inicio", "run_id": "313ae671", "etapa": "transform"}
+{"timestamp": "2026-05-18T10:45:03.299350", "level": "INFO", "message": "etapa_fin", "run_id": "313ae671", "etapa": "transform", "duracion_ms": 1493.7, "filas": 1158, "status": "OK"}
+{"timestamp": "2026-05-18T10:45:00.899194", "level": "INFO", "message": "etapa_inicio", "run_id": "313ae671", "etapa": "load"}
+{"timestamp": "2026-05-18T10:45:02.300459", "level": "INFO", "message": "etapa_fin", "run_id": "313ae671", "etapa": "load", "duracion_ms": 1401.3, "filas": 1189, "status": "OK"}
+{"timestamp": "2026-05-18T10:45:03.759182", "level": "INFO", "message": "run_completado", "run_id": "313ae671", "duracion_ms": 3759.2, "status": "OK"}
+{"timestamp": "2026-05-18T11:00:00", "level": "INFO", "message": "run_inicio", "run_id": "24917cf8"}
+{"timestamp": "2026-05-18T11:00:01.758331", "level": "INFO", "message": "etapa_inicio", "run_id": "24917cf8", "etapa": "extract"}
+{"timestamp": "2026-05-18T11:00:04.699596", "level": "INFO", "message": "etapa_fin", "run_id": "24917cf8", "etapa": "extract", "duracion_ms": 2941.3, "filas": 1689, "status": "OK"}
+{"timestamp": "2026-05-18T11:00:01.618424", "level": "INFO", "message": "etapa_inicio", "run_id": "24917cf8", "etapa": "transform"}
+{"timestamp": "2026-05-18T11:00:02.376944", "level": "INFO", "message": "etapa_fin", "run_id": "24917cf8", "etapa": "transform", "duracion_ms": 758.5, "filas": 1585, "status": "OK"}
+{"timestamp": "2026-05-18T11:00:00.328640", "level": "INFO", "message": "etapa_inicio", "run_id": "24917cf8", "etapa": "load"}
+{"timestamp": "2026-05-18T11:00:00.702746", "level": "INFO", "message": "etapa_fin", "run_id": "24917cf8", "etapa": "load", "duracion_ms": 374.1, "filas": 1186, "status": "OK"}
+{"timestamp": "2026-05-18T11:00:05.777209", "level": "INFO", "message": "run_completado", "run_id": "24917cf8", "duracion_ms": 5777.2, "status": "OK"}
+{"timestamp": "2026-05-18T11:15:00", "level": "INFO", "message": "run_inicio", "run_id": "630085e8"}
+{"timestamp": "2026-05-18T11:15:00.301608", "level": "INFO", "message": "etapa_inicio", "run_id": "630085e8", "etapa": "extract"}
+{"timestamp": "2026-05-18T11:15:02.702348", "level": "INFO", "message": "etapa_fin", "run_id": "630085e8", "etapa": "extract", "duracion_ms": 2400.7, "filas": 667, "status": "OK"}
+{"timestamp": "2026-05-18T11:15:00.180178", "level": "INFO", "message": "etapa_inicio", "run_id": "630085e8", "etapa": "transform"}
+{"timestamp": "2026-05-18T11:15:00.826796", "level": "INFO", "message": "etapa_fin", "run_id": "630085e8", "etapa": "transform", "duracion_ms": 646.6, "filas": 157, "status": "OK"}
+{"timestamp": "2026-05-18T11:15:01.543987", "level": "INFO", "message": "etapa_inicio", "run_id": "630085e8", "etapa": "load"}
+{"timestamp": "2026-05-18T11:15:02.938973", "level": "INFO", "message": "etapa_fin", "run_id": "630085e8", "etapa": "load", "duracion_ms": 1395.0, "filas": 1354, "status": "OK"}
+{"timestamp": "2026-05-18T11:15:07.866801", "level": "INFO", "message": "run_completado", "run_id": "630085e8", "duracion_ms": 7866.8, "status": "OK"}
+{"timestamp": "2026-05-18T11:30:00", "level": "INFO", "message": "run_inicio", "run_id": "cdd5be40"}
+{"timestamp": "2026-05-18T11:30:00.478866", "level": "INFO", "message": "etapa_inicio", "run_id": "cdd5be40", "etapa": "extract"}
+{"timestamp": "2026-05-18T11:30:02.171830", "level": "INFO", "message": "etapa_fin", "run_id": "cdd5be40", "etapa": "extract", "duracion_ms": 1693.0, "filas": 1753, "status": "OK"}
+{"timestamp": "2026-05-18T11:30:01.008269", "level": "INFO", "message": "etapa_inicio", "run_id": "cdd5be40", "etapa": "transform"}
+{"timestamp": "2026-05-18T11:30:02.920521", "level": "INFO", "message": "etapa_fin", "run_id": "cdd5be40", "etapa": "transform", "duracion_ms": 1912.3, "filas": 1895, "status": "OK"}
+{"timestamp": "2026-05-18T11:30:01.764356", "level": "INFO", "message": "etapa_inicio", "run_id": "cdd5be40", "etapa": "load"}
+{"timestamp": "2026-05-18T11:30:03.177727", "level": "INFO", "message": "etapa_fin", "run_id": "cdd5be40", "etapa": "load", "duracion_ms": 1413.4, "filas": 1928, "status": "OK"}
+{"timestamp": "2026-05-18T11:30:07.716335", "level": "INFO", "message": "run_completado", "run_id": "cdd5be40", "duracion_ms": 7716.3, "status": "OK"}
+{"timestamp": "2026-05-18T11:45:00", "level": "INFO", "message": "run_inicio", "run_id": "f8278699"}
+{"timestamp": "2026-05-18T11:45:00.360555", "level": "INFO", "message": "etapa_inicio", "run_id": "f8278699", "etapa": "extract"}
+{"timestamp": "2026-05-18T11:45:01.664610", "level": "INFO", "message": "etapa_fin", "run_id": "f8278699", "etapa": "extract", "duracion_ms": 1304.1, "filas": 248, "status": "OK"}
+{"timestamp": "2026-05-18T11:45:01.375195", "level": "INFO", "message": "etapa_inicio", "run_id": "f8278699", "etapa": "transform"}
+{"timestamp": "2026-05-18T11:45:02.517703", "level": "INFO", "message": "etapa_fin", "run_id": "f8278699", "etapa": "transform", "duracion_ms": 1142.5, "filas": 720, "status": "OK"}
+{"timestamp": "2026-05-18T11:45:01.589478", "level": "INFO", "message": "etapa_inicio", "run_id": "f8278699", "etapa": "load"}
+{"timestamp": "2026-05-18T11:45:02.965910", "level": "INFO", "message": "etapa_fin", "run_id": "f8278699", "etapa": "load", "duracion_ms": 1376.4, "filas": 1566, "status": "OK"}
+{"timestamp": "2026-05-18T11:45:06.217290", "level": "INFO", "message": "run_completado", "run_id": "f8278699", "duracion_ms": 6217.3, "status": "OK"}
+{"timestamp": "2026-05-18T12:00:00", "level": "INFO", "message": "run_inicio", "run_id": "c8e30a77"}
+{"timestamp": "2026-05-18T12:00:00.580905", "level": "INFO", "message": "etapa_inicio", "run_id": "c8e30a77", "etapa": "extract"}
+{"timestamp": "2026-05-18T12:00:01.924042", "level": "INFO", "message": "etapa_fin", "run_id": "c8e30a77", "etapa": "extract", "duracion_ms": 1343.1, "filas": 1629, "status": "OK"}
+{"timestamp": "2026-05-18T12:00:01.909758", "level": "INFO", "message": "etapa_inicio", "run_id": "c8e30a77", "etapa": "transform"}
+{"timestamp": "2026-05-18T12:00:03.007143", "level": "INFO", "message": "etapa_fin", "run_id": "c8e30a77", "etapa": "transform", "duracion_ms": 1097.4, "filas": 1467, "status": "OK"}
+{"timestamp": "2026-05-18T12:00:01.681645", "level": "INFO", "message": "etapa_inicio", "run_id": "c8e30a77", "etapa": "load"}
+{"timestamp": "2026-05-18T12:00:02.175404", "level": "INFO", "message": "etapa_fin", "run_id": "c8e30a77", "etapa": "load", "duracion_ms": 493.8, "filas": 1155, "status": "OK"}
+{"timestamp": "2026-05-18T12:00:05.019049", "level": "INFO", "message": "run_completado", "run_id": "c8e30a77", "duracion_ms": 5019.0, "status": "OK"}
+{"timestamp": "2026-05-18T12:15:00", "level": "INFO", "message": "run_inicio", "run_id": "be50b677"}
+{"timestamp": "2026-05-18T12:15:00.777568", "level": "INFO", "message": "etapa_inicio", "run_id": "be50b677", "etapa": "extract"}
+{"timestamp": "2026-05-18T12:15:02.008053", "level": "INFO", "message": "etapa_fin", "run_id": "be50b677", "etapa": "extract", "duracion_ms": 1230.5, "filas": 792, "status": "OK"}
+{"timestamp": "2026-05-18T12:15:01.152695", "level": "INFO", "message": "etapa_inicio", "run_id": "be50b677", "etapa": "transform"}
+{"timestamp": "2026-05-18T12:15:06.173818", "level": "INFO", "message": "etapa_fin", "run_id": "be50b677", "etapa": "transform", "duracion_ms": 5021.1, "filas": 1377, "status": "OK"}
+{"timestamp": "2026-05-18T12:15:00.661363", "level": "INFO", "message": "etapa_inicio", "run_id": "be50b677", "etapa": "load"}
+{"timestamp": "2026-05-18T12:15:02.114293", "level": "INFO", "message": "etapa_fin", "run_id": "be50b677", "etapa": "load", "duracion_ms": 1452.9, "filas": 1981, "status": "OK"}
+{"timestamp": "2026-05-18T12:15:06.941815", "level": "INFO", "message": "run_completado", "run_id": "be50b677", "duracion_ms": 6941.8, "status": "OK"}
+{"timestamp": "2026-05-18T12:30:00", "level": "INFO", "message": "run_inicio", "run_id": "285fa5db"}
+{"timestamp": "2026-05-18T12:30:00.299081", "level": "INFO", "message": "etapa_inicio", "run_id": "285fa5db", "etapa": "extract"}
+{"timestamp": "2026-05-18T12:30:10.475542", "level": "INFO", "message": "etapa_fin", "run_id": "285fa5db", "etapa": "extract", "duracion_ms": 10176.5, "filas": 653, "status": "OK"}
+{"timestamp": "2026-05-18T12:30:01.535975", "level": "INFO", "message": "etapa_inicio", "run_id": "285fa5db", "etapa": "transform"}
+{"timestamp": "2026-05-18T12:30:03.265641", "level": "INFO", "message": "etapa_fin", "run_id": "285fa5db", "etapa": "transform", "duracion_ms": 1729.7, "filas": 1484, "status": "OK"}
+{"timestamp": "2026-05-18T12:30:01.656060", "level": "INFO", "message": "etapa_inicio", "run_id": "285fa5db", "etapa": "load"}
+{"timestamp": "2026-05-18T12:30:02.266391", "level": "INFO", "message": "etapa_fin", "run_id": "285fa5db", "etapa": "load", "duracion_ms": 610.3, "filas": 1982, "status": "OK"}
+{"timestamp": "2026-05-18T12:30:05.573913", "level": "INFO", "message": "run_completado", "run_id": "285fa5db", "duracion_ms": 5573.9, "status": "OK"}
+{"timestamp": "2026-05-18T12:45:00", "level": "INFO", "message": "run_inicio", "run_id": "c7fba546"}
+{"timestamp": "2026-05-18T12:45:00.721392", "level": "INFO", "message": "etapa_inicio", "run_id": "c7fba546", "etapa": "extract"}
+{"timestamp": "2026-05-18T12:45:02.419048", "level": "INFO", "message": "etapa_fin", "run_id": "c7fba546", "etapa": "extract", "duracion_ms": 1697.7, "filas": 475, "status": "OK"}
+{"timestamp": "2026-05-18T12:45:00.908102", "level": "INFO", "message": "etapa_inicio", "run_id": "c7fba546", "etapa": "transform"}
+{"timestamp": "2026-05-18T12:45:01.516723", "level": "INFO", "message": "etapa_fin", "run_id": "c7fba546", "etapa": "transform", "duracion_ms": 608.6, "filas": 1399, "status": "OK"}
+{"timestamp": "2026-05-18T12:45:00.268275", "level": "INFO", "message": "etapa_inicio", "run_id": "c7fba546", "etapa": "load"}
+{"timestamp": "2026-05-18T12:45:00.880937", "level": "INFO", "message": "etapa_fin", "run_id": "c7fba546", "etapa": "load", "duracion_ms": 612.7, "filas": 555, "status": "OK"}
+{"timestamp": "2026-05-18T12:45:03.333113", "level": "INFO", "message": "run_completado", "run_id": "c7fba546", "duracion_ms": 3333.1, "status": "OK"}
+{"timestamp": "2026-05-18T13:00:00", "level": "INFO", "message": "run_inicio", "run_id": "64dcd259"}
+{"timestamp": "2026-05-18T13:00:00.962170", "level": "INFO", "message": "etapa_inicio", "run_id": "64dcd259", "etapa": "extract"}
+{"timestamp": "2026-05-18T13:00:02.810049", "level": "INFO", "message": "etapa_fin", "run_id": "64dcd259", "etapa": "extract", "duracion_ms": 1847.9, "filas": 1997, "status": "OK"}
+{"timestamp": "2026-05-18T13:00:01.839311", "level": "INFO", "message": "etapa_inicio", "run_id": "64dcd259", "etapa": "transform"}
+{"timestamp": "2026-05-18T13:00:10.202779", "level": "INFO", "message": "etapa_fin", "run_id": "64dcd259", "etapa": "transform", "duracion_ms": 8363.5, "filas": 324, "status": "OK"}
+{"timestamp": "2026-05-18T13:00:01.941504", "level": "INFO", "message": "etapa_inicio", "run_id": "64dcd259", "etapa": "load"}
+{"timestamp": "2026-05-18T13:00:02.555778", "level": "INFO", "message": "etapa_fin", "run_id": "64dcd259", "etapa": "load", "duracion_ms": 614.3, "filas": 738, "status": "OK"}
+{"timestamp": "2026-05-18T13:00:06.143355", "level": "INFO", "message": "run_completado", "run_id": "64dcd259", "duracion_ms": 6143.4, "status": "OK"}
+{"timestamp": "2026-05-18T13:15:00", "level": "INFO", "message": "run_inicio", "run_id": "6470d889"}
+{"timestamp": "2026-05-18T13:15:00.491156", "level": "INFO", "message": "etapa_inicio", "run_id": "6470d889", "etapa": "extract"}
+{"timestamp": "2026-05-18T13:15:02.605373", "level": "INFO", "message": "etapa_fin", "run_id": "6470d889", "etapa": "extract", "duracion_ms": 2114.2, "filas": 654, "status": "OK"}
+{"timestamp": "2026-05-18T13:15:00.759302", "level": "INFO", "message": "etapa_inicio", "run_id": "6470d889", "etapa": "transform"}
+{"timestamp": "2026-05-18T13:15:01.286547", "level": "INFO", "message": "etapa_fin", "run_id": "6470d889", "etapa": "transform", "duracion_ms": 527.2, "filas": 131, "status": "OK"}
+{"timestamp": "2026-05-18T13:15:00.135024", "level": "INFO", "message": "etapa_inicio", "run_id": "6470d889", "etapa": "load"}
+{"timestamp": "2026-05-18T13:15:01.041809", "level": "INFO", "message": "etapa_fin", "run_id": "6470d889", "etapa": "load", "duracion_ms": 906.8, "filas": 1153, "status": "OK"}
+{"timestamp": "2026-05-18T13:15:05.373803", "level": "INFO", "message": "run_completado", "run_id": "6470d889", "duracion_ms": 5373.8, "status": "OK"}
+{"timestamp": "2026-05-18T13:30:00", "level": "INFO", "message": "run_inicio", "run_id": "8e44f832"}
+{"timestamp": "2026-05-18T13:30:00.301935", "level": "INFO", "message": "etapa_inicio", "run_id": "8e44f832", "etapa": "extract"}
+{"timestamp": "2026-05-18T13:30:03.349235", "level": "INFO", "message": "etapa_fin", "run_id": "8e44f832", "etapa": "extract", "duracion_ms": 3047.3, "filas": 1113, "status": "OK"}
+{"timestamp": "2026-05-18T13:30:01.137222", "level": "INFO", "message": "etapa_inicio", "run_id": "8e44f832", "etapa": "transform"}
+{"timestamp": "2026-05-18T13:30:02.970311", "level": "INFO", "message": "etapa_fin", "run_id": "8e44f832", "etapa": "transform", "duracion_ms": 1833.1, "filas": 730, "status": "OK"}
+{"timestamp": "2026-05-18T13:30:01.406709", "level": "INFO", "message": "etapa_inicio", "run_id": "8e44f832", "etapa": "load"}
+{"timestamp": "2026-05-18T13:30:02.885638", "level": "INFO", "message": "etapa_fin", "run_id": "8e44f832", "etapa": "load", "duracion_ms": 1478.9, "filas": 1804, "status": "OK"}
+{"timestamp": "2026-05-18T13:30:07.409641", "level": "INFO", "message": "run_completado", "run_id": "8e44f832", "duracion_ms": 7409.6, "status": "OK"}
+{"timestamp": "2026-05-18T13:45:00", "level": "INFO", "message": "run_inicio", "run_id": "2e1db715"}
+{"timestamp": "2026-05-18T13:45:00.365466", "level": "INFO", "message": "etapa_inicio", "run_id": "2e1db715", "etapa": "extract"}
+{"timestamp": "2026-05-18T13:45:03.839061", "level": "INFO", "message": "etapa_fin", "run_id": "2e1db715", "etapa": "extract", "duracion_ms": 3473.6, "filas": 1814, "status": "OK"}
+{"timestamp": "2026-05-18T13:45:00.346655", "level": "INFO", "message": "etapa_inicio", "run_id": "2e1db715", "etapa": "transform"}
+{"timestamp": "2026-05-18T13:45:00.952739", "level": "INFO", "message": "etapa_fin", "run_id": "2e1db715", "etapa": "transform", "duracion_ms": 606.1, "filas": 623, "status": "OK"}
+{"timestamp": "2026-05-18T13:45:00.918407", "level": "INFO", "message": "etapa_inicio", "run_id": "2e1db715", "etapa": "load"}
+{"timestamp": "2026-05-18T13:45:01.284888", "level": "INFO", "message": "etapa_fin", "run_id": "2e1db715", "etapa": "load", "duracion_ms": 366.5, "filas": 880, "status": "OK"}
+{"timestamp": "2026-05-18T13:45:07.352689", "level": "INFO", "message": "run_completado", "run_id": "2e1db715", "duracion_ms": 7352.7, "status": "OK"}
+{"timestamp": "2026-05-18T14:00:00", "level": "INFO", "message": "run_inicio", "run_id": "d37a53af"}
+{"timestamp": "2026-05-18T14:00:00.635673", "level": "INFO", "message": "etapa_inicio", "run_id": "d37a53af", "etapa": "extract"}
+{"timestamp": "2026-05-18T14:00:02.241205", "level": "INFO", "message": "etapa_fin", "run_id": "d37a53af", "etapa": "extract", "duracion_ms": 1605.5, "filas": 1040, "status": "OK"}
+{"timestamp": "2026-05-18T14:00:00.452169", "level": "INFO", "message": "etapa_inicio", "run_id": "d37a53af", "etapa": "transform"}
+{"timestamp": "2026-05-18T14:00:04.478921", "level": "INFO", "message": "etapa_fin", "run_id": "d37a53af", "etapa": "transform", "duracion_ms": 4026.8, "filas": 773, "status": "OK"}
+{"timestamp": "2026-05-18T14:00:01.947984", "level": "INFO", "message": "etapa_inicio", "run_id": "d37a53af", "etapa": "load"}
+{"timestamp": "2026-05-18T14:00:02.904472", "level": "INFO", "message": "etapa_fin", "run_id": "d37a53af", "etapa": "load", "duracion_ms": 956.5, "filas": 1907, "status": "OK"}
+{"timestamp": "2026-05-18T14:00:04.547740", "level": "INFO", "message": "run_completado", "run_id": "d37a53af", "duracion_ms": 4547.7, "status": "OK"}
+{"timestamp": "2026-05-18T14:15:00", "level": "INFO", "message": "run_inicio", "run_id": "46ccaaf3"}
+{"timestamp": "2026-05-18T14:15:00.102031", "level": "INFO", "message": "etapa_inicio", "run_id": "46ccaaf3", "etapa": "extract"}
+{"timestamp": "2026-05-18T14:15:02.056098", "level": "INFO", "message": "etapa_fin", "run_id": "46ccaaf3", "etapa": "extract", "duracion_ms": 1954.1, "filas": 1129, "status": "OK"}
+{"timestamp": "2026-05-18T14:15:01.346434", "level": "INFO", "message": "etapa_inicio", "run_id": "46ccaaf3", "etapa": "transform"}
+{"timestamp": "2026-05-18T14:15:02.218703", "level": "INFO", "message": "etapa_fin", "run_id": "46ccaaf3", "etapa": "transform", "duracion_ms": 872.3, "filas": 286, "status": "OK"}
+{"timestamp": "2026-05-18T14:15:00.601921", "level": "INFO", "message": "etapa_inicio", "run_id": "46ccaaf3", "etapa": "load"}
+{"timestamp": "2026-05-18T14:15:01.009625", "level": "INFO", "message": "etapa_fin", "run_id": "46ccaaf3", "etapa": "load", "duracion_ms": 407.7, "filas": 185, "status": "OK"}
+{"timestamp": "2026-05-18T14:15:04.969893", "level": "INFO", "message": "run_completado", "run_id": "46ccaaf3", "duracion_ms": 4969.9, "status": "OK"}
+{"timestamp": "2026-05-18T14:30:00", "level": "INFO", "message": "run_inicio", "run_id": "47d4ac48"}
+{"timestamp": "2026-05-18T14:30:01.296373", "level": "INFO", "message": "etapa_inicio", "run_id": "47d4ac48", "etapa": "extract"}
+{"timestamp": "2026-05-18T14:30:02.507580", "level": "INFO", "message": "etapa_fin", "run_id": "47d4ac48", "etapa": "extract", "duracion_ms": 1211.2, "filas": 1847, "status": "OK"}
+{"timestamp": "2026-05-18T14:30:01.526027", "level": "INFO", "message": "etapa_inicio", "run_id": "47d4ac48", "etapa": "transform"}
+{"timestamp": "2026-05-18T14:30:03.012343", "level": "INFO", "message": "etapa_fin", "run_id": "47d4ac48", "etapa": "transform", "duracion_ms": 1486.3, "filas": 1900, "status": "OK"}
+{"timestamp": "2026-05-18T14:30:01.233463", "level": "INFO", "message": "etapa_inicio", "run_id": "47d4ac48", "etapa": "load"}
+{"timestamp": "2026-05-18T14:30:02.450637", "level": "INFO", "message": "etapa_fin", "run_id": "47d4ac48", "etapa": "load", "duracion_ms": 1217.2, "filas": 1112, "status": "OK"}
+{"timestamp": "2026-05-18T14:30:03.747316", "level": "INFO", "message": "run_completado", "run_id": "47d4ac48", "duracion_ms": 3747.3, "status": "OK"}
+{"timestamp": "2026-05-18T14:45:00", "level": "INFO", "message": "run_inicio", "run_id": "a22798b6"}
+{"timestamp": "2026-05-18T14:45:01.322117", "level": "INFO", "message": "etapa_inicio", "run_id": "a22798b6", "etapa": "extract"}
+{"timestamp": "2026-05-18T14:45:02.431587", "level": "INFO", "message": "etapa_fin", "run_id": "a22798b6", "etapa": "extract", "duracion_ms": 1109.5, "filas": 1926, "status": "OK"}
+{"timestamp": "2026-05-18T14:45:01.074664", "level": "INFO", "message": "etapa_inicio", "run_id": "a22798b6", "etapa": "transform"}
+{"timestamp": "2026-05-18T14:45:02.218531", "level": "INFO", "message": "etapa_fin", "run_id": "a22798b6", "etapa": "transform", "duracion_ms": 1143.9, "filas": 1135, "status": "OK"}
+{"timestamp": "2026-05-18T14:45:00.364684", "level": "INFO", "message": "etapa_inicio", "run_id": "a22798b6", "etapa": "load"}
+{"timestamp": "2026-05-18T14:45:01.293193", "level": "INFO", "message": "etapa_fin", "run_id": "a22798b6", "etapa": "load", "duracion_ms": 928.5, "filas": 1809, "status": "OK"}
+{"timestamp": "2026-05-18T14:45:07.064527", "level": "INFO", "message": "run_completado", "run_id": "a22798b6", "duracion_ms": 7064.5, "status": "OK"}
+{"timestamp": "2026-05-18T15:00:00", "level": "INFO", "message": "run_inicio", "run_id": "b7b79b8d"}
+{"timestamp": "2026-05-18T15:00:01.209717", "level": "INFO", "message": "etapa_inicio", "run_id": "b7b79b8d", "etapa": "extract"}
+{"timestamp": "2026-05-18T15:00:04.441791", "level": "INFO", "message": "etapa_fin", "run_id": "b7b79b8d", "etapa": "extract", "duracion_ms": 3232.1, "filas": 1519, "status": "OK"}
+{"timestamp": "2026-05-18T15:00:01.321491", "level": "INFO", "message": "etapa_inicio", "run_id": "b7b79b8d", "etapa": "transform"}
+{"timestamp": "2026-05-18T15:00:04.803925", "level": "INFO", "message": "etapa_fin", "run_id": "b7b79b8d", "etapa": "transform", "duracion_ms": 3482.4, "filas": 314, "status": "OK"}
+{"timestamp": "2026-05-18T15:00:00.815575", "level": "INFO", "message": "etapa_inicio", "run_id": "b7b79b8d", "etapa": "load"}
+{"timestamp": "2026-05-18T15:00:02.444040", "level": "ERROR", "message": "etapa_fin", "run_id": "b7b79b8d", "etapa": "load", "duracion_ms": 1628.5, "filas": 0, "status": "ERROR", "error": "Connection refused"}
+{"timestamp": "2026-05-18T15:00:02.444040", "level": "ERROR", "message": "run_fallido", "run_id": "b7b79b8d", "duracion_ms": 1628.5, "status": "ERROR"}
+{"timestamp": "2026-05-18T15:15:00", "level": "INFO", "message": "run_inicio", "run_id": "89a42446"}
+{"timestamp": "2026-05-18T15:15:01.289830", "level": "INFO", "message": "etapa_inicio", "run_id": "89a42446", "etapa": "extract"}
+{"timestamp": "2026-05-18T15:15:03.991490", "level": "INFO", "message": "etapa_fin", "run_id": "89a42446", "etapa": "extract", "duracion_ms": 2701.7, "filas": 106, "status": "OK"}
+{"timestamp": "2026-05-18T15:15:00.968202", "level": "INFO", "message": "etapa_inicio", "run_id": "89a42446", "etapa": "transform"}
+{"timestamp": "2026-05-18T15:15:01.573369", "level": "INFO", "message": "etapa_fin", "run_id": "89a42446", "etapa": "transform", "duracion_ms": 605.2, "filas": 1938, "status": "OK"}
+{"timestamp": "2026-05-18T15:15:01.116880", "level": "INFO", "message": "etapa_inicio", "run_id": "89a42446", "etapa": "load"}
+{"timestamp": "2026-05-18T15:15:07.606172", "level": "INFO", "message": "etapa_fin", "run_id": "89a42446", "etapa": "load", "duracion_ms": 6489.3, "filas": 616, "status": "OK"}
+{"timestamp": "2026-05-18T15:15:07.046094", "level": "INFO", "message": "run_completado", "run_id": "89a42446", "duracion_ms": 7046.1, "status": "OK"}
+{"timestamp": "2026-05-18T15:30:00", "level": "INFO", "message": "run_inicio", "run_id": "189914d9"}
+{"timestamp": "2026-05-18T15:30:00.546093", "level": "INFO", "message": "etapa_inicio", "run_id": "189914d9", "etapa": "extract"}
+{"timestamp": "2026-05-18T15:30:03.437197", "level": "INFO", "message": "etapa_fin", "run_id": "189914d9", "etapa": "extract", "duracion_ms": 2891.1, "filas": 1431, "status": "OK"}
+{"timestamp": "2026-05-18T15:30:01.953897", "level": "INFO", "message": "etapa_inicio", "run_id": "189914d9", "etapa": "transform"}
+{"timestamp": "2026-05-18T15:30:03.194820", "level": "INFO", "message": "etapa_fin", "run_id": "189914d9", "etapa": "transform", "duracion_ms": 1240.9, "filas": 1081, "status": "OK"}
+{"timestamp": "2026-05-18T15:30:01.829887", "level": "INFO", "message": "etapa_inicio", "run_id": "189914d9", "etapa": "load"}
+{"timestamp": "2026-05-18T15:30:05.396292", "level": "INFO", "message": "etapa_fin", "run_id": "189914d9", "etapa": "load", "duracion_ms": 3566.4, "filas": 506, "status": "OK"}
+{"timestamp": "2026-05-18T15:30:03.387359", "level": "INFO", "message": "run_completado", "run_id": "189914d9", "duracion_ms": 3387.4, "status": "OK"}
+{"timestamp": "2026-05-18T15:45:00", "level": "INFO", "message": "run_inicio", "run_id": "60b1910a"}
+{"timestamp": "2026-05-18T15:45:00.582487", "level": "INFO", "message": "etapa_inicio", "run_id": "60b1910a", "etapa": "extract"}
+{"timestamp": "2026-05-18T15:45:03.440530", "level": "INFO", "message": "etapa_fin", "run_id": "60b1910a", "etapa": "extract", "duracion_ms": 2858.0, "filas": 1262, "status": "OK"}
+{"timestamp": "2026-05-18T15:45:00.353538", "level": "INFO", "message": "etapa_inicio", "run_id": "60b1910a", "etapa": "transform"}
+{"timestamp": "2026-05-18T15:45:01.577169", "level": "INFO", "message": "etapa_fin", "run_id": "60b1910a", "etapa": "transform", "duracion_ms": 1223.6, "filas": 1476, "status": "OK"}
+{"timestamp": "2026-05-18T15:45:00.289086", "level": "INFO", "message": "etapa_inicio", "run_id": "60b1910a", "etapa": "load"}
+{"timestamp": "2026-05-18T15:45:00.850318", "level": "INFO", "message": "etapa_fin", "run_id": "60b1910a", "etapa": "load", "duracion_ms": 561.2, "filas": 1551, "status": "OK"}
+{"timestamp": "2026-05-18T15:45:05.582678", "level": "INFO", "message": "run_completado", "run_id": "60b1910a", "duracion_ms": 5582.7, "status": "OK"}
+{"timestamp": "2026-05-18T16:00:00", "level": "INFO", "message": "run_inicio", "run_id": "862a83fd"}
+{"timestamp": "2026-05-18T16:00:00.986044", "level": "INFO", "message": "etapa_inicio", "run_id": "862a83fd", "etapa": "extract"}
+{"timestamp": "2026-05-18T16:00:02.282301", "level": "INFO", "message": "etapa_fin", "run_id": "862a83fd", "etapa": "extract", "duracion_ms": 1296.3, "filas": 508, "status": "OK"}
+{"timestamp": "2026-05-18T16:00:00.692182", "level": "INFO", "message": "etapa_inicio", "run_id": "862a83fd", "etapa": "transform"}
+{"timestamp": "2026-05-18T16:00:01.320963", "level": "INFO", "message": "etapa_fin", "run_id": "862a83fd", "etapa": "transform", "duracion_ms": 628.8, "filas": 693, "status": "OK"}
+{"timestamp": "2026-05-18T16:00:00.972045", "level": "INFO", "message": "etapa_inicio", "run_id": "862a83fd", "etapa": "load"}
+{"timestamp": "2026-05-18T16:00:02.255922", "level": "INFO", "message": "etapa_fin", "run_id": "862a83fd", "etapa": "load", "duracion_ms": 1283.9, "filas": 1020, "status": "OK"}
+{"timestamp": "2026-05-18T16:00:07.969835", "level": "INFO", "message": "run_completado", "run_id": "862a83fd", "duracion_ms": 7969.8, "status": "OK"}
+{"timestamp": "2026-05-18T16:15:00", "level": "INFO", "message": "run_inicio", "run_id": "13c857bb"}
+{"timestamp": "2026-05-18T16:15:01.841454", "level": "INFO", "message": "etapa_inicio", "run_id": "13c857bb", "etapa": "extract"}
+{"timestamp": "2026-05-18T16:15:13.021990", "level": "INFO", "message": "etapa_fin", "run_id": "13c857bb", "etapa": "extract", "duracion_ms": 11180.5, "filas": 1630, "status": "OK"}
+{"timestamp": "2026-05-18T16:15:01.095725", "level": "INFO", "message": "etapa_inicio", "run_id": "13c857bb", "etapa": "transform"}
+{"timestamp": "2026-05-18T16:15:03.024836", "level": "INFO", "message": "etapa_fin", "run_id": "13c857bb", "etapa": "transform", "duracion_ms": 1929.1, "filas": 1779, "status": "OK"}
+{"timestamp": "2026-05-18T16:15:01.300170", "level": "INFO", "message": "etapa_inicio", "run_id": "13c857bb", "etapa": "load"}
+{"timestamp": "2026-05-18T16:15:01.935651", "level": "INFO", "message": "etapa_fin", "run_id": "13c857bb", "etapa": "load", "duracion_ms": 635.5, "filas": 847, "status": "OK"}
+{"timestamp": "2026-05-18T16:15:04.156918", "level": "INFO", "message": "run_completado", "run_id": "13c857bb", "duracion_ms": 4156.9, "status": "OK"}
+{"timestamp": "2026-05-18T16:30:00", "level": "INFO", "message": "run_inicio", "run_id": "c434f951"}
+{"timestamp": "2026-05-18T16:30:01.023667", "level": "INFO", "message": "etapa_inicio", "run_id": "c434f951", "etapa": "extract"}
+{"timestamp": "2026-05-18T16:30:06.298819", "level": "INFO", "message": "etapa_fin", "run_id": "c434f951", "etapa": "extract", "duracion_ms": 5275.2, "filas": 1023, "status": "OK"}
+{"timestamp": "2026-05-18T16:30:00.870297", "level": "INFO", "message": "etapa_inicio", "run_id": "c434f951", "etapa": "transform"}
+{"timestamp": "2026-05-18T16:30:02.461071", "level": "INFO", "message": "etapa_fin", "run_id": "c434f951", "etapa": "transform", "duracion_ms": 1590.8, "filas": 870, "status": "OK"}
+{"timestamp": "2026-05-18T16:30:00.700548", "level": "INFO", "message": "etapa_inicio", "run_id": "c434f951", "etapa": "load"}
+{"timestamp": "2026-05-18T16:30:08.554053", "level": "INFO", "message": "etapa_fin", "run_id": "c434f951", "etapa": "load", "duracion_ms": 7853.5, "filas": 1818, "status": "OK"}
+{"timestamp": "2026-05-18T16:30:04.991298", "level": "INFO", "message": "run_completado", "run_id": "c434f951", "duracion_ms": 4991.3, "status": "OK"}
+{"timestamp": "2026-05-18T16:45:00", "level": "INFO", "message": "run_inicio", "run_id": "1d6e4b22"}
+{"timestamp": "2026-05-18T16:45:00.471908", "level": "INFO", "message": "etapa_inicio", "run_id": "1d6e4b22", "etapa": "extract"}
+{"timestamp": "2026-05-18T16:45:01.501212", "level": "INFO", "message": "etapa_fin", "run_id": "1d6e4b22", "etapa": "extract", "duracion_ms": 1029.3, "filas": 618, "status": "OK"}
+{"timestamp": "2026-05-18T16:45:00.807222", "level": "INFO", "message": "etapa_inicio", "run_id": "1d6e4b22", "etapa": "transform"}
+{"timestamp": "2026-05-18T16:45:01.896571", "level": "INFO", "message": "etapa_fin", "run_id": "1d6e4b22", "etapa": "transform", "duracion_ms": 1089.3, "filas": 1306, "status": "OK"}
+{"timestamp": "2026-05-18T16:45:00.245161", "level": "INFO", "message": "etapa_inicio", "run_id": "1d6e4b22", "etapa": "load"}
+{"timestamp": "2026-05-18T16:45:01.655660", "level": "INFO", "message": "etapa_fin", "run_id": "1d6e4b22", "etapa": "load", "duracion_ms": 1410.5, "filas": 1849, "status": "OK"}
+{"timestamp": "2026-05-18T16:45:03.241340", "level": "INFO", "message": "run_completado", "run_id": "1d6e4b22", "duracion_ms": 3241.3, "status": "OK"}
+{"timestamp": "2026-05-18T17:00:00", "level": "INFO", "message": "run_inicio", "run_id": "141c9db1"}
+{"timestamp": "2026-05-18T17:00:01.685884", "level": "INFO", "message": "etapa_inicio", "run_id": "141c9db1", "etapa": "extract"}
+{"timestamp": "2026-05-18T17:00:03.399942", "level": "INFO", "message": "etapa_fin", "run_id": "141c9db1", "etapa": "extract", "duracion_ms": 1714.1, "filas": 610, "status": "OK"}
+{"timestamp": "2026-05-18T17:00:01.944973", "level": "INFO", "message": "etapa_inicio", "run_id": "141c9db1", "etapa": "transform"}
+{"timestamp": "2026-05-18T17:00:03.099334", "level": "INFO", "message": "etapa_fin", "run_id": "141c9db1", "etapa": "transform", "duracion_ms": 1154.4, "filas": 1683, "status": "OK"}
+{"timestamp": "2026-05-18T17:00:00.809364", "level": "INFO", "message": "etapa_inicio", "run_id": "141c9db1", "etapa": "load"}
+{"timestamp": "2026-05-18T17:00:02.256762", "level": "INFO", "message": "etapa_fin", "run_id": "141c9db1", "etapa": "load", "duracion_ms": 1447.4, "filas": 1762, "status": "OK"}
+{"timestamp": "2026-05-18T17:00:06.808277", "level": "INFO", "message": "run_completado", "run_id": "141c9db1", "duracion_ms": 6808.3, "status": "OK"}
+{"timestamp": "2026-05-18T17:15:00", "level": "INFO", "message": "run_inicio", "run_id": "ca2c3352"}
+{"timestamp": "2026-05-18T17:15:01.763880", "level": "INFO", "message": "etapa_inicio", "run_id": "ca2c3352", "etapa": "extract"}
+{"timestamp": "2026-05-18T17:15:04.149262", "level": "INFO", "message": "etapa_fin", "run_id": "ca2c3352", "etapa": "extract", "duracion_ms": 2385.4, "filas": 265, "status": "OK"}
+{"timestamp": "2026-05-18T17:15:00.194004", "level": "INFO", "message": "etapa_inicio", "run_id": "ca2c3352", "etapa": "transform"}
+{"timestamp": "2026-05-18T17:15:01.792533", "level": "INFO", "message": "etapa_fin", "run_id": "ca2c3352", "etapa": "transform", "duracion_ms": 1598.5, "filas": 1641, "status": "OK"}
+{"timestamp": "2026-05-18T17:15:00.363288", "level": "INFO", "message": "etapa_inicio", "run_id": "ca2c3352", "etapa": "load"}
+{"timestamp": "2026-05-18T17:15:01.706663", "level": "INFO", "message": "etapa_fin", "run_id": "ca2c3352", "etapa": "load", "duracion_ms": 1343.4, "filas": 1967, "status": "OK"}
+{"timestamp": "2026-05-18T17:15:07.633885", "level": "INFO", "message": "run_completado", "run_id": "ca2c3352", "duracion_ms": 7633.9, "status": "OK"}
+{"timestamp": "2026-05-18T17:30:00", "level": "INFO", "message": "run_inicio", "run_id": "50efb8a2"}
+{"timestamp": "2026-05-18T17:30:00.997150", "level": "INFO", "message": "etapa_inicio", "run_id": "50efb8a2", "etapa": "extract"}
+{"timestamp": "2026-05-18T17:30:02.856307", "level": "INFO", "message": "etapa_fin", "run_id": "50efb8a2", "etapa": "extract", "duracion_ms": 1859.2, "filas": 1613, "status": "OK"}
+{"timestamp": "2026-05-18T17:30:01.503616", "level": "INFO", "message": "etapa_inicio", "run_id": "50efb8a2", "etapa": "transform"}
+{"timestamp": "2026-05-18T17:30:02.982843", "level": "INFO", "message": "etapa_fin", "run_id": "50efb8a2", "etapa": "transform", "duracion_ms": 1479.2, "filas": 588, "status": "OK"}
+{"timestamp": "2026-05-18T17:30:00.671589", "level": "INFO", "message": "etapa_inicio", "run_id": "50efb8a2", "etapa": "load"}
+{"timestamp": "2026-05-18T17:30:01.640375", "level": "INFO", "message": "etapa_fin", "run_id": "50efb8a2", "etapa": "load", "duracion_ms": 968.8, "filas": 442, "status": "OK"}
+{"timestamp": "2026-05-18T17:30:06.216025", "level": "INFO", "message": "run_completado", "run_id": "50efb8a2", "duracion_ms": 6216.0, "status": "OK"}
+{"timestamp": "2026-05-18T17:45:00", "level": "INFO", "message": "run_inicio", "run_id": "449ece54"}
+{"timestamp": "2026-05-18T17:45:01.051149", "level": "INFO", "message": "etapa_inicio", "run_id": "449ece54", "etapa": "extract"}
+{"timestamp": "2026-05-18T17:45:04.080715", "level": "INFO", "message": "etapa_fin", "run_id": "449ece54", "etapa": "extract", "duracion_ms": 3029.6, "filas": 1027, "status": "OK"}
+{"timestamp": "2026-05-18T17:45:01.821893", "level": "INFO", "message": "etapa_inicio", "run_id": "449ece54", "etapa": "transform"}
+{"timestamp": "2026-05-18T17:45:03.816606", "level": "INFO", "message": "etapa_fin", "run_id": "449ece54", "etapa": "transform", "duracion_ms": 1994.7, "filas": 385, "status": "OK"}
+{"timestamp": "2026-05-18T17:45:01.140792", "level": "INFO", "message": "etapa_inicio", "run_id": "449ece54", "etapa": "load"}
+{"timestamp": "2026-05-18T17:45:01.733695", "level": "INFO", "message": "etapa_fin", "run_id": "449ece54", "etapa": "load", "duracion_ms": 592.9, "filas": 1238, "status": "OK"}
+{"timestamp": "2026-05-18T17:45:03.455472", "level": "INFO", "message": "run_completado", "run_id": "449ece54", "duracion_ms": 3455.5, "status": "OK"}
+{"timestamp": "2026-05-18T18:00:00", "level": "INFO", "message": "run_inicio", "run_id": "b5aca74d"}
+{"timestamp": "2026-05-18T18:00:00.590879", "level": "INFO", "message": "etapa_inicio", "run_id": "b5aca74d", "etapa": "extract"}
+{"timestamp": "2026-05-18T18:00:03.014923", "level": "INFO", "message": "etapa_fin", "run_id": "b5aca74d", "etapa": "extract", "duracion_ms": 2424.0, "filas": 1635, "status": "OK"}
+{"timestamp": "2026-05-18T18:00:01.754169", "level": "INFO", "message": "etapa_inicio", "run_id": "b5aca74d", "etapa": "transform"}
+{"timestamp": "2026-05-18T18:00:02.828426", "level": "INFO", "message": "etapa_fin", "run_id": "b5aca74d", "etapa": "transform", "duracion_ms": 1074.3, "filas": 530, "status": "OK"}
+{"timestamp": "2026-05-18T18:00:00.816045", "level": "INFO", "message": "etapa_inicio", "run_id": "b5aca74d", "etapa": "load"}
+{"timestamp": "2026-05-18T18:00:03.717109", "level": "INFO", "message": "etapa_fin", "run_id": "b5aca74d", "etapa": "load", "duracion_ms": 2901.1, "filas": 837, "status": "OK"}
+{"timestamp": "2026-05-18T18:00:03.629369", "level": "INFO", "message": "run_completado", "run_id": "b5aca74d", "duracion_ms": 3629.4, "status": "OK"}
+{"timestamp": "2026-05-18T18:15:00", "level": "INFO", "message": "run_inicio", "run_id": "0effc7fe"}
+{"timestamp": "2026-05-18T18:15:01.296291", "level": "INFO", "message": "etapa_inicio", "run_id": "0effc7fe", "etapa": "extract"}
+{"timestamp": "2026-05-18T18:15:04.453444", "level": "INFO", "message": "etapa_fin", "run_id": "0effc7fe", "etapa": "extract", "duracion_ms": 3157.2, "filas": 655, "status": "OK"}
+{"timestamp": "2026-05-18T18:15:01.803901", "level": "INFO", "message": "etapa_inicio", "run_id": "0effc7fe", "etapa": "transform"}
+{"timestamp": "2026-05-18T18:15:02.880742", "level": "INFO", "message": "etapa_fin", "run_id": "0effc7fe", "etapa": "transform", "duracion_ms": 1076.8, "filas": 984, "status": "OK"}
+{"timestamp": "2026-05-18T18:15:01.912493", "level": "INFO", "message": "etapa_inicio", "run_id": "0effc7fe", "etapa": "load"}
+{"timestamp": "2026-05-18T18:15:03.230913", "level": "INFO", "message": "etapa_fin", "run_id": "0effc7fe", "etapa": "load", "duracion_ms": 1318.4, "filas": 144, "status": "OK"}
+{"timestamp": "2026-05-18T18:15:03.636235", "level": "INFO", "message": "run_completado", "run_id": "0effc7fe", "duracion_ms": 3636.2, "status": "OK"}
+{"timestamp": "2026-05-18T18:30:00", "level": "INFO", "message": "run_inicio", "run_id": "7f32a1fa"}
+{"timestamp": "2026-05-18T18:30:01.551012", "level": "INFO", "message": "etapa_inicio", "run_id": "7f32a1fa", "etapa": "extract"}
+{"timestamp": "2026-05-18T18:30:04.561635", "level": "INFO", "message": "etapa_fin", "run_id": "7f32a1fa", "etapa": "extract", "duracion_ms": 3010.6, "filas": 1103, "status": "OK"}
+{"timestamp": "2026-05-18T18:30:00.100340", "level": "INFO", "message": "etapa_inicio", "run_id": "7f32a1fa", "etapa": "transform"}
+{"timestamp": "2026-05-18T18:30:01.187622", "level": "INFO", "message": "etapa_fin", "run_id": "7f32a1fa", "etapa": "transform", "duracion_ms": 1087.3, "filas": 1790, "status": "OK"}
+{"timestamp": "2026-05-18T18:30:01.102937", "level": "INFO", "message": "etapa_inicio", "run_id": "7f32a1fa", "etapa": "load"}
+{"timestamp": "2026-05-18T18:30:01.964719", "level": "INFO", "message": "etapa_fin", "run_id": "7f32a1fa", "etapa": "load", "duracion_ms": 861.8, "filas": 1703, "status": "OK"}
+{"timestamp": "2026-05-18T18:30:03.545230", "level": "INFO", "message": "run_completado", "run_id": "7f32a1fa", "duracion_ms": 3545.2, "status": "OK"}
+{"timestamp": "2026-05-18T18:45:00", "level": "INFO", "message": "run_inicio", "run_id": "ad8e925e"}
+{"timestamp": "2026-05-18T18:45:01.092495", "level": "INFO", "message": "etapa_inicio", "run_id": "ad8e925e", "etapa": "extract"}
+{"timestamp": "2026-05-18T18:45:03.797683", "level": "INFO", "message": "etapa_fin", "run_id": "ad8e925e", "etapa": "extract", "duracion_ms": 2705.2, "filas": 1578, "status": "OK"}
+{"timestamp": "2026-05-18T18:45:01.431907", "level": "INFO", "message": "etapa_inicio", "run_id": "ad8e925e", "etapa": "transform"}
+{"timestamp": "2026-05-18T18:45:03.201670", "level": "INFO", "message": "etapa_fin", "run_id": "ad8e925e", "etapa": "transform", "duracion_ms": 1769.8, "filas": 274, "status": "OK"}
+{"timestamp": "2026-05-18T18:45:01.147852", "level": "INFO", "message": "etapa_inicio", "run_id": "ad8e925e", "etapa": "load"}
+{"timestamp": "2026-05-18T18:45:01.495308", "level": "INFO", "message": "etapa_fin", "run_id": "ad8e925e", "etapa": "load", "duracion_ms": 347.5, "filas": 576, "status": "OK"}
+{"timestamp": "2026-05-18T18:45:05.846911", "level": "INFO", "message": "run_completado", "run_id": "ad8e925e", "duracion_ms": 5846.9, "status": "OK"}
+{"timestamp": "2026-05-18T19:00:00", "level": "INFO", "message": "run_inicio", "run_id": "9ef6f8f9"}
+{"timestamp": "2026-05-18T19:00:00.677186", "level": "INFO", "message": "etapa_inicio", "run_id": "9ef6f8f9", "etapa": "extract"}
+{"timestamp": "2026-05-18T19:00:01.997103", "level": "INFO", "message": "etapa_fin", "run_id": "9ef6f8f9", "etapa": "extract", "duracion_ms": 1319.9, "filas": 1403, "status": "OK"}
+{"timestamp": "2026-05-18T19:00:00.931118", "level": "INFO", "message": "etapa_inicio", "run_id": "9ef6f8f9", "etapa": "transform"}
+{"timestamp": "2026-05-18T19:00:02.576884", "level": "INFO", "message": "etapa_fin", "run_id": "9ef6f8f9", "etapa": "transform", "duracion_ms": 1645.8, "filas": 715, "status": "OK"}
+{"timestamp": "2026-05-18T19:00:01.096430", "level": "INFO", "message": "etapa_inicio", "run_id": "9ef6f8f9", "etapa": "load"}
+{"timestamp": "2026-05-18T19:00:03.053657", "level": "ERROR", "message": "etapa_fin", "run_id": "9ef6f8f9", "etapa": "load", "duracion_ms": 1957.2, "filas": 0, "status": "ERROR", "error": "Schema mismatch"}
+{"timestamp": "2026-05-18T19:00:03.053657", "level": "ERROR", "message": "run_fallido", "run_id": "9ef6f8f9", "duracion_ms": 1957.2, "status": "ERROR"}
+{"timestamp": "2026-05-18T19:15:00", "level": "INFO", "message": "run_inicio", "run_id": "a15b73a3"}
+{"timestamp": "2026-05-18T19:15:01.601926", "level": "INFO", "message": "etapa_inicio", "run_id": "a15b73a3", "etapa": "extract"}
+{"timestamp": "2026-05-18T19:15:02.604806", "level": "INFO", "message": "etapa_fin", "run_id": "a15b73a3", "etapa": "extract", "duracion_ms": 1002.9, "filas": 1043, "status": "OK"}
+{"timestamp": "2026-05-18T19:15:00.629347", "level": "INFO", "message": "etapa_inicio", "run_id": "a15b73a3", "etapa": "transform"}
+{"timestamp": "2026-05-18T19:15:01.603883", "level": "INFO", "message": "etapa_fin", "run_id": "a15b73a3", "etapa": "transform", "duracion_ms": 974.5, "filas": 596, "status": "OK"}
+{"timestamp": "2026-05-18T19:15:01.003078", "level": "INFO", "message": "etapa_inicio", "run_id": "a15b73a3", "etapa": "load"}
+{"timestamp": "2026-05-18T19:15:01.584800", "level": "INFO", "message": "etapa_fin", "run_id": "a15b73a3", "etapa": "load", "duracion_ms": 581.7, "filas": 943, "status": "OK"}
+{"timestamp": "2026-05-18T19:15:06.523268", "level": "INFO", "message": "run_completado", "run_id": "a15b73a3", "duracion_ms": 6523.3, "status": "OK"}
+{"timestamp": "2026-05-18T19:30:00", "level": "INFO", "message": "run_inicio", "run_id": "577804fe"}
+{"timestamp": "2026-05-18T19:30:00.141396", "level": "INFO", "message": "etapa_inicio", "run_id": "577804fe", "etapa": "extract"}
+{"timestamp": "2026-05-18T19:30:02.387172", "level": "INFO", "message": "etapa_fin", "run_id": "577804fe", "etapa": "extract", "duracion_ms": 2245.8, "filas": 960, "status": "OK"}
+{"timestamp": "2026-05-18T19:30:00.254075", "level": "INFO", "message": "etapa_inicio", "run_id": "577804fe", "etapa": "transform"}
+{"timestamp": "2026-05-18T19:30:01.095836", "level": "INFO", "message": "etapa_fin", "run_id": "577804fe", "etapa": "transform", "duracion_ms": 841.8, "filas": 858, "status": "OK"}
+{"timestamp": "2026-05-18T19:30:00.530894", "level": "INFO", "message": "etapa_inicio", "run_id": "577804fe", "etapa": "load"}
+{"timestamp": "2026-05-18T19:30:00.871811", "level": "INFO", "message": "etapa_fin", "run_id": "577804fe", "etapa": "load", "duracion_ms": 340.9, "filas": 961, "status": "OK"}
+{"timestamp": "2026-05-18T19:30:04.811599", "level": "INFO", "message": "run_completado", "run_id": "577804fe", "duracion_ms": 4811.6, "status": "OK"}
+{"timestamp": "2026-05-18T19:45:00", "level": "INFO", "message": "run_inicio", "run_id": "d0d8be19"}
+{"timestamp": "2026-05-18T19:45:00.112832", "level": "INFO", "message": "etapa_inicio", "run_id": "d0d8be19", "etapa": "extract"}
+{"timestamp": "2026-05-18T19:45:01.843110", "level": "INFO", "message": "etapa_fin", "run_id": "d0d8be19", "etapa": "extract", "duracion_ms": 1730.3, "filas": 238, "status": "OK"}
+{"timestamp": "2026-05-18T19:45:00.489915", "level": "INFO", "message": "etapa_inicio", "run_id": "d0d8be19", "etapa": "transform"}
+{"timestamp": "2026-05-18T19:45:02.444703", "level": "INFO", "message": "etapa_fin", "run_id": "d0d8be19", "etapa": "transform", "duracion_ms": 1954.8, "filas": 1779, "status": "OK"}
+{"timestamp": "2026-05-18T19:45:00.468473", "level": "INFO", "message": "etapa_inicio", "run_id": "d0d8be19", "etapa": "load"}
+{"timestamp": "2026-05-18T19:45:01.326610", "level": "INFO", "message": "etapa_fin", "run_id": "d0d8be19", "etapa": "load", "duracion_ms": 858.1, "filas": 1921, "status": "OK"}
+{"timestamp": "2026-05-18T19:45:04.474664", "level": "INFO", "message": "run_completado", "run_id": "d0d8be19", "duracion_ms": 4474.7, "status": "OK"}
+{"timestamp": "2026-05-18T20:00:00", "level": "INFO", "message": "run_inicio", "run_id": "1a329b00"}
+{"timestamp": "2026-05-18T20:00:01.041953", "level": "INFO", "message": "etapa_inicio", "run_id": "1a329b00", "etapa": "extract"}
+{"timestamp": "2026-05-18T20:00:02.510236", "level": "INFO", "message": "etapa_fin", "run_id": "1a329b00", "etapa": "extract", "duracion_ms": 1468.3, "filas": 954, "status": "OK"}
+{"timestamp": "2026-05-18T20:00:01.829752", "level": "INFO", "message": "etapa_inicio", "run_id": "1a329b00", "etapa": "transform"}
+{"timestamp": "2026-05-18T20:00:02.414378", "level": "INFO", "message": "etapa_fin", "run_id": "1a329b00", "etapa": "transform", "duracion_ms": 584.6, "filas": 1988, "status": "OK"}
+{"timestamp": "2026-05-18T20:00:00.847574", "level": "INFO", "message": "etapa_inicio", "run_id": "1a329b00", "etapa": "load"}
+{"timestamp": "2026-05-18T20:00:01.403113", "level": "INFO", "message": "etapa_fin", "run_id": "1a329b00", "etapa": "load", "duracion_ms": 555.5, "filas": 390, "status": "OK"}
+{"timestamp": "2026-05-18T20:00:05.076925", "level": "INFO", "message": "run_completado", "run_id": "1a329b00", "duracion_ms": 5076.9, "status": "OK"}
+{"timestamp": "2026-05-18T20:15:00", "level": "INFO", "message": "run_inicio", "run_id": "d8fd49d2"}
+{"timestamp": "2026-05-18T20:15:00.449799", "level": "INFO", "message": "etapa_inicio", "run_id": "d8fd49d2", "etapa": "extract"}
+{"timestamp": "2026-05-18T20:15:02.573904", "level": "INFO", "message": "etapa_fin", "run_id": "d8fd49d2", "etapa": "extract", "duracion_ms": 2124.1, "filas": 743, "status": "OK"}
+{"timestamp": "2026-05-18T20:15:01.492175", "level": "INFO", "message": "etapa_inicio", "run_id": "d8fd49d2", "etapa": "transform"}
+{"timestamp": "2026-05-18T20:15:03.488470", "level": "INFO", "message": "etapa_fin", "run_id": "d8fd49d2", "etapa": "transform", "duracion_ms": 1996.3, "filas": 774, "status": "OK"}
+{"timestamp": "2026-05-18T20:15:00.462299", "level": "INFO", "message": "etapa_inicio", "run_id": "d8fd49d2", "etapa": "load"}
+{"timestamp": "2026-05-18T20:15:01.545261", "level": "INFO", "message": "etapa_fin", "run_id": "d8fd49d2", "etapa": "load", "duracion_ms": 1083.0, "filas": 1057, "status": "OK"}
+{"timestamp": "2026-05-18T20:15:03.159468", "level": "INFO", "message": "run_completado", "run_id": "d8fd49d2", "duracion_ms": 3159.5, "status": "OK"}
+{"timestamp": "2026-05-18T20:30:00", "level": "INFO", "message": "run_inicio", "run_id": "23b91fd5"}
+{"timestamp": "2026-05-18T20:30:00.819377", "level": "INFO", "message": "etapa_inicio", "run_id": "23b91fd5", "etapa": "extract"}
+{"timestamp": "2026-05-18T20:30:02.754086", "level": "INFO", "message": "etapa_fin", "run_id": "23b91fd5", "etapa": "extract", "duracion_ms": 1934.7, "filas": 446, "status": "OK"}
+{"timestamp": "2026-05-18T20:30:00.307020", "level": "INFO", "message": "etapa_inicio", "run_id": "23b91fd5", "etapa": "transform"}
+{"timestamp": "2026-05-18T20:30:00.924383", "level": "INFO", "message": "etapa_fin", "run_id": "23b91fd5", "etapa": "transform", "duracion_ms": 617.4, "filas": 960, "status": "OK"}
+{"timestamp": "2026-05-18T20:30:01.915478", "level": "INFO", "message": "etapa_inicio", "run_id": "23b91fd5", "etapa": "load"}
+{"timestamp": "2026-05-18T20:30:02.363928", "level": "INFO", "message": "etapa_fin", "run_id": "23b91fd5", "etapa": "load", "duracion_ms": 448.4, "filas": 524, "status": "OK"}
+{"timestamp": "2026-05-18T20:30:04.900648", "level": "INFO", "message": "run_completado", "run_id": "23b91fd5", "duracion_ms": 4900.6, "status": "OK"}
+{"timestamp": "2026-05-18T20:45:00", "level": "INFO", "message": "run_inicio", "run_id": "f351d7f7"}
+{"timestamp": "2026-05-18T20:45:00.686529", "level": "INFO", "message": "etapa_inicio", "run_id": "f351d7f7", "etapa": "extract"}
+{"timestamp": "2026-05-18T20:45:03.696370", "level": "INFO", "message": "etapa_fin", "run_id": "f351d7f7", "etapa": "extract", "duracion_ms": 3009.8, "filas": 1544, "status": "OK"}
+{"timestamp": "2026-05-18T20:45:00.999582", "level": "INFO", "message": "etapa_inicio", "run_id": "f351d7f7", "etapa": "transform"}
+{"timestamp": "2026-05-18T20:45:02.058654", "level": "INFO", "message": "etapa_fin", "run_id": "f351d7f7", "etapa": "transform", "duracion_ms": 1059.1, "filas": 495, "status": "OK"}
+{"timestamp": "2026-05-18T20:45:00.714287", "level": "INFO", "message": "etapa_inicio", "run_id": "f351d7f7", "etapa": "load"}
+{"timestamp": "2026-05-18T20:45:01.899071", "level": "INFO", "message": "etapa_fin", "run_id": "f351d7f7", "etapa": "load", "duracion_ms": 1184.8, "filas": 1393, "status": "OK"}
+{"timestamp": "2026-05-18T20:45:05.054009", "level": "INFO", "message": "run_completado", "run_id": "f351d7f7", "duracion_ms": 5054.0, "status": "OK"}
+{"timestamp": "2026-05-18T21:00:00", "level": "INFO", "message": "run_inicio", "run_id": "558798eb"}
+{"timestamp": "2026-05-18T21:00:01.556669", "level": "INFO", "message": "etapa_inicio", "run_id": "558798eb", "etapa": "extract"}
+{"timestamp": "2026-05-18T21:00:05.137298", "level": "INFO", "message": "etapa_fin", "run_id": "558798eb", "etapa": "extract", "duracion_ms": 3580.6, "filas": 1984, "status": "OK"}
+{"timestamp": "2026-05-18T21:00:00.217807", "level": "INFO", "message": "etapa_inicio", "run_id": "558798eb", "etapa": "transform"}
+{"timestamp": "2026-05-18T21:00:04.514634", "level": "INFO", "message": "etapa_fin", "run_id": "558798eb", "etapa": "transform", "duracion_ms": 4296.8, "filas": 843, "status": "OK"}
+{"timestamp": "2026-05-18T21:00:00.617398", "level": "INFO", "message": "etapa_inicio", "run_id": "558798eb", "etapa": "load"}
+{"timestamp": "2026-05-18T21:00:02.066626", "level": "INFO", "message": "etapa_fin", "run_id": "558798eb", "etapa": "load", "duracion_ms": 1449.2, "filas": 636, "status": "OK"}
+{"timestamp": "2026-05-18T21:00:06.732189", "level": "INFO", "message": "run_completado", "run_id": "558798eb", "duracion_ms": 6732.2, "status": "OK"}
+{"timestamp": "2026-05-18T21:15:00", "level": "INFO", "message": "run_inicio", "run_id": "a5747c25"}
+{"timestamp": "2026-05-18T21:15:01.856033", "level": "INFO", "message": "etapa_inicio", "run_id": "a5747c25", "etapa": "extract"}
+{"timestamp": "2026-05-18T21:15:03.599548", "level": "INFO", "message": "etapa_fin", "run_id": "a5747c25", "etapa": "extract", "duracion_ms": 1743.5, "filas": 1319, "status": "OK"}
+{"timestamp": "2026-05-18T21:15:01.841273", "level": "INFO", "message": "etapa_inicio", "run_id": "a5747c25", "etapa": "transform"}
+{"timestamp": "2026-05-18T21:15:03.292243", "level": "INFO", "message": "etapa_fin", "run_id": "a5747c25", "etapa": "transform", "duracion_ms": 1451.0, "filas": 149, "status": "OK"}
+{"timestamp": "2026-05-18T21:15:01.669435", "level": "INFO", "message": "etapa_inicio", "run_id": "a5747c25", "etapa": "load"}
+{"timestamp": "2026-05-18T21:15:02.098149", "level": "INFO", "message": "etapa_fin", "run_id": "a5747c25", "etapa": "load", "duracion_ms": 428.7, "filas": 1053, "status": "OK"}
+{"timestamp": "2026-05-18T21:15:07.769553", "level": "INFO", "message": "run_completado", "run_id": "a5747c25", "duracion_ms": 7769.6, "status": "OK"}
+{"timestamp": "2026-05-18T21:30:00", "level": "INFO", "message": "run_inicio", "run_id": "d20972b5"}
+{"timestamp": "2026-05-18T21:30:00.576989", "level": "INFO", "message": "etapa_inicio", "run_id": "d20972b5", "etapa": "extract"}
+{"timestamp": "2026-05-18T21:30:02.651834", "level": "INFO", "message": "etapa_fin", "run_id": "d20972b5", "etapa": "extract", "duracion_ms": 2074.8, "filas": 2000, "status": "OK"}
+{"timestamp": "2026-05-18T21:30:01.043427", "level": "INFO", "message": "etapa_inicio", "run_id": "d20972b5", "etapa": "transform"}
+{"timestamp": "2026-05-18T21:30:01.556485", "level": "INFO", "message": "etapa_fin", "run_id": "d20972b5", "etapa": "transform", "duracion_ms": 513.1, "filas": 721, "status": "OK"}
+{"timestamp": "2026-05-18T21:30:01.663235", "level": "INFO", "message": "etapa_inicio", "run_id": "d20972b5", "etapa": "load"}
+{"timestamp": "2026-05-18T21:30:02.890606", "level": "INFO", "message": "etapa_fin", "run_id": "d20972b5", "etapa": "load", "duracion_ms": 1227.4, "filas": 771, "status": "OK"}
+{"timestamp": "2026-05-18T21:30:07.306212", "level": "INFO", "message": "run_completado", "run_id": "d20972b5", "duracion_ms": 7306.2, "status": "OK"}
+{"timestamp": "2026-05-18T21:45:00", "level": "INFO", "message": "run_inicio", "run_id": "e14b0cdd"}
+{"timestamp": "2026-05-18T21:45:01.589283", "level": "INFO", "message": "etapa_inicio", "run_id": "e14b0cdd", "etapa": "extract"}
+{"timestamp": "2026-05-18T21:45:04.078575", "level": "INFO", "message": "etapa_fin", "run_id": "e14b0cdd", "etapa": "extract", "duracion_ms": 2489.3, "filas": 902, "status": "OK"}
+{"timestamp": "2026-05-18T21:45:01.530483", "level": "INFO", "message": "etapa_inicio", "run_id": "e14b0cdd", "etapa": "transform"}
+{"timestamp": "2026-05-18T21:45:04.261343", "level": "INFO", "message": "etapa_fin", "run_id": "e14b0cdd", "etapa": "transform", "duracion_ms": 2730.9, "filas": 1231, "status": "OK"}
+{"timestamp": "2026-05-18T21:45:01.134772", "level": "INFO", "message": "etapa_inicio", "run_id": "e14b0cdd", "etapa": "load"}
+{"timestamp": "2026-05-18T21:45:01.627603", "level": "INFO", "message": "etapa_fin", "run_id": "e14b0cdd", "etapa": "load", "duracion_ms": 492.8, "filas": 315, "status": "OK"}
+{"timestamp": "2026-05-18T21:45:07.939119", "level": "INFO", "message": "run_completado", "run_id": "e14b0cdd", "duracion_ms": 7939.1, "status": "OK"}
+{"timestamp": "2026-05-18T22:00:00", "level": "INFO", "message": "run_inicio", "run_id": "862cd66d"}
+{"timestamp": "2026-05-18T22:00:00.259757", "level": "INFO", "message": "etapa_inicio", "run_id": "862cd66d", "etapa": "extract"}
+{"timestamp": "2026-05-18T22:00:01.500813", "level": "INFO", "message": "etapa_fin", "run_id": "862cd66d", "etapa": "extract", "duracion_ms": 1241.1, "filas": 1553, "status": "OK"}
+{"timestamp": "2026-05-18T22:00:01.947022", "level": "INFO", "message": "etapa_inicio", "run_id": "862cd66d", "etapa": "transform"}
+{"timestamp": "2026-05-18T22:00:02.706810", "level": "INFO", "message": "etapa_fin", "run_id": "862cd66d", "etapa": "transform", "duracion_ms": 759.8, "filas": 1043, "status": "OK"}
+{"timestamp": "2026-05-18T22:00:01.278585", "level": "INFO", "message": "etapa_inicio", "run_id": "862cd66d", "etapa": "load"}
+{"timestamp": "2026-05-18T22:00:02.387515", "level": "INFO", "message": "etapa_fin", "run_id": "862cd66d", "etapa": "load", "duracion_ms": 1108.9, "filas": 1834, "status": "OK"}
+{"timestamp": "2026-05-18T22:00:06.869369", "level": "INFO", "message": "run_completado", "run_id": "862cd66d", "duracion_ms": 6869.4, "status": "OK"}
+{"timestamp": "2026-05-18T22:15:00", "level": "INFO", "message": "run_inicio", "run_id": "327b1226"}
+{"timestamp": "2026-05-18T22:15:01.581526", "level": "INFO", "message": "etapa_inicio", "run_id": "327b1226", "etapa": "extract"}
+{"timestamp": "2026-05-18T22:15:03.316335", "level": "INFO", "message": "etapa_fin", "run_id": "327b1226", "etapa": "extract", "duracion_ms": 1734.8, "filas": 648, "status": "OK"}
+{"timestamp": "2026-05-18T22:15:00.808645", "level": "INFO", "message": "etapa_inicio", "run_id": "327b1226", "etapa": "transform"}
+{"timestamp": "2026-05-18T22:15:02.415746", "level": "INFO", "message": "etapa_fin", "run_id": "327b1226", "etapa": "transform", "duracion_ms": 1607.1, "filas": 606, "status": "OK"}
+{"timestamp": "2026-05-18T22:15:00.452899", "level": "INFO", "message": "etapa_inicio", "run_id": "327b1226", "etapa": "load"}
+{"timestamp": "2026-05-18T22:15:01.035504", "level": "INFO", "message": "etapa_fin", "run_id": "327b1226", "etapa": "load", "duracion_ms": 582.6, "filas": 1958, "status": "OK"}
+{"timestamp": "2026-05-18T22:15:05.891404", "level": "INFO", "message": "run_completado", "run_id": "327b1226", "duracion_ms": 5891.4, "status": "OK"}
+{"timestamp": "2026-05-18T22:30:00", "level": "INFO", "message": "run_inicio", "run_id": "98c7c4e8"}
+{"timestamp": "2026-05-18T22:30:00.852532", "level": "INFO", "message": "etapa_inicio", "run_id": "98c7c4e8", "etapa": "extract"}
+{"timestamp": "2026-05-18T22:30:04.333654", "level": "INFO", "message": "etapa_fin", "run_id": "98c7c4e8", "etapa": "extract", "duracion_ms": 3481.1, "filas": 573, "status": "OK"}
+{"timestamp": "2026-05-18T22:30:01.334317", "level": "INFO", "message": "etapa_inicio", "run_id": "98c7c4e8", "etapa": "transform"}
+{"timestamp": "2026-05-18T22:30:01.985131", "level": "INFO", "message": "etapa_fin", "run_id": "98c7c4e8", "etapa": "transform", "duracion_ms": 650.8, "filas": 175, "status": "OK"}
+{"timestamp": "2026-05-18T22:30:00.294432", "level": "INFO", "message": "etapa_inicio", "run_id": "98c7c4e8", "etapa": "load"}
+{"timestamp": "2026-05-18T22:30:01.164147", "level": "INFO", "message": "etapa_fin", "run_id": "98c7c4e8", "etapa": "load", "duracion_ms": 869.7, "filas": 1821, "status": "OK"}
+{"timestamp": "2026-05-18T22:30:05.241486", "level": "INFO", "message": "run_completado", "run_id": "98c7c4e8", "duracion_ms": 5241.5, "status": "OK"}
+{"timestamp": "2026-05-18T22:45:00", "level": "INFO", "message": "run_inicio", "run_id": "f50e32d6"}
+{"timestamp": "2026-05-18T22:45:01.766076", "level": "INFO", "message": "etapa_inicio", "run_id": "f50e32d6", "etapa": "extract"}
+{"timestamp": "2026-05-18T22:45:10.313249", "level": "INFO", "message": "etapa_fin", "run_id": "f50e32d6", "etapa": "extract", "duracion_ms": 8547.2, "filas": 1795, "status": "OK"}
+{"timestamp": "2026-05-18T22:45:01.208068", "level": "INFO", "message": "etapa_inicio", "run_id": "f50e32d6", "etapa": "transform"}
+{"timestamp": "2026-05-18T22:45:03.103329", "level": "INFO", "message": "etapa_fin", "run_id": "f50e32d6", "etapa": "transform", "duracion_ms": 1895.3, "filas": 1873, "status": "OK"}
+{"timestamp": "2026-05-18T22:45:00.437742", "level": "INFO", "message": "etapa_inicio", "run_id": "f50e32d6", "etapa": "load"}
+{"timestamp": "2026-05-18T22:45:01.461393", "level": "INFO", "message": "etapa_fin", "run_id": "f50e32d6", "etapa": "load", "duracion_ms": 1023.7, "filas": 1461, "status": "OK"}
+{"timestamp": "2026-05-18T22:45:07.728510", "level": "INFO", "message": "run_completado", "run_id": "f50e32d6", "duracion_ms": 7728.5, "status": "OK"}
+{"timestamp": "2026-05-18T23:00:00", "level": "INFO", "message": "run_inicio", "run_id": "74f9b883"}
+{"timestamp": "2026-05-18T23:00:01.232679", "level": "INFO", "message": "etapa_inicio", "run_id": "74f9b883", "etapa": "extract"}
+{"timestamp": "2026-05-18T23:00:03.782549", "level": "INFO", "message": "etapa_fin", "run_id": "74f9b883", "etapa": "extract", "duracion_ms": 2549.9, "filas": 855, "status": "OK"}
+{"timestamp": "2026-05-18T23:00:00.746031", "level": "INFO", "message": "etapa_inicio", "run_id": "74f9b883", "etapa": "transform"}
+{"timestamp": "2026-05-18T23:00:01.312281", "level": "INFO", "message": "etapa_fin", "run_id": "74f9b883", "etapa": "transform", "duracion_ms": 566.2, "filas": 178, "status": "OK"}
+{"timestamp": "2026-05-18T23:00:01.238904", "level": "INFO", "message": "etapa_inicio", "run_id": "74f9b883", "etapa": "load"}
+{"timestamp": "2026-05-18T23:00:02.320875", "level": "INFO", "message": "etapa_fin", "run_id": "74f9b883", "etapa": "load", "duracion_ms": 1082.0, "filas": 123, "status": "OK"}
+{"timestamp": "2026-05-18T23:00:07.094166", "level": "INFO", "message": "run_completado", "run_id": "74f9b883", "duracion_ms": 7094.2, "status": "OK"}
+{"timestamp": "2026-05-18T23:15:00", "level": "INFO", "message": "run_inicio", "run_id": "e1e66738"}
+{"timestamp": "2026-05-18T23:15:00.806438", "level": "INFO", "message": "etapa_inicio", "run_id": "e1e66738", "etapa": "extract"}
+{"timestamp": "2026-05-18T23:15:08.785320", "level": "INFO", "message": "etapa_fin", "run_id": "e1e66738", "etapa": "extract", "duracion_ms": 7978.9, "filas": 1115, "status": "OK"}
+{"timestamp": "2026-05-18T23:15:01.141285", "level": "INFO", "message": "etapa_inicio", "run_id": "e1e66738", "etapa": "transform"}
+{"timestamp": "2026-05-18T23:15:01.736192", "level": "INFO", "message": "etapa_fin", "run_id": "e1e66738", "etapa": "transform", "duracion_ms": 594.9, "filas": 909, "status": "OK"}
+{"timestamp": "2026-05-18T23:15:01.361650", "level": "INFO", "message": "etapa_inicio", "run_id": "e1e66738", "etapa": "load"}
+{"timestamp": "2026-05-18T23:15:01.847113", "level": "INFO", "message": "etapa_fin", "run_id": "e1e66738", "etapa": "load", "duracion_ms": 485.5, "filas": 1437, "status": "OK"}
+{"timestamp": "2026-05-18T23:15:03.818447", "level": "INFO", "message": "run_completado", "run_id": "e1e66738", "duracion_ms": 3818.4, "status": "OK"}
+{"timestamp": "2026-05-18T23:30:00", "level": "INFO", "message": "run_inicio", "run_id": "8dad5b57"}
+{"timestamp": "2026-05-18T23:30:00.878599", "level": "INFO", "message": "etapa_inicio", "run_id": "8dad5b57", "etapa": "extract"}
+{"timestamp": "2026-05-18T23:30:02.586852", "level": "INFO", "message": "etapa_fin", "run_id": "8dad5b57", "etapa": "extract", "duracion_ms": 1708.3, "filas": 205, "status": "OK"}
+{"timestamp": "2026-05-18T23:30:00.693488", "level": "INFO", "message": "etapa_inicio", "run_id": "8dad5b57", "etapa": "transform"}
+{"timestamp": "2026-05-18T23:30:02.043268", "level": "INFO", "message": "etapa_fin", "run_id": "8dad5b57", "etapa": "transform", "duracion_ms": 1349.8, "filas": 952, "status": "OK"}
+{"timestamp": "2026-05-18T23:30:00.134605", "level": "INFO", "message": "etapa_inicio", "run_id": "8dad5b57", "etapa": "load"}
+{"timestamp": "2026-05-18T23:30:01.354600", "level": "INFO", "message": "etapa_fin", "run_id": "8dad5b57", "etapa": "load", "duracion_ms": 1220.0, "filas": 1419, "status": "OK"}
+{"timestamp": "2026-05-18T23:30:03.986008", "level": "INFO", "message": "run_completado", "run_id": "8dad5b57", "duracion_ms": 3986.0, "status": "OK"}
+{"timestamp": "2026-05-18T23:45:00", "level": "INFO", "message": "run_inicio", "run_id": "e659e9e6"}
+{"timestamp": "2026-05-18T23:45:00.486968", "level": "INFO", "message": "etapa_inicio", "run_id": "e659e9e6", "etapa": "extract"}
+{"timestamp": "2026-05-18T23:45:01.501659", "level": "INFO", "message": "etapa_fin", "run_id": "e659e9e6", "etapa": "extract", "duracion_ms": 1014.7, "filas": 967, "status": "OK"}
+{"timestamp": "2026-05-18T23:45:00.315725", "level": "INFO", "message": "etapa_inicio", "run_id": "e659e9e6", "etapa": "transform"}
+{"timestamp": "2026-05-18T23:45:00.951457", "level": "INFO", "message": "etapa_fin", "run_id": "e659e9e6", "etapa": "transform", "duracion_ms": 635.7, "filas": 846, "status": "OK"}
+{"timestamp": "2026-05-18T23:45:00.975722", "level": "INFO", "message": "etapa_inicio", "run_id": "e659e9e6", "etapa": "load"}
+{"timestamp": "2026-05-18T23:45:03.553065", "level": "INFO", "message": "etapa_fin", "run_id": "e659e9e6", "etapa": "load", "duracion_ms": 2577.3, "filas": 1412, "status": "OK"}
+{"timestamp": "2026-05-18T23:45:07.032341", "level": "INFO", "message": "run_completado", "run_id": "e659e9e6", "duracion_ms": 7032.3, "status": "OK"}
+{"timestamp": "2026-05-19T00:00:00", "level": "INFO", "message": "run_inicio", "run_id": "4df36024"}
+{"timestamp": "2026-05-19T00:00:01.188443", "level": "INFO", "message": "etapa_inicio", "run_id": "4df36024", "etapa": "extract"}
+{"timestamp": "2026-05-19T00:00:04.506512", "level": "INFO", "message": "etapa_fin", "run_id": "4df36024", "etapa": "extract", "duracion_ms": 3318.1, "filas": 451, "status": "OK"}
+{"timestamp": "2026-05-19T00:00:00.377185", "level": "INFO", "message": "etapa_inicio", "run_id": "4df36024", "etapa": "transform"}
+{"timestamp": "2026-05-19T00:00:01.302128", "level": "INFO", "message": "etapa_fin", "run_id": "4df36024", "etapa": "transform", "duracion_ms": 924.9, "filas": 1995, "status": "OK"}
+{"timestamp": "2026-05-19T00:00:00.227484", "level": "INFO", "message": "etapa_inicio", "run_id": "4df36024", "etapa": "load"}
+{"timestamp": "2026-05-19T00:00:00.987966", "level": "INFO", "message": "etapa_fin", "run_id": "4df36024", "etapa": "load", "duracion_ms": 760.5, "filas": 1722, "status": "OK"}
+{"timestamp": "2026-05-19T00:00:07.834380", "level": "INFO", "message": "run_completado", "run_id": "4df36024", "duracion_ms": 7834.4, "status": "OK"}
+{"timestamp": "2026-05-19T00:15:00", "level": "INFO", "message": "run_inicio", "run_id": "1d445459"}
+{"timestamp": "2026-05-19T00:15:00.340636", "level": "INFO", "message": "etapa_inicio", "run_id": "1d445459", "etapa": "extract"}
+{"timestamp": "2026-05-19T00:15:03.698325", "level": "INFO", "message": "etapa_fin", "run_id": "1d445459", "etapa": "extract", "duracion_ms": 3357.7, "filas": 1088, "status": "OK"}
+{"timestamp": "2026-05-19T00:15:00.697599", "level": "INFO", "message": "etapa_inicio", "run_id": "1d445459", "etapa": "transform"}
+{"timestamp": "2026-05-19T00:15:02.109066", "level": "INFO", "message": "etapa_fin", "run_id": "1d445459", "etapa": "transform", "duracion_ms": 1411.5, "filas": 276, "status": "OK"}
+{"timestamp": "2026-05-19T00:15:01.818020", "level": "INFO", "message": "etapa_inicio", "run_id": "1d445459", "etapa": "load"}
+{"timestamp": "2026-05-19T00:15:02.862432", "level": "INFO", "message": "etapa_fin", "run_id": "1d445459", "etapa": "load", "duracion_ms": 1044.4, "filas": 428, "status": "OK"}
+{"timestamp": "2026-05-19T00:15:06.201622", "level": "INFO", "message": "run_completado", "run_id": "1d445459", "duracion_ms": 6201.6, "status": "OK"}
+{"timestamp": "2026-05-19T00:30:00", "level": "INFO", "message": "run_inicio", "run_id": "30559deb"}
+{"timestamp": "2026-05-19T00:30:01.280001", "level": "INFO", "message": "etapa_inicio", "run_id": "30559deb", "etapa": "extract"}
+{"timestamp": "2026-05-19T00:30:03.816824", "level": "INFO", "message": "etapa_fin", "run_id": "30559deb", "etapa": "extract", "duracion_ms": 2536.8, "filas": 1068, "status": "OK"}
+{"timestamp": "2026-05-19T00:30:00.447635", "level": "INFO", "message": "etapa_inicio", "run_id": "30559deb", "etapa": "transform"}
+{"timestamp": "2026-05-19T00:30:01.274840", "level": "INFO", "message": "etapa_fin", "run_id": "30559deb", "etapa": "transform", "duracion_ms": 827.2, "filas": 1160, "status": "OK"}
+{"timestamp": "2026-05-19T00:30:00.397310", "level": "INFO", "message": "etapa_inicio", "run_id": "30559deb", "etapa": "load"}
+{"timestamp": "2026-05-19T00:30:01.128359", "level": "INFO", "message": "etapa_fin", "run_id": "30559deb", "etapa": "load", "duracion_ms": 731.0, "filas": 1584, "status": "OK"}
+{"timestamp": "2026-05-19T00:30:07.078249", "level": "INFO", "message": "run_completado", "run_id": "30559deb", "duracion_ms": 7078.2, "status": "OK"}
+{"timestamp": "2026-05-19T00:45:00", "level": "INFO", "message": "run_inicio", "run_id": "3a7209f5"}
+{"timestamp": "2026-05-19T00:45:01.779339", "level": "INFO", "message": "etapa_inicio", "run_id": "3a7209f5", "etapa": "extract"}
+{"timestamp": "2026-05-19T00:45:04.885551", "level": "INFO", "message": "etapa_fin", "run_id": "3a7209f5", "etapa": "extract", "duracion_ms": 3106.2, "filas": 1467, "status": "OK"}
+{"timestamp": "2026-05-19T00:45:01.692588", "level": "INFO", "message": "etapa_inicio", "run_id": "3a7209f5", "etapa": "transform"}
+{"timestamp": "2026-05-19T00:45:02.369185", "level": "INFO", "message": "etapa_fin", "run_id": "3a7209f5", "etapa": "transform", "duracion_ms": 676.6, "filas": 1226, "status": "OK"}
+{"timestamp": "2026-05-19T00:45:01.713118", "level": "INFO", "message": "etapa_inicio", "run_id": "3a7209f5", "etapa": "load"}
+{"timestamp": "2026-05-19T00:45:02.946821", "level": "INFO", "message": "etapa_fin", "run_id": "3a7209f5", "etapa": "load", "duracion_ms": 1233.7, "filas": 731, "status": "OK"}
+{"timestamp": "2026-05-19T00:45:05.913123", "level": "INFO", "message": "run_completado", "run_id": "3a7209f5", "duracion_ms": 5913.1, "status": "OK"}
+{"timestamp": "2026-05-19T01:00:00", "level": "INFO", "message": "run_inicio", "run_id": "b979dd96"}
+{"timestamp": "2026-05-19T01:00:01.351801", "level": "INFO", "message": "etapa_inicio", "run_id": "b979dd96", "etapa": "extract"}
+{"timestamp": "2026-05-19T01:00:03.468774", "level": "INFO", "message": "etapa_fin", "run_id": "b979dd96", "etapa": "extract", "duracion_ms": 2117.0, "filas": 147, "status": "OK"}
+{"timestamp": "2026-05-19T01:00:00.106665", "level": "INFO", "message": "etapa_inicio", "run_id": "b979dd96", "etapa": "transform"}
+{"timestamp": "2026-05-19T01:00:02.085871", "level": "INFO", "message": "etapa_fin", "run_id": "b979dd96", "etapa": "transform", "duracion_ms": 1979.2, "filas": 1015, "status": "OK"}
+{"timestamp": "2026-05-19T01:00:01.550774", "level": "INFO", "message": "etapa_inicio", "run_id": "b979dd96", "etapa": "load"}
+{"timestamp": "2026-05-19T01:00:02.786744", "level": "INFO", "message": "etapa_fin", "run_id": "b979dd96", "etapa": "load", "duracion_ms": 1236.0, "filas": 467, "status": "OK"}
+{"timestamp": "2026-05-19T01:00:07.052647", "level": "INFO", "message": "run_completado", "run_id": "b979dd96", "duracion_ms": 7052.6, "status": "OK"}
+{"timestamp": "2026-05-19T01:15:00", "level": "INFO", "message": "run_inicio", "run_id": "94aa5e2f"}
+{"timestamp": "2026-05-19T01:15:00.227529", "level": "INFO", "message": "etapa_inicio", "run_id": "94aa5e2f", "etapa": "extract"}
+{"timestamp": "2026-05-19T01:15:02.123967", "level": "INFO", "message": "etapa_fin", "run_id": "94aa5e2f", "etapa": "extract", "duracion_ms": 1896.4, "filas": 1743, "status": "OK"}
+{"timestamp": "2026-05-19T01:15:00.939738", "level": "INFO", "message": "etapa_inicio", "run_id": "94aa5e2f", "etapa": "transform"}
+{"timestamp": "2026-05-19T01:15:07.956451", "level": "INFO", "message": "etapa_fin", "run_id": "94aa5e2f", "etapa": "transform", "duracion_ms": 7016.7, "filas": 268, "status": "OK"}
+{"timestamp": "2026-05-19T01:15:01.852039", "level": "INFO", "message": "etapa_inicio", "run_id": "94aa5e2f", "etapa": "load"}
+{"timestamp": "2026-05-19T01:15:02.528510", "level": "INFO", "message": "etapa_fin", "run_id": "94aa5e2f", "etapa": "load", "duracion_ms": 676.5, "filas": 263, "status": "OK"}
+{"timestamp": "2026-05-19T01:15:03.271325", "level": "INFO", "message": "run_completado", "run_id": "94aa5e2f", "duracion_ms": 3271.3, "status": "OK"}
+{"timestamp": "2026-05-19T01:30:00", "level": "INFO", "message": "run_inicio", "run_id": "c5d1a900"}
+{"timestamp": "2026-05-19T01:30:00.817939", "level": "INFO", "message": "etapa_inicio", "run_id": "c5d1a900", "etapa": "extract"}
+{"timestamp": "2026-05-19T01:30:04.195109", "level": "INFO", "message": "etapa_fin", "run_id": "c5d1a900", "etapa": "extract", "duracion_ms": 3377.2, "filas": 1855, "status": "OK"}
+{"timestamp": "2026-05-19T01:30:00.226123", "level": "INFO", "message": "etapa_inicio", "run_id": "c5d1a900", "etapa": "transform"}
+{"timestamp": "2026-05-19T01:30:01.647309", "level": "INFO", "message": "etapa_fin", "run_id": "c5d1a900", "etapa": "transform", "duracion_ms": 1421.2, "filas": 324, "status": "OK"}
+{"timestamp": "2026-05-19T01:30:00.468044", "level": "INFO", "message": "etapa_inicio", "run_id": "c5d1a900", "etapa": "load"}
+{"timestamp": "2026-05-19T01:30:01.946118", "level": "INFO", "message": "etapa_fin", "run_id": "c5d1a900", "etapa": "load", "duracion_ms": 1478.1, "filas": 1760, "status": "OK"}
+{"timestamp": "2026-05-19T01:30:07.580206", "level": "INFO", "message": "run_completado", "run_id": "c5d1a900", "duracion_ms": 7580.2, "status": "OK"}
+{"timestamp": "2026-05-19T01:45:00", "level": "INFO", "message": "run_inicio", "run_id": "abf0be7f"}
+{"timestamp": "2026-05-19T01:45:01.597925", "level": "INFO", "message": "etapa_inicio", "run_id": "abf0be7f", "etapa": "extract"}
+{"timestamp": "2026-05-19T01:45:16.246284", "level": "INFO", "message": "etapa_fin", "run_id": "abf0be7f", "etapa": "extract", "duracion_ms": 14648.4, "filas": 1648, "status": "OK"}
+{"timestamp": "2026-05-19T01:45:00.579219", "level": "INFO", "message": "etapa_inicio", "run_id": "abf0be7f", "etapa": "transform"}
+{"timestamp": "2026-05-19T01:45:01.564978", "level": "INFO", "message": "etapa_fin", "run_id": "abf0be7f", "etapa": "transform", "duracion_ms": 985.8, "filas": 1953, "status": "OK"}
+{"timestamp": "2026-05-19T01:45:01.649691", "level": "INFO", "message": "etapa_inicio", "run_id": "abf0be7f", "etapa": "load"}
+{"timestamp": "2026-05-19T01:45:02.121978", "level": "INFO", "message": "etapa_fin", "run_id": "abf0be7f", "etapa": "load", "duracion_ms": 472.3, "filas": 1983, "status": "OK"}
+{"timestamp": "2026-05-19T01:45:05.400538", "level": "INFO", "message": "run_completado", "run_id": "abf0be7f", "duracion_ms": 5400.5, "status": "OK"}
+{"timestamp": "2026-05-19T02:00:00", "level": "INFO", "message": "run_inicio", "run_id": "c112e641"}
+{"timestamp": "2026-05-19T02:00:01.270146", "level": "INFO", "message": "etapa_inicio", "run_id": "c112e641", "etapa": "extract"}
+{"timestamp": "2026-05-19T02:00:02.863644", "level": "INFO", "message": "etapa_fin", "run_id": "c112e641", "etapa": "extract", "duracion_ms": 1593.5, "filas": 507, "status": "OK"}
+{"timestamp": "2026-05-19T02:00:00.445983", "level": "INFO", "message": "etapa_inicio", "run_id": "c112e641", "etapa": "transform"}
+{"timestamp": "2026-05-19T02:00:01.187827", "level": "INFO", "message": "etapa_fin", "run_id": "c112e641", "etapa": "transform", "duracion_ms": 741.8, "filas": 1491, "status": "OK"}
+{"timestamp": "2026-05-19T02:00:00.722866", "level": "INFO", "message": "etapa_inicio", "run_id": "c112e641", "etapa": "load"}
+{"timestamp": "2026-05-19T02:00:01.475075", "level": "INFO", "message": "etapa_fin", "run_id": "c112e641", "etapa": "load", "duracion_ms": 752.2, "filas": 641, "status": "OK"}
+{"timestamp": "2026-05-19T02:00:03.575394", "level": "INFO", "message": "run_completado", "run_id": "c112e641", "duracion_ms": 3575.4, "status": "OK"}
+{"timestamp": "2026-05-19T02:15:00", "level": "INFO", "message": "run_inicio", "run_id": "8db68015"}
+{"timestamp": "2026-05-19T02:15:01.309005", "level": "INFO", "message": "etapa_inicio", "run_id": "8db68015", "etapa": "extract"}
+{"timestamp": "2026-05-19T02:15:03.208453", "level": "INFO", "message": "etapa_fin", "run_id": "8db68015", "etapa": "extract", "duracion_ms": 1899.4, "filas": 1237, "status": "OK"}
+{"timestamp": "2026-05-19T02:15:01.090760", "level": "INFO", "message": "etapa_inicio", "run_id": "8db68015", "etapa": "transform"}
+{"timestamp": "2026-05-19T02:15:02.623853", "level": "INFO", "message": "etapa_fin", "run_id": "8db68015", "etapa": "transform", "duracion_ms": 1533.1, "filas": 616, "status": "OK"}
+{"timestamp": "2026-05-19T02:15:01.986614", "level": "INFO", "message": "etapa_inicio", "run_id": "8db68015", "etapa": "load"}
+{"timestamp": "2026-05-19T02:15:03.042345", "level": "INFO", "message": "etapa_fin", "run_id": "8db68015", "etapa": "load", "duracion_ms": 1055.7, "filas": 1733, "status": "OK"}
+{"timestamp": "2026-05-19T02:15:04.857331", "level": "INFO", "message": "run_completado", "run_id": "8db68015", "duracion_ms": 4857.3, "status": "OK"}
+{"timestamp": "2026-05-19T02:30:00", "level": "INFO", "message": "run_inicio", "run_id": "c7070fc7"}
+{"timestamp": "2026-05-19T02:30:00.800995", "level": "INFO", "message": "etapa_inicio", "run_id": "c7070fc7", "etapa": "extract"}
+{"timestamp": "2026-05-19T02:30:02.166484", "level": "INFO", "message": "etapa_fin", "run_id": "c7070fc7", "etapa": "extract", "duracion_ms": 1365.5, "filas": 266, "status": "OK"}
+{"timestamp": "2026-05-19T02:30:00.940335", "level": "INFO", "message": "etapa_inicio", "run_id": "c7070fc7", "etapa": "transform"}
+{"timestamp": "2026-05-19T02:30:01.705469", "level": "INFO", "message": "etapa_fin", "run_id": "c7070fc7", "etapa": "transform", "duracion_ms": 765.1, "filas": 198, "status": "OK"}
+{"timestamp": "2026-05-19T02:30:00.663128", "level": "INFO", "message": "etapa_inicio", "run_id": "c7070fc7", "etapa": "load"}
+{"timestamp": "2026-05-19T02:30:01.582456", "level": "INFO", "message": "etapa_fin", "run_id": "c7070fc7", "etapa": "load", "duracion_ms": 919.3, "filas": 1882, "status": "OK"}
+{"timestamp": "2026-05-19T02:30:05.929352", "level": "INFO", "message": "run_completado", "run_id": "c7070fc7", "duracion_ms": 5929.4, "status": "OK"}
+{"timestamp": "2026-05-19T02:45:00", "level": "INFO", "message": "run_inicio", "run_id": "6e682499"}
+{"timestamp": "2026-05-19T02:45:00.694033", "level": "INFO", "message": "etapa_inicio", "run_id": "6e682499", "etapa": "extract"}
+{"timestamp": "2026-05-19T02:45:04.307599", "level": "INFO", "message": "etapa_fin", "run_id": "6e682499", "etapa": "extract", "duracion_ms": 3613.6, "filas": 1361, "status": "OK"}
+{"timestamp": "2026-05-19T02:45:01.288674", "level": "INFO", "message": "etapa_inicio", "run_id": "6e682499", "etapa": "transform"}
+{"timestamp": "2026-05-19T02:45:02.415204", "level": "INFO", "message": "etapa_fin", "run_id": "6e682499", "etapa": "transform", "duracion_ms": 1126.5, "filas": 197, "status": "OK"}
+{"timestamp": "2026-05-19T02:45:00.350844", "level": "INFO", "message": "etapa_inicio", "run_id": "6e682499", "etapa": "load"}
+{"timestamp": "2026-05-19T02:45:00.923556", "level": "INFO", "message": "etapa_fin", "run_id": "6e682499", "etapa": "load", "duracion_ms": 572.7, "filas": 145, "status": "OK"}
+{"timestamp": "2026-05-19T02:45:03.271965", "level": "INFO", "message": "run_completado", "run_id": "6e682499", "duracion_ms": 3272.0, "status": "OK"}
+{"timestamp": "2026-05-19T03:00:00", "level": "INFO", "message": "run_inicio", "run_id": "b2bd3dee"}
+{"timestamp": "2026-05-19T03:00:00.677104", "level": "INFO", "message": "etapa_inicio", "run_id": "b2bd3dee", "etapa": "extract"}
+{"timestamp": "2026-05-19T03:00:02.984826", "level": "INFO", "message": "etapa_fin", "run_id": "b2bd3dee", "etapa": "extract", "duracion_ms": 2307.7, "filas": 946, "status": "OK"}
+{"timestamp": "2026-05-19T03:00:01.208823", "level": "INFO", "message": "etapa_inicio", "run_id": "b2bd3dee", "etapa": "transform"}
+{"timestamp": "2026-05-19T03:00:02.592460", "level": "INFO", "message": "etapa_fin", "run_id": "b2bd3dee", "etapa": "transform", "duracion_ms": 1383.6, "filas": 1377, "status": "OK"}
+{"timestamp": "2026-05-19T03:00:01.674096", "level": "INFO", "message": "etapa_inicio", "run_id": "b2bd3dee", "etapa": "load"}
+{"timestamp": "2026-05-19T03:00:04.717202", "level": "INFO", "message": "etapa_fin", "run_id": "b2bd3dee", "etapa": "load", "duracion_ms": 3043.1, "filas": 1548, "status": "OK"}
+{"timestamp": "2026-05-19T03:00:03.746565", "level": "INFO", "message": "run_completado", "run_id": "b2bd3dee", "duracion_ms": 3746.6, "status": "OK"}
+{"timestamp": "2026-05-19T03:15:00", "level": "INFO", "message": "run_inicio", "run_id": "be141235"}
+{"timestamp": "2026-05-19T03:15:01.312599", "level": "INFO", "message": "etapa_inicio", "run_id": "be141235", "etapa": "extract"}
+{"timestamp": "2026-05-19T03:15:04.490813", "level": "INFO", "message": "etapa_fin", "run_id": "be141235", "etapa": "extract", "duracion_ms": 3178.2, "filas": 923, "status": "OK"}
+{"timestamp": "2026-05-19T03:15:01.641984", "level": "INFO", "message": "etapa_inicio", "run_id": "be141235", "etapa": "transform"}
+{"timestamp": "2026-05-19T03:15:13.899271", "level": "INFO", "message": "etapa_fin", "run_id": "be141235", "etapa": "transform", "duracion_ms": 12257.3, "filas": 1928, "status": "OK"}
+{"timestamp": "2026-05-19T03:15:00.765632", "level": "INFO", "message": "etapa_inicio", "run_id": "be141235", "etapa": "load"}
+{"timestamp": "2026-05-19T03:15:01.840357", "level": "INFO", "message": "etapa_fin", "run_id": "be141235", "etapa": "load", "duracion_ms": 1074.7, "filas": 1160, "status": "OK"}
+{"timestamp": "2026-05-19T03:15:06.667612", "level": "INFO", "message": "run_completado", "run_id": "be141235", "duracion_ms": 6667.6, "status": "OK"}
+{"timestamp": "2026-05-19T03:30:00", "level": "INFO", "message": "run_inicio", "run_id": "099ffc97"}
+{"timestamp": "2026-05-19T03:30:01.816657", "level": "INFO", "message": "etapa_inicio", "run_id": "099ffc97", "etapa": "extract"}
+{"timestamp": "2026-05-19T03:30:02.926662", "level": "INFO", "message": "etapa_fin", "run_id": "099ffc97", "etapa": "extract", "duracion_ms": 1110.0, "filas": 931, "status": "OK"}
+{"timestamp": "2026-05-19T03:30:00.452750", "level": "INFO", "message": "etapa_inicio", "run_id": "099ffc97", "etapa": "transform"}
+{"timestamp": "2026-05-19T03:30:01.191575", "level": "INFO", "message": "etapa_fin", "run_id": "099ffc97", "etapa": "transform", "duracion_ms": 738.8, "filas": 314, "status": "OK"}
+{"timestamp": "2026-05-19T03:30:00.123465", "level": "INFO", "message": "etapa_inicio", "run_id": "099ffc97", "etapa": "load"}
+{"timestamp": "2026-05-19T03:30:01.084573", "level": "INFO", "message": "etapa_fin", "run_id": "099ffc97", "etapa": "load", "duracion_ms": 961.1, "filas": 391, "status": "OK"}
+{"timestamp": "2026-05-19T03:30:05.065891", "level": "INFO", "message": "run_completado", "run_id": "099ffc97", "duracion_ms": 5065.9, "status": "OK"}
+{"timestamp": "2026-05-19T03:45:00", "level": "INFO", "message": "run_inicio", "run_id": "3cc2aa59"}
+{"timestamp": "2026-05-19T03:45:01.321118", "level": "INFO", "message": "etapa_inicio", "run_id": "3cc2aa59", "etapa": "extract"}
+{"timestamp": "2026-05-19T03:45:03.940110", "level": "INFO", "message": "etapa_fin", "run_id": "3cc2aa59", "etapa": "extract", "duracion_ms": 2619.0, "filas": 1355, "status": "OK"}
+{"timestamp": "2026-05-19T03:45:00.431815", "level": "INFO", "message": "etapa_inicio", "run_id": "3cc2aa59", "etapa": "transform"}
+{"timestamp": "2026-05-19T03:45:01.395889", "level": "INFO", "message": "etapa_fin", "run_id": "3cc2aa59", "etapa": "transform", "duracion_ms": 964.1, "filas": 199, "status": "OK"}
+{"timestamp": "2026-05-19T03:45:01.988717", "level": "INFO", "message": "etapa_inicio", "run_id": "3cc2aa59", "etapa": "load"}
+{"timestamp": "2026-05-19T03:45:03.157884", "level": "INFO", "message": "etapa_fin", "run_id": "3cc2aa59", "etapa": "load", "duracion_ms": 1169.2, "filas": 1202, "status": "OK"}
+{"timestamp": "2026-05-19T03:45:03.031747", "level": "INFO", "message": "run_completado", "run_id": "3cc2aa59", "duracion_ms": 3031.7, "status": "OK"}
+{"timestamp": "2026-05-19T04:00:00", "level": "INFO", "message": "run_inicio", "run_id": "d72573ab"}
+{"timestamp": "2026-05-19T04:00:01.515856", "level": "INFO", "message": "etapa_inicio", "run_id": "d72573ab", "etapa": "extract"}
+{"timestamp": "2026-05-19T04:00:03.679020", "level": "INFO", "message": "etapa_fin", "run_id": "d72573ab", "etapa": "extract", "duracion_ms": 2163.2, "filas": 1026, "status": "OK"}
+{"timestamp": "2026-05-19T04:00:00.433244", "level": "INFO", "message": "etapa_inicio", "run_id": "d72573ab", "etapa": "transform"}
+{"timestamp": "2026-05-19T04:00:02.428160", "level": "INFO", "message": "etapa_fin", "run_id": "d72573ab", "etapa": "transform", "duracion_ms": 1994.9, "filas": 1418, "status": "OK"}
+{"timestamp": "2026-05-19T04:00:00.173753", "level": "INFO", "message": "etapa_inicio", "run_id": "d72573ab", "etapa": "load"}
+{"timestamp": "2026-05-19T04:00:00.876372", "level": "INFO", "message": "etapa_fin", "run_id": "d72573ab", "etapa": "load", "duracion_ms": 702.6, "filas": 1523, "status": "OK"}
+{"timestamp": "2026-05-19T04:00:07.714253", "level": "INFO", "message": "run_completado", "run_id": "d72573ab", "duracion_ms": 7714.3, "status": "OK"}
+{"timestamp": "2026-05-19T04:15:00", "level": "INFO", "message": "run_inicio", "run_id": "18931be2"}
+{"timestamp": "2026-05-19T04:15:00.199812", "level": "INFO", "message": "etapa_inicio", "run_id": "18931be2", "etapa": "extract"}
+{"timestamp": "2026-05-19T04:15:02.789477", "level": "INFO", "message": "etapa_fin", "run_id": "18931be2", "etapa": "extract", "duracion_ms": 2589.7, "filas": 1504, "status": "OK"}
+{"timestamp": "2026-05-19T04:15:01.598055", "level": "INFO", "message": "etapa_inicio", "run_id": "18931be2", "etapa": "transform"}
+{"timestamp": "2026-05-19T04:15:02.882922", "level": "INFO", "message": "etapa_fin", "run_id": "18931be2", "etapa": "transform", "duracion_ms": 1284.9, "filas": 1414, "status": "OK"}
+{"timestamp": "2026-05-19T04:15:01.864284", "level": "INFO", "message": "etapa_inicio", "run_id": "18931be2", "etapa": "load"}
+{"timestamp": "2026-05-19T04:15:03.237298", "level": "INFO", "message": "etapa_fin", "run_id": "18931be2", "etapa": "load", "duracion_ms": 1373.0, "filas": 1139, "status": "OK"}
+{"timestamp": "2026-05-19T04:15:03.076139", "level": "INFO", "message": "run_completado", "run_id": "18931be2", "duracion_ms": 3076.1, "status": "OK"}
+{"timestamp": "2026-05-19T04:30:00", "level": "INFO", "message": "run_inicio", "run_id": "464e120c"}
+{"timestamp": "2026-05-19T04:30:00.548608", "level": "INFO", "message": "etapa_inicio", "run_id": "464e120c", "etapa": "extract"}
+{"timestamp": "2026-05-19T04:30:03.408305", "level": "INFO", "message": "etapa_fin", "run_id": "464e120c", "etapa": "extract", "duracion_ms": 2859.7, "filas": 1628, "status": "OK"}
+{"timestamp": "2026-05-19T04:30:01.838421", "level": "INFO", "message": "etapa_inicio", "run_id": "464e120c", "etapa": "transform"}
+{"timestamp": "2026-05-19T04:30:02.626326", "level": "INFO", "message": "etapa_fin", "run_id": "464e120c", "etapa": "transform", "duracion_ms": 787.9, "filas": 1331, "status": "OK"}
+{"timestamp": "2026-05-19T04:30:00.554419", "level": "INFO", "message": "etapa_inicio", "run_id": "464e120c", "etapa": "load"}
+{"timestamp": "2026-05-19T04:30:01.943501", "level": "INFO", "message": "etapa_fin", "run_id": "464e120c", "etapa": "load", "duracion_ms": 1389.1, "filas": 1518, "status": "OK"}
+{"timestamp": "2026-05-19T04:30:07.908303", "level": "INFO", "message": "run_completado", "run_id": "464e120c", "duracion_ms": 7908.3, "status": "OK"}
+{"timestamp": "2026-05-19T04:45:00", "level": "INFO", "message": "run_inicio", "run_id": "1f01a89a"}
+{"timestamp": "2026-05-19T04:45:01.119076", "level": "INFO", "message": "etapa_inicio", "run_id": "1f01a89a", "etapa": "extract"}
+{"timestamp": "2026-05-19T04:45:03.299427", "level": "INFO", "message": "etapa_fin", "run_id": "1f01a89a", "etapa": "extract", "duracion_ms": 2180.4, "filas": 113, "status": "OK"}
+{"timestamp": "2026-05-19T04:45:01.729293", "level": "INFO", "message": "etapa_inicio", "run_id": "1f01a89a", "etapa": "transform"}
+{"timestamp": "2026-05-19T04:45:02.885114", "level": "INFO", "message": "etapa_fin", "run_id": "1f01a89a", "etapa": "transform", "duracion_ms": 1155.8, "filas": 1268, "status": "OK"}
+{"timestamp": "2026-05-19T04:45:01.781042", "level": "INFO", "message": "etapa_inicio", "run_id": "1f01a89a", "etapa": "load"}
+{"timestamp": "2026-05-19T04:45:03.028085", "level": "INFO", "message": "etapa_fin", "run_id": "1f01a89a", "etapa": "load", "duracion_ms": 1247.0, "filas": 1298, "status": "OK"}
+{"timestamp": "2026-05-19T04:45:03.389012", "level": "INFO", "message": "run_completado", "run_id": "1f01a89a", "duracion_ms": 3389.0, "status": "OK"}
+{"timestamp": "2026-05-19T05:00:00", "level": "INFO", "message": "run_inicio", "run_id": "330f6025"}
+{"timestamp": "2026-05-19T05:00:00.374730", "level": "INFO", "message": "etapa_inicio", "run_id": "330f6025", "etapa": "extract"}
+{"timestamp": "2026-05-19T05:00:01.441986", "level": "INFO", "message": "etapa_fin", "run_id": "330f6025", "etapa": "extract", "duracion_ms": 1067.3, "filas": 431, "status": "OK"}
+{"timestamp": "2026-05-19T05:00:00.755241", "level": "INFO", "message": "etapa_inicio", "run_id": "330f6025", "etapa": "transform"}
+{"timestamp": "2026-05-19T05:00:03.012273", "level": "INFO", "message": "etapa_fin", "run_id": "330f6025", "etapa": "transform", "duracion_ms": 2257.0, "filas": 1518, "status": "OK"}
+{"timestamp": "2026-05-19T05:00:01.322735", "level": "INFO", "message": "etapa_inicio", "run_id": "330f6025", "etapa": "load"}
+{"timestamp": "2026-05-19T05:00:02.441846", "level": "INFO", "message": "etapa_fin", "run_id": "330f6025", "etapa": "load", "duracion_ms": 1119.1, "filas": 1854, "status": "OK"}
+{"timestamp": "2026-05-19T05:00:05.952364", "level": "INFO", "message": "run_completado", "run_id": "330f6025", "duracion_ms": 5952.4, "status": "OK"}
+{"timestamp": "2026-05-19T05:15:00", "level": "INFO", "message": "run_inicio", "run_id": "68234856"}
+{"timestamp": "2026-05-19T05:15:01.653367", "level": "INFO", "message": "etapa_inicio", "run_id": "68234856", "etapa": "extract"}
+{"timestamp": "2026-05-19T05:15:04.702275", "level": "INFO", "message": "etapa_fin", "run_id": "68234856", "etapa": "extract", "duracion_ms": 3048.9, "filas": 235, "status": "OK"}
+{"timestamp": "2026-05-19T05:15:01.771458", "level": "INFO", "message": "etapa_inicio", "run_id": "68234856", "etapa": "transform"}
+{"timestamp": "2026-05-19T05:15:03.405117", "level": "INFO", "message": "etapa_fin", "run_id": "68234856", "etapa": "transform", "duracion_ms": 1633.7, "filas": 886, "status": "OK"}
+{"timestamp": "2026-05-19T05:15:00.303520", "level": "INFO", "message": "etapa_inicio", "run_id": "68234856", "etapa": "load"}
+{"timestamp": "2026-05-19T05:15:00.850388", "level": "INFO", "message": "etapa_fin", "run_id": "68234856", "etapa": "load", "duracion_ms": 546.9, "filas": 170, "status": "OK"}
+{"timestamp": "2026-05-19T05:15:07.746257", "level": "INFO", "message": "run_completado", "run_id": "68234856", "duracion_ms": 7746.3, "status": "OK"}
+{"timestamp": "2026-05-19T05:30:00", "level": "INFO", "message": "run_inicio", "run_id": "8dade11b"}
+{"timestamp": "2026-05-19T05:30:01.532136", "level": "INFO", "message": "etapa_inicio", "run_id": "8dade11b", "etapa": "extract"}
+{"timestamp": "2026-05-19T05:30:02.750810", "level": "INFO", "message": "etapa_fin", "run_id": "8dade11b", "etapa": "extract", "duracion_ms": 1218.7, "filas": 1394, "status": "OK"}
+{"timestamp": "2026-05-19T05:30:00.645994", "level": "INFO", "message": "etapa_inicio", "run_id": "8dade11b", "etapa": "transform"}
+{"timestamp": "2026-05-19T05:30:01.295810", "level": "INFO", "message": "etapa_fin", "run_id": "8dade11b", "etapa": "transform", "duracion_ms": 649.8, "filas": 1651, "status": "OK"}
+{"timestamp": "2026-05-19T05:30:01.328008", "level": "INFO", "message": "etapa_inicio", "run_id": "8dade11b", "etapa": "load"}
+{"timestamp": "2026-05-19T05:30:01.981359", "level": "INFO", "message": "etapa_fin", "run_id": "8dade11b", "etapa": "load", "duracion_ms": 653.4, "filas": 634, "status": "OK"}
+{"timestamp": "2026-05-19T05:30:03.104592", "level": "INFO", "message": "run_completado", "run_id": "8dade11b", "duracion_ms": 3104.6, "status": "OK"}
+{"timestamp": "2026-05-19T05:45:00", "level": "INFO", "message": "run_inicio", "run_id": "4fe3e183"}
+{"timestamp": "2026-05-19T05:45:00.636927", "level": "INFO", "message": "etapa_inicio", "run_id": "4fe3e183", "etapa": "extract"}
+{"timestamp": "2026-05-19T05:45:03.426332", "level": "INFO", "message": "etapa_fin", "run_id": "4fe3e183", "etapa": "extract", "duracion_ms": 2789.4, "filas": 757, "status": "OK"}
+{"timestamp": "2026-05-19T05:45:01.561551", "level": "INFO", "message": "etapa_inicio", "run_id": "4fe3e183", "etapa": "transform"}
+{"timestamp": "2026-05-19T05:45:02.964564", "level": "INFO", "message": "etapa_fin", "run_id": "4fe3e183", "etapa": "transform", "duracion_ms": 1403.0, "filas": 689, "status": "OK"}
+{"timestamp": "2026-05-19T05:45:01.274724", "level": "INFO", "message": "etapa_inicio", "run_id": "4fe3e183", "etapa": "load"}
+{"timestamp": "2026-05-19T05:45:01.611902", "level": "INFO", "message": "etapa_fin", "run_id": "4fe3e183", "etapa": "load", "duracion_ms": 337.2, "filas": 993, "status": "OK"}
+{"timestamp": "2026-05-19T05:45:05.593112", "level": "INFO", "message": "run_completado", "run_id": "4fe3e183", "duracion_ms": 5593.1, "status": "OK"}
+{"timestamp": "2026-05-19T06:00:00", "level": "INFO", "message": "run_inicio", "run_id": "e6b2eef5"}
+{"timestamp": "2026-05-19T06:00:00.990989", "level": "INFO", "message": "etapa_inicio", "run_id": "e6b2eef5", "etapa": "extract"}
+{"timestamp": "2026-05-19T06:00:02.111282", "level": "INFO", "message": "etapa_fin", "run_id": "e6b2eef5", "etapa": "extract", "duracion_ms": 1120.3, "filas": 1563, "status": "OK"}
+{"timestamp": "2026-05-19T06:00:01.738255", "level": "INFO", "message": "etapa_inicio", "run_id": "e6b2eef5", "etapa": "transform"}
+{"timestamp": "2026-05-19T06:00:02.374589", "level": "INFO", "message": "etapa_fin", "run_id": "e6b2eef5", "etapa": "transform", "duracion_ms": 636.3, "filas": 448, "status": "OK"}
+{"timestamp": "2026-05-19T06:00:00.928509", "level": "INFO", "message": "etapa_inicio", "run_id": "e6b2eef5", "etapa": "load"}
+{"timestamp": "2026-05-19T06:00:01.856776", "level": "INFO", "message": "etapa_fin", "run_id": "e6b2eef5", "etapa": "load", "duracion_ms": 928.3, "filas": 1637, "status": "OK"}
+{"timestamp": "2026-05-19T06:00:07.889329", "level": "INFO", "message": "run_completado", "run_id": "e6b2eef5", "duracion_ms": 7889.3, "status": "OK"}
+{"timestamp": "2026-05-19T06:15:00", "level": "INFO", "message": "run_inicio", "run_id": "8f34ab4d"}
+{"timestamp": "2026-05-19T06:15:00.281809", "level": "INFO", "message": "etapa_inicio", "run_id": "8f34ab4d", "etapa": "extract"}
+{"timestamp": "2026-05-19T06:15:03.019829", "level": "INFO", "message": "etapa_fin", "run_id": "8f34ab4d", "etapa": "extract", "duracion_ms": 2738.0, "filas": 1112, "status": "OK"}
+{"timestamp": "2026-05-19T06:15:01.225854", "level": "INFO", "message": "etapa_inicio", "run_id": "8f34ab4d", "etapa": "transform"}
+{"timestamp": "2026-05-19T06:15:04.118871", "level": "ERROR", "message": "etapa_fin", "run_id": "8f34ab4d", "etapa": "transform", "duracion_ms": 2893.0, "filas": 0, "status": "ERROR", "error": "Disk full"}
+{"timestamp": "2026-05-19T06:15:04.118871", "level": "ERROR", "message": "run_fallido", "run_id": "8f34ab4d", "duracion_ms": 2893.0, "status": "ERROR"}
+{"timestamp": "2026-05-19T06:30:00", "level": "INFO", "message": "run_inicio", "run_id": "746379bd"}
+{"timestamp": "2026-05-19T06:30:00.401901", "level": "INFO", "message": "etapa_inicio", "run_id": "746379bd", "etapa": "extract"}
+{"timestamp": "2026-05-19T06:30:03.440003", "level": "INFO", "message": "etapa_fin", "run_id": "746379bd", "etapa": "extract", "duracion_ms": 3038.1, "filas": 574, "status": "OK"}
+{"timestamp": "2026-05-19T06:30:01.046800", "level": "INFO", "message": "etapa_inicio", "run_id": "746379bd", "etapa": "transform"}
+{"timestamp": "2026-05-19T06:30:01.711685", "level": "INFO", "message": "etapa_fin", "run_id": "746379bd", "etapa": "transform", "duracion_ms": 664.9, "filas": 265, "status": "OK"}
+{"timestamp": "2026-05-19T06:30:01.031554", "level": "INFO", "message": "etapa_inicio", "run_id": "746379bd", "etapa": "load"}
+{"timestamp": "2026-05-19T06:30:02.520892", "level": "INFO", "message": "etapa_fin", "run_id": "746379bd", "etapa": "load", "duracion_ms": 1489.3, "filas": 314, "status": "OK"}
+{"timestamp": "2026-05-19T06:30:06.139661", "level": "INFO", "message": "run_completado", "run_id": "746379bd", "duracion_ms": 6139.7, "status": "OK"}
+{"timestamp": "2026-05-19T06:45:00", "level": "INFO", "message": "run_inicio", "run_id": "0a0400d3"}
+{"timestamp": "2026-05-19T06:45:00.862414", "level": "INFO", "message": "etapa_inicio", "run_id": "0a0400d3", "etapa": "extract"}
+{"timestamp": "2026-05-19T06:45:02.848913", "level": "INFO", "message": "etapa_fin", "run_id": "0a0400d3", "etapa": "extract", "duracion_ms": 1986.5, "filas": 276, "status": "OK"}
+{"timestamp": "2026-05-19T06:45:00.902047", "level": "INFO", "message": "etapa_inicio", "run_id": "0a0400d3", "etapa": "transform"}
+{"timestamp": "2026-05-19T06:45:02.370841", "level": "INFO", "message": "etapa_fin", "run_id": "0a0400d3", "etapa": "transform", "duracion_ms": 1468.8, "filas": 720, "status": "OK"}
+{"timestamp": "2026-05-19T06:45:00.600071", "level": "INFO", "message": "etapa_inicio", "run_id": "0a0400d3", "etapa": "load"}
+{"timestamp": "2026-05-19T06:45:01.981530", "level": "INFO", "message": "etapa_fin", "run_id": "0a0400d3", "etapa": "load", "duracion_ms": 1381.5, "filas": 876, "status": "OK"}
+{"timestamp": "2026-05-19T06:45:07.912049", "level": "INFO", "message": "run_completado", "run_id": "0a0400d3", "duracion_ms": 7912.0, "status": "OK"}
+{"timestamp": "2026-05-19T07:00:00", "level": "INFO", "message": "run_inicio", "run_id": "9f99e721"}
+{"timestamp": "2026-05-19T07:00:01.893448", "level": "INFO", "message": "etapa_inicio", "run_id": "9f99e721", "etapa": "extract"}
+{"timestamp": "2026-05-19T07:00:03.210649", "level": "INFO", "message": "etapa_fin", "run_id": "9f99e721", "etapa": "extract", "duracion_ms": 1317.2, "filas": 1511, "status": "OK"}
+{"timestamp": "2026-05-19T07:00:01.530680", "level": "INFO", "message": "etapa_inicio", "run_id": "9f99e721", "etapa": "transform"}
+{"timestamp": "2026-05-19T07:00:03.000130", "level": "INFO", "message": "etapa_fin", "run_id": "9f99e721", "etapa": "transform", "duracion_ms": 1469.4, "filas": 769, "status": "OK"}
+{"timestamp": "2026-05-19T07:00:01.091291", "level": "INFO", "message": "etapa_inicio", "run_id": "9f99e721", "etapa": "load"}
+{"timestamp": "2026-05-19T07:00:02.432889", "level": "INFO", "message": "etapa_fin", "run_id": "9f99e721", "etapa": "load", "duracion_ms": 1341.6, "filas": 1234, "status": "OK"}
+{"timestamp": "2026-05-19T07:00:06.709936", "level": "INFO", "message": "run_completado", "run_id": "9f99e721", "duracion_ms": 6709.9, "status": "OK"}
+{"timestamp": "2026-05-19T07:15:00", "level": "INFO", "message": "run_inicio", "run_id": "0f19c927"}
+{"timestamp": "2026-05-19T07:15:00.933716", "level": "INFO", "message": "etapa_inicio", "run_id": "0f19c927", "etapa": "extract"}
+{"timestamp": "2026-05-19T07:15:03.867304", "level": "INFO", "message": "etapa_fin", "run_id": "0f19c927", "etapa": "extract", "duracion_ms": 2933.6, "filas": 358, "status": "OK"}
+{"timestamp": "2026-05-19T07:15:00.734702", "level": "INFO", "message": "etapa_inicio", "run_id": "0f19c927", "etapa": "transform"}
+{"timestamp": "2026-05-19T07:15:02.198753", "level": "INFO", "message": "etapa_fin", "run_id": "0f19c927", "etapa": "transform", "duracion_ms": 1464.1, "filas": 1139, "status": "OK"}
+{"timestamp": "2026-05-19T07:15:00.463990", "level": "INFO", "message": "etapa_inicio", "run_id": "0f19c927", "etapa": "load"}
+{"timestamp": "2026-05-19T07:15:01.125799", "level": "INFO", "message": "etapa_fin", "run_id": "0f19c927", "etapa": "load", "duracion_ms": 661.8, "filas": 1827, "status": "OK"}
+{"timestamp": "2026-05-19T07:15:06.086662", "level": "INFO", "message": "run_completado", "run_id": "0f19c927", "duracion_ms": 6086.7, "status": "OK"}
+{"timestamp": "2026-05-19T07:30:00", "level": "INFO", "message": "run_inicio", "run_id": "5704da6e"}
+{"timestamp": "2026-05-19T07:30:01.952058", "level": "INFO", "message": "etapa_inicio", "run_id": "5704da6e", "etapa": "extract"}
+{"timestamp": "2026-05-19T07:30:04.759958", "level": "INFO", "message": "etapa_fin", "run_id": "5704da6e", "etapa": "extract", "duracion_ms": 2807.9, "filas": 813, "status": "OK"}
+{"timestamp": "2026-05-19T07:30:00.405756", "level": "INFO", "message": "etapa_inicio", "run_id": "5704da6e", "etapa": "transform"}
+{"timestamp": "2026-05-19T07:30:01.397869", "level": "INFO", "message": "etapa_fin", "run_id": "5704da6e", "etapa": "transform", "duracion_ms": 992.1, "filas": 1592, "status": "OK"}
+{"timestamp": "2026-05-19T07:30:01.990358", "level": "INFO", "message": "etapa_inicio", "run_id": "5704da6e", "etapa": "load"}
+{"timestamp": "2026-05-19T07:30:02.487880", "level": "INFO", "message": "etapa_fin", "run_id": "5704da6e", "etapa": "load", "duracion_ms": 497.5, "filas": 500, "status": "OK"}
+{"timestamp": "2026-05-19T07:30:04.921164", "level": "INFO", "message": "run_completado", "run_id": "5704da6e", "duracion_ms": 4921.2, "status": "OK"}
+{"timestamp": "2026-05-19T07:45:00", "level": "INFO", "message": "run_inicio", "run_id": "e0b84801"}
+{"timestamp": "2026-05-19T07:45:01.610287", "level": "INFO", "message": "etapa_inicio", "run_id": "e0b84801", "etapa": "extract"}
+{"timestamp": "2026-05-19T07:45:04.443518", "level": "INFO", "message": "etapa_fin", "run_id": "e0b84801", "etapa": "extract", "duracion_ms": 2833.2, "filas": 501, "status": "OK"}
+{"timestamp": "2026-05-19T07:45:00.307630", "level": "INFO", "message": "etapa_inicio", "run_id": "e0b84801", "etapa": "transform"}
+{"timestamp": "2026-05-19T07:45:02.174734", "level": "INFO", "message": "etapa_fin", "run_id": "e0b84801", "etapa": "transform", "duracion_ms": 1867.1, "filas": 1912, "status": "OK"}
+{"timestamp": "2026-05-19T07:45:00.837848", "level": "INFO", "message": "etapa_inicio", "run_id": "e0b84801", "etapa": "load"}
+{"timestamp": "2026-05-19T07:45:01.178566", "level": "INFO", "message": "etapa_fin", "run_id": "e0b84801", "etapa": "load", "duracion_ms": 340.7, "filas": 1719, "status": "OK"}
+{"timestamp": "2026-05-19T07:45:05.182640", "level": "INFO", "message": "run_completado", "run_id": "e0b84801", "duracion_ms": 5182.6, "status": "OK"}
+{"timestamp": "2026-05-19T08:00:00", "level": "INFO", "message": "run_inicio", "run_id": "1ee9d44b"}
+{"timestamp": "2026-05-19T08:00:01.963674", "level": "INFO", "message": "etapa_inicio", "run_id": "1ee9d44b", "etapa": "extract"}
+{"timestamp": "2026-05-19T08:00:08.976028", "level": "INFO", "message": "etapa_fin", "run_id": "1ee9d44b", "etapa": "extract", "duracion_ms": 7012.4, "filas": 1611, "status": "OK"}
+{"timestamp": "2026-05-19T08:00:00.868955", "level": "INFO", "message": "etapa_inicio", "run_id": "1ee9d44b", "etapa": "transform"}
+{"timestamp": "2026-05-19T08:00:02.480374", "level": "INFO", "message": "etapa_fin", "run_id": "1ee9d44b", "etapa": "transform", "duracion_ms": 1611.4, "filas": 980, "status": "OK"}
+{"timestamp": "2026-05-19T08:00:01.432208", "level": "INFO", "message": "etapa_inicio", "run_id": "1ee9d44b", "etapa": "load"}
+{"timestamp": "2026-05-19T08:00:02.437120", "level": "INFO", "message": "etapa_fin", "run_id": "1ee9d44b", "etapa": "load", "duracion_ms": 1004.9, "filas": 1832, "status": "OK"}
+{"timestamp": "2026-05-19T08:00:04.142823", "level": "INFO", "message": "run_completado", "run_id": "1ee9d44b", "duracion_ms": 4142.8, "status": "OK"}
+{"timestamp": "2026-05-19T08:15:00", "level": "INFO", "message": "run_inicio", "run_id": "44ed7108"}
+{"timestamp": "2026-05-19T08:15:01.772147", "level": "INFO", "message": "etapa_inicio", "run_id": "44ed7108", "etapa": "extract"}
+{"timestamp": "2026-05-19T08:15:04.707268", "level": "INFO", "message": "etapa_fin", "run_id": "44ed7108", "etapa": "extract", "duracion_ms": 2935.1, "filas": 1845, "status": "OK"}
+{"timestamp": "2026-05-19T08:15:00.534352", "level": "INFO", "message": "etapa_inicio", "run_id": "44ed7108", "etapa": "transform"}
+{"timestamp": "2026-05-19T08:15:01.306609", "level": "INFO", "message": "etapa_fin", "run_id": "44ed7108", "etapa": "transform", "duracion_ms": 772.3, "filas": 985, "status": "OK"}
+{"timestamp": "2026-05-19T08:15:00.694727", "level": "INFO", "message": "etapa_inicio", "run_id": "44ed7108", "etapa": "load"}
+{"timestamp": "2026-05-19T08:15:01.748659", "level": "INFO", "message": "etapa_fin", "run_id": "44ed7108", "etapa": "load", "duracion_ms": 1053.9, "filas": 959, "status": "OK"}
+{"timestamp": "2026-05-19T08:15:04.211981", "level": "INFO", "message": "run_completado", "run_id": "44ed7108", "duracion_ms": 4212.0, "status": "OK"}
+{"timestamp": "2026-05-19T08:30:00", "level": "INFO", "message": "run_inicio", "run_id": "f3aeec31"}
+{"timestamp": "2026-05-19T08:30:01.454007", "level": "INFO", "message": "etapa_inicio", "run_id": "f3aeec31", "etapa": "extract"}
+{"timestamp": "2026-05-19T08:30:02.845153", "level": "INFO", "message": "etapa_fin", "run_id": "f3aeec31", "etapa": "extract", "duracion_ms": 1391.1, "filas": 1088, "status": "OK"}
+{"timestamp": "2026-05-19T08:30:00.964869", "level": "INFO", "message": "etapa_inicio", "run_id": "f3aeec31", "etapa": "transform"}
+{"timestamp": "2026-05-19T08:30:02.397222", "level": "INFO", "message": "etapa_fin", "run_id": "f3aeec31", "etapa": "transform", "duracion_ms": 1432.4, "filas": 1482, "status": "OK"}
+{"timestamp": "2026-05-19T08:30:01.356096", "level": "INFO", "message": "etapa_inicio", "run_id": "f3aeec31", "etapa": "load"}
+{"timestamp": "2026-05-19T08:30:02.703687", "level": "INFO", "message": "etapa_fin", "run_id": "f3aeec31", "etapa": "load", "duracion_ms": 1347.6, "filas": 771, "status": "OK"}
+{"timestamp": "2026-05-19T08:30:06.890897", "level": "INFO", "message": "run_completado", "run_id": "f3aeec31", "duracion_ms": 6890.9, "status": "OK"}
+{"timestamp": "2026-05-19T08:45:00", "level": "INFO", "message": "run_inicio", "run_id": "4708a4fa"}
+{"timestamp": "2026-05-19T08:45:01.030696", "level": "INFO", "message": "etapa_inicio", "run_id": "4708a4fa", "etapa": "extract"}
+{"timestamp": "2026-05-19T08:45:18.809474", "level": "INFO", "message": "etapa_fin", "run_id": "4708a4fa", "etapa": "extract", "duracion_ms": 17778.8, "filas": 429, "status": "OK"}
+{"timestamp": "2026-05-19T08:45:01.460811", "level": "INFO", "message": "etapa_inicio", "run_id": "4708a4fa", "etapa": "transform"}
+{"timestamp": "2026-05-19T08:45:03.387800", "level": "INFO", "message": "etapa_fin", "run_id": "4708a4fa", "etapa": "transform", "duracion_ms": 1927.0, "filas": 813, "status": "OK"}
+{"timestamp": "2026-05-19T08:45:00.292065", "level": "INFO", "message": "etapa_inicio", "run_id": "4708a4fa", "etapa": "load"}
+{"timestamp": "2026-05-19T08:45:01.281538", "level": "INFO", "message": "etapa_fin", "run_id": "4708a4fa", "etapa": "load", "duracion_ms": 989.5, "filas": 1569, "status": "OK"}
+{"timestamp": "2026-05-19T08:45:05.378678", "level": "INFO", "message": "run_completado", "run_id": "4708a4fa", "duracion_ms": 5378.7, "status": "OK"}
+{"timestamp": "2026-05-19T09:00:00", "level": "INFO", "message": "run_inicio", "run_id": "10cab6cc"}
+{"timestamp": "2026-05-19T09:00:01.091208", "level": "INFO", "message": "etapa_inicio", "run_id": "10cab6cc", "etapa": "extract"}
+{"timestamp": "2026-05-19T09:00:03.117080", "level": "INFO", "message": "etapa_fin", "run_id": "10cab6cc", "etapa": "extract", "duracion_ms": 2025.9, "filas": 530, "status": "OK"}
+{"timestamp": "2026-05-19T09:00:01.981528", "level": "INFO", "message": "etapa_inicio", "run_id": "10cab6cc", "etapa": "transform"}
+{"timestamp": "2026-05-19T09:00:02.941035", "level": "ERROR", "message": "etapa_fin", "run_id": "10cab6cc", "etapa": "transform", "duracion_ms": 959.5, "filas": 0, "status": "ERROR", "error": "Connection refused"}
+{"timestamp": "2026-05-19T09:00:02.941035", "level": "ERROR", "message": "run_fallido", "run_id": "10cab6cc", "duracion_ms": 959.5, "status": "ERROR"}
+{"timestamp": "2026-05-19T09:15:00", "level": "INFO", "message": "run_inicio", "run_id": "9d0bf905"}
+{"timestamp": "2026-05-19T09:15:01.266604", "level": "INFO", "message": "etapa_inicio", "run_id": "9d0bf905", "etapa": "extract"}
+{"timestamp": "2026-05-19T09:15:03.860526", "level": "INFO", "message": "etapa_fin", "run_id": "9d0bf905", "etapa": "extract", "duracion_ms": 2593.9, "filas": 882, "status": "OK"}
+{"timestamp": "2026-05-19T09:15:00.859400", "level": "INFO", "message": "etapa_inicio", "run_id": "9d0bf905", "etapa": "transform"}
+{"timestamp": "2026-05-19T09:15:01.379363", "level": "INFO", "message": "etapa_fin", "run_id": "9d0bf905", "etapa": "transform", "duracion_ms": 520.0, "filas": 961, "status": "OK"}
+{"timestamp": "2026-05-19T09:15:01.294273", "level": "INFO", "message": "etapa_inicio", "run_id": "9d0bf905", "etapa": "load"}
+{"timestamp": "2026-05-19T09:15:02.404134", "level": "INFO", "message": "etapa_fin", "run_id": "9d0bf905", "etapa": "load", "duracion_ms": 1109.9, "filas": 323, "status": "OK"}
+{"timestamp": "2026-05-19T09:15:04.122136", "level": "INFO", "message": "run_completado", "run_id": "9d0bf905", "duracion_ms": 4122.1, "status": "OK"}
+{"timestamp": "2026-05-19T09:30:00", "level": "INFO", "message": "run_inicio", "run_id": "78bc8bc5"}
+{"timestamp": "2026-05-19T09:30:01.885870", "level": "INFO", "message": "etapa_inicio", "run_id": "78bc8bc5", "etapa": "extract"}
+{"timestamp": "2026-05-19T09:30:04.203561", "level": "INFO", "message": "etapa_fin", "run_id": "78bc8bc5", "etapa": "extract", "duracion_ms": 2317.7, "filas": 1741, "status": "OK"}
+{"timestamp": "2026-05-19T09:30:01.925618", "level": "INFO", "message": "etapa_inicio", "run_id": "78bc8bc5", "etapa": "transform"}
+{"timestamp": "2026-05-19T09:30:03.118793", "level": "INFO", "message": "etapa_fin", "run_id": "78bc8bc5", "etapa": "transform", "duracion_ms": 1193.2, "filas": 1690, "status": "OK"}
+{"timestamp": "2026-05-19T09:30:00.230900", "level": "INFO", "message": "etapa_inicio", "run_id": "78bc8bc5", "etapa": "load"}
+{"timestamp": "2026-05-19T09:30:01.488972", "level": "INFO", "message": "etapa_fin", "run_id": "78bc8bc5", "etapa": "load", "duracion_ms": 1258.1, "filas": 1415, "status": "OK"}
+{"timestamp": "2026-05-19T09:30:05.810270", "level": "INFO", "message": "run_completado", "run_id": "78bc8bc5", "duracion_ms": 5810.3, "status": "OK"}
+{"timestamp": "2026-05-19T09:45:00", "level": "INFO", "message": "run_inicio", "run_id": "97a1c49b"}
+{"timestamp": "2026-05-19T09:45:01.931342", "level": "INFO", "message": "etapa_inicio", "run_id": "97a1c49b", "etapa": "extract"}
+{"timestamp": "2026-05-19T09:45:03.814171", "level": "INFO", "message": "etapa_fin", "run_id": "97a1c49b", "etapa": "extract", "duracion_ms": 1882.8, "filas": 1776, "status": "OK"}
+{"timestamp": "2026-05-19T09:45:01.610988", "level": "INFO", "message": "etapa_inicio", "run_id": "97a1c49b", "etapa": "transform"}
+{"timestamp": "2026-05-19T09:45:02.730918", "level": "INFO", "message": "etapa_fin", "run_id": "97a1c49b", "etapa": "transform", "duracion_ms": 1119.9, "filas": 1656, "status": "OK"}
+{"timestamp": "2026-05-19T09:45:01.141709", "level": "INFO", "message": "etapa_inicio", "run_id": "97a1c49b", "etapa": "load"}
+{"timestamp": "2026-05-19T09:45:01.591908", "level": "INFO", "message": "etapa_fin", "run_id": "97a1c49b", "etapa": "load", "duracion_ms": 450.2, "filas": 826, "status": "OK"}
+{"timestamp": "2026-05-19T09:45:06.917967", "level": "INFO", "message": "run_completado", "run_id": "97a1c49b", "duracion_ms": 6918.0, "status": "OK"}
+{"timestamp": "2026-05-19T10:00:00", "level": "INFO", "message": "run_inicio", "run_id": "f3299ff9"}
+{"timestamp": "2026-05-19T10:00:01.437981", "level": "INFO", "message": "etapa_inicio", "run_id": "f3299ff9", "etapa": "extract"}
+{"timestamp": "2026-05-19T10:00:04.156610", "level": "INFO", "message": "etapa_fin", "run_id": "f3299ff9", "etapa": "extract", "duracion_ms": 2718.6, "filas": 1490, "status": "OK"}
+{"timestamp": "2026-05-19T10:00:00.453190", "level": "INFO", "message": "etapa_inicio", "run_id": "f3299ff9", "etapa": "transform"}
+{"timestamp": "2026-05-19T10:00:00.957233", "level": "INFO", "message": "etapa_fin", "run_id": "f3299ff9", "etapa": "transform", "duracion_ms": 504.0, "filas": 675, "status": "OK"}
+{"timestamp": "2026-05-19T10:00:00.780157", "level": "INFO", "message": "etapa_inicio", "run_id": "f3299ff9", "etapa": "load"}
+{"timestamp": "2026-05-19T10:00:01.865440", "level": "INFO", "message": "etapa_fin", "run_id": "f3299ff9", "etapa": "load", "duracion_ms": 1085.3, "filas": 1093, "status": "OK"}
+{"timestamp": "2026-05-19T10:00:05.142466", "level": "INFO", "message": "run_completado", "run_id": "f3299ff9", "duracion_ms": 5142.5, "status": "OK"}
+{"timestamp": "2026-05-19T10:15:00", "level": "INFO", "message": "run_inicio", "run_id": "64055731"}
+{"timestamp": "2026-05-19T10:15:01.352602", "level": "INFO", "message": "etapa_inicio", "run_id": "64055731", "etapa": "extract"}
+{"timestamp": "2026-05-19T10:15:03.258681", "level": "INFO", "message": "etapa_fin", "run_id": "64055731", "etapa": "extract", "duracion_ms": 1906.1, "filas": 1849, "status": "OK"}
+{"timestamp": "2026-05-19T10:15:00.831710", "level": "INFO", "message": "etapa_inicio", "run_id": "64055731", "etapa": "transform"}
+{"timestamp": "2026-05-19T10:15:01.459630", "level": "INFO", "message": "etapa_fin", "run_id": "64055731", "etapa": "transform", "duracion_ms": 627.9, "filas": 764, "status": "OK"}
+{"timestamp": "2026-05-19T10:15:01.589673", "level": "INFO", "message": "etapa_inicio", "run_id": "64055731", "etapa": "load"}
+{"timestamp": "2026-05-19T10:15:02.058155", "level": "INFO", "message": "etapa_fin", "run_id": "64055731", "etapa": "load", "duracion_ms": 468.5, "filas": 1396, "status": "OK"}
+{"timestamp": "2026-05-19T10:15:05.912277", "level": "INFO", "message": "run_completado", "run_id": "64055731", "duracion_ms": 5912.3, "status": "OK"}
+{"timestamp": "2026-05-19T10:30:00", "level": "INFO", "message": "run_inicio", "run_id": "f98d1d88"}
+{"timestamp": "2026-05-19T10:30:00.498524", "level": "INFO", "message": "etapa_inicio", "run_id": "f98d1d88", "etapa": "extract"}
+{"timestamp": "2026-05-19T10:30:01.678523", "level": "INFO", "message": "etapa_fin", "run_id": "f98d1d88", "etapa": "extract", "duracion_ms": 1180.0, "filas": 1345, "status": "OK"}
+{"timestamp": "2026-05-19T10:30:00.292873", "level": "INFO", "message": "etapa_inicio", "run_id": "f98d1d88", "etapa": "transform"}
+{"timestamp": "2026-05-19T10:30:01.006972", "level": "INFO", "message": "etapa_fin", "run_id": "f98d1d88", "etapa": "transform", "duracion_ms": 714.1, "filas": 1689, "status": "OK"}
+{"timestamp": "2026-05-19T10:30:00.958724", "level": "INFO", "message": "etapa_inicio", "run_id": "f98d1d88", "etapa": "load"}
+{"timestamp": "2026-05-19T10:30:02.200586", "level": "INFO", "message": "etapa_fin", "run_id": "f98d1d88", "etapa": "load", "duracion_ms": 1241.9, "filas": 924, "status": "OK"}
+{"timestamp": "2026-05-19T10:30:06.958372", "level": "INFO", "message": "run_completado", "run_id": "f98d1d88", "duracion_ms": 6958.4, "status": "OK"}
+{"timestamp": "2026-05-19T10:45:00", "level": "INFO", "message": "run_inicio", "run_id": "2de3a976"}
+{"timestamp": "2026-05-19T10:45:01.793157", "level": "INFO", "message": "etapa_inicio", "run_id": "2de3a976", "etapa": "extract"}
+{"timestamp": "2026-05-19T10:45:04.314075", "level": "INFO", "message": "etapa_fin", "run_id": "2de3a976", "etapa": "extract", "duracion_ms": 2520.9, "filas": 1469, "status": "OK"}
+{"timestamp": "2026-05-19T10:45:01.813121", "level": "INFO", "message": "etapa_inicio", "run_id": "2de3a976", "etapa": "transform"}
+{"timestamp": "2026-05-19T10:45:03.135873", "level": "INFO", "message": "etapa_fin", "run_id": "2de3a976", "etapa": "transform", "duracion_ms": 1322.8, "filas": 708, "status": "OK"}
+{"timestamp": "2026-05-19T10:45:00.475004", "level": "INFO", "message": "etapa_inicio", "run_id": "2de3a976", "etapa": "load"}
+{"timestamp": "2026-05-19T10:45:01.606355", "level": "INFO", "message": "etapa_fin", "run_id": "2de3a976", "etapa": "load", "duracion_ms": 1131.4, "filas": 1619, "status": "OK"}
+{"timestamp": "2026-05-19T10:45:07.196396", "level": "INFO", "message": "run_completado", "run_id": "2de3a976", "duracion_ms": 7196.4, "status": "OK"}
+{"timestamp": "2026-05-19T11:00:00", "level": "INFO", "message": "run_inicio", "run_id": "cabb37d9"}
+{"timestamp": "2026-05-19T11:00:00.322263", "level": "INFO", "message": "etapa_inicio", "run_id": "cabb37d9", "etapa": "extract"}
+{"timestamp": "2026-05-19T11:00:01.618319", "level": "INFO", "message": "etapa_fin", "run_id": "cabb37d9", "etapa": "extract", "duracion_ms": 1296.1, "filas": 1793, "status": "OK"}
+{"timestamp": "2026-05-19T11:00:00.364743", "level": "INFO", "message": "etapa_inicio", "run_id": "cabb37d9", "etapa": "transform"}
+{"timestamp": "2026-05-19T11:00:06.399656", "level": "INFO", "message": "etapa_fin", "run_id": "cabb37d9", "etapa": "transform", "duracion_ms": 6034.9, "filas": 395, "status": "OK"}
+{"timestamp": "2026-05-19T11:00:01.430801", "level": "INFO", "message": "etapa_inicio", "run_id": "cabb37d9", "etapa": "load"}
+{"timestamp": "2026-05-19T11:00:02.026681", "level": "INFO", "message": "etapa_fin", "run_id": "cabb37d9", "etapa": "load", "duracion_ms": 595.9, "filas": 1327, "status": "OK"}
+{"timestamp": "2026-05-19T11:00:07.314388", "level": "INFO", "message": "run_completado", "run_id": "cabb37d9", "duracion_ms": 7314.4, "status": "OK"}
+{"timestamp": "2026-05-19T11:15:00", "level": "INFO", "message": "run_inicio", "run_id": "3a225497"}
+{"timestamp": "2026-05-19T11:15:00.989125", "level": "INFO", "message": "etapa_inicio", "run_id": "3a225497", "etapa": "extract"}
+{"timestamp": "2026-05-19T11:15:03.395547", "level": "INFO", "message": "etapa_fin", "run_id": "3a225497", "etapa": "extract", "duracion_ms": 2406.4, "filas": 1821, "status": "OK"}
+{"timestamp": "2026-05-19T11:15:00.984948", "level": "INFO", "message": "etapa_inicio", "run_id": "3a225497", "etapa": "transform"}
+{"timestamp": "2026-05-19T11:15:02.549483", "level": "ERROR", "message": "etapa_fin", "run_id": "3a225497", "etapa": "transform", "duracion_ms": 1564.5, "filas": 0, "status": "ERROR", "error": "Connection refused"}
+{"timestamp": "2026-05-19T11:15:02.549483", "level": "ERROR", "message": "run_fallido", "run_id": "3a225497", "duracion_ms": 1564.5, "status": "ERROR"}
+{"timestamp": "2026-05-19T11:30:00", "level": "INFO", "message": "run_inicio", "run_id": "3c8e694f"}
+{"timestamp": "2026-05-19T11:30:00.784713", "level": "INFO", "message": "etapa_inicio", "run_id": "3c8e694f", "etapa": "extract"}
+{"timestamp": "2026-05-19T11:30:09.113667", "level": "INFO", "message": "etapa_fin", "run_id": "3c8e694f", "etapa": "extract", "duracion_ms": 8329.0, "filas": 1608, "status": "OK"}
+{"timestamp": "2026-05-19T11:30:01.869837", "level": "INFO", "message": "etapa_inicio", "run_id": "3c8e694f", "etapa": "transform"}
+{"timestamp": "2026-05-19T11:30:02.865521", "level": "INFO", "message": "etapa_fin", "run_id": "3c8e694f", "etapa": "transform", "duracion_ms": 995.7, "filas": 1145, "status": "OK"}
+{"timestamp": "2026-05-19T11:30:01.019926", "level": "INFO", "message": "etapa_inicio", "run_id": "3c8e694f", "etapa": "load"}
+{"timestamp": "2026-05-19T11:30:02.228532", "level": "INFO", "message": "etapa_fin", "run_id": "3c8e694f", "etapa": "load", "duracion_ms": 1208.6, "filas": 536, "status": "OK"}
+{"timestamp": "2026-05-19T11:30:06.590921", "level": "INFO", "message": "run_completado", "run_id": "3c8e694f", "duracion_ms": 6590.9, "status": "OK"}
+{"timestamp": "2026-05-19T11:45:00", "level": "INFO", "message": "run_inicio", "run_id": "1e62656c"}
+{"timestamp": "2026-05-19T11:45:00.743352", "level": "INFO", "message": "etapa_inicio", "run_id": "1e62656c", "etapa": "extract"}
+{"timestamp": "2026-05-19T11:45:03.897577", "level": "INFO", "message": "etapa_fin", "run_id": "1e62656c", "etapa": "extract", "duracion_ms": 3154.2, "filas": 1071, "status": "OK"}
+{"timestamp": "2026-05-19T11:45:01.579196", "level": "INFO", "message": "etapa_inicio", "run_id": "1e62656c", "etapa": "transform"}
+{"timestamp": "2026-05-19T11:45:02.910384", "level": "INFO", "message": "etapa_fin", "run_id": "1e62656c", "etapa": "transform", "duracion_ms": 1331.2, "filas": 681, "status": "OK"}
+{"timestamp": "2026-05-19T11:45:00.926860", "level": "INFO", "message": "etapa_inicio", "run_id": "1e62656c", "etapa": "load"}
+{"timestamp": "2026-05-19T11:45:01.733726", "level": "INFO", "message": "etapa_fin", "run_id": "1e62656c", "etapa": "load", "duracion_ms": 806.9, "filas": 1793, "status": "OK"}
+{"timestamp": "2026-05-19T11:45:04.445741", "level": "INFO", "message": "run_completado", "run_id": "1e62656c", "duracion_ms": 4445.7, "status": "OK"}
+{"timestamp": "2026-05-19T12:00:00", "level": "INFO", "message": "run_inicio", "run_id": "9202dad4"}
+{"timestamp": "2026-05-19T12:00:01.038088", "level": "INFO", "message": "etapa_inicio", "run_id": "9202dad4", "etapa": "extract"}
+{"timestamp": "2026-05-19T12:00:02.872393", "level": "INFO", "message": "etapa_fin", "run_id": "9202dad4", "etapa": "extract", "duracion_ms": 1834.3, "filas": 1887, "status": "OK"}
+{"timestamp": "2026-05-19T12:00:01.062206", "level": "INFO", "message": "etapa_inicio", "run_id": "9202dad4", "etapa": "transform"}
+{"timestamp": "2026-05-19T12:00:03.024699", "level": "INFO", "message": "etapa_fin", "run_id": "9202dad4", "etapa": "transform", "duracion_ms": 1962.5, "filas": 1721, "status": "OK"}
+{"timestamp": "2026-05-19T12:00:00.324064", "level": "INFO", "message": "etapa_inicio", "run_id": "9202dad4", "etapa": "load"}
+{"timestamp": "2026-05-19T12:00:00.854835", "level": "INFO", "message": "etapa_fin", "run_id": "9202dad4", "etapa": "load", "duracion_ms": 530.8, "filas": 361, "status": "OK"}
+{"timestamp": "2026-05-19T12:00:05.932256", "level": "INFO", "message": "run_completado", "run_id": "9202dad4", "duracion_ms": 5932.3, "status": "OK"}
+{"timestamp": "2026-05-19T12:15:00", "level": "INFO", "message": "run_inicio", "run_id": "6d432bb3"}
+{"timestamp": "2026-05-19T12:15:01.590010", "level": "INFO", "message": "etapa_inicio", "run_id": "6d432bb3", "etapa": "extract"}
+{"timestamp": "2026-05-19T12:15:02.690138", "level": "INFO", "message": "etapa_fin", "run_id": "6d432bb3", "etapa": "extract", "duracion_ms": 1100.1, "filas": 1913, "status": "OK"}
+{"timestamp": "2026-05-19T12:15:00.871455", "level": "INFO", "message": "etapa_inicio", "run_id": "6d432bb3", "etapa": "transform"}
+{"timestamp": "2026-05-19T12:15:02.232521", "level": "INFO", "message": "etapa_fin", "run_id": "6d432bb3", "etapa": "transform", "duracion_ms": 1361.1, "filas": 322, "status": "OK"}
+{"timestamp": "2026-05-19T12:15:00.111800", "level": "INFO", "message": "etapa_inicio", "run_id": "6d432bb3", "etapa": "load"}
+{"timestamp": "2026-05-19T12:15:00.639729", "level": "INFO", "message": "etapa_fin", "run_id": "6d432bb3", "etapa": "load", "duracion_ms": 527.9, "filas": 1346, "status": "OK"}
+{"timestamp": "2026-05-19T12:15:06.829920", "level": "INFO", "message": "run_completado", "run_id": "6d432bb3", "duracion_ms": 6829.9, "status": "OK"}
+{"timestamp": "2026-05-19T12:30:00", "level": "INFO", "message": "run_inicio", "run_id": "61f1ac66"}
+{"timestamp": "2026-05-19T12:30:01.051601", "level": "INFO", "message": "etapa_inicio", "run_id": "61f1ac66", "etapa": "extract"}
+{"timestamp": "2026-05-19T12:30:03.410726", "level": "INFO", "message": "etapa_fin", "run_id": "61f1ac66", "etapa": "extract", "duracion_ms": 2359.1, "filas": 401, "status": "OK"}
+{"timestamp": "2026-05-19T12:30:01.290947", "level": "INFO", "message": "etapa_inicio", "run_id": "61f1ac66", "etapa": "transform"}
+{"timestamp": "2026-05-19T12:30:02.835552", "level": "INFO", "message": "etapa_fin", "run_id": "61f1ac66", "etapa": "transform", "duracion_ms": 1544.6, "filas": 1494, "status": "OK"}
+{"timestamp": "2026-05-19T12:30:00.257706", "level": "INFO", "message": "etapa_inicio", "run_id": "61f1ac66", "etapa": "load"}
+{"timestamp": "2026-05-19T12:30:00.605075", "level": "INFO", "message": "etapa_fin", "run_id": "61f1ac66", "etapa": "load", "duracion_ms": 347.4, "filas": 1380, "status": "OK"}
+{"timestamp": "2026-05-19T12:30:06.813374", "level": "INFO", "message": "run_completado", "run_id": "61f1ac66", "duracion_ms": 6813.4, "status": "OK"}
+{"timestamp": "2026-05-19T12:45:00", "level": "INFO", "message": "run_inicio", "run_id": "77bdb25a"}
+{"timestamp": "2026-05-19T12:45:00.444467", "level": "INFO", "message": "etapa_inicio", "run_id": "77bdb25a", "etapa": "extract"}
+{"timestamp": "2026-05-19T12:45:01.536911", "level": "INFO", "message": "etapa_fin", "run_id": "77bdb25a", "etapa": "extract", "duracion_ms": 1092.4, "filas": 1972, "status": "OK"}
+{"timestamp": "2026-05-19T12:45:01.867975", "level": "INFO", "message": "etapa_inicio", "run_id": "77bdb25a", "etapa": "transform"}
+{"timestamp": "2026-05-19T12:45:02.388115", "level": "INFO", "message": "etapa_fin", "run_id": "77bdb25a", "etapa": "transform", "duracion_ms": 520.1, "filas": 384, "status": "OK"}
+{"timestamp": "2026-05-19T12:45:01.594426", "level": "INFO", "message": "etapa_inicio", "run_id": "77bdb25a", "etapa": "load"}
+{"timestamp": "2026-05-19T12:45:02.568948", "level": "INFO", "message": "etapa_fin", "run_id": "77bdb25a", "etapa": "load", "duracion_ms": 974.5, "filas": 718, "status": "OK"}
+{"timestamp": "2026-05-19T12:45:03.923882", "level": "INFO", "message": "run_completado", "run_id": "77bdb25a", "duracion_ms": 3923.9, "status": "OK"}
+{"timestamp": "2026-05-19T13:00:00", "level": "INFO", "message": "run_inicio", "run_id": "6942d2d2"}
+{"timestamp": "2026-05-19T13:00:00.918283", "level": "INFO", "message": "etapa_inicio", "run_id": "6942d2d2", "etapa": "extract"}
+{"timestamp": "2026-05-19T13:00:03.022695", "level": "ERROR", "message": "etapa_fin", "run_id": "6942d2d2", "etapa": "extract", "duracion_ms": 2104.4, "filas": 0, "status": "ERROR", "error": "Connection refused"}
+{"timestamp": "2026-05-19T13:00:03.022695", "level": "ERROR", "message": "run_fallido", "run_id": "6942d2d2", "duracion_ms": 2104.4, "status": "ERROR"}
+{"timestamp": "2026-05-19T13:15:00", "level": "INFO", "message": "run_inicio", "run_id": "338a0ee7"}
+{"timestamp": "2026-05-19T13:15:01.092093", "level": "INFO", "message": "etapa_inicio", "run_id": "338a0ee7", "etapa": "extract"}
+{"timestamp": "2026-05-19T13:15:04.153984", "level": "INFO", "message": "etapa_fin", "run_id": "338a0ee7", "etapa": "extract", "duracion_ms": 3061.9, "filas": 962, "status": "OK"}
+{"timestamp": "2026-05-19T13:15:01.193111", "level": "INFO", "message": "etapa_inicio", "run_id": "338a0ee7", "etapa": "transform"}
+{"timestamp": "2026-05-19T13:15:03.071056", "level": "INFO", "message": "etapa_fin", "run_id": "338a0ee7", "etapa": "transform", "duracion_ms": 1877.9, "filas": 128, "status": "OK"}
+{"timestamp": "2026-05-19T13:15:01.391929", "level": "INFO", "message": "etapa_inicio", "run_id": "338a0ee7", "etapa": "load"}
+{"timestamp": "2026-05-19T13:15:02.404564", "level": "INFO", "message": "etapa_fin", "run_id": "338a0ee7", "etapa": "load", "duracion_ms": 1012.6, "filas": 1450, "status": "OK"}
+{"timestamp": "2026-05-19T13:15:07.903923", "level": "INFO", "message": "run_completado", "run_id": "338a0ee7", "duracion_ms": 7903.9, "status": "OK"}
+{"timestamp": "2026-05-19T13:30:00", "level": "INFO", "message": "run_inicio", "run_id": "c7592e9f"}
+{"timestamp": "2026-05-19T13:30:00.883592", "level": "INFO", "message": "etapa_inicio", "run_id": "c7592e9f", "etapa": "extract"}
+{"timestamp": "2026-05-19T13:30:02.138700", "level": "INFO", "message": "etapa_fin", "run_id": "c7592e9f", "etapa": "extract", "duracion_ms": 1255.1, "filas": 534, "status": "OK"}
+{"timestamp": "2026-05-19T13:30:01.801967", "level": "INFO", "message": "etapa_inicio", "run_id": "c7592e9f", "etapa": "transform"}
+{"timestamp": "2026-05-19T13:30:03.242309", "level": "INFO", "message": "etapa_fin", "run_id": "c7592e9f", "etapa": "transform", "duracion_ms": 1440.3, "filas": 119, "status": "OK"}
+{"timestamp": "2026-05-19T13:30:01.399146", "level": "INFO", "message": "etapa_inicio", "run_id": "c7592e9f", "etapa": "load"}
+{"timestamp": "2026-05-19T13:30:01.845151", "level": "INFO", "message": "etapa_fin", "run_id": "c7592e9f", "etapa": "load", "duracion_ms": 446.0, "filas": 280, "status": "OK"}
+{"timestamp": "2026-05-19T13:30:04.091226", "level": "INFO", "message": "run_completado", "run_id": "c7592e9f", "duracion_ms": 4091.2, "status": "OK"}
+{"timestamp": "2026-05-19T13:45:00", "level": "INFO", "message": "run_inicio", "run_id": "15c9b269"}
+{"timestamp": "2026-05-19T13:45:00.997430", "level": "INFO", "message": "etapa_inicio", "run_id": "15c9b269", "etapa": "extract"}
+{"timestamp": "2026-05-19T13:45:02.686045", "level": "INFO", "message": "etapa_fin", "run_id": "15c9b269", "etapa": "extract", "duracion_ms": 1688.6, "filas": 1023, "status": "OK"}
+{"timestamp": "2026-05-19T13:45:01.493759", "level": "INFO", "message": "etapa_inicio", "run_id": "15c9b269", "etapa": "transform"}
+{"timestamp": "2026-05-19T13:45:06.255511", "level": "INFO", "message": "etapa_fin", "run_id": "15c9b269", "etapa": "transform", "duracion_ms": 4761.8, "filas": 1561, "status": "OK"}
+{"timestamp": "2026-05-19T13:45:01.420201", "level": "INFO", "message": "etapa_inicio", "run_id": "15c9b269", "etapa": "load"}
+{"timestamp": "2026-05-19T13:45:01.893960", "level": "INFO", "message": "etapa_fin", "run_id": "15c9b269", "etapa": "load", "duracion_ms": 473.8, "filas": 700, "status": "OK"}
+{"timestamp": "2026-05-19T13:45:06.143116", "level": "INFO", "message": "run_completado", "run_id": "15c9b269", "duracion_ms": 6143.1, "status": "OK"}
+{"timestamp": "2026-05-19T14:00:00", "level": "INFO", "message": "run_inicio", "run_id": "3cc621f7"}
+{"timestamp": "2026-05-19T14:00:00.975101", "level": "INFO", "message": "etapa_inicio", "run_id": "3cc621f7", "etapa": "extract"}
+{"timestamp": "2026-05-19T14:00:04.305968", "level": "INFO", "message": "etapa_fin", "run_id": "3cc621f7", "etapa": "extract", "duracion_ms": 3330.9, "filas": 207, "status": "OK"}
+{"timestamp": "2026-05-19T14:00:01.462699", "level": "INFO", "message": "etapa_inicio", "run_id": "3cc621f7", "etapa": "transform"}
+{"timestamp": "2026-05-19T14:00:04.359910", "level": "INFO", "message": "etapa_fin", "run_id": "3cc621f7", "etapa": "transform", "duracion_ms": 2897.2, "filas": 1773, "status": "OK"}
+{"timestamp": "2026-05-19T14:00:01.274625", "level": "INFO", "message": "etapa_inicio", "run_id": "3cc621f7", "etapa": "load"}
+{"timestamp": "2026-05-19T14:00:02.041363", "level": "INFO", "message": "etapa_fin", "run_id": "3cc621f7", "etapa": "load", "duracion_ms": 766.7, "filas": 1329, "status": "OK"}
+{"timestamp": "2026-05-19T14:00:03.829985", "level": "INFO", "message": "run_completado", "run_id": "3cc621f7", "duracion_ms": 3830.0, "status": "OK"}
+{"timestamp": "2026-05-19T14:15:00", "level": "INFO", "message": "run_inicio", "run_id": "8fa57a69"}
+{"timestamp": "2026-05-19T14:15:01.024024", "level": "INFO", "message": "etapa_inicio", "run_id": "8fa57a69", "etapa": "extract"}
+{"timestamp": "2026-05-19T14:15:02.173472", "level": "INFO", "message": "etapa_fin", "run_id": "8fa57a69", "etapa": "extract", "duracion_ms": 1149.4, "filas": 1277, "status": "OK"}
+{"timestamp": "2026-05-19T14:15:01.482756", "level": "INFO", "message": "etapa_inicio", "run_id": "8fa57a69", "etapa": "transform"}
+{"timestamp": "2026-05-19T14:15:02.687459", "level": "INFO", "message": "etapa_fin", "run_id": "8fa57a69", "etapa": "transform", "duracion_ms": 1204.7, "filas": 1732, "status": "OK"}
+{"timestamp": "2026-05-19T14:15:00.321740", "level": "INFO", "message": "etapa_inicio", "run_id": "8fa57a69", "etapa": "load"}
+{"timestamp": "2026-05-19T14:15:01.766411", "level": "INFO", "message": "etapa_fin", "run_id": "8fa57a69", "etapa": "load", "duracion_ms": 1444.7, "filas": 1742, "status": "OK"}
+{"timestamp": "2026-05-19T14:15:05.089824", "level": "INFO", "message": "run_completado", "run_id": "8fa57a69", "duracion_ms": 5089.8, "status": "OK"}
+{"timestamp": "2026-05-19T14:30:00", "level": "INFO", "message": "run_inicio", "run_id": "0b8b74e0"}
+{"timestamp": "2026-05-19T14:30:01.593860", "level": "INFO", "message": "etapa_inicio", "run_id": "0b8b74e0", "etapa": "extract"}
+{"timestamp": "2026-05-19T14:30:04.956165", "level": "INFO", "message": "etapa_fin", "run_id": "0b8b74e0", "etapa": "extract", "duracion_ms": 3362.3, "filas": 1260, "status": "OK"}
+{"timestamp": "2026-05-19T14:30:00.734383", "level": "INFO", "message": "etapa_inicio", "run_id": "0b8b74e0", "etapa": "transform"}
+{"timestamp": "2026-05-19T14:30:01.654244", "level": "INFO", "message": "etapa_fin", "run_id": "0b8b74e0", "etapa": "transform", "duracion_ms": 919.9, "filas": 1433, "status": "OK"}
+{"timestamp": "2026-05-19T14:30:01.436205", "level": "INFO", "message": "etapa_inicio", "run_id": "0b8b74e0", "etapa": "load"}
+{"timestamp": "2026-05-19T14:30:02.729095", "level": "INFO", "message": "etapa_fin", "run_id": "0b8b74e0", "etapa": "load", "duracion_ms": 1292.9, "filas": 1340, "status": "OK"}
+{"timestamp": "2026-05-19T14:30:06.628547", "level": "INFO", "message": "run_completado", "run_id": "0b8b74e0", "duracion_ms": 6628.5, "status": "OK"}
+{"timestamp": "2026-05-19T14:45:00", "level": "INFO", "message": "run_inicio", "run_id": "2a08b936"}
+{"timestamp": "2026-05-19T14:45:01.242161", "level": "INFO", "message": "etapa_inicio", "run_id": "2a08b936", "etapa": "extract"}
+{"timestamp": "2026-05-19T14:45:02.513655", "level": "ERROR", "message": "etapa_fin", "run_id": "2a08b936", "etapa": "extract", "duracion_ms": 1271.5, "filas": 0, "status": "ERROR", "error": "Schema mismatch"}
+{"timestamp": "2026-05-19T14:45:02.513655", "level": "ERROR", "message": "run_fallido", "run_id": "2a08b936", "duracion_ms": 1271.5, "status": "ERROR"}
+{"timestamp": "2026-05-19T15:00:00", "level": "INFO", "message": "run_inicio", "run_id": "4c12d99d"}
+{"timestamp": "2026-05-19T15:00:00.567611", "level": "INFO", "message": "etapa_inicio", "run_id": "4c12d99d", "etapa": "extract"}
+{"timestamp": "2026-05-19T15:00:02.536003", "level": "INFO", "message": "etapa_fin", "run_id": "4c12d99d", "etapa": "extract", "duracion_ms": 1968.4, "filas": 1679, "status": "OK"}
+{"timestamp": "2026-05-19T15:00:01.802620", "level": "INFO", "message": "etapa_inicio", "run_id": "4c12d99d", "etapa": "transform"}
+{"timestamp": "2026-05-19T15:00:03.513842", "level": "INFO", "message": "etapa_fin", "run_id": "4c12d99d", "etapa": "transform", "duracion_ms": 1711.2, "filas": 103, "status": "OK"}
+{"timestamp": "2026-05-19T15:00:00.710899", "level": "INFO", "message": "etapa_inicio", "run_id": "4c12d99d", "etapa": "load"}
+{"timestamp": "2026-05-19T15:00:01.332527", "level": "INFO", "message": "etapa_fin", "run_id": "4c12d99d", "etapa": "load", "duracion_ms": 621.6, "filas": 1985, "status": "OK"}
+{"timestamp": "2026-05-19T15:00:07.079931", "level": "INFO", "message": "run_completado", "run_id": "4c12d99d", "duracion_ms": 7079.9, "status": "OK"}
+{"timestamp": "2026-05-19T15:15:00", "level": "INFO", "message": "run_inicio", "run_id": "c988655c"}
+{"timestamp": "2026-05-19T15:15:00.180363", "level": "INFO", "message": "etapa_inicio", "run_id": "c988655c", "etapa": "extract"}
+{"timestamp": "2026-05-19T15:15:03.263440", "level": "INFO", "message": "etapa_fin", "run_id": "c988655c", "etapa": "extract", "duracion_ms": 3083.1, "filas": 1876, "status": "OK"}
+{"timestamp": "2026-05-19T15:15:01.986388", "level": "INFO", "message": "etapa_inicio", "run_id": "c988655c", "etapa": "transform"}
+{"timestamp": "2026-05-19T15:15:02.706887", "level": "INFO", "message": "etapa_fin", "run_id": "c988655c", "etapa": "transform", "duracion_ms": 720.5, "filas": 1732, "status": "OK"}
+{"timestamp": "2026-05-19T15:15:01.633362", "level": "INFO", "message": "etapa_inicio", "run_id": "c988655c", "etapa": "load"}
+{"timestamp": "2026-05-19T15:15:02.754929", "level": "INFO", "message": "etapa_fin", "run_id": "c988655c", "etapa": "load", "duracion_ms": 1121.6, "filas": 810, "status": "OK"}
+{"timestamp": "2026-05-19T15:15:05.672787", "level": "INFO", "message": "run_completado", "run_id": "c988655c", "duracion_ms": 5672.8, "status": "OK"}
+{"timestamp": "2026-05-19T15:30:00", "level": "INFO", "message": "run_inicio", "run_id": "18e8a595"}
+{"timestamp": "2026-05-19T15:30:01.021049", "level": "INFO", "message": "etapa_inicio", "run_id": "18e8a595", "etapa": "extract"}
+{"timestamp": "2026-05-19T15:30:02.975393", "level": "INFO", "message": "etapa_fin", "run_id": "18e8a595", "etapa": "extract", "duracion_ms": 1954.3, "filas": 1579, "status": "OK"}
+{"timestamp": "2026-05-19T15:30:01.870273", "level": "INFO", "message": "etapa_inicio", "run_id": "18e8a595", "etapa": "transform"}
+{"timestamp": "2026-05-19T15:30:02.721321", "level": "INFO", "message": "etapa_fin", "run_id": "18e8a595", "etapa": "transform", "duracion_ms": 851.0, "filas": 1487, "status": "OK"}
+{"timestamp": "2026-05-19T15:30:00.851442", "level": "INFO", "message": "etapa_inicio", "run_id": "18e8a595", "etapa": "load"}
+{"timestamp": "2026-05-19T15:30:02.001449", "level": "INFO", "message": "etapa_fin", "run_id": "18e8a595", "etapa": "load", "duracion_ms": 1150.0, "filas": 1300, "status": "OK"}
+{"timestamp": "2026-05-19T15:30:06.755668", "level": "INFO", "message": "run_completado", "run_id": "18e8a595", "duracion_ms": 6755.7, "status": "OK"}
+{"timestamp": "2026-05-19T15:45:00", "level": "INFO", "message": "run_inicio", "run_id": "21eea659"}
+{"timestamp": "2026-05-19T15:45:00.973463", "level": "INFO", "message": "etapa_inicio", "run_id": "21eea659", "etapa": "extract"}
+{"timestamp": "2026-05-19T15:45:02.192715", "level": "INFO", "message": "etapa_fin", "run_id": "21eea659", "etapa": "extract", "duracion_ms": 1219.3, "filas": 1681, "status": "OK"}
+{"timestamp": "2026-05-19T15:45:00.218999", "level": "INFO", "message": "etapa_inicio", "run_id": "21eea659", "etapa": "transform"}
+{"timestamp": "2026-05-19T15:45:01.316279", "level": "INFO", "message": "etapa_fin", "run_id": "21eea659", "etapa": "transform", "duracion_ms": 1097.3, "filas": 631, "status": "OK"}
+{"timestamp": "2026-05-19T15:45:01.781679", "level": "INFO", "message": "etapa_inicio", "run_id": "21eea659", "etapa": "load"}
+{"timestamp": "2026-05-19T15:45:02.707909", "level": "INFO", "message": "etapa_fin", "run_id": "21eea659", "etapa": "load", "duracion_ms": 926.2, "filas": 1306, "status": "OK"}
+{"timestamp": "2026-05-19T15:45:04.009348", "level": "INFO", "message": "run_completado", "run_id": "21eea659", "duracion_ms": 4009.3, "status": "OK"}
+{"timestamp": "2026-05-19T16:00:00", "level": "INFO", "message": "run_inicio", "run_id": "64c9dcd6"}
+{"timestamp": "2026-05-19T16:00:00.275158", "level": "INFO", "message": "etapa_inicio", "run_id": "64c9dcd6", "etapa": "extract"}
+{"timestamp": "2026-05-19T16:00:03.289820", "level": "INFO", "message": "etapa_fin", "run_id": "64c9dcd6", "etapa": "extract", "duracion_ms": 3014.7, "filas": 1283, "status": "OK"}
+{"timestamp": "2026-05-19T16:00:01.172419", "level": "INFO", "message": "etapa_inicio", "run_id": "64c9dcd6", "etapa": "transform"}
+{"timestamp": "2026-05-19T16:00:02.276156", "level": "INFO", "message": "etapa_fin", "run_id": "64c9dcd6", "etapa": "transform", "duracion_ms": 1103.7, "filas": 405, "status": "OK"}
+{"timestamp": "2026-05-19T16:00:00.567979", "level": "INFO", "message": "etapa_inicio", "run_id": "64c9dcd6", "etapa": "load"}
+{"timestamp": "2026-05-19T16:00:01.975121", "level": "INFO", "message": "etapa_fin", "run_id": "64c9dcd6", "etapa": "load", "duracion_ms": 1407.1, "filas": 1874, "status": "OK"}
+{"timestamp": "2026-05-19T16:00:03.530591", "level": "INFO", "message": "run_completado", "run_id": "64c9dcd6", "duracion_ms": 3530.6, "status": "OK"}
+{"timestamp": "2026-05-19T16:15:00", "level": "INFO", "message": "run_inicio", "run_id": "d82051f9"}
+{"timestamp": "2026-05-19T16:15:01.595960", "level": "INFO", "message": "etapa_inicio", "run_id": "d82051f9", "etapa": "extract"}
+{"timestamp": "2026-05-19T16:15:02.986347", "level": "INFO", "message": "etapa_fin", "run_id": "d82051f9", "etapa": "extract", "duracion_ms": 1390.4, "filas": 806, "status": "OK"}
+{"timestamp": "2026-05-19T16:15:00.633041", "level": "INFO", "message": "etapa_inicio", "run_id": "d82051f9", "etapa": "transform"}
+{"timestamp": "2026-05-19T16:15:02.043746", "level": "INFO", "message": "etapa_fin", "run_id": "d82051f9", "etapa": "transform", "duracion_ms": 1410.7, "filas": 519, "status": "OK"}
+{"timestamp": "2026-05-19T16:15:01.981769", "level": "INFO", "message": "etapa_inicio", "run_id": "d82051f9", "etapa": "load"}
+{"timestamp": "2026-05-19T16:15:03.321068", "level": "INFO", "message": "etapa_fin", "run_id": "d82051f9", "etapa": "load", "duracion_ms": 1339.3, "filas": 1261, "status": "OK"}
+{"timestamp": "2026-05-19T16:15:04.067915", "level": "INFO", "message": "run_completado", "run_id": "d82051f9", "duracion_ms": 4067.9, "status": "OK"}
+{"timestamp": "2026-05-19T16:30:00", "level": "INFO", "message": "run_inicio", "run_id": "1061d7b7"}
+{"timestamp": "2026-05-19T16:30:00.631667", "level": "INFO", "message": "etapa_inicio", "run_id": "1061d7b7", "etapa": "extract"}
+{"timestamp": "2026-05-19T16:30:01.874436", "level": "INFO", "message": "etapa_fin", "run_id": "1061d7b7", "etapa": "extract", "duracion_ms": 1242.8, "filas": 1314, "status": "OK"}
+{"timestamp": "2026-05-19T16:30:01.655778", "level": "INFO", "message": "etapa_inicio", "run_id": "1061d7b7", "etapa": "transform"}
+{"timestamp": "2026-05-19T16:30:03.600980", "level": "INFO", "message": "etapa_fin", "run_id": "1061d7b7", "etapa": "transform", "duracion_ms": 1945.2, "filas": 177, "status": "OK"}
+{"timestamp": "2026-05-19T16:30:00.743802", "level": "INFO", "message": "etapa_inicio", "run_id": "1061d7b7", "etapa": "load"}
+{"timestamp": "2026-05-19T16:30:02.237339", "level": "INFO", "message": "etapa_fin", "run_id": "1061d7b7", "etapa": "load", "duracion_ms": 1493.5, "filas": 156, "status": "OK"}
+{"timestamp": "2026-05-19T16:30:03.254988", "level": "INFO", "message": "run_completado", "run_id": "1061d7b7", "duracion_ms": 3255.0, "status": "OK"}
+{"timestamp": "2026-05-19T16:45:00", "level": "INFO", "message": "run_inicio", "run_id": "deb49a0d"}
+{"timestamp": "2026-05-19T16:45:01.754267", "level": "INFO", "message": "etapa_inicio", "run_id": "deb49a0d", "etapa": "extract"}
+{"timestamp": "2026-05-19T16:45:03.899969", "level": "INFO", "message": "etapa_fin", "run_id": "deb49a0d", "etapa": "extract", "duracion_ms": 2145.7, "filas": 1963, "status": "OK"}
+{"timestamp": "2026-05-19T16:45:01.800123", "level": "INFO", "message": "etapa_inicio", "run_id": "deb49a0d", "etapa": "transform"}
+{"timestamp": "2026-05-19T16:45:03.594578", "level": "INFO", "message": "etapa_fin", "run_id": "deb49a0d", "etapa": "transform", "duracion_ms": 1794.5, "filas": 1988, "status": "OK"}
+{"timestamp": "2026-05-19T16:45:00.327840", "level": "INFO", "message": "etapa_inicio", "run_id": "deb49a0d", "etapa": "load"}
+{"timestamp": "2026-05-19T16:45:01.778996", "level": "INFO", "message": "etapa_fin", "run_id": "deb49a0d", "etapa": "load", "duracion_ms": 1451.2, "filas": 1256, "status": "OK"}
+{"timestamp": "2026-05-19T16:45:04.166039", "level": "INFO", "message": "run_completado", "run_id": "deb49a0d", "duracion_ms": 4166.0, "status": "OK"}
+{"timestamp": "2026-05-19T17:00:00", "level": "INFO", "message": "run_inicio", "run_id": "dc3fe3c7"}
+{"timestamp": "2026-05-19T17:00:01.849683", "level": "INFO", "message": "etapa_inicio", "run_id": "dc3fe3c7", "etapa": "extract"}
+{"timestamp": "2026-05-19T17:00:04.115936", "level": "INFO", "message": "etapa_fin", "run_id": "dc3fe3c7", "etapa": "extract", "duracion_ms": 2266.3, "filas": 1840, "status": "OK"}
+{"timestamp": "2026-05-19T17:00:00.403484", "level": "INFO", "message": "etapa_inicio", "run_id": "dc3fe3c7", "etapa": "transform"}
+{"timestamp": "2026-05-19T17:00:02.352137", "level": "INFO", "message": "etapa_fin", "run_id": "dc3fe3c7", "etapa": "transform", "duracion_ms": 1948.7, "filas": 554, "status": "OK"}
+{"timestamp": "2026-05-19T17:00:00.427036", "level": "INFO", "message": "etapa_inicio", "run_id": "dc3fe3c7", "etapa": "load"}
+{"timestamp": "2026-05-19T17:00:01.857092", "level": "INFO", "message": "etapa_fin", "run_id": "dc3fe3c7", "etapa": "load", "duracion_ms": 1430.1, "filas": 221, "status": "OK"}
+{"timestamp": "2026-05-19T17:00:07.513773", "level": "INFO", "message": "run_completado", "run_id": "dc3fe3c7", "duracion_ms": 7513.8, "status": "OK"}
+{"timestamp": "2026-05-19T17:15:00", "level": "INFO", "message": "run_inicio", "run_id": "be1daf90"}
+{"timestamp": "2026-05-19T17:15:01.690714", "level": "INFO", "message": "etapa_inicio", "run_id": "be1daf90", "etapa": "extract"}
+{"timestamp": "2026-05-19T17:15:02.808320", "level": "INFO", "message": "etapa_fin", "run_id": "be1daf90", "etapa": "extract", "duracion_ms": 1117.6, "filas": 1553, "status": "OK"}
+{"timestamp": "2026-05-19T17:15:01.505184", "level": "INFO", "message": "etapa_inicio", "run_id": "be1daf90", "etapa": "transform"}
+{"timestamp": "2026-05-19T17:15:03.147659", "level": "INFO", "message": "etapa_fin", "run_id": "be1daf90", "etapa": "transform", "duracion_ms": 1642.5, "filas": 306, "status": "OK"}
+{"timestamp": "2026-05-19T17:15:00.375115", "level": "INFO", "message": "etapa_inicio", "run_id": "be1daf90", "etapa": "load"}
+{"timestamp": "2026-05-19T17:15:01.581056", "level": "INFO", "message": "etapa_fin", "run_id": "be1daf90", "etapa": "load", "duracion_ms": 1205.9, "filas": 1486, "status": "OK"}
+{"timestamp": "2026-05-19T17:15:06.741117", "level": "INFO", "message": "run_completado", "run_id": "be1daf90", "duracion_ms": 6741.1, "status": "OK"}
+{"timestamp": "2026-05-19T17:30:00", "level": "INFO", "message": "run_inicio", "run_id": "eb176add"}
+{"timestamp": "2026-05-19T17:30:00.938432", "level": "INFO", "message": "etapa_inicio", "run_id": "eb176add", "etapa": "extract"}
+{"timestamp": "2026-05-19T17:30:03.569721", "level": "INFO", "message": "etapa_fin", "run_id": "eb176add", "etapa": "extract", "duracion_ms": 2631.3, "filas": 861, "status": "OK"}
+{"timestamp": "2026-05-19T17:30:00.588320", "level": "INFO", "message": "etapa_inicio", "run_id": "eb176add", "etapa": "transform"}
+{"timestamp": "2026-05-19T17:30:01.274535", "level": "INFO", "message": "etapa_fin", "run_id": "eb176add", "etapa": "transform", "duracion_ms": 686.2, "filas": 445, "status": "OK"}
+{"timestamp": "2026-05-19T17:30:00.938631", "level": "INFO", "message": "etapa_inicio", "run_id": "eb176add", "etapa": "load"}
+{"timestamp": "2026-05-19T17:30:02.207696", "level": "INFO", "message": "etapa_fin", "run_id": "eb176add", "etapa": "load", "duracion_ms": 1269.1, "filas": 1927, "status": "OK"}
+{"timestamp": "2026-05-19T17:30:03.063070", "level": "INFO", "message": "run_completado", "run_id": "eb176add", "duracion_ms": 3063.1, "status": "OK"}
+{"timestamp": "2026-05-19T17:45:00", "level": "INFO", "message": "run_inicio", "run_id": "3daec14f"}
+{"timestamp": "2026-05-19T17:45:00.470697", "level": "INFO", "message": "etapa_inicio", "run_id": "3daec14f", "etapa": "extract"}
+{"timestamp": "2026-05-19T17:45:01.560728", "level": "INFO", "message": "etapa_fin", "run_id": "3daec14f", "etapa": "extract", "duracion_ms": 1090.0, "filas": 551, "status": "OK"}
+{"timestamp": "2026-05-19T17:45:00.247794", "level": "INFO", "message": "etapa_inicio", "run_id": "3daec14f", "etapa": "transform"}
+{"timestamp": "2026-05-19T17:45:01.675774", "level": "INFO", "message": "etapa_fin", "run_id": "3daec14f", "etapa": "transform", "duracion_ms": 1428.0, "filas": 1634, "status": "OK"}
+{"timestamp": "2026-05-19T17:45:00.365549", "level": "INFO", "message": "etapa_inicio", "run_id": "3daec14f", "etapa": "load"}
+{"timestamp": "2026-05-19T17:45:01.202243", "level": "INFO", "message": "etapa_fin", "run_id": "3daec14f", "etapa": "load", "duracion_ms": 836.7, "filas": 888, "status": "OK"}
+{"timestamp": "2026-05-19T17:45:07.211247", "level": "INFO", "message": "run_completado", "run_id": "3daec14f", "duracion_ms": 7211.2, "status": "OK"}
+{"timestamp": "2026-05-19T18:00:00", "level": "INFO", "message": "run_inicio", "run_id": "c5559ef7"}
+{"timestamp": "2026-05-19T18:00:00.959434", "level": "INFO", "message": "etapa_inicio", "run_id": "c5559ef7", "etapa": "extract"}
+{"timestamp": "2026-05-19T18:00:02.808882", "level": "INFO", "message": "etapa_fin", "run_id": "c5559ef7", "etapa": "extract", "duracion_ms": 1849.4, "filas": 1077, "status": "OK"}
+{"timestamp": "2026-05-19T18:00:00.319660", "level": "INFO", "message": "etapa_inicio", "run_id": "c5559ef7", "etapa": "transform"}
+{"timestamp": "2026-05-19T18:00:01.368708", "level": "INFO", "message": "etapa_fin", "run_id": "c5559ef7", "etapa": "transform", "duracion_ms": 1049.0, "filas": 1607, "status": "OK"}
+{"timestamp": "2026-05-19T18:00:00.207780", "level": "INFO", "message": "etapa_inicio", "run_id": "c5559ef7", "etapa": "load"}
+{"timestamp": "2026-05-19T18:00:01.364249", "level": "INFO", "message": "etapa_fin", "run_id": "c5559ef7", "etapa": "load", "duracion_ms": 1156.5, "filas": 396, "status": "OK"}
+{"timestamp": "2026-05-19T18:00:05.194855", "level": "INFO", "message": "run_completado", "run_id": "c5559ef7", "duracion_ms": 5194.9, "status": "OK"}
+{"timestamp": "2026-05-19T18:15:00", "level": "INFO", "message": "run_inicio", "run_id": "bb94718c"}
+{"timestamp": "2026-05-19T18:15:00.894700", "level": "INFO", "message": "etapa_inicio", "run_id": "bb94718c", "etapa": "extract"}
+{"timestamp": "2026-05-19T18:15:09.438297", "level": "INFO", "message": "etapa_fin", "run_id": "bb94718c", "etapa": "extract", "duracion_ms": 8543.6, "filas": 707, "status": "OK"}
+{"timestamp": "2026-05-19T18:15:00.735567", "level": "INFO", "message": "etapa_inicio", "run_id": "bb94718c", "etapa": "transform"}
+{"timestamp": "2026-05-19T18:15:01.487264", "level": "INFO", "message": "etapa_fin", "run_id": "bb94718c", "etapa": "transform", "duracion_ms": 751.7, "filas": 751, "status": "OK"}
+{"timestamp": "2026-05-19T18:15:00.966751", "level": "INFO", "message": "etapa_inicio", "run_id": "bb94718c", "etapa": "load"}
+{"timestamp": "2026-05-19T18:15:01.845675", "level": "INFO", "message": "etapa_fin", "run_id": "bb94718c", "etapa": "load", "duracion_ms": 878.9, "filas": 1151, "status": "OK"}
+{"timestamp": "2026-05-19T18:15:03.284265", "level": "INFO", "message": "run_completado", "run_id": "bb94718c", "duracion_ms": 3284.3, "status": "OK"}
+{"timestamp": "2026-05-19T18:30:00", "level": "INFO", "message": "run_inicio", "run_id": "8755f232"}
+{"timestamp": "2026-05-19T18:30:01.369732", "level": "INFO", "message": "etapa_inicio", "run_id": "8755f232", "etapa": "extract"}
+{"timestamp": "2026-05-19T18:30:02.897628", "level": "INFO", "message": "etapa_fin", "run_id": "8755f232", "etapa": "extract", "duracion_ms": 1527.9, "filas": 686, "status": "OK"}
+{"timestamp": "2026-05-19T18:30:00.326459", "level": "INFO", "message": "etapa_inicio", "run_id": "8755f232", "etapa": "transform"}
+{"timestamp": "2026-05-19T18:30:01.958735", "level": "INFO", "message": "etapa_fin", "run_id": "8755f232", "etapa": "transform", "duracion_ms": 1632.3, "filas": 984, "status": "OK"}
+{"timestamp": "2026-05-19T18:30:01.982940", "level": "INFO", "message": "etapa_inicio", "run_id": "8755f232", "etapa": "load"}
+{"timestamp": "2026-05-19T18:30:03.480643", "level": "INFO", "message": "etapa_fin", "run_id": "8755f232", "etapa": "load", "duracion_ms": 1497.7, "filas": 299, "status": "OK"}
+{"timestamp": "2026-05-19T18:30:04.950726", "level": "INFO", "message": "run_completado", "run_id": "8755f232", "duracion_ms": 4950.7, "status": "OK"}
+{"timestamp": "2026-05-19T18:45:00", "level": "INFO", "message": "run_inicio", "run_id": "2084bd86"}
+{"timestamp": "2026-05-19T18:45:00.408168", "level": "INFO", "message": "etapa_inicio", "run_id": "2084bd86", "etapa": "extract"}
+{"timestamp": "2026-05-19T18:45:03.488976", "level": "INFO", "message": "etapa_fin", "run_id": "2084bd86", "etapa": "extract", "duracion_ms": 3080.8, "filas": 395, "status": "OK"}
+{"timestamp": "2026-05-19T18:45:01.959399", "level": "INFO", "message": "etapa_inicio", "run_id": "2084bd86", "etapa": "transform"}
+{"timestamp": "2026-05-19T18:45:02.483442", "level": "INFO", "message": "etapa_fin", "run_id": "2084bd86", "etapa": "transform", "duracion_ms": 524.0, "filas": 798, "status": "OK"}
+{"timestamp": "2026-05-19T18:45:01.070490", "level": "INFO", "message": "etapa_inicio", "run_id": "2084bd86", "etapa": "load"}
+{"timestamp": "2026-05-19T18:45:01.902100", "level": "INFO", "message": "etapa_fin", "run_id": "2084bd86", "etapa": "load", "duracion_ms": 831.6, "filas": 1178, "status": "OK"}
+{"timestamp": "2026-05-19T18:45:04.431972", "level": "INFO", "message": "run_completado", "run_id": "2084bd86", "duracion_ms": 4432.0, "status": "OK"}
+{"timestamp": "2026-05-19T19:00:00", "level": "INFO", "message": "run_inicio", "run_id": "5b879538"}
+{"timestamp": "2026-05-19T19:00:00.177041", "level": "INFO", "message": "etapa_inicio", "run_id": "5b879538", "etapa": "extract"}
+{"timestamp": "2026-05-19T19:00:02.199392", "level": "INFO", "message": "etapa_fin", "run_id": "5b879538", "etapa": "extract", "duracion_ms": 2022.4, "filas": 470, "status": "OK"}
+{"timestamp": "2026-05-19T19:00:00.362342", "level": "INFO", "message": "etapa_inicio", "run_id": "5b879538", "etapa": "transform"}
+{"timestamp": "2026-05-19T19:00:01.132537", "level": "INFO", "message": "etapa_fin", "run_id": "5b879538", "etapa": "transform", "duracion_ms": 770.2, "filas": 1557, "status": "OK"}
+{"timestamp": "2026-05-19T19:00:00.433692", "level": "INFO", "message": "etapa_inicio", "run_id": "5b879538", "etapa": "load"}
+{"timestamp": "2026-05-19T19:00:01.454474", "level": "INFO", "message": "etapa_fin", "run_id": "5b879538", "etapa": "load", "duracion_ms": 1020.8, "filas": 1921, "status": "OK"}
+{"timestamp": "2026-05-19T19:00:06.042779", "level": "INFO", "message": "run_completado", "run_id": "5b879538", "duracion_ms": 6042.8, "status": "OK"}
+{"timestamp": "2026-05-19T19:15:00", "level": "INFO", "message": "run_inicio", "run_id": "12e3b6ec"}
+{"timestamp": "2026-05-19T19:15:00.620388", "level": "INFO", "message": "etapa_inicio", "run_id": "12e3b6ec", "etapa": "extract"}
+{"timestamp": "2026-05-19T19:15:02.135468", "level": "INFO", "message": "etapa_fin", "run_id": "12e3b6ec", "etapa": "extract", "duracion_ms": 1515.1, "filas": 1549, "status": "OK"}
+{"timestamp": "2026-05-19T19:15:01.294045", "level": "INFO", "message": "etapa_inicio", "run_id": "12e3b6ec", "etapa": "transform"}
+{"timestamp": "2026-05-19T19:15:02.082315", "level": "INFO", "message": "etapa_fin", "run_id": "12e3b6ec", "etapa": "transform", "duracion_ms": 788.3, "filas": 120, "status": "OK"}
+{"timestamp": "2026-05-19T19:15:00.224821", "level": "INFO", "message": "etapa_inicio", "run_id": "12e3b6ec", "etapa": "load"}
+{"timestamp": "2026-05-19T19:15:01.404079", "level": "INFO", "message": "etapa_fin", "run_id": "12e3b6ec", "etapa": "load", "duracion_ms": 1179.3, "filas": 1577, "status": "OK"}
+{"timestamp": "2026-05-19T19:15:07.581240", "level": "INFO", "message": "run_completado", "run_id": "12e3b6ec", "duracion_ms": 7581.2, "status": "OK"}

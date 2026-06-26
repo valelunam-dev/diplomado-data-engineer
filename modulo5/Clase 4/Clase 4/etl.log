@@ -1,0 +1,2 @@
+2026-05-15 21:00:57,357 | INFO     | etl:27 | Pipeline arranco
+2026-05-15 21:00:57,358 | DEBUG    | etl:28 | Solo aparecera en archivo, no en consola

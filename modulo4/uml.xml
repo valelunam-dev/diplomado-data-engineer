@@ -1,0 +1,88 @@
+<mxfile host="app.diagrams.net" modified="2026-05-10T21:00:00.000Z" agent="ChatGPT" version="24.7.17">
+  <diagram id="modeloTelemetria" name="Modelo Conceptual UML">
+    <mxGraphModel dx="1600" dy="900" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1920" pageHeight="1080" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+
+        <!-- VEHICULO -->
+        <mxCell id="vehiculo" value="&lt;b&gt;Vehiculo&lt;/b&gt;&lt;hr&gt;id_vehiculo : UUID&lt;br&gt;patente : String&lt;br&gt;marca : String&lt;br&gt;modelo : String&lt;br&gt;anio : Integer" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="420" y="60" width="240" height="150" as="geometry"/>
+        </mxCell>
+
+        <!-- EVENTO TELEMETRIA -->
+        <mxCell id="evento" value="&lt;b&gt;EventoTelemetria&lt;/b&gt;&lt;hr&gt;id_evento : UUID&lt;br&gt;timestamp : Timestamp&lt;br&gt;rpm : Integer&lt;br&gt;velocidad : Decimal&lt;br&gt;latitud : Decimal&lt;br&gt;longitud : Decimal&lt;br&gt;temperatura_motor : Decimal&lt;br&gt;combustible : Decimal&lt;br&gt;ignicion : Boolean" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="360" y="320" width="360" height="240" as="geometry"/>
+        </mxCell>
+
+        <!-- VIAJE -->
+        <mxCell id="viaje" value="&lt;b&gt;Viaje&lt;/b&gt;&lt;hr&gt;id_viaje : UUID&lt;br&gt;fecha_inicio : Timestamp&lt;br&gt;fecha_fin : Timestamp&lt;br&gt;distancia_km : Decimal&lt;br&gt;duracion_seg : Integer" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="820" y="320" width="260" height="170" as="geometry"/>
+        </mxCell>
+
+        <!-- CONDUCTOR -->
+        <mxCell id="conductor" value="&lt;b&gt;Conductor&lt;/b&gt;&lt;hr&gt;id_conductor : UUID&lt;br&gt;nombre : String&lt;br&gt;rut : String&lt;br&gt;licencia : String" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="1160" y="320" width="250" height="160" as="geometry"/>
+        </mxCell>
+
+        <!-- GEOZONA -->
+        <mxCell id="geozona" value="&lt;b&gt;Geozona&lt;/b&gt;&lt;hr&gt;id_geozona : UUID&lt;br&gt;nombre : String&lt;br&gt;tipo : String&lt;br&gt;radio_metros : Integer&lt;br&gt;tiempo_maximo_estadia : Integer" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="60" y="340" width="250" height="180" as="geometry"/>
+        </mxCell>
+
+        <!-- ALERTA -->
+        <mxCell id="alerta" value="&lt;b&gt;Alerta&lt;/b&gt;&lt;hr&gt;id_alerta : UUID&lt;br&gt;fecha_generacion : Timestamp&lt;br&gt;estado : String&lt;br&gt;descripcion : String" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="470" y="700" width="250" height="170" as="geometry"/>
+        </mxCell>
+
+        <!-- TIPO ALERTA -->
+        <mxCell id="tipoalerta" value="&lt;b&gt;TipoAlerta&lt;/b&gt;&lt;hr&gt;id_tipo_alerta : Integer&lt;br&gt;nombre : String&lt;br&gt;criticidad : String&lt;br&gt;regla_generacion : String" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="840" y="700" width="280" height="180" as="geometry"/>
+        </mxCell>
+
+        <!-- RELACIONES -->
+
+        <!-- Vehiculo Evento -->
+        <mxCell id="r1" value="1            genera            0..*" style="endArrow=none;html=1;strokeWidth=2;" edge="1" parent="1" source="vehiculo" target="evento">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <!-- Vehiculo Viaje -->
+        <mxCell id="r2" value="1            realiza            0..*" style="endArrow=none;html=1;strokeWidth=2;" edge="1" parent="1" source="vehiculo" target="viaje">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <!-- Conductor Viaje -->
+        <mxCell id="r3" value="1            conduce            0..*" style="endArrow=none;html=1;strokeWidth=2;" edge="1" parent="1" source="conductor" target="viaje">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <!-- Evento Viaje -->
+        <mxCell id="r4" value="0..*            asociado a            0..1" style="endArrow=none;dashed=1;html=1;strokeWidth=2;" edge="1" parent="1" source="evento" target="viaje">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <!-- Evento Geozona -->
+        <mxCell id="r5" value="0..*            ocurre en            0..1" style="endArrow=none;html=1;strokeWidth=2;" edge="1" parent="1" source="evento" target="geozona">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <!-- Evento Alerta -->
+        <mxCell id="r6" value="1            genera            0..*" style="endArrow=none;html=1;strokeWidth=2;" edge="1" parent="1" source="evento" target="alerta">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <!-- TipoAlerta Alerta -->
+        <mxCell id="r7" value="1            clasifica            0..*" style="endArrow=none;html=1;strokeWidth=2;" edge="1" parent="1" source="tipoalerta" target="alerta">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <!-- Geozona Alerta -->
+        <mxCell id="r8" value="0..1            contextualiza            0..*" style="endArrow=none;dashed=1;html=1;strokeWidth=2;" edge="1" parent="1" source="geozona" target="alerta">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

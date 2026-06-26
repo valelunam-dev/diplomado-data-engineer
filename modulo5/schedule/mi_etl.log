@@ -1,0 +1,11 @@
+2026-05-15 21:31:24 | DEBUG    | mi_etl | debug: detalles internos (solo va al archivo)
+2026-05-15 21:31:24 | INFO     | mi_etl | info: ETL arrancando
+2026-05-15 21:31:24 | WARNING  | mi_etl | warning: hubo 2 filas con NaN
+2026-05-15 21:31:24 | ERROR    | mi_etl | error: la API externa devolvio 500
+2026-05-15 21:31:24 | CRITICAL | mi_etl | critical: la base de datos no responde
+2026-05-15 21:31:24 | ERROR    | mi_etl | exception: division por cero - traceback completo abajo
+Traceback (most recent call last):
+  File "C:\Repos\diplomado-data-engineer\modulo5\schedule\app2.py", line 24, in <module>
+    1/0
+    ~^~
+ZeroDivisionError: division by zero

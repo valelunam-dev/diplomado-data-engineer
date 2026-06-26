@@ -1,0 +1,58 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Modelo UML Rent a Car">
+    <mxGraphModel dx="1000" dy="800" grid="1" gridSize="10">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+
+        <!-- Cliente -->
+        <mxCell id="cliente" value="&lt;b&gt;Cliente&lt;/b&gt;&lt;hr&gt;rut (PK)&lt;br&gt;nombre&lt;br&gt;telefono&lt;br&gt;email" 
+        style="shape=rectangle;whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="50" y="200" width="220" height="140" as="geometry"/>
+        </mxCell>
+
+        <!-- Vehiculo -->
+        <mxCell id="vehiculo" value="&lt;b&gt;Vehiculo&lt;/b&gt;&lt;hr&gt;patente (PK)&lt;br&gt;marca&lt;br&gt;modelo&lt;br&gt;anio&lt;br&gt;estado&lt;br&gt;kilometraje" 
+        style="shape=rectangle;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="500" y="200" width="240" height="170" as="geometry"/>
+        </mxCell>
+
+        <!-- Sucursal -->
+        <mxCell id="sucursal" value="&lt;b&gt;Sucursal&lt;/b&gt;&lt;hr&gt;id_sucursal (PK)&lt;br&gt;nombre&lt;br&gt;direccion" 
+        style="shape=rectangle;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="500" y="30" width="220" height="120" as="geometry"/>
+        </mxCell>
+
+        <!-- Arriendo -->
+        <mxCell id="arriendo" value="&lt;b&gt;Arriendo&lt;/b&gt;&lt;hr&gt;id_arriendo (PK)&lt;br&gt;fecha_inicio&lt;br&gt;fecha_fin&lt;br&gt;estado" 
+        style="shape=rectangle;whiteSpace=wrap;html=1;fillColor=#dae8fc;" vertex="1" parent="1">
+          <mxGeometry x="260" y="380" width="240" height="150" as="geometry"/>
+        </mxCell>
+
+        <!-- Mantenimiento -->
+        <mxCell id="mant" value="&lt;b&gt;Mantenimiento&lt;/b&gt;&lt;hr&gt;id_mantenimiento (PK)&lt;br&gt;fecha&lt;br&gt;tipo&lt;br&gt;descripcion" 
+        style="shape=rectangle;whiteSpace=wrap;html=1;fillColor=#ffe6cc;" vertex="1" parent="1">
+          <mxGeometry x="800" y="200" width="240" height="150" as="geometry"/>
+        </mxCell>
+
+        <!-- Relaciones -->
+        <mxCell id="rel1" style="endArrow=none;" edge="1" parent="1" source="cliente" target="arriendo">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="rel2" style="endArrow=none;" edge="1" parent="1" source="vehiculo" target="arriendo">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="rel3" style="endArrow=none;" edge="1" parent="1" source="sucursal" target="vehiculo">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="rel4" style="endArrow=none;" edge="1" parent="1" source="vehiculo" target="mant">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
