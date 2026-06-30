@@ -1,11 +1,29 @@
+"""
+Job 2 de Apache Beam: Transformacion (T) y Validacion de Contratos.
+
+Consume la capa PSA generada por el Job 1 y:
+  1. Valida cada registro contra el Contrato de Datos (Data Contract):
+       - monto_original debe ser estrictamente numerico y mayor a cero (> 0).
+       - ciudad solo puede ser 'Santiago', 'Lima' o 'Buenos Aires'.
+  2. Los registros que FALLAN el contrato se desvian a una Dead-Letter Queue (DLQ)
+     en formato JSON Lines, usando SALIDAS ETIQUETADAS (Tagged Outputs), sin botar
+     el pipeline (los registros validos siguen su curso normal).
+  3. Los registros validos se cruzan con el maestro de tipos de cambio
+     (tipo_cambio.csv) mediante un SIDE INPUT distribuido para convertir el monto
+     local (CLP / PEN / ARS) a USD.
+  4. El resultado final, enriquecido y DEDUPLICADO por id_transaccion, se escribe en
+     la capa Gold en formato Parquet, particionado por proc_date.
+
+Uso:
+    python job2_transform_gold.py --proc_date 2026-06-10 \
+        --psa_dir ../data/psa --gold_dir ../data/gold \
+        --errors_dir ../data/errors --tipo_cambio ../data/inputs/tipo_cambio.csv
+"""
 import argparse
 import csv
 import glob
 import io
 import json
-import os
-import shutil
-from pathlib import Path
 
 import apache_beam as beam
 import pyarrow as pa
@@ -21,7 +39,7 @@ GOLD_SCHEMA = pa.schema([
     ("id_transaccion", pa.string()),
     ("ciudad", pa.string()),
     ("monto_usd", pa.float64()),
-    ("fecha_transaccion", pa.string()),
+    ("fecha_compras", pa.string()),
 ])
 
 # Etiquetas para las salidas multiples (Tagged Outputs).
@@ -68,7 +86,7 @@ class ConvertirAUSD(beam.DoFn):
             "id_transaccion": registro["id_transaccion"],
             "ciudad": registro["ciudad"],
             "monto_usd": round(monto_usd, 6),
-            "fecha_transaccion": registro["fecha_transaccion"],
+            "fecha_compras": registro["fecha_transaccion"],
         }
 
 
@@ -85,32 +103,15 @@ def deduplicar(clave_valores):
 
 
 def construir_pipeline(opciones, args):
-    from datetime import date
-    proc_date = args.proc_date if args.proc_date else date.today().strftime('%Y-%m-%d')
+    proc_date = args.proc_date
     # Se normalizan los separadores a '/' (Beam usa '/' en su sistema de archivos,
     # incluso en Windows; mezclar '\' rompe el patron glob).
     psa_dir = args.psa_dir.replace("\\", "/").rstrip("/")
     gold_dir = args.gold_dir.replace("\\", "/").rstrip("/")
     errors_dir = args.errors_dir.replace("\\", "/").rstrip("/")
     psa_glob = f"{psa_dir}/proc_date={proc_date}/ventas*.parquet"
-    gold_prefijo = f"{gold_dir}/proc_date={proc_date}/ventas_gold"
-    dlq_prefijo = f"{errors_dir}/proc_date={proc_date}/dlq_ventas"
-
-    # =========================
-    # LIMPIAR SALIDAS
-    # =========================
-
-    gold_path = Path(gold_dir) / f"proc_date={proc_date}"
-    errors_path = Path(errors_dir) / f"proc_date={proc_date}"
-
-    if gold_path.exists():
-        shutil.rmtree(gold_path)
-
-    if errors_path.exists():
-        shutil.rmtree(errors_path)
-
-    gold_path.mkdir(parents=True, exist_ok=True)
-    errors_path.mkdir(parents=True, exist_ok=True)
+    gold_prefijo = f"{gold_dir}/proc_date={proc_date}/ventas_usd"
+    dlq_prefijo = f"{errors_dir}/proc_date={proc_date}/rechazados"
 
     with beam.Pipeline(options=opciones) as p:
         # Side Input: maestro de tipos de cambio como dict distribuido.
@@ -120,7 +121,11 @@ def construir_pipeline(opciones, args):
             | "ParsearTipoCambio" >> beam.Map(parsear_tipo_cambio)
         )
 
-        # --- Rama principal: lectura de PSA y validacion ---
+        # Lectura de la capa PSA generada por el Job 1.
+        # NOTA: el conector ReadFromParquet de Beam tiene un bug de glob con el
+        # filesystem local en Windows; por eso se resuelven los archivos concretos
+        # con glob de Python y se lee cada shard, uniendolos con Flatten. En un
+        # runner distribuido (Dataflow/Flink) se pasaria directamente el patron.
         archivos_psa = [f.replace("\\", "/") for f in glob.glob(psa_glob)]
         if not archivos_psa:
             raise FileNotFoundError(f"No se encontraron archivos PSA en: {psa_glob}")
@@ -164,19 +169,13 @@ def construir_pipeline(opciones, args):
 
 
 def main(argv=None):
-    BASE_DIR = Path(__file__).resolve().parent.parent
-    DEFAULT_PSA = str(BASE_DIR / 'data' / 'psa')
-    DEFAULT_GOLD = str(BASE_DIR / 'data' / 'gold')
-    DEFAULT_ERRORS = str(BASE_DIR / 'data' / 'errors')
-    DEFAULT_TC = str(BASE_DIR / 'data' / 'inputs' / 'tipo_cambio.csv')
-
     parser = argparse.ArgumentParser(description="Job 2 - Transformacion a capa Gold")
-    parser.add_argument("--proc_date", required=False,
+    parser.add_argument("--proc_date", required=True,
                         help="Fecha de proceso YYYY-MM-DD (macro {{ ds }} de Airflow)")
-    parser.add_argument("--psa_dir", default=DEFAULT_PSA, help="Carpeta de la capa PSA")
-    parser.add_argument("--gold_dir", default=DEFAULT_GOLD, help="Carpeta destino Gold")
-    parser.add_argument("--errors_dir", default=DEFAULT_ERRORS, help="Carpeta destino DLQ")
-    parser.add_argument("--tipo_cambio", default=DEFAULT_TC,
+    parser.add_argument("--psa_dir", default="data/psa", help="Carpeta de la capa PSA")
+    parser.add_argument("--gold_dir", default="data/gold", help="Carpeta destino Gold")
+    parser.add_argument("--errors_dir", default="data/errors", help="Carpeta destino DLQ")
+    parser.add_argument("--tipo_cambio", default="data/inputs/tipo_cambio.csv",
                         help="Ruta del maestro de tipos de cambio")
     args, beam_args = parser.parse_known_args(argv)
 

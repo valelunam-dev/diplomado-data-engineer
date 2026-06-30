@@ -1,0 +1,41 @@
+[2026-06-29T22:41:47.122+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2026-06-29T22:41:47.315+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: pipeline_beam_airflow.job1_ingest_to_psa manual__2026-06-29T22:41:43.705999+00:00 [queued]>
+[2026-06-29T22:41:47.336+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: pipeline_beam_airflow.job1_ingest_to_psa manual__2026-06-29T22:41:43.705999+00:00 [queued]>
+[2026-06-29T22:41:47.338+0000] {taskinstance.py:2867} INFO - Starting attempt 1 of 4
+[2026-06-29T22:41:47.371+0000] {taskinstance.py:2890} INFO - Executing <Task(BashOperator): job1_ingest_to_psa> on 2026-06-29 22:41:43.705999+00:00
+[2026-06-29T22:41:47.387+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=78) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2026-06-29T22:41:47.392+0000] {standard_task_runner.py:72} INFO - Started process 87 to run task
+[2026-06-29T22:41:47.395+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'pipeline_beam_***', 'job1_ingest_to_psa', 'manual__2026-06-29T22:41:43.705999+00:00', '--job-id', '11', '--raw', '--subdir', 'DAGS_FOLDER/dag_orden_ventas_latam.py', '--cfg-path', '/tmp/tmp0crqf2rx']
+[2026-06-29T22:41:47.398+0000] {standard_task_runner.py:105} INFO - Job 11: Subtask job1_ingest_to_psa
+[2026-06-29T22:41:47.552+0000] {task_command.py:467} INFO - Running <TaskInstance: pipeline_beam_airflow.job1_ingest_to_psa manual__2026-06-29T22:41:43.705999+00:00 [running]> on host bad38954e7d4
+[2026-06-29T22:41:47.696+0000] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='valeria' AIRFLOW_CTX_DAG_ID='pipeline_beam_***' AIRFLOW_CTX_TASK_ID='job1_ingest_to_psa' AIRFLOW_CTX_EXECUTION_DATE='2026-06-29T22:41:43.705999+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-06-29T22:41:43.705999+00:00'
+[2026-06-29T22:41:47.701+0000] {logging_mixin.py:190} INFO - Task instance is in running state
+[2026-06-29T22:41:47.702+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2026-06-29T22:41:47.703+0000] {logging_mixin.py:190} INFO - Current task name:job1_ingest_to_psa state:running start_date:2026-06-29 22:41:47.317473+00:00
+[2026-06-29T22:41:47.704+0000] {logging_mixin.py:190} INFO - Dag name:pipeline_beam_*** and current dag run status:running
+[2026-06-29T22:41:47.705+0000] {taskinstance.py:732} INFO - ::endgroup::
+[2026-06-29T22:41:47.708+0000] {subprocess.py:78} INFO - Tmp dir root location: /tmp
+[2026-06-29T22:41:47.710+0000] {subprocess.py:88} INFO - Running command: ['/usr/bin/bash', '-c', '\npython beam_jobs/job1_ingest_to_psa.py --proc_date 2026-06-29']
+[2026-06-29T22:41:47.730+0000] {subprocess.py:99} INFO - Output:
+[2026-06-29T22:41:56.172+0000] {subprocess.py:106} INFO - {'id_transaccion': 'STGO-001', 'ciudad': 'Santiago', 'monto_original': '25000', 'moneda_origen': 'CLP', 'fecha_transaccion': '2026-06-10', 'ingestado_at': '2026-06-29T22:41:55.356565', 'proc_date': '2026-06-29'}
+[2026-06-29T22:41:56.185+0000] {subprocess.py:106} INFO - {'id_transaccion': 'STGO-002', 'ciudad': 'Santiago', 'monto_original': '42000', 'moneda_origen': 'CLP', 'fecha_transaccion': '2026-06-10', 'ingestado_at': '2026-06-29T22:41:55.356565', 'proc_date': '2026-06-29'}
+[2026-06-29T22:41:56.188+0000] {subprocess.py:106} INFO - {'id_transaccion': 'LIMA-981', 'ciudad': 'Lima', 'monto_original': '150.5', 'moneda_origen': 'PEN', 'fecha_transaccion': '2026-06-10', 'ingestado_at': '2026-06-29T22:41:55.356565', 'proc_date': '2026-06-29'}
+[2026-06-29T22:41:56.196+0000] {subprocess.py:106} INFO - {'id_transaccion': 'LIMA-982', 'ciudad': 'Lima', 'monto_original': '89.9', 'moneda_origen': 'PEN', 'fecha_transaccion': '2026-06-10', 'ingestado_at': '2026-06-29T22:41:55.356565', 'proc_date': '2026-06-29'}
+[2026-06-29T22:41:56.202+0000] {subprocess.py:106} INFO - {'id_transaccion': 'BA-551', 'ciudad': 'Buenos Aires', 'monto_original': '12000', 'moneda_origen': 'ARS', 'fecha_transaccion': '2026-06-10', 'ingestado_at': '2026-06-29T22:41:55.356565', 'proc_date': '2026-06-29'}
+[2026-06-29T22:41:56.205+0000] {subprocess.py:106} INFO - {'id_transaccion': 'BA-552', 'ciudad': 'BsAs_Erronea', 'monto_original': '-500', 'moneda_origen': 'ARS', 'fecha_transaccion': '2026-06-10', 'ingestado_at': '2026-06-29T22:41:55.356565', 'proc_date': '2026-06-29'}
+[2026-06-29T22:41:56.208+0000] {subprocess.py:106} INFO - {'id_transaccion': 'BA-553', 'ciudad': 'Buenos Aires', 'monto_original': 'NULO_ERROR', 'moneda_origen': 'ARS', 'fecha_transaccion': '2026-06-10', 'ingestado_at': '2026-06-29T22:41:55.356565', 'proc_date': '2026-06-29'}
+[2026-06-29T22:41:56.217+0000] {subprocess.py:106} INFO - 
+[2026-06-29T22:41:56.221+0000] {subprocess.py:106} INFO - PSA creada en: /opt/***/data/psa/proc_date=2026-06-29
+[2026-06-29T22:41:57.022+0000] {subprocess.py:110} INFO - Command exited with return code 0
+[2026-06-29T22:41:57.141+0000] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2026-06-29T22:41:57.144+0000] {taskinstance.py:353} INFO - Marking task as SUCCESS. dag_id=pipeline_beam_***, task_id=job1_ingest_to_psa, run_id=manual__2026-06-29T22:41:43.705999+00:00, execution_date=20260629T224143, start_date=20260629T224147, end_date=20260629T224157
+[2026-06-29T22:41:57.264+0000] {logging_mixin.py:190} INFO - Task instance in success state
+[2026-06-29T22:41:57.266+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: running
+[2026-06-29T22:41:57.269+0000] {logging_mixin.py:190} INFO - Dag name:pipeline_beam_*** queued_at:2026-06-29 22:41:43.753100+00:00
+[2026-06-29T22:41:57.273+0000] {logging_mixin.py:190} INFO - Task hostname:bad38954e7d4 operator:BashOperator
+[2026-06-29T22:41:57.335+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2026-06-29T22:41:57.403+0000] {standard_task_runner.py:217} INFO - Process not found (most likely exited), stop collecting metrics
+[2026-06-29T22:41:57.406+0000] {taskinstance.py:3901} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2026-06-29T22:41:57.411+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

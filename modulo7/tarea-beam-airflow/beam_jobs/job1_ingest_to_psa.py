@@ -3,8 +3,15 @@ import pandas as pd
 import json
 import os
 import argparse
+from pathlib import Path
 
 from datetime import datetime, date
+
+# Carpeta raíz del proyecto -- use IA en esto para ejecutar bien
+BASE_DIR = Path(__file__).resolve().parent.parent
+
+INPUT_DIR = BASE_DIR / "data" / "inputs"
+PSA_DIR = BASE_DIR / "data" / "psa"
 
 # PARAMETROS -- use IA en esto para que el job sea reutilizable y pueda ser ejecutado con diferentes fechas de proceso (proc_date)
 
@@ -29,9 +36,7 @@ ingestado_at = datetime.now().isoformat()
 
 def leer_santiago():
 
-    df = pd.read_csv(
-        "data/inputs/ventas_santiago.csv"
-    )
+    df = pd.read_csv(INPUT_DIR / "ventas_santiago.csv")
 
     for _, row in df.iterrows():
 
@@ -50,7 +55,7 @@ def leer_santiago():
 def leer_lima():
 
     df = pd.read_parquet(
-        "data/inputs/ventas_lima.parquet"
+        INPUT_DIR / "ventas_lima.parquet"
     )
 
     for _, row in df.iterrows():
@@ -70,7 +75,7 @@ def leer_lima():
 def leer_buenos_aires():
 
     with open(
-        "data/inputs/ventas_buenos_aires.json",
+        INPUT_DIR / "ventas_buenos_aires.json",
         encoding="utf-8"
     ) as archivo:
 
@@ -108,7 +113,7 @@ with beam.Pipeline() as p:
 
 # PSA PARQUET
 
-ruta_psa = f"data/psa/proc_date={proc_date}"
+ruta_psa = PSA_DIR / f"proc_date={proc_date}"
 
 os.makedirs(
     ruta_psa,
@@ -118,7 +123,7 @@ os.makedirs(
 df = pd.DataFrame(datos_unificados)
 
 df.to_parquet(
-    f"{ruta_psa}/ventas_unificadas.parquet",
+    ruta_psa / "ventas_unificadas.parquet",
     index=False
 )
 
