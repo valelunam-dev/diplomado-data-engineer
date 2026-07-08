@@ -1,0 +1,54 @@
+<?xml version='1.0' encoding='utf-8'?>
+<scheme version="2.0" title="" description="">
+	<nodes>
+		<node id="0" name="Frequent Itemsets" qualified_name="orangecontrib.associate.widgets.owitemsets.OWItemsets" project_name="Orange3-Associate" version="" title="Frequent Itemsets" position="(344.0, 328.0)" />
+		<node id="1" name="Association Rules" qualified_name="orangecontrib.associate.widgets.owassociate.OWAssociate" project_name="Orange3-Associate" version="" title="Association Rules" position="(353.0, 449.0)" />
+		<node id="2" name="File" qualified_name="Orange.widgets.data.owfile.OWFile" project_name="Orange3" version="" title="File" position="(189.0, 383.0)" />
+	</nodes>
+	<links>
+		<link id="0" source_node_id="2" sink_node_id="0" source_channel="Data" sink_channel="Data" enabled="true" source_channel_id="data" sink_channel_id="data" />
+		<link id="1" source_node_id="2" sink_node_id="1" source_channel="Data" sink_channel="Data" enabled="true" source_channel_id="data" sink_channel_id="data" />
+	</links>
+	<annotations />
+	<thumbnail />
+	<node_properties>
+		<properties node_id="0" format="literal">{'autoFind': False, 'autoSend': True, 'controlAreaVisible': True, 'filterKeywords': '', 'filterMaxItems': 10000, 'filterMinItems': 1, 'filterSearch': True, 'maxItemsets': 10000, 'minSupport': 30, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\xff\xff\xfc\xa5\x00\x00\x00R\xff\xff\xfe\xdf\x00\x00\x01\xb3\xff\xff\xfc\xa6\x00\x00\x00g\xff\xff\xfe\xde\x00\x00\x01\xb2\x00\x00\x00\x01\x00\x00\x00\x00\x07\x80\xff\xff\xfc\xa6\x00\x00\x00g\xff\xff\xfe\xde\x00\x00\x01\xb2', '__version__': 1}</properties>
+		<properties node_id="1" format="literal">{'autoFind': False, 'autoSend': True, 'classify': False, 'controlAreaVisible': True, 'filterAntecedentMax': 1000, 'filterAntecedentMin': 1, 'filterConsequentMax': 1000, 'filterConsequentMin': 1, 'filterKeywordsAntecedent': '', 'filterKeywordsConsequent': '', 'filterSearch': False, 'maxRules': 10000, 'minConfidence': 55, 'minSupport': 30, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x01\x8a\x00\x00\x00q\x00\x00\x04\x9a\x00\x00\x02\x83\x00\x00\x01\x8b\x00\x00\x00\x8f\x00\x00\x04\x99\x00\x00\x02\x82\x00\x00\x00\x00\x00\x00\x00\x00\x05\x00\x00\x00\x01\x8b\x00\x00\x00\x8f\x00\x00\x04\x99\x00\x00\x02\x82', '__version__': 1}</properties>
+		<properties node_id="2" format="pickle">gASV4QYAAAAAAAB9lCiMEmNvbnRyb2xBcmVhVmlzaWJsZZSIjAxyZWNlbnRfcGF0aHOUXZQojB5v
+cmFuZ2V3aWRnZXQudXRpbHMuZmlsZWRpYWxvZ3OUjApSZWNlbnRQYXRolJOUKYGUfZQojAdhYnNw
+YXRolIwtQzovVXNlcnMvdmFsZXJpYS5sdW5hL0Rvd25sb2Fkcy9ob3JhRGVsVGUuY3N2lIwGcHJl
+Zml4lE6MB3JlbHBhdGiUTowFdGl0bGWUjACUjAVzaGVldJRoDowLZmlsZV9mb3JtYXSUTnViaAYp
+gZR9lChoCYxeQzovVXNlcnMvdmFsZXJpYS5sdW5hL0FwcERhdGEvTG9jYWwvUHJvZ3JhbXMvT3Jh
+bmdlL0xpYi9zaXRlLXBhY2thZ2VzL09yYW5nZS9kYXRhc2V0cy9pcmlzLnRhYpRoC4wPc2FtcGxl
+LWRhdGFzZXRzlGgMjAhpcmlzLnRhYpRoDWgOaA9oDmgQTnViaAYpgZR9lChoCYxhQzovVXNlcnMv
+dmFsZXJpYS5sdW5hL0FwcERhdGEvTG9jYWwvUHJvZ3JhbXMvT3JhbmdlL0xpYi9zaXRlLXBhY2th
+Z2VzL09yYW5nZS9kYXRhc2V0cy90aXRhbmljLnRhYpRoC2gUaAyMC3RpdGFuaWMudGFilGgNaA5o
+D2gOaBBOdWJoBimBlH2UKGgJjGFDOi9Vc2Vycy92YWxlcmlhLmx1bmEvQXBwRGF0YS9Mb2NhbC9Q
+cm9ncmFtcy9PcmFuZ2UvTGliL3NpdGUtcGFja2FnZXMvT3JhbmdlL2RhdGFzZXRzL2hvdXNpbmcu
+dGFilGgLaBRoDIwLaG91c2luZy50YWKUaA1oDmgPaA5oEE51YmgGKYGUfZQoaAmMZ0M6L1VzZXJz
+L3ZhbGVyaWEubHVuYS9BcHBEYXRhL0xvY2FsL1Byb2dyYW1zL09yYW5nZS9MaWIvc2l0ZS1wYWNr
+YWdlcy9PcmFuZ2UvZGF0YXNldHMvaGVhcnRfZGlzZWFzZS50YWKUaAtoFGgMjBFoZWFydF9kaXNl
+YXNlLnRhYpRoDWgOaA9oDmgQTnViaAYpgZR9lChoCYxoQzovVXNlcnMvdmFsZXJpYS5sdW5hL0Fw
+cERhdGEvTG9jYWwvUHJvZ3JhbXMvT3JhbmdlL0xpYi9zaXRlLXBhY2thZ2VzL09yYW5nZS9kYXRh
+c2V0cy9icm93bi1zZWxlY3RlZC50YWKUaAtoFGgMjBJicm93bi1zZWxlY3RlZC50YWKUaA1oDmgP
+aA5oEE51YmgGKYGUfZQoaAmMXUM6L1VzZXJzL3ZhbGVyaWEubHVuYS9BcHBEYXRhL0xvY2FsL1By
+b2dyYW1zL09yYW5nZS9MaWIvc2l0ZS1wYWNrYWdlcy9PcmFuZ2UvZGF0YXNldHMvem9vLnRhYpRo
+C2gUaAyMB3pvby50YWKUaA1oDmgPaA5oEE51YmWMC3JlY2VudF91cmxzlF2UjBNzYXZlZFdpZGdl
+dEdlb21ldHJ5lENCAdnQywADAAD///2kAAAAJ////zQAAAJb///9pQAAADz///8zAAACWgAAAAEA
+AAAAB4D///2lAAAAPP///zMAAAJalIwLc2hlZXRfbmFtZXOUfZSMBnNvdXJjZZRLAIwDdXJslGgO
+jA1kb21haW5fZWRpdG9ylH2UjAtfX3ZlcnNpb25fX5RLAYwQY29udGV4dF9zZXR0aW5nc5RdlIwV
+b3Jhbmdld2lkZ2V0LnNldHRpbmdzlIwHQ29udGV4dJSTlCmBlH2UKIwGdmFsdWVzlH2UKIwJdmFy
+aWFibGVzlF2UaDJ9lGg+XZQoXZQojANQYW6UjBRPcmFuZ2UuZGF0YS52YXJpYWJsZZSMEERpc2Ny
+ZXRlVmFyaWFibGWUk5RLAIwEMCwgMZSIZV2UKIwEUGF0ZZRoRksAjAQwLCAxlIhlXZQojAtNYW50
+ZXF1aWxsYZRoRksAjAQwLCAxlIhlXZQojAlNZXJtZWxhZGGUaEZLAIwEMCwgMZSIZV2UKIwFSmFt
+b26UaEZLAIwEMCwgMZSIZV2UKIwFUXVlc2+UaEZLAIwEMCwgMZSIZWVzaDRLAXWMCmF0dHJpYnV0
+ZXOUKIwDUGFulF2UKIwBMJSMATGUZYaUjARQYXRllF2UKGhaaFtlhpSMC01hbnRlcXVpbGxhlF2U
+KGhaaFtlhpSMCU1lcm1lbGFkYZRdlChoWmhbZYaUjAVKYW1vbpRdlChoWmhbZYaUjAVRdWVzb5Rd
+lChoWmhbZYaUdJSMBW1ldGFzlCmMCmNsYXNzX3ZhcnOUKYwSbW9kaWZpZWRfdmFyaWFibGVzlF2U
+dWJhdS4=
+</properties>
+	</node_properties>
+	<session_state>
+		<window_groups />
+	</session_state>
+</scheme>
