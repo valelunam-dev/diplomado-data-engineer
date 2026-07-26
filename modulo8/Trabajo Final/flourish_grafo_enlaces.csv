@@ -1,0 +1,13 @@
+﻿source,target,lift,reglas
+Dia_Semana=Monday,Nivel_Duplicados=Alto,2.47,3
+Reglas_Calidad=Reglas_Muchas,Nivel_Duplicados=Alto,2.47,10
+Rechazos=Rechazos_Alto,Nivel_Duplicados=Alto,2.31,12
+Region=Sur,Nivel_Duplicados=Alto,2.31,1
+Tipo_Pipeline=Batch,Nivel_Duplicados=Alto,2.02,5
+Reintentos=Reint_1,Nivel_Duplicados=Alto,2.02,4
+Prioridad=Media,Nivel_Duplicados=Alto,2.02,5
+Tipo_Pipeline=Streaming,Nivel_Duplicados=Alto,2.02,2
+Prioridad=Alta,Nivel_Duplicados=Alto,2.02,4
+Region=Centro,Nivel_Duplicados=Alto,1.79,2
+Reintentos=Reint_2,Nivel_Duplicados=Alto,1.48,2
+Sistema_Origen=CRM,Nivel_Duplicados=Alto,1.48,1

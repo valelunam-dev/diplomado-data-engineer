@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='utf-8'?>
+<scheme version="2.0" title="Reglas de Asociacion - Grupo 6 (Duplicados)" description="Escenario 6: causas y efectos de los datos duplicados. Soporte 5%, Confianza 50%.">
+	<nodes>
+		<node id="0" name="File" qualified_name="Orange.widgets.data.owfile.OWFile" project_name="Orange3" version="" title="File" position="(150.0, 200.0)" />
+		<node id="1" name="Frequent Itemsets" qualified_name="orangecontrib.associate.widgets.owitemsets.OWItemsets" project_name="Orange3-Associate" version="" title="Frequent Itemsets" position="(400.0, 130.0)" />
+		<node id="2" name="Association Rules" qualified_name="orangecontrib.associate.widgets.owassociate.OWAssociate" project_name="Orange3-Associate" version="" title="Association Rules" position="(400.0, 280.0)" />
+		<node id="3" name="Data Table" qualified_name="Orange.widgets.data.owtable.OWDataTable" project_name="Orange3" version="" title="Data Table" position="(150.0, 340.0)" />
+	</nodes>
+	<links>
+		<link id="0" source_node_id="0" sink_node_id="1" source_channel="Data" sink_channel="Data" enabled="true" source_channel_id="data" sink_channel_id="data" />
+		<link id="1" source_node_id="0" sink_node_id="2" source_channel="Data" sink_channel="Data" enabled="true" source_channel_id="data" sink_channel_id="data" />
+		<link id="2" source_node_id="0" sink_node_id="3" source_channel="Data" sink_channel="Data" enabled="true" source_channel_id="data" sink_channel_id="data" />
+	</links>
+	<annotations />
+	<thumbnail />
+	<node_properties>
+		<properties node_id="0" format="pickle">gAJ9KFgSAAAAY29udHJvbEFyZWFWaXNpYmxliFgMAAAAcmVjZW50X3BhdGhzXWNvcmFuZ2V3aWRnZXQudXRpbHMuZmlsZWRpYWxvZ3MKUmVjZW50UGF0aAopgX0oWAcAAABhYnNwYXRoWFcAAABDOi9SZXBvcy9kaXBsb21hZG8tZGF0YS1lbmdpbmVlci9tb2R1bG84L1RyYWJham8gRmluYWwvb3JhbmdlX2VzY2VuYXJpbzZfY2F0ZWdvcmljby5jc3ZYBgAAAHByZWZpeE5YBwAAAHJlbHBhdGhOWAUAAAB0aXRsZVgAAAAAWAUAAABzaGVldFgAAAAAWAsAAABmaWxlX2Zvcm1hdE51YmFYCwAAAHJlY2VudF91cmxzXVgLAAAAc2hlZXRfbmFtZXN9WAYAAABzb3VyY2VLAFgDAAAAdXJsWAAAAABYDQAAAGRvbWFpbl9lZGl0b3J9KFgLAAAAX192ZXJzaW9uX19LAVgQAAAAY29udGV4dF9zZXR0aW5nc111WAsAAABfX3ZlcnNpb25fX0sBWBAAAABjb250ZXh0X3NldHRpbmdzXXUu</properties>
+		<properties node_id="1" format="literal">{'autoFind': False, 'autoSend': True, 'controlAreaVisible': True, 'filterKeywords': '', 'filterMaxItems': 10000, 'filterMinItems': 1, 'filterSearch': True, 'maxItemsets': 10000, 'minSupport': 5, '__version__': 1}</properties>
+		<properties node_id="2" format="literal">{'autoFind': False, 'autoSend': True, 'classify': False, 'controlAreaVisible': True, 'filterAntecedentMax': 1000, 'filterAntecedentMin': 1, 'filterConsequentMax': 1000, 'filterConsequentMin': 1, 'filterKeywordsAntecedent': '', 'filterKeywordsConsequent': '', 'filterSearch': False, 'maxRules': 10000, 'minConfidence': 50, 'minSupport': 5, '__version__': 1}</properties>
+		<properties node_id="3" format="literal">{'auto_commit': True, 'controlAreaVisible': True, 'dist_color_RGB': (220, 220, 220, 255), 'selected_rows': [], 'selected_cols': [], 'show_attribute_labels': True, 'show_distributions': False, '__version__': 1}</properties>
+	</node_properties>
+	<session_state>
+		<window_groups />
+	</session_state>
+</scheme>

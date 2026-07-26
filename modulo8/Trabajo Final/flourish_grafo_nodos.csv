@@ -1,0 +1,14 @@
+﻿id,Variable,Apariciones
+Nivel_Duplicados=Alto,Nivel_Duplicados,25
+Rechazos=Rechazos_Alto,Rechazos,12
+Reglas_Calidad=Reglas_Muchas,Reglas_Calidad,10
+Tipo_Pipeline=Batch,Tipo_Pipeline,5
+Prioridad=Media,Prioridad,5
+Reintentos=Reint_1,Reintentos,4
+Prioridad=Alta,Prioridad,4
+Dia_Semana=Monday,Dia_Semana,3
+Tipo_Pipeline=Streaming,Tipo_Pipeline,2
+Reintentos=Reint_2,Reintentos,2
+Region=Centro,Region,2
+Region=Sur,Region,1
+Sistema_Origen=CRM,Sistema_Origen,1

@@ -1,0 +1,16 @@
+﻿Sistema_Origen,Nivel_Duplicados,Ejecuciones
+CRM,Bajo,9
+ERP,Bajo,7
+IoT,Bajo,15
+POS,Bajo,6
+Web,Bajo,10
+CRM,Medio,9
+ERP,Medio,6
+IoT,Medio,8
+POS,Medio,13
+Web,Medio,13
+CRM,Alto,15
+ERP,Alto,6
+IoT,Alto,8
+POS,Alto,11
+Web,Alto,14
