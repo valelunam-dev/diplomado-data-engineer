@@ -1,0 +1,3893 @@
+ DIPLOMADO EN DATA ENGINEERING · MODULO 10 - CAPÍTULO 1
+Machine Learning para la 
+Escala Masiva de Datos
+Del dato a la decisión
+Aplicando Machine Learning para resolver problemas empresariales 
+mediante un caso de estudio real.
+Eduardo Castillo Rodríguez
+Máster en Inteligencia Artificial · Licenciado en Matemáticas y Computación
+Consultor en Inteligencia Artificial y Analítica de Datos MÓDULO 10
+¿Qué aprenderemos en este módulo?
+Problema de negocio
+Del dato a la decisión
+Big Data y escalabilidad
+Cuando los datos superan la capacidad humana
+Plataformas modernas de datos
+Data Warehouse, Data Lake, Lakehouse
+Analytics y toma de decisiones
+Descriptiva, Diagnóstica, Predictiva, Prescriptiva
+Machine Learning
+Modelos que aprenden de los datos
+Laboratorio integrador
+Proyecto real con dataset Corporación Favorita
+CONCEPTO CLAVE
+ Durante este capítulo construiremos el camino completo desde un problema de negocio hasta la construcción de 
+modelos de Machine Learning utilizando un caso real.      ¿Cuántas decisiones 
+toma un 
+supermercado 
+mediano cada día?
+Antes de comenzar — reflexiona un momento. El dilema de las dos góndolas
+Tienda Costanera
+Estantes de leche vacíos. Clientes que se van sin comprar.
+Tienda Maipú
+Bodega llena. Leche que vence el jueves.
+Dos tiendas. Mismo lunes. Mismo producto (leche). Dos realidades opuestas.
+¿Cuál de las dos pierde dinero? Las dos.
+Desabastecimiento
+Pierde ventas.
+Sobrestock
+Pierde producto.
+El problema real
+No es la leche — es la decisión. ¿Cómo sabe Netflix qué 
+recomendar?
+Cada vez que un usuario abre Netflix, la plataforma debe decidir qué 
+contenido mostrar primero.
+Historial de visualización
+Géneros preferidos
+Horario de consumo
+Dispositivo utilizado
+Comportamiento de usuarios con gustos similares
+Características del contenido
+Netflix no adivina las preferencias de sus usuarios. Aprende de su 
+comportamiento pasado para anticipar qué contenido tiene 
+mayor probabilidad de consumir. Personalización basada en datos
+Todas estas organizaciones utilizan Machine Learning para anticipar los intereses de cada usuario y ofrecer recomendaciones 
+personalizadas.
+Netflix
+Recomienda películas y series.
+Spotify
+Recomienda música.
+Amazon
+Recomienda productos.
+YouTube
+Recomienda videos.
+El principio es siempre el mismo: aprender del comportamiento pasado para anticipar el comportamiento futuro. LA MISMA LÓGICA
+¿Puede un supermercado 
+hacer lo mismo?
+Netflix predice
+Qué quieres ver — para cada usuario, en cada momento.
+Un supermercado puede predecir
+Qué producto venderá, en qué tienda, en qué cantidad, 
+en qué momento.
+La lógica es exactamente la misma. Lo único que cambia es el problema de negocio.
+La tecnología es la misma. Lo que cambia es el problema de negocio que queremos resolver. Lunes. 08:00 AM. Dos llamadas.
+📞 Costanera
+"No tenemos leche."
+📞 Maipú
+"No cabe más leche en la bodega."
+El mismo producto. El mismo día. Decisiones tomadas con los mismos 
+datos. ¿Por qué falló la decisión?
+Los datos existían.
+Cada venta estaba registrada. Cada 
+movimiento de inventario, 
+documentado.
+Faltaba capacidad analítica.
+A tiempo
+A escala
+Para cada tienda, cada producto, 
+cada día
+Tener datos no es suficiente. La 
+ventaja competitiva está en 
+convertirlos en conocimiento 
+accionable. La demanda no depende de un solo factor
+Precio
+Variaciones propias y de la competencia
+Promociones
+Descuentos y ofertas activas
+Clima
+Temperatura y condiciones del día
+Inventario
+Stock disponible en tienda
+Feriados
+Días festivos y quincenas
+Eventos locales
+Partidos, conciertos, ferias
+Competencia
+Precios y disponibilidad del entorno
+Precio del petróleo
+Impacto indirecto en costos logísticos, transporte y 
+comportamiento económico.
+Ningún analista puede procesar todas estas variables simultáneamente para 50.000 productos. Aquí es donde 
+Machine Learning se vuelve indispensable. ¿Dónde viven los datos?
+Cada venta comienza en el punto de venta.
+¿A dónde va ese dato?
+¿Cómo llega a un modelo de Machine Learning? CONCEPTO CLAVE
+SQL
+¿Qué es?
+Structured Query Language. 
+Lenguaje estándar para consultar y 
+manipular bases de datos 
+relacionales. Permite extraer, filtrar, 
+agrupar y transformar datos 
+almacenados en tablas.
+¿Para qué sirve?
+Es la primera capa de acceso a los 
+datos transaccionales. Toda 
+organización con un sistema de 
+ventas tiene una base de datos 
+SQL detrás.
+En nuestro caso
+Cada vez que un cliente pasa un 
+producto por la caja en 
+Corporación Favorita, esa venta 
+queda registrada en una base de 
+datos SQL. Es el punto de origen 
+del dato — antes de que viaje por 
+el pipeline, al Data Lake, y 
+finalmente al modelo construido 
+con Python y pandas.
+Ya lo conoces — aquí lo ubicamos en el flujo completo. CONCEPTO CLAVE
+Pipeline de Datos
+¿Qué es?
+Secuencia automatizada de pasos 
+que mueve, transforma y entrega 
+datos desde una fuente hasta un 
+destino. Cada paso del pipeline 
+toma el resultado del anterior y lo 
+prepara para el siguiente.
+¿Para qué sirve?
+Garantiza que los datos lleguen 
+limpios, completos y a tiempo al 
+lugar donde serán analizados o 
+procesados por un modelo. Sin 
+pipeline, los datos quedan 
+atrapados en su origen.
+En nuestro caso
+El dato de la venta de leche en 
+Costanera no llega solo al modelo 
+de predicción. Pasa por un 
+pipeline: se extrae de SQL, se 
+limpia, se transforma, se carga al 
+Data Lake y se procesa con Spark. 
+Si un paso falla, la cadena se 
+rompe. CONCEPTO CLAVE
+Data Lake
+¿Qué es?
+Repositorio centralizado que 
+almacena grandes volúmenes de 
+datos en su formato original — 
+estructurados, semiestructurados y 
+no estructurados — sin necesidad 
+de definir su estructura de 
+antemano.
+¿Para qué sirve?
+Permite acumular datos de 
+múltiples fuentes (ventas, clima, 
+inventario, redes sociales) sin 
+transformarlos primero. La 
+transformación ocurre cuando se 
+necesita, no al momento de 
+almacenar.
+En nuestro caso
+Todas las ventas de las 54 tiendas 
+de Corporación Favorita, los datos 
+de clima, los calendarios de 
+feriados y los registros de 
+inventario convergen en un Data 
+Lake. Desde ahí, el pipeline los 
+entrega listos para ser procesados 
+con Python y pandas (polars) y 
+alimentar el modelo de predicción. Del código de barras al cliente satisfecho
+1
+Cliente →  Caja
+Registro en tiempo real
+2
+Base de Datos SQL
+Estructuración del dato 
+transaccional
+3
+Pipeline de Datos
+Extracción, transformación y carga
+4
+Data Lake
+Almacenamiento masivo 
+centralizado
+5
+Python + pandas (polars)
+Preparación y limpieza de datos
+6
+scikit-learn
+Entrenamiento del modelo de ML
+7
+Predicción →  Decisión
+Valor real para el negocio
+Una línea continua. Sin interrupciones. Sin datos perdidos.
+En escenarios de mayor escala, el paso de preparación puede realizarse con Apache Spark (PySpark) y Spark ML. El colapso de la escala
+1 5 productos
+Manejable para un humano
+2 500 productos
+Difícil, pero posible
+3 50.000 productos
+Imposible para un humano
+4 200 supermercados × cada día
+Aquí nace Big Data. CONCEPTO CLAVE
+Big Data
+¿Qué es?
+Conjunto de datos cuyo volumen, 
+velocidad o variedad supera la 
+capacidad de las herramientas 
+tradicionales de procesamiento. No 
+es solo "mucho dato" — es dato 
+que no cabe en una hoja de 
+cálculo ni en un servidor 
+convencional.
+¿Para qué sirve?
+Permite almacenar, procesar y 
+analizar información a una escala 
+que sería imposible con bases de 
+datos relacionales clásicas.
+En nuestro caso
+El supermercado genera millones 
+de registros de ventas, inventario y 
+comportamiento de clientes cada 
+día. Eso es Big Data: demasiado 
+para Excel, demasiado para un solo 
+servidor, pero perfectamente 
+manejable con las herramientas 
+correctas.
+Excel
+Miles de filas. Un computador.
+Base de datos relacional
+Millones de registros. Consultas SQL.
+Big Data
+Cientos de millones de registros. 
+Procesamiento distribuido.
+El problema no es solo la cantidad de datos — es la capacidad para procesarlos y analizarlos a tiempo. Evolución de las plataformas de datos
+¿Dónde se almacenan y administran todos estos datos?
+Sistemas Operacionales
+Sistemas transaccionales · Punto de origen de los datos
+Data Warehouse
+Datos estructurados · Reportes · Business Intelligence · 
+SQL
+Data Lake
+Grandes volúmenes · Datos estructurados y no 
+estructurados · Big Data · Machine Learning
+Data Lakehouse
+Analítica · Business Intelligence · Machine Learning · 
+Inteligencia Artificial · Plataforma moderna
+La evolución de las plataformas de datos ha permitido integrar Business Intelligence, Machine Learning e Inteligencia 
+Artificial sobre una misma infraestructura. ¿Qué arquitectura usar?
+No existe una arquitectura universalmente mejor. La elección depende de las necesidades del negocio, el volumen de datos y los casos de uso. Actualmente, 
+la tendencia es evolucionar hacia plataformas Lakehouse.
+Característica Data Warehouse Data Lake Data Lakehouse
+Datos estructurados ✔ ✔ ✔
+Datos no estructurados   ✔ ✔
+Business Intelligence ✔ Parcial ✔
+Machine Learning Limitado ✔ ✔
+Escalabilidad Media Alta Alta
+Gobierno de datos Alto Medio Alto
+Casos de uso modernos Limitados Buenos Excelente
+Actualmente, muchas organizaciones están migrando hacia arquitecturas Lakehouse para integrar analítica, Machine 
+Learning e Inteligencia Artificial en una única plataforma.
+Plataformas de referencia: Microsoft Fabric · Databricks · Snowflake · Google BigQuery
+Las plataformas modernas permiten utilizar una misma infraestructura para Business Intelligence, Machine Learning 
+e Inteligencia Artificial, eliminando la necesidad de mantener múltiples plataformas independientes. Los datos existen. El problema 
+también.
+Cada venta
+genera un registro
+Cada registro
+es un dato
+Millones de datos
+Pero los datos solos no toman decisiones.
+Los datos ya existen. También sabemos dónde almacenarlos. Pero almacenar información 
+no significa comprenderla.
+¿Cómo transformar 
+millones de datos en 
+decisiones? Del dato al aprendizaje automático
+Datos
+Big Data
+Analytics
+Machine Learning
+Decisiones
+Machine Learning es una disciplina dentro de Analytics que 
+permite construir modelos capaces de aprender patrones a partir 
+de los datos para apoyar la toma de decisiones.
+IDEA CLAVE
+Los datos por sí solos no generan valor. El valor aparece 
+cuando somos capaces de transformarlos en 
+conocimiento útil para decidir. CONCEPTO CLAVE
+Analytics
+¿Qué es?
+Proceso de examinar datos para 
+descubrir patrones, extraer 
+conclusiones y apoyar la toma de 
+decisiones. Va desde la simple 
+descripción de lo ocurrido hasta la 
+recomendación automatizada de 
+acciones.
+¿Para qué sirve?
+Transforma datos crudos en 
+conocimiento accionable. Sin 
+Analytics, los datos son solo ruido 
+almacenado.
+En nuestro caso
+El supermercado tiene millones de 
+registros de ventas. Analytics es lo 
+que convierte esos registros en 
+respuestas: ¿qué producto falla?, 
+¿por qué?, ¿qué pasará mañana?, 
+¿qué debemos pedir hoy? Analytics: cuatro niveles de conocimiento
+Cada nivel responde una pregunta más valiosa — y genera una acción más precisa.
+Descriptiva
+¿Qué pasó?
+Las ventas de leche cayeron 30% el martes en Costanera.
+Diagnóstica
+¿Por qué pasó?
+Feriado local + el proveedor no entregó a tiempo.
+Predictiva
+¿Qué va a pasar?
+El próximo viernes habrá demanda +45% en Costanera.
+Prescriptiva
+¿Qué debo hacer?
+Pedir 400 unidades el jueves antes de las 6 PM.
+Solo la analítica prescriptiva genera una acción concreta. Los tres niveles anteriores son el camino para llegar a ella. NIVEL 1
+Descriptiva: ¿Qué 
+pasó?
+"Las ventas de leche en Costanera 
+aumentaron 40% el martes pasado."
+Sabemos el resultado.
+No sabemos por qué.
+No sabemos qué hacer. NIVEL 2
+Diagnóstica: 
+¿Por qué pasó?
+"Hubo un feriado local. El proveedor 
+no entregó. La competencia bajó el 
+precio."
+Ahora entendemos.
+Pero ya es tarde para actuar.
+ NIVEL 3
+Predictiva: ¿Qué va a pasar?
+📅 Quincena
+Próximo viernes
+🌡 +4°C
+Temperatura en alza
+⚽ Partido
+Alta afluencia local
+El modelo anticipa: demanda de leche +40% en Costanera. Ahora 
+podemos actuar antes. NIVEL 4
+Prescriptiva: ¿Qué debo hacer?
+1
+Pide 400 unidades
+El  lunes antes de las 6 PM
+2
+Redistribuye 80 unidades
+Desde Maipú a Costanera
+3
+Decisión ejecutada
+Cliente satisfecho. Cero desperdicio.
+La organización no solo sabe — actúa. Esto es Machine Learning aplicado a decisiones reales. VARIABLE OBJETIVO
+¿Qué queremos predecir?
+La demanda futura de leche en cada tienda.
+Esa será la variable objetivo que construiremos durante los laboratorios.
+Cada tienda. Cada producto. Cada día. Eso es lo que el modelo debe aprender a anticipar. CONCEPTO CLAVE
+Machine Learning
+¿Qué es?
+Rama de la inteligencia artificial 
+que permite a los sistemas 
+aprender patrones a partir de 
+datos históricos y hacer 
+predicciones o recomendaciones 
+sobre datos nuevos — sin ser 
+programados explícitamente para 
+cada caso.
+¿Para qué sirve?
+Automatiza decisiones complejas 
+que dependen de múltiples 
+variables simultáneas. Cuanto más 
+datos tiene, más preciso se vuelve. 
+Escala donde el juicio humano no 
+puede llegar.
+En nuestro caso
+El supermercado no puede tener 
+un analista revisando 
+manualmente 50.000 productos 
+en 54 tiendas cada día. En esta 
+clase construiremos modelos de 
+Machine Learning con Python, 
+pandas (polars) y scikit-learn sobre 
+el dataset real de Corporación 
+Favorita — el mismo problema, a 
+escala real. ¿Quién hace posible un proyecto de Machine 
+Learning?
+Aunque solemos hablar de 'Machine Learning' como una única disciplina, en la práctica intervienen distintos perfiles que 
+colaboran durante todo el ciclo de vida del proyecto.
+Analista de Datos
+Data Analyst
+Responsabilidades principales
+Explora y comprende los datos.
+Identifica patrones y tendencias.
+Genera visualizaciones e indicadores.
+Comunica información para apoyar la toma de 
+decisiones.
+Científico de Datos
+Data Scientist
+Responsabilidades principales
+Formula el problema analítico.
+Diseña variables y modelos.
+Construye y evalúa modelos de Machine Learning.
+Interpreta los resultados para apoyar decisiones.
+Ingeniero de Datos
+Data Engineer
+Responsabilidades principales
+Integra múltiples fuentes de datos.
+Diseña procesos ETL/ELT.
+Mantiene la infraestructura de datos.
+Garantiza la calidad y disponibilidad de la información.
+CONCEPTO CLAVE
+Los roles representan funciones y responsabilidades dentro de un proyecto, no necesariamente cargos distintos 
+dentro de una organización. En muchos proyectos, especialmente en pequeñas y medianas empresas, una misma 
+persona puede desempeñar dos o más de estos roles en distintas etapas del ciclo de vida del proyecto. A medida que 
+las organizaciones alcanzan una mayor madurez analítica, estas responsabilidades suelen distribuirse entre equipos 
+especializados. CAPÍTULO 10
+¿Cómo llevamos todo esto a un proyecto real?
+Durante este capítulo construiremos un proyecto completo de Machine Learning utilizando un conjunto de datos empresarial 
+real.
+Problema de negocio
+¿Qué queremos predecir?
+Comprensión de los datos
+Exploración inicial
+Preparación de datos
+Limpieza y transformación
+Análisis Exploratorio
+EDA
+Ingeniería de Variables
+Feature Engineering
+Entrenamiento del modelo
+Ajuste y optimización
+Evaluación
+Métricas de desempeño
+Predicción de demanda
+Resultado del proyecto
+CONCEPTO CLAVE
+En este capítulo integraremos los conocimientos adquiridos durante el diplomado para desarrollar un proyecto 
+completo de Machine Learning, siguiendo las mismas etapas utilizadas en proyectos profesionales de Ciencia de 
+Datos. MACHINE LEARNING
+El ciclo de vida de un proyecto de Machine Learning
+Problema de negocio
+¿Qué queremos predecir?
+Obtención de datos
+Fuentes internas y externas
+Preparación de datos
+ETL / ELT
+Análisis Exploratorio
+EDA
+Ingeniería de Variables
+Feature Engineering
+Entrenamiento del Modelo
+Ajuste y optimización
+Evaluación
+Métricas de desempeño
+Despliegue
+Modelo en producción
+Monitoreo
+Mejora continua
+CONCEPTO CLAVE
+Machine Learning corresponde solo a una etapa del proyecto. El mayor esfuerzo normalmente se concentra en 
+comprender el problema de negocio y preparar adecuadamente los datos. HOJA DE RUTA
+Nuestro proyecto durante este módulo
+Durante este módulo trabajaremos sobre un único caso de estudio empresarial, recorriendo paso a paso todas las etapas de 
+un proyecto real de Machine Learning.
+Problema de negocio
+Datos
+EDA
+Preparación
+Feature Engineering
+Machine Learning
+Evaluación
+Predicción Herramientas que utilizaremos durante el curso
+Preparación de datos
+Python · pandas
+Machine Learning
+scikit-learn
+Modelo de regresión
+Predicción de la demanda
+Apoyo a la toma de decisiones
+Del dato al valor de negocio
+Durante este curso utilizaremos Python, pandas (polars) y scikit-learn para construir nuestros modelos de Machine 
+Learning sobre datos reales. ¿Cómo evoluciona el flujo cuando los datos crecen?
+Escenario Procesamiento Machine Learning
+Datos pequeños y medianos Python + pandas scikit-learn
+Datos grandes (un computador) Polars scikit-learn
+Datos masivos (clúster distribuido) Apache Spark (PySpark) Spark ML
+El proceso de Machine Learning es el mismo. Lo que cambia son las herramientas utilizadas para procesar los datos según su 
+escala.
+En esta primera clase trabajaremos con Python, pandas (polars) y scikit-learn. Apache Spark y Spark ML son la 
+evolución natural cuando el volumen de datos supera la capacidad de un único computador. El Data Engineer: el habilitador 
+invisible
+Sin infraestructura de 
+datos
+→ No existe Analytics.
+Sin Analytics
+→ No existe Machine 
+Learning.
+Sin Machine Learning
+→ No existen decisiones inteligentes.
+El Data Engineer construye el sistema nervioso de la 
+organización.
+En esta clase: Python + pandas sobre el dataset de Corporación Favorita. En producción: 
+pipelines automatizados sobre Data Lakes a escala. CASO DE ESTUDIO
+Nuestro primer proyecto de Machine Learning
+Durante el resto del diplomado trabajaremos sobre un mismo caso de estudio basado en una cadena de supermercados.
+Un solo caso de estudio
+Cada laboratorio desarrolla una 
+nueva etapa del mismo proyecto.
+Dataset empresarial real
+No construiremos ejemplos 
+artificiales.
+Flujo profesional
+Aplicaremos exactamente el mismo 
+proceso utilizado en proyectos 
+reales.
+Dataset Favorita (Kaggle) · Más de 23 millones de registros semanales · Variables de negocio reales: ventas históricas, 
+promociones, tiendas, productos, precio del petróleo.
+A partir de este punto dejaremos la 
+teoría y comenzaremos a construir un 
+proyecto real de Machine Learning 
+paso a paso. CASO REAL
+Corporación Favorita
+La cadena de supermercados más grande de Ecuador. Un dataset real. 
+Una competencia global en Kaggle.
+El mismo problema que acabamos de describir — a escala real.
+La predicción precisa de demanda es uno de los temas más 
+críticos en supply chain para habilitar la ejecución de los 
+procesos downstream: planeación de inventario, distribución y 
+logística. La escala que cambia todo
+125M
+Registros de ventas
+Si cada registro fuera una hoja de papel, 
+la pila mediría 12 km de altura.
+54
+Tiendas
+En todo Ecuador
+33
+Familias de productos
+4 años de historia
+Esto no se analiza en Excel.
+Dataset original extraído de Kaggle · Competencia: Corporación Favorita Grocery Sales Forecasting · 
+kaggle.com/competitions/favorita-grocery-sales-forecasting DATASET
+Del problema al proyecto de Machine Learning
+Para concentrarnos en los conceptos de Machine Learning, el dataset original ha sido adaptado y enriquecido.
+Resumen Semanal
+El dataset original, que contenía millones de registros 
+diarios, ha sido agregado y resumido a nivel semanal. 
+Esto nos permite trabajar con una escala más manejable 
+sin perder la esencia de los patrones de venta.
+Datos del Petróleo
+Hemos incorporado datos históricos del precio del 
+petróleo. Esta es una variable exógena crucial que, 
+aunque no está directamente relacionada con las ventas 
+de un supermercado, puede influir indirectamente en el 
+consumo y la cadena de suministro en el país.
+Esta preparación nos proporciona un conjunto de datos robusto y relevante para nuestro proyecto de predicción de demanda, 
+reflejando un escenario más realista. PROYECTO INTEGRADOR
+Proyecto Integrador: 
+Corporación Favorita
+Aplicaremos todos los conceptos aprendidos durante el diplomado sobre 
+un caso empresarial real.
+Dataset
+Más de 23 millones de 
+registros semanales
+54 supermercados
+4.036 productos
+Cinco años de historia
+Variables externas 
+integradas
+Variables disponibles
+Ventas históricas
+Promociones
+Precio del petróleo
+Calendario
+Tiendas y productos
+Objetivo
+Construir un modelo de Machine Learning capaz de anticipar el 
+comportamiento futuro de las ventas utilizando datos históricos y 
+variables explicativas.
+CONCEPTO CLAVE
+Este laboratorio integra todos los conceptos estudiados durante 
+el diplomado: ingeniería de datos, preparación de variables, 
+análisis exploratorio, Machine Learning e interpretación de 
+resultados. DATASET
+Del dataset original al laboratorio
+Para concentrarnos en los conceptos de Machine Learning, el dataset original ha sido adaptado y preparado especialmente para este módulo.
+A partir del dataset original construimos un conjunto de datos optimizado para el laboratorio.
+Característica Dataset original (Kaggle) Dataset del laboratorio
+Volumen 125 millones de registros diarios 23,5 millones de registros semanales
+Estructura 7 archivos independientes 1 archivo integrado
+Tipo de datos Datos transaccionales Datos preparados para ML
+Complejidad Complejidad empresarial real Complejidad adecuada para el 
+laboratorio
+Dataset original: Corporación Favorita Grocery Sales Forecasting · kaggle.com/competitions/favorita-grocery-sales-
+forecasting PROYECTO INTEGRADOR
+¿Cómo construiremos nuestro modelo?
+Problema
+Leche que falta o sobra
+Datos
+Corporación Favorita
+Python + pandas
+Preparación
+scikit-learn
+Entrenamiento
+Modelo de ML
+Regresión
+Predicción
+Demanda futura
+Decisión
+Reposición correcta
+Durante el laboratorio seguiremos exactamente este flujo utilizando el conjunto de datos de Corporación Favorita. Primer contacto: 
+el dataset
+No vamos a programar todavía. Vamos a 
+hacer preguntas.
+¿Cuáles son los productos con mayor 
+variabilidad de demanda?
+¿Qué tiendas tienen patrones más 
+predecibles?
+¿Qué variables explican mejor los 
+picos de venta?
+Los datos tienen respuestas. Python, 
+pandas y scikit-learn son las 
+herramientas para encontrarlas. LABORATORIO
+¿Qué aprenderemos durante el laboratorio?
+Preparar datos
+Limpieza, transformación e 
+integración
+Ingeniería de variables
+Feature Engineering para Machine 
+Learning
+Entrenar modelos
+Regresión con scikit-learn
+Evaluar resultados
+Métricas de desempeño del modelo
+Interpretar métricas
+Del número a la decisión de negocio
+Cada etapa del laboratorio corresponde a una fase del ciclo de vida de un proyecto profesional de Machine Learning. ML no existe 
+para construir 
+modelos.
+Existe para ayudar a las organizaciones a tomar mejores decisiones.
+La leche en el estante correcto, en la tienda correcta, en el momento 
+correcto — eso es Machine Learning aplicado. Python, pandas y scikit-
+learn son el medio. La decisión de negocio es el fin. DESCARGA
+Dataset del laboratorio
+Descarga el conjunto de datos preparado especialmente para este módulo.
+Dataset Corporación Favorita
+Archivo integrado · 23,5 millones de registros · Listo para usar en Google Colab
+Descargar dataset →
+El archivo favorita_weekly_oil.parquet ya se encuentra integrado y preparado para Machine Learning. No requiere 
+transformaciones adicionales para comenzar el laboratorio. Reducción de Dimensionalidad con 
+PCA
+MÓDULO DE MACHINE LEARNING · DIPLOMADO DATA ENGINEER
+Eduardo Castillo Rodríguez
+Máster en Inteligencia Artificial
+Dataset de ventas retail — 23 millones de registros HILO CONDUCTOR DE LA PRESENTACIÓN
+Antes de entrenar un modelo... ¿Qué queremos describir?
+Pregunta de negocio Observación Características
+¿Cómo se comporta una tienda? Tienda + Semana Productos
+¿Cómo se comporta un producto? Producto + Semana Tiendas
+¿Cómo se comporta un cliente? Cliente Variables del cliente
+Toda matriz de características comienza definiendo qué queremos describir. El Dataset Original
+PUNTO DE PARTIDA
+Semana Tienda Producto Ventas Promoción
+1 1 1001 15 Sí
+1 1 1002 8 No
+1 1 1003 21 Sí
+1 2 1001 10 Sí
+1 2 1002 5 No
+23 millones de registros con esta estructura
+¿Qué representa una fila?
+Transacción de un producto en una tienda durante una 
+semana.
+¿Puede un modelo de Machine Learning 
+aprender el comportamiento de una tienda con 
+una sola fila?
+Una fila representa únicamente la venta de un producto 
+específico durante una semana en una tienda. Con esa 
+información no podemos describir el comportamiento 
+completo de la tienda. Para caracterizar una tienda 
+necesitamos observar simultáneamente las ventas de 
+todos sus productos.
+Una transacción no describe una tienda. ¿Puede un modelo de Machine Learning trabajar directamente 
+con 23 millones de registros?
+EL PROBLEMA DE REPRESENTACIÓN
+Los datos son transaccionales
+Cada fila registra un evento puntual de venta, no un 
+comportamiento.
+Una fila ≠ un comportamiento
+Una transacción no describe cómo se comporta una tienda a lo 
+largo del tiempo.
+Se necesita una representación adecuada
+Los datos deben transformarse antes de entrenar cualquier 
+modelo predictivo.
+VEREDICTO
+No.
+Los modelos de Machine Learning no aprenden directamente de los 
+datos transaccionales. Aprenden de la representación que 
+construimos para describir el problema. Ingeniería de Características: De Transacciones a 
+Observaciones
+El objetivo del Pivot no es simplemente reorganizar los datos. El objetivo es construir una nueva representación donde cada fila describa 
+completamente el comportamiento de una tienda durante una semana.
+1
+Dataset transaccional
+23M registros · Semana / Tienda / Producto / Ventas
+2
+Agrupación semanal
+Suma de ventas por Semana + Tienda + Producto
+3
+Pivot
+Cada producto se convierte en una columna
+4
+Matriz de características
+2,322 observaciones × 5,000 variables
+La unidad de análisis deja de ser una transacción y pasa a ser el comportamiento semanal de una tienda.
+23M
+Registros originales
+Filas en la tabla transaccional cruda
+2,322
+Observaciones estructuradas
+Combinaciones únicas Semana × Tienda La Matriz de Características: 2,322 × 5,000
+Ahora cada fila representa una tienda durante una semana.
+Los productos ya no representan registros. Ahora representan características utilizadas para describir el comportamiento de una tienda.
+Observació
+n
+Prod1 Prod2 Prod3 Prod4 ...
+Sem1-T1 120 0 0 15 ...
+Sem1-T2 0 85 0 0 ...
+Sem2-T1 40 0 18 0 ...
+Sem2-T2 0 0 0 62 ...
+... ... ... ... ... ...
+Matriz altamente dispersa (Sparse Matrix): la mayoría de los valores 
+son cero.
+2,322
+Observaciones (filas)
+Combinaciones únicas Semana + Tienda
+5,000
+Variables (columnas)
+Productos como características independientes
+5,000 variables
+Dimensión original de la matriz
+80 componentes
+Resultado de aplicar PCA
+95% de la información conservada
+Varianza explicada acumulada La Matriz de Características Depende de la Pregunta de 
+Negocio
+PRINCIPIO FUNDAMENTAL DE INGENIERÍA DE CARACTERÍSTICAS
+Pregunta de negocio Observación Características
+Describir el comportamiento de una tienda Tienda + Semana Productos
+Describir el comportamiento de un 
+producto
+Producto + Semana Tiendas
+Describir el comportamiento de un cliente Cliente Variables del cliente
+Describir el comportamiento de un 
+paciente
+Paciente Variables clínicas
+Un mismo dataset puede generar distintas matrices de características
+1
+Si la pregunta es...
+¿Cómo se comporta una tienda?
+Observación: Tienda + Semana
+Características: Productos
+2
+Si la pregunta cambia a...
+¿Cómo se comporta un producto?
+Observación: Producto + Semana
+Características: Tiendas
+La matriz de características no está determinada por el dataset. Está determinada por la pregunta de negocio que queremos responder.
+No existe una única matriz de características.
+La matriz depende completamente de la pregunta que queremos 
+responder.
+Nuestro caso de estudio:
+Pregunta → ¿Cómo se comporta cada tienda semana a semana?
+Observación → Tienda + Semana
+Características → 5,000 productos ¿Es buena idea entrenar un modelo con 5,000 variables?
+PREGUNTA DE NEGOCIO
+¿Necesitamos realmente las ventas de los 5,000 productos para describir el 
+comportamiento de una tienda?
+EL PROBLEMA DE DIMENSIONALIDAD
+Maldición de la dimensionalidad
+Con 5,000 variables, los datos se dispersan en el espacio de 
+características y los algoritmos pierden capacidad de 
+generalización.
+Ruido vs. señal
+Variables correlacionadas y redundantes hacen que el modelo 
+aprenda ruido en lugar de patrones reales.
+Costo computacional
+Miles de variables ralentizan el entrenamiento y amplifican el 
+sobreajuste.
+Interpretabilidad
+Imposible identificar qué 
+variables importan entre 
+5,000 candidatas 
+simultáneas.
+Sparsity
+La mayoría de valores son 
+cero — productos sin venta 
+en ciertas tiendas 
+amplifican el ruido.
+La respuesta es no. Necesitamos reducir la dimensionalidad 
+sin perder información relevante. ¿Qué hace realmente PCA?
+REDUCCIÓN DE DIMENSIONALIDAD — SIN MATEMÁTICAS
+PCA no reduce únicamente el número de variables. Construye una representación más compacta de las observaciones.
+En nuestro caso, cada observación corresponde al comportamiento semanal de una tienda.
+5,000 variables
+La matriz de características original
+Busca patrones
+Identifica las direcciones de mayor varianza en los datos
+Elimina redundancia
+Variables correlacionadas se fusionan en un único componente
+80 componentes principales
+Representación compacta que conserva el 95% de la información
+PCA no inventa información nueva. Reorganiza la existente de forma 
+más eficiente.
+PCA no es un truco matemático. Es una decisión de ingeniería 
+motivada por el problema de negocio. ¿Qué representa realmente una Componente Principal?
+CONCEPTO CLAVE
+Una componente principal NO representa un producto.
+Representa un patrón de comportamiento.
+PC1 = 0.18 × Producto A
+    + 0.07 × Producto B
+    − 0.11 × Producto C
+    + 0.04 × Producto D
+    + ... (5,000 productos)
+        
+No es un producto
+Ningún componente equivale a un SKU individual.
+Es una combinación
+Mezcla miles de productos con pesos positivos y negativos.
+Es un patrón
+PC1 podría representar 'tiendas que venden más en temporada 
+alta'.
+Una componente principal = un patrón de comportamiento, 
+no un producto. ¿Por qué debemos escalar los datos?
+EL PROBLEMA DEL ESCALAMIENTO
+Producto A
+Ventas: 0 – 10 unidades
+Producto B
+Ventas: 0 – 10,000 unidades
+Sin escalamiento → Producto B domina el análisis, ignorando el Producto A
+StandardScaler
+Transforma cada variable a media = 0 y desviación estándar = 
+1.
+Todas las variables tienen igual importancia antes de PCA.
+Sin escalamiento, PCA mide magnitud — no varianza.
+PASO OBLIGATORIO ANTES DE PCA PCA No Aparece por Casualidad — Aparece para Resolver un 
+Problema Real
+El Análisis de Componentes Principales (PCA) es la solución natural al problema de dimensionalidad — no un truco matemático, sino una 
+decisión de ingeniería motivada por el negocio.
+Compresión inteligente
+Comprime 5,000 variables en pocos componentes, preservando la 
+información crítica del dataset
+Máxima varianza
+Identifica las direcciones de mayor varianza y proyecta las 
+observaciones sobre ellas
+Elimina redundancia
+Variables correlacionadas se fusionan en un único componente, sin 
+pérdida crítica de información
+Prepara el terreno
+Los componentes resultantes son entrada ideal para cualquier 
+algoritmo de Machine Learning supervisado o no supervisado El Flujo Completo: De 23 Millones de Registros a un Modelo de 
+Machine Learning
+PCA 80EscalamientoMatriz pivotAgregación 
+semanal23M registros
+Escalamiento
+Paso obligatorio antes de PCA — ninguna 
+variable debe dominar artificialmente por 
+escala
+80 componentes
+Determinado por varianza explicada 
+acumulada, no por regla fija
+Factor 62.5×
+De 5,000 a 80 variables — compresión 
+masiva preservando el 95% de la 
+información Resultados de PCA: 5,000 Variables →  80 Componentes
+La reducción de dimensionalidad produce resultados concretos y medibles sobre el dataset de ventas retail.
+"Los datos determinan el número de componentes."
+No elegimos arbitrariamente 80 componentes — el número se obtiene analizando la curva de varianza explicada acumulada.
+⚠ GRÁFICO CONCEPTUAL — REFERENCIAL
+0
+2 0
+4 0
+6 0
+8 0
+1 0 0
+V a r i a n z a  E x p l i c a d a  A c u m u l a d a  ( % )
+0 2 0 4 0 6 0 8 0 1 0 0 1 2 0 1 4 0 1 6 0 1 8 0 2 0 0
+C o m p o n e n t e s
+U m b r a l  o b j e t i v o  ( 9 5 % ) :  9 5
+Curva de varianza explicada acumulada (conceptual)
+La curva real será obtenida durante la implementación en Google Colab.
+Componentes 1 y 2
+Solo para visualización 2D — no para entrenar el 
+modelo
+Componentes 3–80
+Alimentan el modelo predictivo con 
+representación compacta y densa
+Interpretación
+Cada componente es una combinación lineal de 
+los 5,000 productos y captura un patrón de 
+comportamiento de las observaciones.
+Beneficio práctico
+Entrenamiento más rápido y menor riesgo de 
+sobreajuste Visualización: Los Primeros 2 Componentes Revelan 
+Estructura Oculta
+P C 2  ( C o m p o n e n t e  P r i n c i p a l  2 )
+0
+2
+4
+P C 2  ( C o m p o n e n t e  P r i n c i p a l  2 )
+- 4 - 3 . 5 - 3 - 2 . 5 - 2 - 1 . 5 - 1 - 0 . 5 0 0 . 5 1 1 . 5 2 2 . 5 3 3 . 5 4 4 . 5 5
+P C 1  ( C o m p o n e n t e  P r i n c i p a l  1 )
+Gráfico conceptual — 2,322 observaciones proyectadas en 2D
+Patrones de comportamiento similares
+Tiendas con patrones de comportamiento similares 
+aparecen próximas en el espacio reducido.
+Detección de anomalías
+Observaciones atípicas se identifican antes del 
+modelado.
+Validación del pipeline
+Si hay estructura en los datos, PCA la hace visible. Si no, 
+el modelo predictivo tampoco la encontrará.
+Esta visualización es el primer entregable del 
+notebook en Google Colab. La Lección Central: El Trabajo Real de Machine Learning No Es 
+Entrenar Modelos
+El mito
+El valor está en elegir el algoritmo correcto — Random Forest 
+vs. XGBoost vs. redes neuronales
+La realidad
+El 80% del trabajo está en construir una representación 
+adecuada de los datos — antes del primer entrenamiento
+23M
+Registros de origen
+Dataset transaccional crudo de ventas retail
+80
+Componentes finales
+Listos para modelos predictivos, preservando el 95% de la información
+Lo que hicimos hoy
+1 Transformamos 23M de registros
+En 2,322 observaciones estructuradas mediante agregación y 
+pivoteo
+2 Redujimos 5,000 variables a 80
+Compresión 62.5× conservando el 95% de la información
+3 Patrones de comportamiento visibles
+Agrupamientos naturales de tiendas visibles en el espacio 
+reducido — validación visual del pipeline
+Próximo paso: en Google Colab implementaremos este flujo 
+completo — desde la carga del dataset hasta la aplicación de PCA. SESIÓN PRÁCTICA — FLUJO COMPLETO
+Lo que implementaremos en Google Colab
+Carga del dataset
+23M registros
+Polars
+Procesamiento eficiente
+Agrupación semanal
+Semana + Tienda + Producto
+Pivot
+Construcción de la matriz
+Matriz de características
+2,322 × 5,000
+StandardScaler
+Escalamiento de variables
+PCA
+Reducción dimensional
+Visualización
+PC1 vs PC2
+Modelo de Machine Learning
+Dataset reducido 2,322 × 80
+Al finalizar la sesión, cada estudiante tendrá un dataset de 2,322 × 80 listo para entrenar modelos predictivos. PRINCIPIO DE INGENIERÍA
+El Machine Learning comienza mucho antes del primer 
+algoritmo.
+Un modelo predictivo mediocre sobre datos bien representados 
+supera consistentemente a un modelo sofisticado sobre datos mal 
+estructurados.
+El valor real está en construir una representación adecuada. Los 
+algoritmos aprenden sobre representaciones, no sobre datos 
+transaccionales.
+Representación primero
+Antes de elegir un algoritmo, verifica que tus datos tengan la forma 
+correcta para que el modelo aprenda algo útil.
+PCA como diagnóstico
+La visualización en 2D valida que la ingeniería de características 
+produjo estructura real, no solo estética.
+Compresión sin pérdida crítica
+62.5× de reducción manteniendo el 95% de varianza — el balance que 
+define proyectos reales.
+1
+Definir
+Primero definimos qué queremos describir.
+2
+Representar
+Luego construimos una representación 
+adecuada.
+3
+Modelar
+Solo después entrenamos un modelo de 
+Machine Learning.
+1
+Pregunta de negocio
+¿Qué queremos describir?
+2
+Unidad de análisis
+La observación que define la matriz
+3
+Matriz de características
+Representación adecuada de los datos
+4
+Machine Learning
+Los algoritmos aprenden sobre representaciones
+Todo proyecto de Machine Learning comienza respondiendo una pregunta muy simple: ¿Qué queremos describir?
+Cuando definimos correctamente la observación y construimos una buena representación de los datos, los algoritmos pueden 
+aprender.
+DIPLOMADO DE BIG DATA · MÓDULO DE MACHINE LEARNING · GOOGLE COLAB: SIGUIENTE SESIÓN ¿Cómo se implementa este pipeline en Python?
+ENTRENAMIENTO
+from sklearn.preprocessing import StandardScaler
+from sklearn.decomposition import PCA
+from sklearn.ensemble import RandomForestClassifier
+import joblib
+# 1. Escalar los datos
+scaler = StandardScaler()
+X_train_scaled = scaler.fit_transform(X_train)
+# 2. Aplicar PCA
+pca = PCA(n_components=50)
+X_train_pca = pca.fit_transform(X_train_scaled)
+# 3. Entrenar el modelo
+model = RandomForestClassifier()
+model.fit(X_train_pca, y_train)
+# 4. Guardar los 3 objetos
+joblib.dump(scaler, 'scaler.pkl')
+joblib.dump(pca,    'pca.pkl')
+joblib.dump(model,  'model.pkl')
+        
+PREDICCIÓN EN PRODUCCIÓN
+import joblib
+# 1. Cargar los 3 objetos guardados
+scaler = joblib.load('scaler.pkl')
+pca    = joblib.load('pca.pkl')
+model  = joblib.load('model.pkl')
+# 2. Nuevo registro con 5,000 variables
+X_nuevo = obtener_nuevo_registro()
+# 3. Aplicar el MISMO scaler del entrenamiento
+X_scaled = scaler.transform(X_nuevo)
+# 4. Aplicar el MISMO PCA del entrenamiento
+X_pca = pca.transform(X_scaled)
+# 5. Predecir
+prediccion = model.predict(X_pca)
+        
+⚠ Nunca uses fit_transform() en producción. Usa siempre transform() — el scaler y el PCA ya fueron ajustados durante el entrenamiento. 
+Aplicar fit_transform() sobre datos nuevos recalcularía los parámetros y corrompería la predicción.
+Regla de oro
+fit_transform() → solo en entrenamiento · transform() → siempre en producción PCA en un Pipeline de Machine Learning
+MÓDULO DE MACHINE LEARNING · DIPLOMADO DE BIG DATA
+FLUJO DE ENTRENAMIENTO
+Datos originales
+5,000 variables
+StandardScaler
+Normalización de escala
+PCA
+Reducción a 50 componentes
+Entrenamiento del modelo
+Random Forest, XGBoost, etc.
+FLUJO DE PREDICCIÓN
+Nuevo registro
+5,000 variables
+StandardScaler ⚠
+el mismo del entrenamiento
+PCA ⚠
+el mismo del entrenamiento
+50 Componentes principales
+Modelo entrenado
+Predicción ✓
+El modelo nunca recibe las variables originales directamente. Antes de realizar una predicción, los nuevos datos deben pasar por el mismo 
+StandardScaler y el mismo PCA utilizados durante el entrenamiento.
+Objetos que se almacenan en producción StandardScaler
+Modelo PCA Modelo de Machine Learning Visualización de Datos de Alta 
+Dimensionalidad con t-SNE
+MÓDULO DE MACHINE LEARNING · DIPLOMADO DATA ENGINEER
+Eduardo Castillo Rodríguez
+Máster en Inteligencia Artificial
+Dataset de ventas retail — 23 millones de registros PUNTO DE PARTIDA — MÓDULO ANTERIOR
+¿Dónde terminamos la clase de PCA?
+Elemento Resultado obtenido
+Dataset Favorita Grocery Sales — 23 millones de transacciones
+Unidad de análisis Tienda + Semana
+Matriz de características 2.322 observaciones × 5.000 variables
+Normalización Datos escalados mediante StandardScaler
+Reducción PCA aplicado — componentes principales obtenidos
+Ahora debemos responder una nueva pregunta: ¿Cómo visualizar una matriz de 5.000 dimensiones? El Problema de la Visualización
+POR QUÉ LA REPRESENTACIÓN NO ES SUFICIENTE
+Tenemos una excelente representación para Machine Learning. Pero todavía no podemos comprender visualmente cómo se organizan las 
+observaciones.
+LO QUE TENEMOS
+Matriz 2,322 × 5,000
+Cada tienda-semana está perfectamente representada por las 
+ventas de 5,000 productos.
+Representación completa
+Captura el comportamiento real de cada tienda. Ideal para 
+entrenar modelos.
+Pero...
+5,000 dimensiones son imposibles de visualizar directamente.
+LO QUE NECESITAMOS
+Una proyección
+Reducir 5,000 dimensiones a 2, conservando la estructura de los 
+datos.
+Que preserve vecindades
+Las tiendas similares deben aparecer cerca en el mapa. Las 
+tiendas distintas deben aparecer lejos.
+Que sea interpretable
+El resultado debe poder leerse visualmente sin conocer las 5,000 
+variables originales. ¿Qué hace realmente t-SNE?
+REDUCCIÓN DE DIMENSIONALIDAD — SIN MATEMÁTICAS
+t-SNE construye una representación bidimensional que intenta conservar las relaciones de vecindad entre observaciones similares.
+En nuestro caso, t-SNE toma la matriz de 2,322 tiendas-semanas × 5,000 productos y produce un mapa en 2 dimensiones donde:
+Tiendas similares aparecen cerca
+Si dos tiendas tienen patrones de venta parecidos en los 5,000 productos, t-SNE las coloca próximas en el mapa.
+Tiendas distintas aparecen lejos
+Si dos tiendas tienen comportamientos muy diferentes, t-SNE las separa en el espacio bidimensional.
+La similitud se mide en 5,000 dimensiones
+t-SNE calcula las distancias en el espacio original de alta dimensionalidad, no en el mapa final.
+t-SNE no explica las variables. Revela la estructura. Visualización t-SNE del Caso 
+Favorita
+VISUALIZACIÓN GENERADA EN GOOGLE COLAB
+Eje X
+Primera dimensión t-SNE. Sin interpretación física directa.
+Eje Y
+Segunda dimensión t-SNE. Sin interpretación física directa.
+Cada punto
+Representa una observación tienda–semana. Total: 12.060 
+observaciones.
+Color
+Puede utilizarse para representar variables del negocio, como 
+tienda, año, mes o cualquier otra característica de interés.
+t-SNE organiza automáticamente las observaciones según la 
+similitud de sus patrones de venta. Las agrupaciones representan 
+vecindades locales de comportamiento, facilitando la exploración 
+visual de datos de alta dimensionalidad.
+ Cómo leer el mapa t-SNE
+INTERPRETACIÓN DE LAS LLAMADAS VISUALES
+①  Cercanía
+Los puntos cercanos representan observaciones con patrones 
+de venta similares.
+②  Agrupaciones
+Los clusters indican grupos de observaciones con características 
+semejantes.
+③  Separación
+Las regiones separadas reflejan distintos comportamientos 
+presentes en los datos.
+④  Exploración
+t-SNE facilita descubrir patrones sin conocer previamente las 
+categorías existentes.
+t-SNE no clasifica automáticamente los datos; proporciona una 
+representación visual que facilita descubrir estructuras, grupos y 
+posibles comportamientos atípicos.
+ Qué NO interpretar en un 
+mapa t-SNE
+ERRORES FRECUENTES AL INTERPRETAR UN MAPA T-SNE
+❌ Los ejes no tienen significado físico
+Las dimensiones t-SNE no representan variables del negocio, 
+productos ni componentes principales. Son únicamente 
+coordenadas utilizadas para construir la visualización.
+❌ No interpretar las distancias globales
+La separación entre regiones lejanas no representa una medida 
+cuantitativa exacta de diferencia. t-SNE preserva principalmente 
+las relaciones locales entre observaciones.
+✅ Lo realmente importante
+Interpreta únicamente las vecindades locales: los puntos 
+cercanos suelen representar observaciones con patrones de 
+venta similares.
+t-SNE es una herramienta de exploración visual. Su objetivo es 
+facilitar el descubrimiento de estructuras y patrones en datos de 
+alta dimensionalidad, no proporcionar una representación 
+geométrica exacta del espacio original de los datos.
+ Lo que NO debemos interpretar
+LIMITACIONES DEL MAPA T-SNE
+t-SNE es una herramienta poderosa, pero sus resultados pueden inducir a error si no se conocen sus limitaciones.
+INTERPRETACIONES INCORRECTAS
+Los ejes no tienen significado físico
+El eje X y el eje Y no representan variables del negocio. No tienen 
+unidades ni interpretación directa.
+Las distancias globales pueden ser engañosas
+Dos grupos que parecen cercanos en el mapa pueden estar muy 
+lejos en el espacio original de 5,000 dimensiones.
+El tamaño de un grupo no implica importancia
+Un grupo grande no necesariamente representa más tiendas o 
+más ventas. Depende de los parámetros del algoritmo.
+REGLA DE ORO
+t-SNE es una herramienta de exploración, no de 
+confirmación.
+Úsalo para generar hipótesis
+El mapa sugiere estructura. La estructura debe validarse con 
+análisis adicionales.
+No uses t-SNE para medir distancias
+Las distancias en el mapa 2D no son métricas confiables del 
+espacio original.
+Los resultados dependen de los parámetros
+Cambiar la perplejidad (perplexity) puede producir mapas 
+visualmente muy diferentes. PCA y t-SNE
+DOS HERRAMIENTAS, DOS OBJETIVOS DISTINTOS
+PCA y t-SNE no son algoritmos rivales. Resuelven problemas distintos dentro del mismo pipeline de análisis.
+Dimensión PCA t-SNE
+Objetivo Reducir dimensionalidad preservando varianza Visualizar estructura preservando vecindades
+Salida k componentes principales 2 o 3 dimensiones
+Uso principal Preprocesamiento para modelos Exploración visual
+Interpretabilidad Componentes explicables (% varianza) Ejes sin significado físico
+Entrada para modelos Sí — directamente No recomendado
+Visualización Limitada (primeros 2 componentes) Diseñado para visualizar Dos Herramientas dentro del Mismo Pipeline
+PCA puede utilizarse antes de t-SNE para acelerar el procesamiento en datasets grandes, pero ambas técnicas pueden utilizarse de manera 
+independiente dependiendo del objetivo del análisis.
+EL PIPELINE COMPLETO
+Dataset
+23M registros transaccionales
+Ingeniería de características
+Pivot → Matriz 2,322 × 5,000
+StandardScaler
+Normalización de variables
+PCA (opcional)
+Reducción a 80 componentes para acelerar 
+t-SNE
+t-SNE (opcional)
+Proyección a 2 dimensiones para visualización
+Visualización
+Mapa de tiendas-semanas en 2D
+¿CUÁNDO USAR CADA UNO?
+Solo PCA
+Cuando el objetivo es reducir dimensionalidad para entrenar un 
+modelo predictivo.
+Solo t-SNE
+Cuando el objetivo es explorar visualmente la estructura del dataset sin 
+entrenar un modelo.
+PCA + t-SNE
+Cuando el dataset es muy grande. PCA reduce primero a ~50-100 
+dimensiones, luego t-SNE proyecta a 2D de forma más eficiente. Lo que implementaremos en Google Colab
+SESIÓN PRÁCTICA — FLUJO COMPLETO
+Carga del dataset
+23M registros
+Agrupación y Pivot
+Construcción de la matriz 2,322 × 5,000
+StandardScaler
+Normalización de las 5,000 variables
+PCA (opcional)
+Reducción a 80 componentes para 
+acelerar t-SNE
+t-SNE
+Proyección a 2 dimensiones
+Visualización
+Scatter plot coloreado por ciudad o tipo de 
+tienda
+El resultado será un mapa visual de 2,322 puntos donde cada punto representa una tienda durante una semana. Podremos colorear los 
+puntos por variables externas para interpretar la estructura. PRINCIPIO DE INGENIERÍA
+"El Machine Learning comienza mucho antes del primer 
+algoritmo."
+El mito
+El valor está en elegir el algoritmo correcto — PCA, t-SNE, 
+clustering, redes neuronales.
+La realidad
+El valor está en construir la representación correcta — definir la 
+observación, construir la matriz, escalar los datos.
+Lo que aprendimos
+Partimos de 23 millones de transacciones y construimos una 
+representación que permite visualizar el comportamiento de 
+2,322 tiendas-semanas en 2 dimensiones.
+La lección central
+El objetivo no era aprender un algoritmo. Era comprender cómo 
+explorar y visualizar datos de muy alta dimensionalidad usando el 
+mismo caso de estudio trabajado durante todo el módulo. Reducción de Dimensionalidad con 
+UMAP
+MÓDULO DE MACHINE LEARNING · DIPLOMADO DATA ENGINEER
+Eduardo Castillo Rodríguez
+Máster en Inteligencia Artificial
+Dataset de ventas retail — 23 millones de registros PUNTO DE PARTIDA — MÓDULO ANTERIOR
+¿Dónde terminamos la clase de PCA?
+Elemento Resultado obtenido
+Dataset Favorita Grocery Sales — 23 millones de transacciones
+Unidad de análisis Tienda + Semana
+Matriz de características 2.322 observaciones × 5.000 variables
+Normalización Datos escalados mediante StandardScaler
+Reducción PCA aplicado — componentes principales obtenidos
+Ahora debemos responder una nueva pregunta: ¿Existe una alternativa más rápida y moderna para visualizar datos de alta 
+dimensionalidad?
+ El Problema de la Visualización
+POR QUÉ LA REPRESENTACIÓN NO ES SUFICIENTE
+Tenemos una excelente representación para Machine Learning. Pero todavía no podemos comprender visualmente cómo se organizan las 
+observaciones.
+LO QUE TENEMOS
+Matriz 2,322 × 5,000
+Cada tienda-semana está perfectamente representada por las 
+ventas de 5,000 productos.
+Representación completa
+Captura el comportamiento real de cada tienda. Ideal para 
+entrenar modelos.
+Pero...
+5,000 dimensiones son imposibles de visualizar directamente.
+LO QUE NECESITAMOS
+Una proyección
+Reducir 5,000 dimensiones a 2, conservando la estructura de los 
+datos.
+Que preserve vecindades
+Las tiendas similares deben aparecer cerca en el mapa. Las 
+tiendas distintas deben aparecer lejos.
+Que sea interpretable
+El resultado debe poder leerse visualmente sin conocer las 5,000 
+variables originales. ¿Qué es UMAP?
+REDUCCIÓN DE DIMENSIONALIDAD — INTUICIÓN PRÁCTICA
+UMAP (Uniform Manifold Approximation and Projection) es una técnica moderna de reducción de dimensionalidad no lineal que transforma 
+datos con miles de variables en una representación de pocas dimensiones, preservando la estructura de los datos tanto a nivel local como, en 
+gran medida, a nivel global.
+Fue desarrollada para ofrecer una alternativa más rápida y escalable que t-SNE, manteniendo una excelente capacidad para visualizar patrones 
+complejos en grandes volúmenes de datos.
+EL FLUJO DE UMAP
+Datos originales
+El punto de partida: la matriz de alta dimensionalidad.
+Grafo de vecinos
+UMAP construye un grafo conectando cada observación 
+con sus vecinos más cercanos.
+Optimización
+El algoritmo ajusta una representación de baja 
+dimensión que respeta ese grafo.
+Representación en 2D
+El resultado: un mapa donde la estructura del 
+espacio original se conserva.
+¿POR QUÉ UMAP?
+✓  Reducción no lineal
+Captura estructuras complejas que métodos lineales como PCA 
+no pueden representar.
+✓  Preserva estructura local y global
+Mantiene vecindades locales y, en mayor medida que t-SNE, la 
+estructura global.
+✓  Velocidad superior
+Considerablemente más rápido que t-SNE en datasets grandes.
+✓  Escalable
+Diseñado para funcionar bien con millones de observaciones.
+✓  Versátil
+Puede usarse para visualización y como preprocesamiento para 
+modelos.
+UMAP busca representar los datos en dos dimensiones manteniendo, en la medida de lo posible, la forma y organización del espacio 
+original.
+ Visualización UMAP del Caso 
+Favorita
+VISUALIZACIÓN GENERADA EN GOOGLE COLAB
+Eje UMAP 1
+Primera dimensión latente generada por UMAP. No posee una 
+interpretación física directa.
+Eje UMAP 2
+Segunda dimensión generada por UMAP para preservar la 
+estructura de similitud entre las observaciones.
+Cada punto
+Corresponde a una observación del conjunto de datos. Cada 
+punto representa una combinación tienda–semana.
+Color
+Puede utilizarse para representar variables del negocio, como 
+tienda, año, mes o cualquier otra característica de interés.
+UMAP permite identificar rápidamente grupos de observaciones 
+con comportamientos similares, facilitando el análisis exploratorio 
+de grandes volúmenes de datos.
+ Cómo leer un mapa UMAP
+INTERPRETACIÓN DE LAS CLAVES VISUALES
+①  Cercanía
+Observaciones cercanas en el mapa suelen presentar 
+características similares en el espacio original de alta 
+dimensionalidad.
+②  Agrupaciones
+Los grupos representan observaciones con comportamientos 
+parecidos, facilitando la identificación de segmentos o patrones 
+en los datos.
+③  Separación
+Las regiones alejadas corresponden a grupos con características 
+diferentes, permitiendo distinguir distintos perfiles presentes en 
+el conjunto de datos.
+④  Posible Anomalia
+UMAP facilita descubrir relaciones, tendencias y posibles 
+anomalías antes de construir modelos de Machine Learning.
+UMAP transforma miles de variables en una representación visual 
+intuitiva, facilitando el análisis exploratorio de datos complejos.
+ Qué NO interpretar en un 
+mapa UMAP
+ERRORES FRECUENTES AL INTERPRETAR UN MAPA UMAP
+❌ Los ejes no tienen significado físico
+Los ejes UMAP 1 y UMAP 2 son dimensiones construidas por el 
+algoritmo. No representan variables originales del conjunto de 
+datos ni tienen una interpretación de negocio directa.
+❌ No interpretar las distancias globales como 
+medidas exactas
+Aunque UMAP preserva mejor la estructura global que t-SNE, 
+las distancias entre grupos alejados no representan una medida 
+exacta de similitud. El análisis debe centrarse en la organización 
+general y en las relaciones entre observaciones cercanas.
+✅ Lo realmente importante
+Utilice UMAP para descubrir patrones, identificar agrupaciones, 
+detectar anomalías y comprender mejor la organización general 
+de los datos antes de construir modelos predictivos.
+UMAP es una herramienta de exploración visual. Su principal 
+objetivo es facilitar la comprensión de la estructura de datos de 
+alta dimensionalidad, no medir distancias exactas.
+ ¿Cuál técnica utilizar?
+COMPARATIVA — PCA · T-SNE · UMAP
+No existe una técnica mejor en todos los casos. La elección depende del objetivo del análisis y del tamaño del conjunto de datos.
+Característica PCA t-SNE UMAP
+Tipo Lineal No lineal No lineal
+Objetivo principal Reducir dimensionalidad Visualización Visualización
+Estructura local ⭐⭐ ⭐⭐⭐⭐⭐ ⭐⭐⭐⭐⭐
+Estructura global ⭐⭐⭐⭐ ⭐⭐ ⭐⭐⭐⭐
+Velocidad ⭐⭐⭐⭐⭐ ⭐⭐ ⭐⭐⭐⭐
+Escalabilidad Excelente Limitada Excelente
+Interpretabilidad Alta Baja Baja
+Uso típico Preprocesamiento y 
+modelado
+Exploración visual en datasets 
+medianos
+Exploración visual en grandes 
+volúmenes
+Utilice PCA cuando...
+Quiera reducir variables antes de 
+entrenar modelos. Necesite conservar la 
+mayor parte de la información. La 
+interpretabilidad de los componentes 
+sea importante.
+Utilice t-SNE cuando...
+Necesite una visualización de alta 
+calidad. Trabaje con conjuntos de datos 
+medianos. Quiera descubrir 
+agrupaciones locales con precisión.
+Utilice UMAP cuando...
+Trabaje con grandes volúmenes de datos. 
+Requiera mayor velocidad de 
+procesamiento. Desee preservar tanto 
+relaciones locales como buena parte de 
+la estructura global. Pipeline de análisis con reducción de dimensionalidad
+DEL DATO ORIGINAL AL ANÁLISIS EXPLORATORIO
+La reducción de dimensionalidad constituye una etapa de apoyo para comprender la estructura de los datos antes de aplicar modelos de 
+Machine Learning.
+EL PIPELINE COMPLETO
+Datos originales
+23M registros transaccionales
+Limpieza y preparación
+Filtrado, agrupación y construcción de la matriz
+Matriz de características
+Pivot → Matriz 2,322 × 5,000
+StandardScaler
+Estandarización de las 5,000 variables
+PCA / t-SNE / UMAP
+Reducción de dimensionalidad según el 
+objetivo
+Visualización y análisis
+Exploración, segmentación y descubrimiento de 
+patrones
+¿CUÁNDO APLICAR CADA TÉCNICA?
+PCA
+Cuando el objetivo es reducir variables para entrenar modelos 
+predictivos. Rápido, lineal e interpretable.
+t-SNE
+Cuando se necesita una visualización de alta calidad en datasets 
+medianos. Excelente para descubrir agrupaciones locales.
+UMAP
+Cuando se trabaja con grandes volúmenes de datos. Más rápido que t-
+SNE y preserva mejor la estructura global. CONCLUSIONES
+Conclusiones
+✓  La reducción de dimensionalidad facilita el análisis
+Permite explorar y comprender datos con miles de variables que no 
+pueden visualizarse directamente.
+✓  PCA, t-SNE y UMAP son técnicas complementarias
+Cada una resuelve un problema distinto dentro del mismo pipeline 
+de análisis.
+✓  UMAP destaca por velocidad y escalabilidad
+Combina rapidez, escalabilidad y una excelente capacidad de 
+visualización para grandes volúmenes de datos.
+✓  La técnica adecuada depende del problema
+La elección depende del objetivo del análisis, el tamaño del dataset 
+y si se requiere interpretabilidad.
+✓  La interpretación requiere conocimiento del negocio
+Los resultados visuales siempre deben complementarse con el contexto y el conocimiento del dominio.
+Visualizar correctamente los datos es el primer paso para descubrir patrones, generar conocimiento y construir mejores modelos de 
+Machine Learning.
+ Aprendizaje Supervisado: 
+Predicción de Demanda
+MÓDULO DE MACHINE LEARNING · DIPLOMADO DATA ENGINEER
+Eduardo Castillo Rodríguez
+Máster en Inteligencia Artificial CONTEXTO DEL MÓDULO
+¿Qué es la Inteligencia Artificial?
+Disciplina de la informática cuyo objetivo es desarrollar sistemas capaces de realizar tareas que normalmente 
+requieren inteligencia humana.
+Visión artificial
+Reconocimiento de imágenes
+Traducción automática
+Idiomas en tiempo real
+Asistentes virtuales
+ChatGPT, Alexa, Siri
+Recomendación
+Amazon, Netflix, Spotify
+Vehículos autónomos
+Tesla, Waymo
+Predicción de demanda
+Retail, logística, manufactura
+Machine Learning es una de las principales técnicas utilizadas actualmente para construir sistemas de Inteligencia Artificial. CONTEXTO HISTÓRICO
+Evolución de la Inteligencia Artificial
+11950
+IA Simbólica
+Reglas y lógica formal
+2 1990
+Machine Learning
+Aprender de datos
+32012
+Deep Learning
+Redes neuronales profundas
+4 2022
+LLMs
+ChatGPT, Claude, Gemini52025
+Agentes de IA
+Sistemas autónomos con herramientas
+Cada etapa no reemplaza a la anterior — la amplía. Random Forest y XGBoost siguen siendo el estado del arte para datos tabulares.
+ TIPOS DE APRENDIZAJE
+Los Tres Grandes Tipos de Machine Learning
+Tipo Aprende con Objetivo Ejemplos
+Aprendizaje Supervisado Datos etiquetados Predicción y clasificación Predicción de demanda, fraude, 
+diagnóstico
+Aprendizaje No 
+Supervisado
+Datos sin etiquetas Descubrir patrones Clustering, segmentación, PCA
+Aprendizaje por Refuerzo Recompensas y 
+penalizaciones
+Aprender estrategias Robots, videojuegos, logística
+Este módulo trabaja con Aprendizaje Supervisado FAMILIAS DE ALGORITMOS
+Familias de Modelos de Machine Learning
+MODELOS CLÁSICOS
+Regresión Lineal
+Relaciones lineales
+Árboles de Decisión
+Reglas si/entonces
+Random Forest
+Ensamble de árboles
+XGBoost
+Boosting secuencial
+REDES NEURONALES
+MLP
+Red densa multicapa
+CNN
+Imágenes y visión
+RNN / LSTM
+Secuencias y series temporales
+Transformers
+Texto, audio, imagen
+Ambas familias aprenden a partir de datos. La diferencia está en cómo representan el conocimiento internamente.
+ GUÍA DE SELECCIÓN
+¿Qué Tecnología Usar Según el Problema?
+Problema Modelo recomendado Familia
+Predicción de demanda (datos tabulares) Random Forest · XGBoost ML Clásico ← Este módulo
+Clasificación (datos tabulares) Árboles · Random Forest ML Clásico
+Segmentación de clientes K-Means · DBSCAN No Supervisado
+Reducción de dimensionalidad PCA · UMAP No Supervisado
+Texto y lenguaje natural LLMs (GPT, Claude, Gemini) LLMs / Modelos Generativos
+No existe un único modelo para todos los problemas. El Data Engineer debe conocer el mapa completo para elegir la herramienta correcta.
+Otros algoritmos ampliamente utilizados para datos tabulares son LightGBM y CatBoost. En este módulo trabajaremos con Random Forest y XGBoost por su amplia utilización 
+industrial y su excelente valor didáctico. PRINCIPIO DE SELECCIÓN
+¿Por Qué Existen Tantos Algoritmos de Machine Learning?
+Cantidad de datos
+Pocos datos vs millones de registros
+Tipo de relaciones
+Lineales o altamente no lineales
+Presencia de ruido
+Datos limpios o con errores
+Interpretabilidad
+¿Explicar el modelo o maximizar precisión?
+Tiempo disponible
+Entrenamiento rápido o máxima precisión
+Objetivo del negocio
+Predicción de demanda, clasificación, segmentación o recomendación
+No existe un algoritmo perfecto. La elección depende del problema que queremos resolver. MÉTRICAS DE EVALUACIÓN
+¿Cómo Compararemos los Modelos?
+MAE
+Error Absoluto Medio
+Promedio del error cometido. Mientras menor, 
+mejor.
+RMSE
+Raíz del Error Cuadrático Medio
+Penaliza más los errores grandes. Mientras 
+menor, mejor.
+R²
+Coeficiente de Determinación
+% de variabilidad explicada por el modelo. 
+Mientras mayor, mejor.
+Modelos
+Baseline · Reg. Lineal · RF · XGBoost
+Predicciones
+Estimaciones de demanda sobre datos de prueba
+MAE · RMSE · R²
+Comparación objetiva
+Mejor modelo
+El que minimiza el error
+En el laboratorio, todos los modelos serán evaluados con estas tres métricas. DEL DATO CRUDO A LA VARIABLE ÚTIL
+¿Qué es una Característica (Feature)?
+Una característica es una variable que el modelo utiliza para aprender patrones. Las características no siempre existen en el dataset original — 
+muchas deben construirse.
+DATOS ORIGINALES
+Semana Producto Ventas
+1 A 120
+2 A 135
+3 A 140
+Solo registra lo que ocurrió — sin contexto histórico
+DESPUÉS DEL FEATURE ENGINEERING
+lag_1
+Ventas históricas semana anterior
+lag_2
+Ventas históricas hace 2 semanas
+lag_3
+Ventas históricas hace 3 semanas
+prom_4s
+Promedio de ventas últimas 4 semanas
+días_promoción
+Días con promoción activa
+Estas variables no existen en el dataset original. Son construidas por el Data Engineer para aportar contexto histórico al modelo y 
+mejorar la predicción de demanda. VARIABLES DEL LABORATORIO
+Feature Engineering en Este Laboratorio
+Variable Descripción
+lag_1 Ventas históricas de la semana anterior — el predictor más importante
+lag_2 Ventas históricas de dos semanas atrás — captura tendencia reciente
+lag_3 Ventas históricas de tres semanas atrás — contexto de corto plazo
+prom_4s Promedio de ventas históricas de las últimas cuatro semanas — suaviza la volatilidad
+días_promoción Número de días con promociones activas en la semana
+días_con_venta Número de días con al menos una venta registrada
+semana_id Identificador temporal para preservar el orden cronológico
+Estas variables aportan contexto histórico al modelo, mejorando su capacidad para predecir la demanda futura.
+ DECISIÓN PEDAGÓGICA
+¿Por Qué No Entrenamos con Todo el Dataset?
+DATASET FAVORITA COMPLETO
+23M
+Registros originales
+Semana × Tienda × Producto
+RAM
+Requiere decenas de GB de memoria para procesar el conjunto 
+completo
+CPU / GPU
+Entrenamientos de horas o días según el algoritmo
+Infraestructura
+Servidores especializados o plataformas distribuidas (Spark, 
+Databricks, Kubernetes)
+DATASET PREPARADO PARA EL LABORATORIO
+≈1,6M
+Dataset preparado para el laboratorio
+Agregado semanalmente y optimizado para fines docentes, 
+conservando la estructura y los patrones del conjunto original
+Google Colab
+Ejecutable en cualquier computador con acceso a Internet
+Tiempo de ejecución
+Entrenamiento completo dentro de una sesión de clases
+Misma metodología
+Preparación, entrenamiento, evaluación y comparación de 
+modelos idénticos a proyectos empresariales
+Dataset original
+≈23 millones de registros de ventas 
+históricas
+Agregación semanal
+Consolidación de transacciones
+Top 250 productos
+Con mayor volumen de ventas
+Feature Engineering
+Lags, promedio móvil, promociones y 
+variables temporales
+Dataset preparado
+≈1,6 millones de registros
+Entrenamiento
+Google Colab
+¿Por qué reducimos el tamaño del dataset?
+El dataset original contiene aproximadamente 23 millones de registros de ventas históricas. Para facilitar el aprendizaje, se agregan las 
+transacciones a nivel semanal, se seleccionan los 250 productos con mayor volumen de ventas y se construyen nuevas variables mediante 
+Feature Engineering. El resultado es un dataset de ≈1,6 millones de registros: suficientemente representativo para modelar la demanda y 
+eficiente para entrenar modelos en una sesión de clases en Google Colab.
+Idea clave
+No estamos simplificando el problema de Machine Learning. Estamos adaptando el tamaño del dataset para que todo el flujo de 
+preparación, entrenamiento y evaluación de la predicción de demanda pueda ejecutarse en una sesión de laboratorio sin perder 
+representatividad. EL ROL CENTRAL DEL DATA ENGINEER
+¿Dónde Participa el Data Engineer en un Proyecto de Machine 
+Learning?
+Fuentes de datos
+APIs, bases de datos, archivos, sistemas 
+transaccionales
+Preparación del dataset
+Limpieza, transformación, agregación y 
+Feature Engineering
+Modelo de Machine Learning
+El modelo aprende a partir del dataset 
+preparado
+Predicción
+Estimaciones sobre nuevos datos
+Apoyo a la toma de decisiones
+Las predicciones generan valor para el negocio
+El Data Engineer diseña y mantiene los procesos necesarios para transformar datos provenientes de múltiples fuentes en un dataset limpio, 
+consistente y preparado para entrenar modelos de Machine Learning. Su principal responsabilidad es garantizar la disponibilidad y calidad 
+de los datos. LOS MODELOS DE ESTE MÓDULO
+Un Mismo Problema, Cuatro Modelos Diferentes
+Problema de negocio
+¿Cuántas unidades de demanda tendrá 
+este producto?
+Dataset preparado
+Favorita_weekly.parquet · ≈1,6M registros
+Entrenar cuatro modelos
+Baseline · Reg. Lineal · Random Forest · 
+XGBoost
+Comparar resultados
+MAE · RMSE · R²
+Seleccionar el mejor
+El modelo con menor error
+Dataset preparado mediante agregación semanal, selección de los 250 productos con mayor volumen y construcción de variables mediante Feature Engineering.
+En este módulo entrenaremos cuatro modelos usando el mismo conjunto de datos para comparar su desempeño en la predicción de 
+demanda. MODELO 0 DE 4
+Modelo Base (Baseline)
+El Baseline es el modelo de referencia. No utiliza aprendizaje automático — 
+aplica una regla sencilla para generar una predicción.
+Nuestra regla
+La demanda de la próxima semana será igual a las ventas observadas en 
+la semana anterior.
+Semana actual
+150 unidades vendidas
+Regla simple
+Sin entrenamiento
+Predicción
+150 unidades
+Próxima semana
+Demanda estimada
+VENTAJAS
+Extremadamente rápido
+Fácil de implementar
+No requiere entrenamiento
+Permite evaluar si un modelo agrega valor
+LIMITACIONES
+No aprende patrones
+No considera promociones
+No detecta tendencias
+No mejora con más datos
+Todo proyecto de Machine Learning debería compararse primero contra un Modelo Base (Baseline).
+ MODELO 1 DE 4
+Regresión Lineal
+Intenta encontrar la relación lineal entre las variables de entrada y la variable 
+a predecir. Aprende una ecuación de la forma: ventas = a × lag_1 + b × promo 
++ c × semana + ...
+Más promociones
+Variable predictora activa
+Relación lineal
+El modelo aprende el coeficiente
+Mayor demanda
+Predicción proporcional
+Ejemplo
+Cada semana con promoción activa agrega en promedio +12 unidades a 
+la predicción de demanda.
+VENTAJAS
+Muy rápida
+Fácil de interpretar
+Excelente modelo inicial
+Bajo costo computacional
+LIMITACIONES
+Solo relaciones lineales
+No captura interacciones complejas
+Sensible a valores atípicos
+Precisión limitada en problemas reales
+La Regresión Lineal es el punto de partida ideal: si no supera al Baseline, los datos no tienen señal suficiente para aprender. MODELO 2 DE 4
+Random Forest
+Construye muchos árboles de decisión independientes, cada uno entrenado 
+con una muestra diferente de los datos. La predicción final es el promedio de 
+todos los árboles.
+Árbol 1
+Muestra aleatoria A
+Árbol 2
+Muestra aleatoria B
+Árbol 3
+Muestra aleatoria C
+Promedio de predicciones
+Reduce el error individual
+Predicción final
+Más robusta y precisa
+VENTAJAS
+Alta precisión
+Captura relaciones no lineales
+Robusto frente al ruido
+Poco ajuste de parámetros
+Muy utilizado en la industria
+LIMITACIONES
+Más lento que Regresión Lineal
+Consume más memoria
+Menor interpretabilidad
+Random Forest es uno de los algoritmos más utilizados para datos tabulares gracias a su equilibrio entre precisión, robustez e 
+interpretabilidad en la predicción de demanda. MODELO 3 DE 4
+XGBoost
+Construye árboles secuencialmente. Cada nuevo árbol corrige los errores del 
+anterior. Este proceso se llama Gradient Boosting.
+Árbol 1
+Primera predicción — con errores
+Corrige errores
+Aprende de los residuos
+Árbol 2
+Mejora la predicción anterior
+Predicción final
+Suma de todos los árboles
+VENTAJAS
+Muy alta precisión
+Excelente en datos tabulares
+Captura relaciones complejas
+Muy utilizado en la industria y competencias de ML
+LIMITACIONES
+Mayor tiempo de entrenamiento
+Más hiperparámetros
+Mayor complejidad
+Puede sobreajustarse si no se configura bien
+XGBoost es el algoritmo más premiado en competencias de Machine Learning con datos tabulares — Kaggle, KDD, y proyectos 
+industriales de predicción de demanda. COMPARACIÓN DE MODELOS
+Los Cuatro Modelos de un Vistazo
+Modelo Aprende Velocidad Precisión Interpretabilidad Uso 
+recomendado
+Baseline No aprende ⚡⚡⚡ ★☆☆ ⭐⭐⭐ Punto de 
+referencia
+Regresión Lineal Relaciones lineales ⚡⚡⚡ ★★☆ ⭐⭐⭐ Problemas 
+simples
+Random Forest Árboles independientes ⚡⚡☆ ★★★ ⭐⭐☆ Datos tabulares
+XGBoost Árboles secuenciales ⚡⚡☆ ★★★ ⭐⭐☆ Máxima 
+precisión
+Ningún algoritmo es el mejor para todos los problemas. La selección depende del tipo de datos, el objetivo y el equilibrio entre precisión, 
+velocidad e interpretabilidad.
+ DEL CONCEPTO A LA PRÁCTICA
+Del Problema de Negocio al Modelo Predictivo
+Problema de negocio
+¿Cuántas unidades demandará este producto?
+Datos históricos
+Favorita_weekly.parquet · ≈1,6M registros
+Limpieza de datos
+Eliminar errores, nulos y duplicados
+Feature Engineering
+Lags, promedio móvil, promociones, variables 
+temporales
+Entrenamiento
+Baseline · Regresión Lineal · Random Forest · 
+XGBoost
+Evaluación
+MAE · RMSE · R²
+Comparación de modelos
+¿Cuál entrega el mejor desempeño?
+Predicción
+Demanda estimada para la próxima semana
+Decisión de negocio
+Reposición de inventario basada en datos
+Este es el flujo que implementaremos paso a paso en el laboratorio: Google Colab, Python, Polars, Scikit-Learn y XGBoost. HOJA DE RUTA DEL LABORATORIO
+Flujo del Laboratorio Práctico
+Preparación
+Leer Favorita_weekly.parquet
+Feature Engineering
+Lags, promedios, semana del año
+Dataset Supervisado
+23M × 7 variables + target
+Baseline
+Regla simple: lag_1 como predicción
+Regresión Lineal
+Relación lineal entre variables
+Random Forest
+Ensamble de árboles independientes
+XGBoost
+Árboles secuenciales con corrección de errores
+Comparación
+MAE · RMSE · R² para cada modelo
+Predicción
+Demanda de la próxima semana
+Exportación
+Resultados a CSV
+Conclusión
+¿Qué modelo elegir y por qué?
+Clasificación
+Transformar target con umbral percentil 75
+Árbol de Decisión
+Modelo de clasificación binaria
+Evaluación del clasificador
+Accuracy · Precision · Recall · F1
+Exportación
+Resultados de clasificación a CSV
+Conclusiones
+Regresión vs Clasificación — ¿cuándo usar cada uno?
+En las siguientes secciones implementaremos cada modelo paso a paso usando el mismo conjunto de datos de Favorita para comparar 
+su desempeño.
+El laboratorio incluye dos casos de Aprendizaje Supervisado: Predicción de Demanda (Regresión) e Identificación de Productos de Alta 
+Demanda (Clasificación). Esto permite entender cuándo usar cada enfoque y cómo evaluar correctamente sus resultados. DEFINICIÓN — SIN MATEMÁTICAS
+¿Qué es Aprendizaje Supervisado?
+Enseñarle a un modelo a predecir mostrándole miles de ejemplos donde ya conocemos la respuesta correcta.
+Datos históricos
+Ejemplos del pasado con respuesta conocida
+Variable a predecir
+La respuesta que el modelo debe aprender
+Modelo entrenado
+Generaliza el patrón para predecir casos nuevos
+Nuestro caso
+Ventas históricas → predecir demanda de la próxima semana
+El modelo aprende del pasado para predecir el futuro.
+ ¿CUÁL ES NUESTRO TRABAJO?
+Data Engineer vs ML Engineer
+DATA ENGINEER
+Obtiene los datos
+Fuentes, APIs, bases de datos
+Construye variables
+Feature Engineering Temporal
+Diseña el pipeline
+Reproducible y escalable
+Genera el dataset
+Supervisado y de alta calidad
+ML ENGINEER
+Entrena modelos
+Selección de algoritmos
+Configura y entrena modelos
+Selección y ajuste inicial
+Interpreta resultados
+¿El modelo es útil para el negocio?
+Despliega el modelo
+Producción y monitoreo
+En organizaciones grandes estos roles suelen estar separados. En empresas medianas y pequeñas, un mismo profesional puede 
+desempeñar ambas funciones. Este módulo se centra en el rol del Data Engineer, incorporando el entrenamiento inicial de modelos 
+para comprender el flujo completo. DEFINICIÓN DE LA VARIABLE A PREDECIR
+¿Qué Queremos Predecir?
+¿Cuántas unidades de demanda tendrá un producto en una tienda durante la 
+próxima semana?
+1Semana t-3
+Histórico
+2 Semana t-2
+Histórico
+3Semana t-1
+Histórico
+4 Semana t
+Hoy — predecimos
+5Semana t+1
+← TARGET HILO CONDUCTOR DE LA PRESENTACIÓN
+Antes de entrenar un modelo... ¿Qué queremos predecir?
+Pregunta de negocio Observación Variable a predecir
+¿Cuánto venderá una tienda? Tienda + Semana + Producto Unidades vendidas
+¿Habrá alta demanda? Tienda + Semana + Producto Alta / Baja
+¿Qué productos reponer? Tienda + Semana Lista de productos
+Todo modelo supervisado comienza definiendo qué queremos predecir y cuál es la variable a predecir.
+ El Punto de Partida: Favorita_weekly.parquet
+MÓDULO ANTERIOR → ESTE MÓDULO
+Semana Tienda Producto Ventas Promoción
+1 1 1001 15 Sí
+1 1 1002 8 No
+1 1 1003 21 Sí
+1 2 1001 10 Sí
+1 2 1002 5 No
+≈23 millones de registros · Una fila por Tienda + Producto + Semana
+Módulo anterior
+125M transacciones → agregación semanal → 
+Favorita_weekly.parquet
+Este módulo
+Leemos Favorita_weekly.parquet y construimos el 
+dataset supervisado para predecir demanda. ¿Puede un modelo predecir la demanda directamente desde 
+Favorita_weekly.parquet?
+EL PROBLEMA DE REPRESENTACIÓN
+Favorita_weekly.parquet
+≈23M registros · Tienda + Producto + Semana
+Sin historial
+Cada fila es un evento puntual
+No son ejemplos
+Un modelo no puede aprender de esto
+Feature Engineering
+Transformar y estructurar
+Dataset Supervisado
+Listo para entrenar
+Favorita_weekly.parquet contiene registros semanales, pero aún no tiene historial temporal ni variable a predecir. Necesitamos Feature 
+Engineering.
+ MENSAJE CENTRAL DEL MÓDULO
+El Algoritmo es el Último Paso
+125M transacciones
+Módulo anterior
+Favorita_weekly.parquet
+≈23M registros semanales
+Feature Engineering
+Este módulo
+Dataset Supervisado
+Con lags y target
+Machine Learning
+El último paso
+80%
+Del trabajo es ingeniería de datos
+20%
+Es selección y ajuste del modelo CONSTRUCCIÓN DE VARIABLES PREDICTORAS
+Ingeniería de Características para Predicción de Demanda
+En este laboratorio construiremos variables predictoras utilizando información histórica de las ventas.
+Nuestro problema consiste en predecir la demanda de una semana futura. Por esta razón, utilizaremos información histórica para 
+construir variables predictoras (features) que ayuden al modelo a identificar patrones de comportamiento.
+HISTORIAL DE VENTAS
+lag_1
+Ventas de la semana anterior
+lag_2
+Ventas de hace dos semanas
+lag_3
+Ventas de hace tres semanas
+Objetivo: aportar memoria histórica al modelo.
+TENDENCIA
+Promedio móvil
+Promedio de las últimas cuatro 
+semanas
+Objetivo: reducir fluctuaciones y representar la tendencia 
+reciente.
+CONTEXTO
+Promoción
+¿El producto estará en promoción 
+durante la semana a predecir?
+Semana del año
+Captura patrones estacionales: 
+vacaciones, festividades, temporadas
+Objetivo: incorporar contexto externo al modelo.
+Ventas históricas
+Datos de semanas anteriores
+Construcción de variables
+lag_1 · lag_2 · lag_3 · Promedio móvil · 
+Promoción · Semana del año
+Modelo de Machine Learning
+Aprende patrones a partir de las variables 
+construidas
+⚠ Evitar Data Leakage: Las variables predictoras solo pueden utilizar información disponible al momento de realizar la predicción. 
+Nunca deben incorporar datos futuros ni información de la variable a predecir. En este laboratorio, todas las variables históricas usan 
+exclusivamente información de semanas anteriores.
+Las variables utilizadas en este laboratorio no tienen como objetivo enseñar Series Temporales. Se emplean como técnica de Ingeniería de 
+Características para enriquecer el conjunto de datos y mejorar el desempeño de un modelo de Machine Learning Supervisado aplicado a la 
+predicción de demanda. LO QUE RECIBE EL MODELO
+¿Qué Aprende Realmente el Modelo?
+Un ejemplo del dataset supervisado — el modelo aprende de millones de filas similares:
+Tienda Producto Semana Lag 1 Lag 2 Lag 3 Prom. 4 sem. Promo Demanda ↓
+3 1542 42 15 17 14 15.3 Sí 18
+Millones de filas
+Variables predictoras + demanda observada
+Modelo ML
+Aprende relaciones entre variables y demanda
+Nuevo registro
+Variables conocidas, demanda desconocida
+Predicción
+Demanda estimada: 18 unidades
+El modelo no memoriza los datos. Aprende patrones estadísticos presentes en millones de ejemplos y los aplica a registros que nunca ha 
+visto. DESPLAZAMIENTO TEMPORAL DE LA SERIE
+La Variable a Predecir: Cómo se Construye
+CONSTRUCCIÓN DEL TARGET
+Tienda Producto Semana Ventas target
+T1 P1001 1 15 12
+T1 P1001 2 12 18
+T1 P1001 3 18 9
+T1 P1001 4 9 21
+T1 P1001 5 21 ?
+target = demanda de la semana siguiente (shift -1)
+La última semana no tiene target — la demanda futura es 
+desconocida. Esas filas se eliminan del dataset de entrenamiento.
+REGLA DE CONSTRUCCIÓN
+Agrupar
+Por Tienda + Producto, orden cronológico
+Shift(-1)
+target[t] = ventas históricas[t+1]
+Eliminar última semana
+Sin target conocido
+La variable a predecir la construimos nosotros.
+ EVALUACIÓN HONESTA DEL MODELO
+División Temporal del Dataset
+Entrenamiento · 80%
+Semanas históricas · El modelo aprende los patrones
+Prueba · 20%
+Semanas más recientes · Evaluación final del modelo
+En series temporales la división siempre debe ser cronológica para evitar Data Leakage. CONEXIÓN CON EL LABORATORIO
+¿Qué Veremos en el Laboratorio de Hoy?
+01
+Leer
+Favorita_weekly.parquet · ≈1,6 millones de 
+registros
+02
+Agrupar
+Semana · Tienda · Producto
+03
+Variables
+Lags y promedios
+04
+Target
+Demanda semana t+1
+05
+Split
+Temporal cronológico
+06
+Entrenar
+Random Forest · XGBoost
+07
+Evaluar
+MAE · RMSE · R²
+08
+Predecir
+Demanda por tienda
+Este notebook implementa exactamente el pipeline conceptual de esta presentación. CUATRO ALGORITMOS — UNA MISMA PREGUNTA
+Modelos Supervisados
+Todos responden la misma pregunta: ¿Cuántas unidades demandará este producto la próxima semana?
+Regresión Lineal
+Relación lineal. Rápido e interpretable.
+Árbol de Decisión
+Reglas si/entonces. Muy interpretable.
+Random Forest
+Cientos de árboles. Robusto y preciso.
+XGBoost
+Árboles secuenciales. Estado del arte. EVOLUCIÓN DE COMPLEJIDAD Y PRECISIÓN
+¿Cuál Modelo Elegir?
+Regresión Lineal
+⚡⚡⚡ Velocidad · ★★☆  Precisión · 
+⭐⭐⭐ Interpretabilidad
+Árbol de Decisión
+⚡⚡⚡ Velocidad · ★★☆  Precisión · 
+⭐⭐⭐ Interpretabilidad
+Random Forest
+⚡⚡☆  Velocidad · ★★★  Precisión · 
+⭐⭐☆  Interpretabilidad
+XGBoost
+⚡⚡☆  Velocidad · ★★★  Precisión · ⭐⭐☆  Interpretabilidad · 🏆 Estado del arte
+En el laboratorio entrenaremos Random Forest y XGBoost — los dos modelos más utilizados en predicción de demanda con datos 
+tabulares. MÉTRICAS DE REGRESIÓN
+Evaluación del Modelo
+2.3
+MAE
+Error promedio en unidades
+3.1
+RMSE
+Penaliza errores grandes
+0.87
+R²
+Varianza explicada por el modelo
+MAE = 2.3 unidades
+Si predice 15, la demanda real estará entre 12.7 y 17.3
+R² = 0.87
+El modelo explica el 87% de la variabilidad de la demanda EL MODELO EN PRODUCCIÓN
+De la Predicción a la Decisión
+Orden de 
+reposición
+Predicción: 
+14 unidades
+Modelo 
+entrenado
+Feature 
+Engineering
+Nuevo 
+registro
+ENTRADA
+Variable Valor
+lag_1 12 unidades
+prom_4s 11.2 unidades
+promo 1 (Sí)
+semana 52
+Tienda 5 · Producto 1001
+PREDICCIÓN
+14 
+unidades
+→ Reponer antes de semana 53 EXTENSIÓN NATURAL DEL APRENDIZAJE SUPERVISADO
+El Mismo Pipeline, Otra Pregunta
+Problema Variable a predecir Tipo
+Predicción de demanda Demanda próxima semana Regresión
+¿Habrá quiebre de stock? Sí / No Clasificación
+¿Alta demanda? Sí / No Clasificación
+REGRESIÓN
+Variable a predecir
+Demanda semana t+1 (número)
+Algoritmos
+RandomForestRegressor · XGBRegressor
+Salida
+14 unidades
+CLASIFICACIÓN
+Variable a predecir
+Alta demanda: Sí / No
+Algoritmos
+RandomForestClassifier · XGBClassifier
+Salida
+Alta demanda: Sí (prob. 0.82)
+El Feature Engineering permanece igual. Cambia la variable a predecir y el modelo. En el laboratorio resolveremos regresión y, como 
+extensión, mostraremos brevemente la clasificación.
+ El Flujo Completo: De 125 Millones de Transacciones a una 
+Predicción
+Dataset 
+Supervisado
+Feature 
+Engineering
+Favorita_wee
+kly.parquet
+Módulo 
+anterior
+125M 
+transaccione
+s
+Los 
+algoritmos 
+evolucionan.
+La 
+Ingenierí
+a de 
+Datos 
+permane
+ce.
+Quien sabe construir buenos datos podrá 
+aprovechar cualquier algoritmo.
+ LA PREGUNTA QUE DEFINE TU CARRERA
+¿Qué Cambia y Qué Permanece?
+EVOLUCIONA CONSTANTEMENTE
+1
+Algoritmos
+2
+Frameworks
+3
+Librerías
+4
+Hardware
+5
+Modelos
+6
+APIs
+PERMANECE SIEMPRE
+1
+Calidad de los datos
+2
+Ingeniería de variables
+3
+Pipelines
+4
+Versionado
+5
+Validación
+6
+Reproducibilidad
+Los algoritmos evolucionan 
+cada año.
+La Ingeniería de 
+Datos permanece. CONCLUSIÓN DEL MÓDULO
+No aprendimos algoritmos. Aprendimos a construir 
+soluciones.
+Datos
+125M transacciones
+Feature Engineering
+Construir ejemplos
+Entrenamiento
+El modelo aprende
+Evaluación
+MAE · RMSE · R²
+Valor de negocio
+Predicción de demanda → Reposición CIERRE DEL MÓDULO
+El verdadero aprendizaje de hoy
+125M transacciones
+Punto de partida
+Ingeniería de Datos
+Limpiar y estructurar
+Feature Engineering
+Lags, promedios, contexto
+Dataset Supervisado
+Ejemplos listos
+Machine Learning
+El modelo aprende
+Predicción de demanda
+Unidades por tienda
+Valor de negocio
+Reposición → menos pérdidas
+Los algoritmos evolucionan.
+La Ingeniería de 
+Datos permanece.
+Quien sabe construir buenos datos podrá aprovechar cualquier algoritmo, presente o futuro.
+DIPLOMADO DATA ENGINEER · MÓDULO DE MACHINE LEARNING PRINCIPIO DE INGENIERÍA
+El Machine Learning comienza mucho antes del primer 
+algoritmo.
+Un modelo mediocre sobre datos bien representados supera 
+consistentemente a un modelo sofisticado sobre datos mal 
+estructurados.
+El dataset es el producto. El modelo es la herramienta.
+Representación primero
+Cada fila debe contener la información necesaria para predecir.
+Feature Engineering Temporal
+Lags y promedios — la clave del modelo.
+Variable a predecir clara
+Sin target definido, no hay aprendizaje supervisado.
+1
+Definir
+¿Qué predecir?
+2
+Representar
+Construir el dataset
+3
+Modelar
+Entrenar el modelo
+DIPLOMADO DATA ENGINEER · MÓDULO DE MACHINE LEARNING SESIÓN PRÁCTICA — PARTE 1: PREPARACIÓN
+Lo que implementaremos en Google Colab
+Leer
+Favorita_weekly.parquet · ≈1,6 millones de 
+registros
+Agrupar
+Semana + Tienda + Producto
+Variables
+Lags + promedio móvil
+Target
+Demanda semana t+1
+Dataset
+≈1,6M × 7 variables
+Al finalizar esta parte: dataset supervisado de ≈1,6 millones de registros × 7 variables listo. SESIÓN PRÁCTICA — PARTE 2: MODELADO
+Lo que implementaremos en Google Colab
+Split
+División temporal Train/Val/Test
+Entrenar
+Random Forest y XGBoost
+Evaluar
+MAE, RMSE, R²
+Predecir
+Demanda semanal por producto y tienda
+Al finalizar la sesión: modelo entrenado para predecir la demanda semanal por producto y tienda. Aprendizaje Supervisado en un Pipeline de Machine Learning
+MÓDULO DE MACHINE LEARNING · DIPLOMADO DATA ENGINEER
+FLUJO DE ENTRENAMIENTO
+Dataset Supervisado
+23M ejemplos · 7 variables
+Train / Test
+División temporal 80/20
+Entrenamiento del modelo
+Random Forest, XGBoost
+Evaluación
+MAE, RMSE, R²
+FLUJO DE PREDICCIÓN
+Nuevo registro
+Tienda + Producto + Semana
+Calcular lags ⚠
+Solo con datos del pasado
+Modelo entrenado ⚠
+El mismo del entrenamiento
+Predicción ✓
+Unidades estimadas → Reposición
+Los mismos parámetros de Feature Engineering del entrenamiento deben aplicarse en producción. APRENDIZAJE SUPERVISADO
+Dos Grandes Tipos de Problemas
+Regresión
+Predice números
+¿Cuánta demanda tendremos la próxima semana?
+Clasificación
+Predice categorías
+¿Este producto tendrá alta demanda?
+El Aprendizaje Supervisado resuelve dos tipos de problemas: Regresión y Clasificación. Ambos usan datos etiquetados; lo que cambia es el 
+tipo de variable a predecir.
+ COMPARACIÓN DIRECTA
+¿Qué Cambia entre Regresión y Clasificación?
+Regresión Clasificación
+Predice un valor numérico Predice una categoría
+Demanda de la próxima semana Alta demanda: Sí / No
+Precio de un producto ¿Es fraude? Sí / No
+Temperatura esperada ¿Es spam? Sí / No
+Tiempo de entrega ¿Cliente moroso? Sí / No
+Métricas: MAE · RMSE · R² Métricas: Accuracy · Precision · Recall · F1
+No cambia el proceso de entrenamiento. Cambia únicamente el tipo de respuesta que el modelo debe aprender.
+ EL MISMO DATASET, DOS PREGUNTAS
+Nuestro Segundo Caso de Estudio
+PROBLEMA 1 — REGRESIÓN
+Ventas históricas
+Favorita_weekly.parquet
+¿Cuántas unidades venderemos?
+Variable a predecir: número
+Resultado: 158 unidades
+Valor numérico continuo
+PROBLEMA 2 — CLASIFICACIÓN
+Mismo dataset
+Favorita_weekly.parquet
+¿Alta demanda?
+Umbral: percentil 75 de ventas
+Resultado: Sí / No
+Variable binaria
+El notebook convierte la variable a predecir numérica en binaria aplicando un umbral (percentil 75). Mismo Feature Engineering, misma 
+división temporal, mismo proceso — solo cambia la variable a predecir. TRANSICIÓN — PARTE 2 DEL LABORATORIO
+Otro Tipo de Problema dentro del Aprendizaje Supervisado
+Hasta ahora resolvimos un problema de regresión: predecir cuántas unidades se venderán. Ahora resolveremos otro tipo de problema 
+supervisado: la clasificación.
+REGRESIÓN (LO QUE HICIMOS)
+Predice 
+números
+¿Cuánta demanda habrá la próxima semana?
+Variable a predecir: número continuo
+CLASIFICACIÓN (LO QUE HAREMOS)
+Predice 
+categorías
+¿Este producto tendrá alta demanda?
+Variable a predecir: Sí / No
+La diferencia no está en el algoritmo. La diferencia está en el tipo de variable a predecir. DOS TIPOS DE PROBLEMA SUPERVISADO
+Regresión vs Clasificación
+Regresión Clasificación
+Predice un número continuo Predice una categoría o clase
+Demanda de la próxima semana ¿Alta demanda? Sí / No
+Precio de un producto ¿Es fraude? Sí / No
+Temperatura esperada ¿Es spam? Sí / No
+Tiempo de entrega ¿Cliente moroso? Sí / No
+Métricas: MAE · RMSE · R² Métricas: Accuracy · Precision · Recall · F1
+Ambos son problemas de Aprendizaje Supervisado. Lo único que cambia es el tipo de variable a predecir.
+ NUESTRO NUEVO PROBLEMA
+De Regresión a Clasificación: El Mismo Dataset
+ANTES RESPONDÍAMOS
+¿Cuántas unidades 
+venderemos?
+Variable a predecir: número continuo · Regresión
+AHORA RESPONDEREMOS
+¿Habrá alta 
+demanda?
+Variable a predecir: Sí / No · Clasificación
+Ventas históricas
+Valores numéricos de ventas
+Aplicar umbral
+Percentil 75 de ventas por producto
+Alta demanda
+Ventas > umbral → 1 (Sí)
+Demanda normal
+Ventas ≤ umbral → 0 (No)
+En el notebook transformaremos la variable a predecir numérica en una variable binaria aplicando un umbral. El mismo dataset 
+supervisado, una nueva pregunta de negocio. MODELO PARA CLASIFICACIÓN
+Árbol de Decisión para Clasificación
+Un Árbol de Decisión aprende reglas a partir de los datos y divide 
+progresivamente el espacio de variables hasta llegar a una predicción de 
+demanda.
+¿Hay promoción?
+Primera división del árbol
+Sí →  ¿lag_1 > 120?
+Segunda división si hay promoción
+Sí →  Alta demanda
+Predicción: clase positiva
+No →  Demanda normal
+Predicción: clase negativa
+Utilizaremos un Árbol de Decisión por su facilidad de interpretación 
+y porque permite comprender los conceptos fundamentales de 
+clasificación.
+VENTAJAS
+Muy interpretable
+Fácil de visualizar
+Muy utilizado en clasificación tabular
+Excelente para introducir conceptos de clasificación
+No requiere escalamiento de variables
+LIMITACIONES
+Propenso a sobreajuste
+Sensible a pequeños cambios en los datos
+Menor precisión que Random Forest o XGBoost EVALUACIÓN DE CLASIFICADORES
+¿Cómo Evaluaremos un Clasificador?
+MATRIZ DE CONFUSIÓN
+Real: Sí (Alta) Real: No (Normal)
+Pred: Sí TP — Verdadero 
+Positivo
+FP — Falso Positivo
+Pred: No FN — Falso Negativo TN — Verdadero 
+Negativo
+TP
+Predijo Alta y era Alta — acierto
+TN
+Predijo Normal y era Normal — acierto
+FP
+Predijo Alta pero era Normal — error
+FN
+Predijo Normal pero era Alta — error
+LAS CUATRO MÉTRICAS
+Accuracy
+% total de aciertos. ✔ Útil cuando las clases están 
+balanceadas.
+Precision
+Cuando predice Sí, ¿acierta? ✔ Importante cuando un 
+falso positivo es costoso — fraude, spam.
+Recall
+¿Cuántos positivos reales encontró? ✔ Importante 
+cuando un falso negativo es costoso — diagnóstico 
+médico, alertas críticas.
+F1-score
+Media armónica de Precision y Recall. ✔ Útil cuando 
+ambas métricas son igualmente importantes.
+En el laboratorio usaremos estas cuatro métricas para evaluar el Árbol de Decisión en la clasificación de alta demanda. EVALUACIÓN DE CLASIFICADORES
+Métricas de Evaluación para Clasificación
+En problemas de clasificación, el desempeño del modelo no se evalúa mediante MAE, RMSE o R², sino utilizando métricas derivadas de la Matriz de Confusión.
+Accuracy
+% total de predicciones correctas. Usar cuando las clases están 
+balanceadas.
+Precision
+De las predicciones positivas, ¿cuántas eran realmente positivas? 
+Alta Precision = pocos falsos positivos.
+Recall
+De todos los casos positivos reales, ¿cuántos detectó el modelo? 
+Alto Recall = pocos falsos negativos.
+F1-score
+Media armónica de Precision y Recall. Usar cuando se necesita 
+equilibrio entre ambas.
+             Tipo de problema                        Métricas principales           
+Regresión MAE · RMSE · R²
+Clasificación Accuracy · Precision · Recall · F1-score
+Todas las métricas de clasificación se calculan a partir de la Matriz de 
+Confusión presentada en la diapositiva anterior. En el laboratorio las obtendrás 
+directamente con classification_report de Scikit-Learn.
+¿CUÁL UTILIZAR?
+             Accuracy → Clases balanceadas           
+             Precision → Costoso generar falsas alarmas           
+             Recall → Crítico no perder positivos           
+             F1-score → Equilibrio entre ambas            GUÍA DE MÉTRICAS
+¿Qué Métrica Utilizar?
+Tipo de problema Métricas Cuándo priorizarla
+Regresión MAE · RMSE · R² Predicción de valores numéricos continuos
+Clasificación — general Accuracy Clases balanceadas, problema simple
+Clasificación — fraude / spam Precision Cuando los falsos positivos son costosos
+Clasificación — diagnóstico Recall Cuando los falsos negativos son costosos
+Clasificación — equilibrio F1-score Cuando Precision y Recall son igualmente 
+importantes
+La métrica correcta depende del tipo de problema y del costo de cada error. En nuestro caso: ¿es peor predecir alta demanda cuando no la 
+hay, o no detectarla cuando sí existe?
+ RESUMEN DE EVALUACIÓN
+¿Cómo Evaluamos un Modelo de Machine Learning?
+Tipo de problema Variable a predecir Algoritmos Métricas
+Regresión Numérica Baseline · Regresión Lineal · Random Forest · 
+XGBoost
+MAE · RMSE · R²
+Clasificación Categórica (Sí/No) Árbol de Decisión Accuracy · Precision · Recall · F1
+La variable a predecir determina tanto el algoritmo como las métricas a utilizar. El Dataset Supervisado: Cada Fila es un Ejemplo de 
+Entrenamiento
+Observació
+n
+lag_1 lag_2 prom_4
+s
+promo target
+Sem5-T1-
+P1001
+15 12 13.5 1 18
+Sem5-T1-
+P1002
+8 9 8.2 0 7
+Sem5-T2-
+P1001
+10 11 10.8 1 14
+Sem5-T2-
+P1002
+5 4 4.5 0 6
+... ... ... ... ... ...
+target = demanda de la semana siguiente.
+23M
+Ejemplos de entrenamiento
+Combinaciones únicas Semana × Tienda × Producto
+7
+Variables predictoras
+Lags, promedios, promoción, semana del año
+Cada fila contiene el historial necesario para predecir la 
+demanda futura.
+ El Dataset Supervisado Depende de la Pregunta de Negocio
+PRINCIPIO FUNDAMENTAL DE INGENIERÍA DE CARACTERÍSTICAS
+Pregunta de negocio Variable a predecir Tipo de modelo
+¿Cuántas unidades venderá este producto? Unidades (número) Regresión
+¿Habrá alta demanda la próxima semana? Alta / Baja (categoría) Clasificación
+¿Habrá quiebre de stock? Sí / No (categoría) Clasificación
+¿Cuándo ocurrirá el próximo pico? Semana (número) Regresión temporal
+Una misma tabla de transacciones puede generar distintos datasets supervisados
+1
+Si la pregunta es...
+¿Cuántas unidades venderá este producto?
+Variable a predecir: Demanda semana siguiente (número)
+2
+Si la pregunta cambia a...
+¿Habrá alta demanda?
+Variable a predecir: Alta / Baja (binario)
+El dataset supervisado no está determinado por los datos crudos. Está determinado por la pregunta de negocio que queremos responder.
+No existe un único dataset supervisado.
+El dataset depende de la variable a predecir que definamos.
+Nuestro caso de estudio:
+Pregunta → ¿Cuánta demanda tendrá un producto la próxima 
+semana?
+Variable a predecir → Demanda semana t+1
+Tipo → Regresión CONCLUSIONES DEL MÓDULO
+Cinco Ideas que Debes Recordar
+Machine Learning es IA
+Es una de las principales técnicas para 
+construir sistemas de Inteligencia Artificial
+Dos tipos de problemas supervisados
+Regresión predice números · Clasificación 
+predice categorías
+No existe el algoritmo perfecto
+La elección depende del problema, los 
+datos y el objetivo del negocio
+Las métricas dependen del problema
+Regresión: MAE · RMSE · R² · Clasificación: 
+Accuracy · Precision · Recall · F1
+El éxito depende de cuatro factores
+Calidad de los datos · Feature Engineering · 
+Algoritmo correcto · Métricas correctas
+Feature Engineering
+La calidad de las variables influye 
+directamente en el desempeño del modelo 
+— suele tener mayor impacto que cambiar 
+de algoritmo
+Escalabilidad
+Los principios del Machine Learning son los mismos para pequeños y grandes volúmenes de datos; lo que cambia es la infraestructura 
+disponible
+El objetivo de un modelo de Machine Learning no es únicamente predecir, sino apoyar la toma de decisiones basada en datos.
+DIPLOMADO DATA ENGINEER · MÓDULO DE MACHINE LEARNING CIERRE DEL MÓDULO
+¿Qué Aprendimos?
+Comprender el problema
+Identificar un problema de regresión supervisada
+Preparar los datos
+Aplicar limpieza, transformación e Ingeniería de Características
+Construir variables predictoras
+Generar nuevas variables que aporten contexto al modelo
+Entrenar modelos
+Comparar Baseline, Regresión Lineal, Random Forest y XGBoost
+Evaluar resultados
+Interpretar correctamente MAE, RMSE y R²
+Apoyar decisiones
+Usar predicciones de demanda para mejorar la planificación y la 
+reposición de inventario
+En Machine 
+Learning, 
+entrenar un 
+modelo suele 
+ocupar pocas 
+líneas de 
+código.
+Construir un 
+buen conjunto 
+de datos es el 
+verdadero 
+desafío del 
+Data Engineer.
+DIPLOMADO DATA ENGINEER · MÓDULO DE MACHINE LEARNING · FIN DEL MÓDULO Aprendizaje No Supervisado: 
+Descubrimiento de Patrones en 
+Grandes Volúmenes de Datos
+MÓDULO DE MACHINE LEARNING · DIPLOMADO DATA ENGINEER
+Eduardo Castillo Rodríguez
+Máster en Inteligencia Artificial CASO DE NEGOCIO
+¿Todos los productos de un 
+supermercado se comportan de la 
+misma manera?
+Cada producto tiene su propio patrón de comportamiento.
+Alta rotación
+Estacionales
+Sensibles a promociones
+Baja rotación EL DESAFÍO
+El problema no puede resolverse 
+manualmente
+Tres obstáculos lo impiden:
+Sin categorías previas
+Número desconocido de grupos
+Escala imposible de analizar LA PREGUNTA CLAVE
+¿Cómo descubrir automáticamente 
+grupos de productos con 
+comportamientos similares? EL CASO DE ESTUDIO
+¿Qué información tenemos 
+disponible?
+Productos Tiendas
+Demanda Promociones
+Tiempo DOS FAMILIAS DE MACHINE LEARNING
+Supervisado vs No Supervisado
+APRENDIZAJE SUPERVISADO
+Datos + respuesta conocida
+Aprende una relación
+Predice una variable objetivo
+APRENDIZAJE NO SUPERVISADO
+Solo datos
+Descubre patrones
+Agrupa observaciones similares APLICACIONES REALES
+¿Qué problemas podemos resolver?
+Segmentación de productos Segmentación de tiendas
+Segmentación de clientes Segmentación de 
+proveedores
+Patrones de compra
+En este capítulo: 
+Problema 1 →  Productos
+Problema 2 →  Tiendas VALOR DE NEGOCIO
+¿Por qué agrupar productos?
+Estrategias diferenciadas Promociones específicas Mejor inventario
+Logística optimizada Análisis más simple VARIABLES DE CLUSTERING
+¿Qué hace similares a dos 
+productos?
+Depende de las variables que decidimos observar.
+1 Demanda promedio
+2 Variabilidad
+3 Estacionalidad
+4 Respuesta a promociones
+5 Frecuencia de venta DECISIÓN DEL DATA ENGINEER
+Las variables elegidas determinan los clusters
+VARIABLES: DEMANDA + ESTACIONALIDAD
+Producto A
+→ Grupo 1
+Producto B
+→ Grupo 1
+Producto C
+→ Grupo 2
+✓  A y B quedan juntos. DECISIÓN DEL DATA ENGINEER
+Cambia la variable, cambian los grupos
+VARIABLES: DEMANDA + PROMOCIONES
+Producto A
+→ Grupo 1
+Producto B
+→ Grupo 2
+Producto C
+→ Grupo 2
+  A y B quedan separados. PREPARACIÓN DEL DATASET
+Cambia la unidad de análisis
+DATASET ORIGINAL
+Producto × Tienda × Semana
+Una fila por combinación →
+DATASET PARA CLUSTERING
+Arroz
+Azúcar
+Aceite NUESTRO DATASET
+El perfil de comportamiento de 
+cada producto
+Arroz Azúcar
+Aceite Leche
+Chocolate HIPÓTESIS DE NEGOCIO
+¿Qué esperamos descubrir?
+Alta rotación
+ Estacionales
+Sensibles a promociones
+ Baja rotación
+¿Existen realmente estos grupos en los datos? EL PROCESO
+Los grupos aparecen a partir de los 
+datos
+Datos mezclados
+Algoritmo
+Grupos naturales Esto se conoce como Clustering
+"Descubrir clusters naturales sin necesidad de etiquetas previas."
+1
+Sin supervisión
+2
+Sin etiquetas
+3
+Clusters naturales NUESTRO PRIMER ALGORITMO
+Existen varios algoritmos de 
+clustering
+K-Means Clustering Jerárquico
+DBSCAN K-MEANS · TRANSICIÓN
+Del supermercado al espacio de datos
+Productos
+Variables
+Vectores
+Puntos K-MEANS · EL ESPACIO DE DATOS
+Cada producto se convierte en un 
+punto
+Cada punto representa un producto descrito por sus características históricas. K-MEANS · LA PREGUNTA
+¿Existen grupos escondidos?
+¿Será posible descubrir automáticamente 
+grupos de productos similares?     K-MEANS
+K-Means
+¿Cómo puede un algoritmo descubrir grupos 
+si nadie le dice cuáles existen? K-MEANS · DIAPOSITIVA 17
+¿Por dónde comienza?
+Los centroides iniciales se ubican aleatoriamente en el espacio de datos.
+💡 El algoritmo no sabe nada todavía. Solo elige puntos de partida.
+ K-MEANS · DIAPOSITIVA 18
+Primera asignación
+Cada punto adopta el color del centroide más cercano.
+💡 Los grupos aparecen. Pero los centroides aún no están en el lugar correcto.
+ K-MEANS · DIAPOSITIVA 19
+Los centroides se mueven
+Cada centroide se desplaza al centro geométrico de su grupo.
+💡 Los puntos no se mueven. Solo cambian los centroides.
+ K-MEANS · DIAPOSITIVA 20
+Segunda asignación
+Con los centroides en nueva posición, algunos productos cambian de grupo.
+💡 El algoritmo mejora automáticamente. Los grupos son más coherentes que 
+antes.
+ K-MEANS
+Cada producto busca el centroide 
+más cercano
+Cada producto se asigna temporalmente al grupo más cercano. K-MEANS
+¿Están bien ubicados los 
+centroides?
+Algunos centroides quedaron desplazados respecto al centro real de sus grupos.
+¿Podemos mejorar estos grupos?
+ K-MEANS
+Los centroides se actualizan
+El algoritmo recalcula automáticamente la posición de cada centroide.
+💡 Los puntos no se mueven. Solo cambian los centroides.
+ K-MEANS
+Los productos vuelven a evaluarse
+Al cambiar los centroides, algunos productos encuentran un grupo más adecuado. K-MEANS
+El proceso se repite
+Los centroides vuelven a desplazarse. Los cambios ahora son notablemente 
+menores.
+💡 El algoritmo comienza a estabilizarse.
+ K-MEANS
+¿Cuándo termina K-Means?
+Cuando los grupos dejan de modificarse significativamente, el algoritmo finaliza.
+💡 Los centroides prácticamente ya no cambian de posición.
+ K-MEANS · RESULTADO
+Resultado final
+Cada grupo reúne productos con comportamientos similares. K-MEANS · INTERPRETACIÓN
+¿Qué significan estos grupos?
+El analista asigna nombres a cada grupo.
+Alta demanda Estacionales
+Sensibles a promociones Baja rotación
+⚠ Etiquetas del analista, no del algoritmo.
+ K-MEANS · RESUMEN
+El algoritmo en seis pasos
+Datos Centroides iniciales
+Asignación Reubicación
+Nueva asignación Clusters finales K-MEANS · IDEA CLAVE
+K-Means no conoce el negocio
+Solo identifica
+ No interpreta
+ El analista interpreta
+El algoritmo descubre. El analista 
+comprende. K-MEANS · RESUMEN
+¿Qué aprendimos sobre K-Means?
+Descubre grupos automáticamente
+ Usa similitud entre observaciones
+ Requiere definir K
+¿Cómo elegimos el número correcto de 
+grupos? K-MEANS · ESCALAMIENTO
+¿Por qué debemos escalar las variables?
+DEMANDA PROMEDIO
+0 – 500
+FRECUENCIA DE VENTA
+0 – 7
+💡 Escalas distintas distorsionan la distancia entre productos.
+ K-MEANS · ESCALAMIENTO
+¿Qué ocurre si no escalamos?
+SIN ESCALAMIENTO
+           La demanda domina. La frecuencia casi no influye.         
+CON ESCALAMIENTO
+           Todas las variables contribuyen de forma equilibrada.         
+💡 Escalar permite que todas las variables aporten de forma equilibrada al algoritmo.
+ K-MEANS · ELEGIR K
+¿Cuántos grupos debemos crear?
+K = 3
+K = 4
+K = 5
+K = ? K-MEANS · MÉTODO DEL CODO
+Método del Codo (Elbow Method)
+Buscamos el punto donde más grupos producen menos mejora.
+Eje X: Número de grupos (K)
+Eje Y: Inertia (variabilidad interna) K-MEANS · SILHOUETTE SCORE
+Silhouette Score
+≈ 1
+GRUPOS BIEN DEFINIDOS
+≈ 0
+GRUPOS POCO DIFERENCIADOS
+< 0
+ASIGNACIONES INCORRECTAS K-MEANS · LABORATORIO
+Del concepto a la implementación
+01
+Favorita_weekly.parquet
+02
+Perfil del producto
+03
+Selección de variables
+04
+Escalamiento
+05
+K-Means
+06
+Método del Codo
+07
+Silhouette Score
+08
+Interpretación
+09
+Decisiones de negocio DBSCAN
+K-Means tiene limitaciones
+Requiere definir K Asume grupos esféricos
+Sensible a outliers Todo punto pertenece a un 
+cluster
+Problemas con densidades 
+distintas DBSCAN · DEFINICIÓN
+DBSCAN
+"Density-Based Spatial Clustering of Applications with Noise"
+Sin K previo
+Basado en densidad
+Sin centroides
+Detecta ruido DBSCAN · CONCEPTOS
+Tres tipos de puntos
+●
+PUNTO NÚCLEO
+◉
+PUNTO FRONTERA
+ 
+PUNTO RUIDO DBSCAN · PARÁMETROS
+DBSCAN (Density-Based Spatial Clustering of Applications with Noise) es un algoritmo de clustering que agrupa puntos según su densidad en 
+el espacio: forma clusters donde hay muchos puntos cercanos entre sí, y marca como ruido (anomalías) los puntos aislados. A diferencia de K-
+Means, no requiere definir el número de grupos de antemano.
+El parámetro eps
+eps
+RADIO DE BÚSQUEDA
+eps define el radio máximo de vecindad: la distancia máxima que puede haber entre dos puntos para que se consideren vecinos. Si un punto 
+tiene al menos min_samples vecinos dentro de ese radio eps, se convierte en un punto núcleo (core point) y forma parte de un cluster.
+eps pequeño eps grande DBSCAN · PARÁMETROS
+El parámetro min_samples
+min_samples
+VECINOS MÍNIMOS
+min_samples define el número mínimo de puntos que deben estar dentro del radio eps para que un punto sea considerado un punto núcleo 
+(core point). Si un punto tiene al menos min_samples vecinos dentro de su radio eps, forma parte de un cluster; si tiene menos vecinos, se 
+clasifica como un punto borde (border point) o como ruido. Valores altos de min_samples exigen una mayor densidad local para formar clusters.
+min_samples pequeño min_samples grande DBSCAN · FUNCIONAMIENTO
+Cómo funciona paso a paso
+Seleccionar un punto
+Buscar vecinos dentro de eps
+¿Suficientes vecinos?
+Crear o expandir un cluster
+Repetir con cada vecino
+Marcar como ruido si no DBSCAN · VENTAJAS
+¿Cuándo usar DBSCAN?
+Sin K previo Detecta ruido
+Formas arbitrarias Robusto a outliers
+Análisis geoespacial Detección de anomalías DBSCAN · DESVENTAJAS
+Limitaciones a considerar
+Sensible a eps Sensible a min_samples
+Densidades muy diferentes Alta dimensionalidad
+Requiere escalamiento DBSCAN · COMPARACIÓN
+K-Means vs DBSCAN
+Característica K-Means DBSCAN
+Número de clusters Definido por el usuario Detectado automáticamente
+Detecta ruido No Sí
+Forma de los clusters Esférica Arbitraria
+Utiliza centroides Sí No
+Sensible a outliers Sí Mucho menos
+Escalamiento recomendado Sí Sí
+Usa K-Means cuando los clusters son aproximadamente esféricos y 
+conoces el número de grupos.
+Usa DBSCAN cuando hay outliers, formas irregulares o no conoces 
+el número de clusters.
+ DBSCAN · CASO FAVORITA
+Aplicación al caso Favorita
+PIPELINE COMPARTIDO
+Favorita_weekly.parquet
+Feature Engineering
+StandardScaler
+Bifurcación →
+K-MEANS
+n_clusters=4
+Método del Codo
+DBSCAN
+eps + min_samples
+Silhouette Score DBSCAN · DETECCIÓN DE ANOMALÍAS
+¿Qué es una anomalía?
+Observación significativamente diferente del resto de datos.
+Fraude
+Falla técnica
+Evento poco frecuente
+Oportunidad DBSCAN · DETECCIÓN DE ANOMALÍAS
+¿Cómo detecta anomalías DBSCAN?
+Puntos en regiones densas Puntos aislados
+Etiqueta especial: -1 DBSCAN · APLICACIONES REALES
+Detección de anomalías en la industria
+Retail Banca
+Ciberseguridad IoT
+Manufactura Salud DBSCAN · CASO FAVORITA
+Anomalías en el dataset Favorita
+DBSCAN detecta productos con comportamiento excepcional automáticamente.
+Demanda extremadamente alta
+Demanda extremadamente baja
+Respuesta inusual a promociones
+Comportamiento único DBSCAN · DOS PROBLEMAS, UN ALGORITMO
+Un algoritmo, dos resultados
+SEGMENTACIÓN
+Dataset escalado
+DBSCAN
+Clusters 0, 1, 2, 3...
+DETECCIÓN DE ANOMALÍAS
+Dataset escalado
+DBSCAN
+Cluster = -1
+💡 Mismo algoritmo, mismo dataset, dos perspectivas.
+ LABORATORIO · PIPELINE COMPLETO
+Lo que implementaremos en Google Colab
+Mismo dataset, dos algoritmos, tres análisis.
+01
+Favorita_weekly.parquet
+02
+Polars
+03
+Feature Engineering
+04
+StandardScaler
+05
+K-Means
+06
+DBSCAN
+07
+PCA
+08
+Comparación
+09
+Anomalías CONCLUSIONES DEL MÓDULO
+Lo que aprendimos en este módulo
+K-Means
+ DBSCAN
+ La elección importa
+No existe un algoritmo universalmente mejor para todos los datos.
+ Introducción a MLOps
+CAPÍTULO 6 · DIPLOMADO DATA ENGINEER
+Del desarrollo de modelos al despliegue en producción
+Eduardo Castillo Rodríguez
+Máster en Inteligencia Artificial
+¿Cómo llevar un modelo de Machine Learning a producción? CAPÍTULO 6 · OBJETIVOS
+Objetivos del capítulo
+Al finalizar esta sesión el estudiante será capaz de:
+Comprender MLOps
+Entender qué es MLOps y por qué es 
+fundamental en proyectos de Machine 
+Learning
+Ciclo de vida del modelo
+Identificar las etapas del ciclo de vida de 
+un modelo de Machine Learning
+Rol del Data Engineer
+Comprender el rol del Data Engineer en 
+un proyecto de Machine Learning
+Desafíos del despliegue
+Reconocer los principales desafíos del 
+despliegue de modelos en producción
+Herramientas de MLOps
+Conocer herramientas ampliamente 
+utilizadas en el ecosistema MLOps
+Del laboratorio a producción
+Comprender cómo llevar un modelo 
+desde el desarrollo hasta su uso real EL PROBLEMA · DESPUÉS DEL ENTRENAMIENTO
+¿Qué ocurre después de entrenar un modelo?
+Entrenar un modelo no significa que esté listo para ser utilizado por una organización. Existe un largo camino entre el laboratorio y la 
+producción.
+Datos
+Recolección y preparación del conjunto de datos
+Entrenamiento
+El modelo aprende patrones a partir de los datos
+Evaluación
+Se miden métricas de desempeño del modelo
+Modelo listo… ¿y ahora?
+El modelo existe, pero aún no está en producción ni genera valor 
+real
+Un modelo que no está en producción no genera valor. MLOps es el puente entre el laboratorio y el mundo real. MLOPS · DEFINICIÓN
+¿Qué es MLOps?
+MLOps (Machine Learning Operations) es el conjunto de prácticas que permiten desarrollar, desplegar, monitorear y mantener modelos 
+de Machine Learning de forma confiable, automatizada y reproducible.
+MLOps surge de la necesidad de aplicar principios de ingeniería de software al ciclo de vida completo de los modelos de Machine Learning.
+Data Engineering
+Gestión, transformación y disponibilidad 
+de los datos
+Machine Learning
+Desarrollo, entrenamiento y evaluación de 
+modelos
+DevOps
+Automatización, despliegue y operación 
+de sistemas
+La intersección de estas tres disciplinas define MLOps. MLOPS · CICLO DE VIDA DEL MODELO
+Ciclo de vida de un modelo
+Un modelo de Machine Learning no es un producto estático. Su ciclo de vida es continuo e iterativo, desde la obtención de datos hasta el 
+reentrenamiento en producción.
+Reentrenamiento
+Actualización del modelo ante cambios en los datos
+El proceso es continuo: el monitoreo alimenta el reentrenamiento, cerrando el ciclo.
+Datos
+Recolección, almacenamiento y gobierno de 
+datos
+Preparación
+Limpieza, transformación y feature 
+engineering
+Entrenamiento
+Ajuste del modelo sobre los datos de 
+entrenamiento
+Validación
+Evaluación del desempeño con métricas 
+definidas
+Despliegue
+Publicación del modelo en un entorno 
+productivo
+Monitoreo
+Seguimiento del comportamiento del 
+modelo en producción MLOPS · ROL DEL DATA ENGINEER
+Rol del Data Engineer
+El Data Engineer es el responsable de garantizar que los datos y los modelos estén disponibles, integrados y funcionando correctamente en los 
+sistemas productivos.
+Etapa Responsabilidad del Data Engineer
+Datos Construcción y mantenimiento de pipelines de datos
+Preparación Garantía de calidad, limpieza y transformación
+Entrenamiento Disponibilidad y acceso eficiente a los datos
+Despliegue Integración del modelo con los sistemas productivos
+Producción Automatización de flujos y procesos
+Monitoreo Seguimiento del desempeño y detección de anomalías
+"El Data Engineer conecta los modelos con los sistemas productivos. Sin datos confiables, no hay modelo confiable." MLOPS · PRINCIPALES DESAFÍOS
+Principales desafíos
+Llevar un modelo a producción implica superar obstáculos técnicos y organizacionales que van mucho más allá del entrenamiento.
+Calidad de datos
+Datos inconsistentes o incompletos afectan directamente el 
+desempeño del modelo en producción
+Versionamiento
+Gestionar versiones de datos, código y modelos de forma 
+coordinada y trazable
+Reproducibilidad
+Garantizar que los experimentos puedan replicarse con los 
+mismos resultados
+Escalabilidad
+Diseñar sistemas capaces de manejar grandes volúmenes de 
+datos y solicitudes
+Monitoreo
+Detectar degradación del modelo o cambios en la distribución de 
+los datos (data drift)
+Reentrenamiento
+Actualizar el modelo de forma automatizada cuando su 
+desempeño disminuye MLOPS · DE LOS DESAFÍOS A LAS SOLUCIONES
+¿Cómo responde MLOps a estos desafíos?
+Cada desafío del ciclo de vida posee herramientas y prácticas específicas para resolverlo.
+Desafío Solución habitual
+Calidad de datos Pipelines de datos
+Versionamiento Git + DVC
+Reproducibilidad Docker
+Despliegue FastAPI
+Automatización Airflow
+Monitoreo MLflow
+Las herramientas de MLOps existen para resolver problemas concretos del ciclo de vida de un modelo, no simplemente para agregar 
+complejidad al proyecto. MLOPS · HERRAMIENTAS
+Herramientas de MLOps
+El ecosistema MLOps agrupa sus herramientas por función dentro del ciclo de vida del modelo.
+Versionamiento
+Git · DVC
+Control de versiones para código, datos y modelos.
+Contenedores
+Docker
+Empaquetar aplicaciones para ejecutarlas de forma idéntica en 
+cualquier entorno.
+Orquestación
+Kubernetes
+Administrar y escalar contenedores automáticamente.
+Experimentación
+MLflow
+Registrar experimentos, métricas y versiones de modelos.
+Automatización
+Airflow
+Orquestar pipelines de datos y procesos automáticos.
+Serving
+FastAPI
+Publicar modelos de Machine Learning como servicios web (API).
+No es necesario dominar todas estas herramientas. Lo importante es comprender qué problema resuelve cada una dentro del ciclo de 
+vida de un modelo. MLOPS · FLUJO COMPLETO
+Flujo completo de un proyecto
+Un proyecto de Machine Learning en producción sigue un flujo continuo que integra ingeniería de datos, modelado y operaciones.
+Datos
+Recolección y almacenamiento
+Data Engineering
+Transformación y preparación
+Entrenamiento
+Ajuste del modelo
+Validación
+Evaluación de métricas
+Modelo Final
+Modelo aprobado para producción
+Despliegue
+Publicación como servicio
+Monitoreo
+Seguimiento en producción
+Retroalimentación
+Detección de degradación
+Nuevo entrenamiento
+El ciclo comienza de nuevo
+"El proceso es continuo. En MLOps, el despliegue no es el final: es el comienzo de la operación." CAPÍTULO 6 · CONCLUSIONES
+Conclusiones
+Un buen modelo no es suficiente
+El entrenamiento es solo el punto de 
+partida. El valor real se genera en 
+producción.
+Los modelos deben mantenerse
+Sin monitoreo y reentrenamiento, los 
+modelos se degradan con el tiempo.
+Del laboratorio a producción
+MLOps permite llevar modelos desde el 
+desarrollo hasta su uso real de forma 
+confiable.
+El Data Engineer es clave
+Cumple un rol fundamental en la integración de datos, modelos y 
+sistemas productivos.
+Integración como base
+La integración entre datos, modelos y sistemas es la base de los 
+proyectos modernos de IA.
+"El éxito de un proyecto de Machine Learning no depende únicamente de construir un buen modelo, sino de mantenerlo funcionando 
+correctamente en producción."
+"Entrenar un modelo es solo el comienzo. El verdadero desafío consiste en mantenerlo funcionando correctamente en producción." MLOPS · ARQUITECTURA
+Arquitectura simplificada de un proyecto de Machine Learning
+Un proyecto de ML en producción integra múltiples capas: datos, ingeniería, modelado y operaciones.
+Datos
+Fuentes, almacenamiento y gobierno
+Data Engineering
+Transformación, limpieza y preparación
+Entrenamiento
+Ajuste del modelo con los datos preparados
+Validación
+Evaluación de métricas y aprobación
+Modelo aprobado
+Listo para ser desplegado
+Docker
+Empaquetado del modelo en un contenedor
+FastAPI
+Exposición del modelo como servicio web
+Kubernetes
+Escalado y orquestación en producción
+Producción + Monitoreo
+Seguimiento continuo del desempeño
+Reentrenamiento
+El ciclo se reinicia con nuevos datos
+MLflow actúa de forma transversal: registra experimentos, métricas y versiones del modelo a lo largo de todo el ciclo.
+"MLOps integra datos, modelos y operaciones para mantener soluciones de Inteligencia Artificial funcionando de manera continua en 
+producción." DIPLOMADO DATA ENGINEER · CIERRE
+El camino recorrido durante el diplomado
+Cada capítulo del diplomado representa una pieza fundamental del ciclo de vida de un proyecto de Machine Learning. Juntas, forman una visión 
+completa e integrada.
+Reducción de Dimensionalidad
+PCA y técnicas para simplificar datos 
+complejos
+Modelos Supervisados
+Regresión y clasificación con etiquetas 
+conocidas
+Modelos No Supervisados
+Clustering y descubrimiento de patrones 
+ocultos
+Overfitting y Generalización
+Regularización y control del sobreajuste
+Validación Cruzada
+Evaluación robusta y confiable del modelo
+Optimización de Hiperparámetros
+Grid Search, Random Search y Bayesian 
+Optimization
+MLOps
+Del desarrollo al despliegue y monitoreo 
+en producción
+"Estas piezas no son independientes: forman el ciclo de vida completo de un proyecto de Machine Learning moderno." DIPLOMADO DATA ENGINEER · CIERRE
+Gracias
+Diplomado en Data Engineering · Machine Learning con Big Data
+¡Felicitaciones por completar este recorrido!
+Reducción de dimensionalidad
+Modelos supervisados
+Modelos no supervisados
+Overfitting y generalización
+Validación cruzada
+Optimización de hiperparámetros
+MLOps y despliegue en producción
+"La Inteligencia Artificial no termina cuando un modelo obtiene una buena 
+métrica. Comienza cuando ese modelo entrega valor real en producción."
+Eduardo Castillo Rodríguez
+Máster en Inteligencia Artificial
+Profesor Universitario Generalización, Underfitting y 
+Overfitting
+MÓDULO DE MACHINE LEARNING · DIPLOMADO DATA ENGINEER
+Eduardo Castillo Rodríguez
+Máster en Inteligencia Artificial
+Cómo construir modelos que aprendan patrones y no memoricen los datos. CAPÍTULO 5 · OBJETIVOS
+Objetivos del capítulo
+Al finalizar esta sesión el estudiante será capaz de:
+Generalización
+Comprender el concepto de 
+generalización en Machine Learning.
+Underfitting y Overfitting
+Diferenciar ambos problemas y sus 
+causas.
+Sesgo y Varianza
+Explicar el sesgo y la varianza como 
+conceptos fundamentales.
+Trade-off Bias–Variance
+Interpretar el equilibrio entre sesgo y varianza.
+Buena Generalización
+Identificar cuándo un modelo generaliza correctamente. GENERALIZACIÓN · INTRODUCCIÓN
+¿Por qué no basta con entrenar un 
+modelo?
+El objetivo real
+El Machine Learning no busca 
+memorizar los datos de 
+entrenamiento, sino aprender 
+patrones que funcionen sobre datos 
+nunca vistos.
+El riesgo de memorizar
+Un modelo que memoriza los datos 
+de entrenamiento puede tener un 
+rendimiento perfecto en 
+entrenamiento pero fallar 
+completamente en producción.
+Generalización
+La capacidad de un modelo para desempeñarse bien sobre datos nuevos se 
+llama generalización. Es el criterio más importante para evaluar un modelo. GENERALIZACIÓN · DEFINICIÓN
+¿Qué es la generalización?
+Definición formal
+La generalización es la capacidad de 
+un modelo entrenado para producir 
+predicciones correctas sobre datos 
+nuevos que no formaron parte del 
+conjunto de entrenamiento.
+Ejemplo sencillo
+Un modelo entrenado para detectar 
+spam con correos de 2020 debe 
+seguir funcionando correctamente 
+con correos de 2024, aunque el 
+lenguaje y los patrones hayan 
+cambiado.
+Idea clave
+Un modelo que generaliza bien no memoriza: aprende la estructura subyacente 
+de los datos. La diferencia entre memorizar y aprender es la esencia del 
+Machine Learning. GENERALIZACIÓN · DIAGNÓSTICO
+¿Cómo saber si un modelo aprende correctamente?
+Existen tres situaciones posibles al evaluar el comportamiento de un modelo:
+Situación Entrenamiento Datos nuevos
+Buen modelo Buen desempeño Buen desempeño
+Underfitting Bajo desempeño Bajo desempeño
+Overfitting Excelente desempeño Bajo desempeño
+El objetivo del Machine Learning no es obtener el mejor resultado sobre el entrenamiento, sino mantener un buen rendimiento sobre datos nunca vistos. GENERALIZACIÓN · UNDERFITTING
+Underfitting
+El underfitting ocurre cuando el modelo es demasiado simple para capturar los 
+patrones presentes en los datos. El modelo no aprende lo suficiente ni del conjunto 
+de entrenamiento.
+Características Síntomas Consecuencias
+Modelo demasiado 
+simple
+Error alto en 
+entrenamiento
+Predicciones 
+imprecisas
+Capacidad insuficiente Error alto en validación No es útil en 
+producción
+Alto sesgo (bias) Curvas de aprendizaje 
+planas
+Requiere mayor 
+complejidad
+Pocas características o 
+épocas
+Rendimiento similar en 
+train y test
+Subajuste del modelo
+Causas más comunes
+Modelo demasiado simple.
+Muy pocas variables.
+Muy pocas épocas de entrenamiento.
+Regularización excesiva. GENERALIZACIÓN · OVERFITTING
+Overfitting
+El overfitting ocurre cuando el modelo es demasiado complejo y aprende no solo los 
+patrones, sino también el ruido y las particularidades del conjunto de 
+entrenamiento.
+Características Síntomas Consecuencias
+Modelo demasiado 
+complejo
+Error muy bajo en 
+entrenamiento
+Falla en datos nuevos
+Memoriza los datos de 
+entrenamiento
+Error alto en validación No generaliza
+Alta varianza Gran diferencia entre 
+train y test
+Inútil en producción
+Demasiados 
+parámetros o épocas
+Sensible a pequeñas 
+variaciones
+Sobreajuste del 
+modelo
+Causas más comunes
+Modelo demasiado complejo.
+Exceso de parámetros.
+Demasiadas épocas.
+Muy pocos datos.
+Presencia de ruido. GENERALIZACIÓN · COMPARACIÓN
+Underfitting vs Overfitting
+Ambos problemas impiden que el modelo generalice correctamente, pero por razones opuestas.
+               Underfitting                            Overfitting             
+Complejidad del modelo Demasiado simple Demasiado complejo
+Sesgo (Bias) Alto Bajo
+Varianza Baja Alta
+Error en entrenamiento Alto Muy bajo
+Error en prueba Alto Alto
+Generalización No generaliza No generaliza
+Solución Aumentar complejidad Reducir complejidad / regularizar
+Diagnóstico No aprende Memoriza los datos GENERALIZACIÓN · SESGO Y VARIANZA
+Sesgo y Varianza
+El sesgo y la varianza son las dos fuentes principales de error en un modelo de 
+Machine Learning.
+Sesgo (Bias): Error producido por un modelo demasiado simple que no logra 
+capturar el patrón real.
+Varianza: Error producido por un modelo demasiado sensible a pequeñas 
+variaciones del conjunto de entrenamiento.
+Concepto Sesgo (Bias) Varianza
+Definición Error por suposiciones 
+incorrectas del modelo
+Error por sensibilidad 
+excesiva a los datos de 
+entrenamiento
+Causa Modelo demasiado 
+simple
+Modelo demasiado 
+complejo
+Efecto Underfitting Overfitting
+Error en 
+entrenamiento
+Alto Bajo
+Error en prueba Alto Alto
+Analogía (diana) Disparos alejados del 
+centro
+Disparos dispersos entre 
+sí GENERALIZACIÓN · SESGO Y VARIANZA · CASO 1
+Alto Sesgo, Baja Varianza
+Las predicciones son consistentes entre sí, pero sistemáticamente alejadas del valor 
+verdadero.
+¿Qué ocurre?
+El modelo comete siempre el mismo 
+tipo de error. Las predicciones son 
+estables pero incorrectas.
+Ejemplo típico
+Modelo lineal tratando de ajustarse a 
+datos no lineales. Underfitting 
+clásico: el modelo es demasiado 
+simple para capturar el patrón real.
+En la diana: los disparos caen agrupados, pero lejos del centro. Alta consistencia, baja precisión. GENERALIZACIÓN · SESGO Y VARIANZA · CASO 2
+Bajo Sesgo, Alta Varianza
+Las predicciones están cerca del valor verdadero en promedio, pero son muy 
+dispersas e inconsistentes.
+¿Qué ocurre?
+El modelo es sensible a pequeñas 
+variaciones en los datos de 
+entrenamiento. Cada vez que se 
+entrena, produce resultados 
+diferentes.
+Ejemplo típico
+Modelo demasiado complejo que 
+memoriza el ruido del 
+entrenamiento. Overfitting clásico: 
+funciona bien en entrenamiento 
+pero falla en datos nuevos.
+En la diana: los disparos rodean el centro pero están muy dispersos. Alta precisión promedio, baja 
+consistencia. SESGO Y VARIANZA · CASO 3
+Bajo Sesgo, Baja Varianza
+Las predicciones son precisas y consistentes. Este es el escenario ideal: el modelo 
+generaliza correctamente.
+¿Qué ocurre?
+El modelo aprende el patrón real de 
+los datos sin memorizar el ruido. Las 
+predicciones son estables y 
+correctas en datos nuevos.
+Modelo ideal
+Complejidad justa. Captura los 
+patrones reales sin sobreajustar. El 
+modelo alcanza el mejor equilibrio 
+entre sesgo y varianza, logrando el 
+menor error de generalización y un 
+excelente desempeño sobre datos 
+nuevos.
+En la diana: los disparos caen agrupados en el centro. Alta precisión y alta consistencia. El objetivo del 
+Machine Learning. SESGO Y VARIANZA · RESUMEN
+Tres escenarios principales
+Combinando sesgo y varianza obtenemos tres situaciones clave. Solo una de ellas representa un modelo que generaliza correctamente.
+Escenario Sesgo Varianza Comportamiento Diagnóstico
+Alto Sesgo, Baja 
+Varianza
+Alto Baja Predicciones 
+consistentes pero 
+incorrectas
+Underfitting
+Bajo Sesgo, Alta 
+Varianza
+Bajo Alta Predicciones dispersas, 
+inestables
+Overfitting
+Bajo Sesgo, Baja 
+Varianza
+Bajo Baja Predicciones precisas y 
+consistentes
+✅ Modelo ideal
+El objetivo del entrenamiento es encontrar el punto de equilibrio donde tanto el sesgo como la varianza sean mínimos. GENERALIZACIÓN · TRADE-OFF
+Trade-off Bias–Variance
+El trade-off Bias–Variance describe la tensión fundamental entre sesgo y varianza: 
+reducir uno tiende a aumentar el otro.
+Baja complejidad
+Domina el sesgo. El 
+modelo es demasiado 
+simple y comete 
+errores sistemáticos.
+Zona óptima ✓
+El error de validación 
+es mínimo. Aquí el 
+modelo alcanza su 
+mejor capacidad de 
+generalización.
+Alta complejidad
+Domina la varianza. El 
+modelo memoriza el 
+entrenamiento y falla 
+con datos nuevos.
+Error total
+Error total = sesgo² + varianza + ruido irreducible. El objetivo es minimizar esta 
+suma. GENERALIZACIÓN · EJEMPLO CONCEPTUAL
+Ejemplo conceptual: tres modelos
+Sobre el mismo conjunto de datos, tres modelos con distinta complejidad producen 
+resultados muy diferentes.
+Underfitting
+Modelo lineal simple. No captura la 
+curvatura real de los datos. Error alto 
+en entrenamiento y en prueba.
+❌ No aprende el patrón.
+Modelo adecuado
+Modelo con complejidad justa. 
+Captura el patrón real sin memorizar 
+el ruido. Generaliza correctamente.
+✅ Aprende el patrón y generaliza.
+Overfitting
+Modelo polinomial de grado muy alto. Pasa por cada punto de entrenamiento 
+pero falla completamente en datos nuevos.
+❌ Memoriza el entrenamiento y falla con datos nuevos. GENERALIZACIÓN · CONCLUSIONES
+Conclusiones
+Las ideas fundamentales que debemos recordar de esta sesión:
+El objetivo es generalizar
+El Machine Learning busca aprender 
+patrones, no memorizar datos.
+Más complejidad no implica un 
+mejor modelo
+La complejidad debe ajustarse al 
+problema y a los datos disponibles.
+El overfitting aparece cuando el 
+modelo memoriza
+Un modelo sobreajustado falla con datos 
+nuevos aunque funcione bien en 
+entrenamiento.
+El equilibrio Bias–Variance produce mejores modelos
+Reducir sesgo y varianza simultáneamente es el desafío central del 
+diseño de modelos.
+La siguiente etapa: comprobar la generalización
+Aprenderemos cómo verificar objetivamente que un modelo 
+realmente generaliza. PRÓXIMA ACTIVIDAD
+Laboratorio: Observando el 
+Overfitting en acción
+Hasta ahora hemos visto estos conceptos desde un punto de vista teórico. En el 
+laboratorio veremos cómo cambia el comportamiento de un modelo al aumentar su 
+complejidad y cómo identificar visualmente el underfitting, el overfitting y la zona 
+de mejor generalización.
+Herramienta
+Google Colab con 
+Python y scikit-learn.
+¿Qué 
+observaremos?
+Cómo varía el error de 
+entrenamiento y 
+validación al 
+aumentar la 
+complejidad del 
+modelo.
+Objetivo
+Identificar 
+visualmente la zona 
+de mejor 
+generalización en un 
+modelo de regresión 
+polinómica. Validación Cruzada (Cross 
+Validation)
+CAPÍTULO 5 · DIPLOMADO DATA ENGINEER
+Eduardo Castillo Rodríguez
+Máster en Inteligencia Artificial
+¿Cómo evaluar correctamente un modelo de Machine Learning? CAPÍTULO 5 · OBJETIVOS
+Objetivos del capítulo
+Al finalizar esta sesión el estudiante será capaz de:
+Limitaciones del Hold-Out
+Comprender las limitaciones de una única 
+partición Train/Test
+K-Fold Cross Validation
+Explicar el funcionamiento de K-Fold 
+Cross Validation
+Interpretación de resultados
+Interpretar correctamente los resultados 
+obtenidos mediante validación cruzada
+Hold-Out vs K-Fold
+Comparar ambas estrategias de 
+evaluación
+Cuándo usar cada estrategia
+Comprender cuándo utilizar cada 
+estrategia según el contexto
+Evaluación confiable
+Aplicar validación cruzada para obtener 
+estimaciones robustas del modelo EL PROBLEMA · PARTICIÓN TRAIN/TEST
+¿Podemos confiar en una única partición Train/Test?
+PRIMERA DIVISIÓN
+Train 80% Test 20%
+R² = 0.94
+SEGUNDA DIVISIÓN
+Train 80% Test 20%
+R² = 0.79
+Ambos modelos utilizaron exactamente el mismo algoritmo y los mismos datos. ¿Por qué obtuvieron resultados diferentes?
+El resultado depende de cómo fueron divididos los datos. EVALUACIÓN · HOLD-OUT
+Hold-Out
+La estrategia más simple: dividir los datos una única vez en entrenamiento y prueba.
+DIVISIÓN DEL CONJUNTO DE DATOS
+Entrenamiento
+80%
+Prueba
+20%
+01
+Datos completos
+Todo el conjunto de datos disponible
+02
+División única
+Se separa una vez: 80% Train / 20% Test
+03
+Entrenamiento
+El modelo aprende sobre el conjunto de entrenamiento
+04
+Evaluación
+Se mide el desempeño sobre el conjunto de prueba
+Ventajas Limitaciones
+Muy simple Depende de una única partición
+Muy rápido Alta variabilidad
+Bajo costo computacional Puede entregar estimaciones poco representativas VALIDACIÓN CRUZADA · DEFINICIÓN
+¿Qué es la Validación Cruzada?
+Definición
+La validación cruzada consiste en repetir varias veces el 
+entrenamiento y la evaluación utilizando diferentes particiones 
+del conjunto de datos.
+Objetivo
+Su objetivo no es mejorar el modelo, sino obtener una 
+estimación más confiable de su capacidad de generalización.
+Múltiples evaluaciones
+Se entrena y evalúa el modelo varias veces 
+con distintas particiones
+Estimación robusta
+El promedio de los resultados es más 
+representativo que una única medición
+Reducción de variabilidad
+Disminuye el impacto de una partición 
+desfavorable VALIDACIÓN CRUZADA · K-FOLD
+K-Fold Cross Validation
+El conjunto de datos se divide en K partes iguales (folds). En cada iteración, un fold diferente actúa como conjunto de validación mientras los 
+demás se usan para entrenamiento.
+Iteración 1
+🟧 Val  |  🟦 Train  |  🟦 Train  |  🟦 Train  |  
+🟦 Train
+Iteración 2
+🟦 Train  |  🟧 Val  |  🟦 Train  |  🟦 Train  |  
+🟦 Train
+Iteración 3
+🟦 Train  |  🟦 Train  |  🟧 Val  |  🟦 Train  |  
+🟦 Train
+Iteración 4
+🟦 Train  |  🟦 Train  |  🟦 Train  |  🟧 Val  |  
+🟦 Train
+Iteración 5
+🟦 Train  |  🟦 Train  |  🟦 Train  |  🟦 Train  
+|  🟧 Val
+🟧 Validación   🟦 Entrenamiento
+Cada fold actúa exactamente una vez como conjunto de validación. El resultado final es el promedio de las K evaluaciones. K-FOLD · PROCESO PASO A PASO
+¿Cómo funciona?
+Dividir los datos
+Separar el conjunto en K folds de igual tamaño
+Entrenar el modelo
+Usar K-1 folds como conjunto de entrenamiento
+Evaluar
+Medir el desempeño sobre el fold reservado
+Cambiar Fold
+Seleccionar el siguiente fold como validación
+Repetir el proceso
+Completar las K iteraciones
+Calcular el promedio
+Promediar los K resultados para la estimación final
+El proceso garantiza que cada observación del conjunto de datos sea utilizada exactamente una vez como dato de validación. K-FOLD · INTERPRETACIÓN DE RESULTADOS
+Interpretación de resultados
+Cada iteración produce un valor de desempeño. El análisis del conjunto de resultados permite evaluar la estabilidad del modelo.
+Fold R²
+1 0.91
+2 0.93
+3 0.88
+4 0.95
+5 0.90
+0.914
+Promedio (R²)
+0.024
+Desviación estándar
+Un promedio alto y una desviación estándar baja indican que el modelo entrega resultados consistentes independientemente de la 
+partición utilizada. K-FOLD · ELECCIÓN DE K
+¿Cuántos folds utilizar?
+La elección de K afecta el equilibrio entre costo computacional y estabilidad de la estimación.
+K Características
+5 Más rápido, menor costo computacional, ligera variabilidad
+10 Mayor estabilidad, estimación más confiable, costo moderado
+n (LOO) Leave-One-Out: máxima precisión, muy alto costo computacional
+Recomendación práctica
+K = 5 y K = 10 son las configuraciones más utilizadas en la práctica
+Leave-One-Out
+Solo recomendado para conjuntos de datos muy pequeños donde 
+cada observación es valiosa EVALUACIÓN · COMPARACIÓN
+Hold-Out vs K-Fold
+La elección de la técnica depende del tipo de datos y del problema a resolver.
+Hold-Out K-Fold
+Una única evaluación Varias evaluaciones (K iteraciones)
+Mayor variabilidad Mayor estabilidad
+Muy rápido Mayor costo computacional
+Menor confiabilidad Mayor confiabilidad
+Depende de la partición Independiente de la partición
+Usa una sola partición para validar Todas las observaciones actúan una vez como conjunto de 
+validación
+K-Fold proporciona una estimación más robusta del desempeño del modelo. Cuando el tiempo lo permite, es siempre preferible a Hold-
+Out. LABORATORIO · GOOGLE COLAB
+Laboratorio
+En Google Colab utilizaremos el mismo dataset sintético de Salarios vs. Años de Experiencia empleado en el capítulo anterior. Esto permitirá 
+concentrarnos en comprender el funcionamiento de Hold-Out y K-Fold Cross Validation sin incorporar nuevas variables al problema.
+Hold-Out
+Implementar una única partición Train/Test utilizando el dataset 
+de salarios.
+Variabilidad del Hold-Out
+Modificar la partición Train/Test y observar cómo cambian las 
+métricas obtenidas.
+K-Fold
+Aplicar K-Fold Cross Validation con K = 5 y K = 10 sobre el mismo 
+conjunto de datos.
+Resultados por Fold
+Visualizar el desempeño obtenido en cada Fold y comparar las 
+distintas evaluaciones.
+Promedio
+Calcular el promedio de las métricas obtenidas mediante 
+validación cruzada.
+Desviación estándar
+Analizar la estabilidad del modelo utilizando la variabilidad entre 
+los distintos Folds.
+Utilizar el mismo dataset que en el capítulo de Overfitting permite centrar el análisis en la técnica de validación y no en el conjunto de datos. CAPÍTULO 5 · CONCLUSIONES
+Conclusiones
+Partición única
+Una única partición puede entregar 
+resultados engañosos y no representativos
+K-Fold reduce la dependencia
+K-Fold reduce la dependencia de una sola 
+división de los datos
+Evaluación, no entrenamiento
+La validación cruzada mejora la evaluación 
+del modelo, no su entrenamiento
+Herramienta fundamental
+Es una herramienta esencial antes de comparar modelos o ajustar hiperparámetros
+La validación cruzada constituye una práctica esencial para 
+evaluar modelos antes de incorporarlos a un flujo de datos o a 
+un entorno de producción.
+En el laboratorio aplicaremos estos conceptos utilizando Scikit-
+learn y Google Colab para evaluar la estabilidad y capacidad de 
+generalización de un modelo. UNIVERSIDAD DE SANTIAGO DE CHILE 
+Facultad de Administración y Economía 
+Diplomado en Data Engineer  
+Evaluación Final 
+ 
+Objetivo 
+El objetivo de esta evaluación es que cada estudiante desarrolle un proyecto completo de 
+Machine Learning aplicando los conocimientos adquiridos durante el diplomado. El 
+proyecto deberá abordar todas las etapas de un proceso de Ciencia de Datos, desde la 
+comprensión del problema hasta la evaluación e interpretación del modelo obtenido. 
+Se evaluará principalmente la capacidad de análisis, la correcta aplicación de las técnicas 
+estudiadas y la justificación de las decisiones tomadas durante el desarrollo del proyecto. 
+ 
+Instrucciones Generales 
+La evaluación es individual. 
+Cada estudiante deberá seleccionar un conjunto de datos público que cumpla con los 
+requisitos establecidos y desarrollar un proyecto completo utilizando Python y scikit-learn 
+en Google Colab. 
+El notebook deberá ejecutarse correctamente desde la primera hasta la última celda, sin 
+errores. 
+ 
+Requisitos del Dataset 
+El conjunto de datos deberá cumplir con las siguientes condiciones: 
+• Ser de acceso público.  
+• Contener al menos 100.000 registros.  
+• Contener una variable objetivo claramente definida.  
+• Corresponder a un problema de:   o Regresión, o  
+o Clasificación.  
+• No haber sido utilizado durante las clases del diplomado.  
+Se recomienda obtener el dataset desde repositorios como: 
+• Kaggle  
+• UCI Machine Learning Repository  
+• Data.gov  
+• Google Dataset Search  
+• Portales de Datos Abiertos  
+ 
+Desarrollo del Proyecto 
+El proyecto deberá considerar, como mínimo, las siguientes etapas. 
+ 
+1. Comprensión del Problema (10 puntos) 
+Describa claramente: 
+• Problema de negocio.  
+• Objetivo del proyecto.  
+• Variable objetivo.  
+• Tipo de problema de Machine Learning (Regresión o Clasificación).  
+• Beneficio esperado para la organización.  
+ 
+2. Análisis Exploratorio de Datos (EDA) (20 puntos) 
+Realice un análisis exploratorio que incluya, como mínimo: 
+• Dimensiones del dataset.   • Tipos de datos.  
+• Valores nulos.  
+• Registros duplicados.  
+• Estadísticas descriptivas.  
+• Distribución de la variable objetivo.  
+• Distribución de variables numéricas.  
+• Análisis de variables categóricas.  
+• Matriz de correlación.  
+• Visualizaciones relevantes.  
+• Interpretación de los principales resultados obtenidos.  
+Importante: No se evaluará únicamente la generación de gráficos, sino también la 
+interpretación y análisis de los resultados. 
+ 
+3. Preparación de los Datos (15 puntos) 
+Realice y justifique las transformaciones necesarias para preparar los datos. 
+Como mínimo deberá considerar: 
+• Tratamiento de valores nulos.  
+• Tratamiento de registros duplicados.  
+• Tratamiento de valores extremos (cuando corresponda).  
+• Codificación de variables categóricas.  
+• Escalamiento de variables (cuando corresponda).  
+• Ingeniería de características (si aplica).  
+• División del conjunto de datos en entrenamiento y prueba.  
+Todas las decisiones deberán estar debidamente justificadas. 
+  4. Reducción de Dimensionalidad (10 puntos) 
+Aplique al menos una técnica de reducción de dimensionalidad estudiada durante el 
+diplomado. 
+Por ejemplo: 
+• PCA (Principal Component Analysis).  
+• Selección de características (Feature Selection).  
+Explique: 
+• La técnica utilizada.  
+• El criterio para seleccionar el número de componentes o variables.  
+• El impacto de la reducción de dimensionalidad sobre el desempeño del modelo.  
+ 
+5. Construcción del Modelo (20 puntos) 
+Construya un modelo utilizando scikit-learn. 
+Se deberá: 
+• Seleccionar un algoritmo apropiado.  
+• Justificar la elección del algoritmo.  
+• Entrenar el modelo.  
+• Realizar predicciones.  
+• Ajustar hiperparámetros cuando corresponda.  
+ 
+6. Evaluación del Modelo (15 puntos) 
+Evaluar el desempeño del modelo utilizando métricas apropiadas. 
+Para problemas de Regresión 
+• MAE  
+• MSE   • RMSE  
+• R²  
+Para problemas de Clasificación 
+• Accuracy  
+• Precision  
+• Recall  
+• F1-score  
+• Matriz de Confusión  
+• Curva ROC (cuando corresponda)  
+Interpretar los resultados obtenidos. 
+ 
+7. Interpretación del Modelo y Conclusiones (10 puntos) 
+Analice los resultados obtenidos considerando: 
+• Variables más importantes.  
+• Fortalezas del modelo.  
+• Limitaciones del modelo.  
+• Posibles mejoras.  
+• Aplicaciones prácticas del modelo en un contexto real.  
+ 
+Entregables 
+Cada estudiante deberá entregar: 
+• Notebook de Google Colab (.ipynb) completamente ejecutado.  
+• Informe ejecutivo en formato PDF (máximo 10 páginas).  
+• Enlace oficial del dataset utilizado.   • Archivo del modelo entrenado (.joblib o .pkl), si corresponde.  
+ 
+Criterios de Evaluación 
+Criterio Puntaje 
+Comprensión del problema 10 
+Análisis Exploratorio de Datos (EDA) 20 
+Preparación de los datos 15 
+Reducción de dimensionalidad 10 
+Construcción del modelo 20 
+Evaluación del modelo 15 
+Interpretación y conclusiones 10 
+Total 100 puntos 
+ 
+Uso de Inteligencia Artificial 
+Se permite el uso de herramientas de Inteligencia Artificial como apoyo durante el 
+desarrollo del proyecto (por ejemplo, ChatGPT, Gemini, Claude, Copilot, entre otras). 
+No obstante, cada estudiante deberá comprender completamente el código desarrollado 
+y ser capaz de explicar y justificar todas las decisiones metodológicas adoptadas . El uso 
+de estas herramientas no reemplaza la responsabilidad individual sobre el trabajo 
+presentado. 
+ 
+Consideraciones Generales 
+• Se evaluará especialmente la capacidad de análisis y la correcta aplicación de las 
+técnicas estudiadas durante el diplomado.  
+• El código deberá estar correctamente documentado y organizado.   • Todas las figuras deberán contar con título y, cuando corresponda, interpretación.  
+• El notebook deberá ejecutarse sin errores desde el inicio hasta el final.  
+• El informe deberá redactarse utilizando un lenguaje técnico y profesional.  
+ 
+Fecha de Entrega 
+Fecha límite de entrega: 10 de agosto de 2026, hasta las 23:59 horas. 
+No se aceptarán trabajos entregados fuera del plazo establecido, salvo situaciones 
+debidamente justificadas y autorizadas conforme al reglamento académico vigente. 
+ 
+Forma de Entrega 
+Los estudiantes deberán enviar la evaluación al siguiente correo electrónico: 
+eduardo.castillo.r@usach.cl 
+Asunto del correo: 
+Evaluación Final – Diplomado Machine Learning – Nombre y Apellido 
+Archivos adjuntos: 
+• Apellido_Nombre_EvaluacionFinal.ipynb  
+• Apellido_Nombre_Informe.pdf  
+• Archivo del modelo (.joblib o .pkl), si corresponde.  
+ 
+Recomendaciones 
+Se recomienda seleccionar un problema relacionado con un área de interés personal o 
+profesional (salud, finanzas, retail, educación, energía, transporte, entre otras). La elección 
+de un problema con contexto de negocio permitirá realizar un análisis más pr ofundo, 
+obtener conclusiones de mayor valor y demostrar una mejor comprensión de las técnicas 
+de Machine Learning aplicadas. 
+ 

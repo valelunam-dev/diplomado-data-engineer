@@ -1,0 +1,390 @@
+<html><head><meta charset='utf-8'><style>
+@page { size: a4 portrait; margin: 1.7cm 1.9cm 1.6cm 1.9cm;
+        @frame footer { -pdf-frame-content: pie; bottom: 0.9cm; margin-left: 1.9cm;
+                        margin-right: 1.9cm; height: 1cm; } }
+body { font-family: Helvetica, Arial, sans-serif; font-size: 9.3pt; color: #1c1c1c;
+       line-height: 1.42; text-align: justify; }
+h1 { font-size: 17pt; color: #0b3c5d; margin: 0 0 2pt 0; line-height: 1.2; }
+h2 { font-size: 11.4pt; color: #0b3c5d; margin: 13pt 0 4pt 0;
+     border-bottom: 1.1pt solid #0b3c5d; padding-bottom: 2pt; }
+h3 { font-size: 9.9pt; color: #16607f; margin: 9pt 0 3pt 0; }
+p { margin: 0 0 5pt 0; }
+ul { margin: 0 0 5pt 14pt; padding: 0; }
+li { margin-bottom: 2pt; }
+table { width: 100%; border-collapse: collapse; margin: 4pt 0 7pt 0; font-size: 8.3pt; }
+th { background-color: #0b3c5d; color: #ffffff; padding: 3.5pt 4pt; text-align: left;
+     font-weight: bold; }
+td { padding: 3pt 4pt; border-bottom: 0.5pt solid #cfd8dc; vertical-align: top; }
+tr.par td { background-color: #f2f6f8; }
+.portada { text-align: center; margin-bottom: 8pt; }
+.institucion { font-size: 8.6pt; color: #4a5a63; margin-bottom: 10pt; }
+.subtitulo { font-size: 10.5pt; color: #33474f; margin: 2pt 0 8pt 0; }
+.meta { font-size: 8.4pt; color: #4a5a63; }
+.resumen { background-color: #eef4f7; border-left: 2.6pt solid #0b3c5d;
+           padding: 6pt 8pt; margin: 6pt 0 9pt 0; font-size: 8.9pt; }
+.destacado { background-color: #fff6e5; border-left: 2.6pt solid #d98324;
+             padding: 5pt 8pt; margin: 5pt 0 7pt 0; font-size: 8.7pt; }
+.kpi { width: 100%; border-collapse: collapse; margin: 5pt 0 8pt 0; }
+.kpi td { text-align: center; border: 0.8pt solid #0b3c5d; padding: 5pt 3pt;
+          background-color: #f7fafb; }
+.kpi .valor { font-size: 14pt; color: #0b3c5d; font-weight: bold; }
+.kpi .etiqueta { font-size: 7.4pt; color: #4a5a63; }
+.figura { margin: 5pt 0 3pt 0; }
+.pie-figura { font-size: 7.6pt; color: #4a5a63; text-align: center; margin: 0 0 7pt 0;
+              font-style: italic; }
+#pie { font-size: 7.2pt; color: #78909c; text-align: center; }
+.nota { font-size: 7.8pt; color: #4a5a63; }
+</style></head><body>
+<div id="pie"><p id="pie">Evaluación Final — Diplomado en Data Engineer · USACH · Valeria Luna
+· Predicción de la duración de viajes urbanos · página <pdf:pagenumber> de <pdf:pagecount></p></div>
+
+<div class="portada">
+  <p class="institucion"><b>UNIVERSIDAD DE SANTIAGO DE CHILE</b><br/>
+  Facultad de Administración y Economía · Diplomado en Data Engineer<br/>
+  Módulo 10 — Machine Learning para la escala masiva de datos</p>
+  <h1>Predicción de la duración de viajes urbanos mediante Machine Learning</h1>
+  <p class="subtitulo">Informe ejecutivo — Evaluación Final</p>
+  <p class="meta"><b>Estudiante:</b> Valeria Luna &nbsp;·&nbsp; <b>Fecha:</b> agosto de 2026
+  &nbsp;·&nbsp; <b>Tipo de problema:</b> Regresión supervisada<br/>
+  <b>Dataset:</b> NYC TLC — <i>Yellow Taxi Trip Records</i>, enero 2024
+  (2.964.624 viajes)</p>
+</div>
+
+<div class="resumen">
+<b>Resumen ejecutivo.</b> Las empresas de transporte de pasajeros programan su operación en función
+del tiempo que demora cada servicio y, en la práctica, lo estiman con promedios históricos. Este
+proyecto construye un modelo de Machine Learning que predice la duración de un viaje urbano
+utilizando <b>solo información disponible al momento de iniciarlo</b>. Sobre 2.964.624
+viajes reales de la ciudad de Nueva York, el modelo seleccionado
+(<i>HistGradientBoostingRegressor</i> de scikit-learn) alcanza un <b>R² de 0,8532</b> y un error
+medio absoluto de <b>2,744 minutos</b> frente a una duración promedio de 14,65
+minutos, lo que representa una <b>reducción de 65 % del error</b> respecto de estimar
+con el promedio histórico. El trabajo deja dos hallazgos metodológicos relevantes: la depuración de
+datos elevó la correlación entre distancia y duración de <b>0,005 a 0,810</b>,
+y la reducción de dimensionalidad mediante PCA <b>no mejoró</b> el desempeño predictivo.
+</div>
+
+<h2>1. Comprensión del problema</h2>
+
+<p><b>Problema de negocio.</b> Cuando la duración de un servicio se estima mal se producen efectos
+en cadena: conductores sin holgura entre servicios, incumplimiento de horarios comprometidos,
+sobredotación o subdotación de flota y tiempos muertos que se pagan igual. La estimación por
+promedios ignora que la duración depende fuertemente de la hora del día, del día de la semana, del
+origen-destino y de si el viaje involucra un aeropuerto.</p>
+
+<p><b>Objetivo.</b> Construir un modelo capaz de predecir la duración de un viaje urbano, en minutos,
+utilizando únicamente información conocida al iniciar el servicio, de modo que sea utilizable en
+producción.</p>
+
+<p><b>Variable objetivo.</b> <span class="nota"><b>duracion_min</b> = (hora de término − hora de
+inicio) en minutos.</span> Variable numérica continua y positiva, construida a partir de las marcas
+de tiempo del viaje. Corresponde a un problema de <b>aprendizaje supervisado de regresión</b>.</p>
+
+<p><b>Beneficio esperado.</b></p>
+<table><colgroup><col width="30%"/><col width="70%"/></colgroup><tr><th>Ámbito</th><th>Beneficio</th></tr><tr><td>Programación de servicios y turnos</td><td>Estimar la duración antes de asignar el servicio permite construir turnos factibles y reducir la holgura improductiva.</td></tr><tr class="par"><td>Compromiso con el cliente</td><td>Informar un tiempo estimado de llegada (ETA) confiable mejora la experiencia y reduce reclamos.</td></tr><tr><td>Dimensionamiento de flota</td><td>Conocer la duración esperada por franja horaria y zona permite anticipar los vehículos requeridos.</td></tr><tr class="par"><td>Control de gestión y costos</td><td>El tiempo es el principal componente del costo variable; comparar duración real versus estimada entrega una línea base objetiva.</td></tr></table>
+
+<h2>2. Dataset y análisis exploratorio</h2>
+
+<p>Se utilizaron los registros públicos de viajes de taxis amarillos de la ciudad de Nueva York
+(NYC Taxi &amp; Limousine Commission), correspondientes a enero de 2024:
+<b>2.964.624 viajes y 19 variables</b> en formato Parquet. El conjunto no fue
+utilizado en las clases del diplomado y supera con holgura el mínimo de 100.000 registros. La unidad
+de análisis es un viaje individual.</p>
+
+<table class="kpi">
+<tr>
+  <td><span class="valor">2.964.624</span><br/><span class="etiqueta">viajes analizados</span></td>
+  <td><span class="valor">4,73 %</span><br/><span class="etiqueta">registros con nulos</span></td>
+  <td><span class="valor">0</span><br/><span class="etiqueta">registros duplicados</span></td>
+  <td><span class="valor">11,6</span><br/><span class="etiqueta">mediana de duración (min)</span></td>
+</tr>
+</table>
+
+<p><b>Calidad de los datos.</b> El análisis detectó problemas que condicionan todo el modelamiento:
+870 viajes con duración negativa (término anterior al inicio), una duración
+máxima de 9.455 minutos, una distancia máxima de 312.722 millas
+—físicamente imposible—, 60.371 viajes con distancia cero, montos negativos de hasta
+−900 USD y 31.465 viajes con cero pasajeros. Los nulos afectan exactamente a
+140.162 registros (4,73 %) y siempre al mismo bloque de cinco variables, lo
+que revela registros incompletos de un flujo de captura distinto y no ausencias aleatorias.</p>
+
+<div class="figura"><img src="C:/Users/valeria.luna/AppData/Local/Temp/claude/C--Repos-diplomado-data-engineer-modulo10/1faee442-35b4-44d6-b95d-97dd74726b1d/scratchpad/figuras/eda_hora.png" style="width: 487pt"/></div><p class="pie-figura">Figura 1. La demanda alcanza su máximo a las 18:00 (210.582 viajes) y su mínimo a las 4:00 (16.123), pero la duración promedio sigue una curva propia: varía cerca de 40 % entre las 2:00 (12,1 min) y las 16:00 (16,9 min) con distancias medianas equivalentes.</p>
+
+<div class="figura"><img src="C:/Users/valeria.luna/AppData/Local/Temp/claude/C--Repos-diplomado-data-engineer-modulo10/1faee442-35b4-44d6-b95d-97dd74726b1d/scratchpad/figuras/eda_heatmap_hora_dia.png" style="width: 487pt"/></div><p class="pie-figura">Figura 2. La congestión es un fenómeno de días hábiles en horario de tarde; las madrugadas de fin de semana son los momentos más rápidos de la semana.</p>
+
+<div class="destacado">
+<b>Hallazgo central del análisis exploratorio.</b> En los datos sin depurar, la correlación entre
+distancia y duración es de <b>0,005</b>: prácticamente nula, un resultado contraintuitivo
+tratándose del determinante físico evidente del tiempo de viaje. La relación no está ausente: unos
+pocos miles de registros con valores extremos dominan el coeficiente de Pearson y la ocultan. Si la
+selección de variables se hubiera hecho con esa matriz de correlación, <b>se habría descartado la
+variable más predictiva del problema</b>.
+</div>
+
+<h2>3. Preparación de los datos</h2>
+
+<p><b>Filtros de calidad.</b> Cada criterio responde a una justificación operacional y no a un
+recorte estadístico arbitrario. Se retuvo el <b>94,58 %</b> de los registros
+(2.804.049 viajes), eliminando anomalías sin sacrificar volumen de información.</p>
+
+<table><colgroup><col width="17%"/><col width="25%"/><col width="58%"/></colgroup><tr><th>Filtro aplicado</th><th>Criterio</th><th>Justificación</th></tr><tr><td>Período</td><td>Inicio dentro de enero 2024</td><td>El archivo corresponde a enero de 2024; existen registros fechados en 2002 por error del taxímetro.</td></tr><tr class="par"><td>Duración</td><td>Entre 1 y 120 minutos</td><td>Bajo 1 minuto no hay servicio efectivo; sobre 2 horas se trata de registros mal cerrados (percentil 99 = 60,5 min).</td></tr><tr><td>Distancia</td><td>Entre 0,1 y 100 millas</td><td>Excluye taxímetros sin registrar y valores físicamente imposibles.</td></tr><tr class="par"><td>Velocidad implícita</td><td>Entre 1 y 80 mph</td><td>Filtro cruzado: detecta inconsistencias entre distancia y tiempo que los filtros individuales no capturan.</td></tr><tr><td>Zona y tarifa</td><td>Excluir zonas 264/265 y RatecodeID 99</td><td>Códigos reservados a 'desconocido': no aportan información.</td></tr><tr class="par"><td>Monto</td><td>total_amount &gt; 0</td><td>Los montos negativos corresponden a anulaciones y reversos contables.</td></tr></table>
+
+<p><b>Valores nulos.</b> En lugar de eliminar el 4,73 % de las filas, se imputó con
+criterios de negocio explícitos: <i>passenger_count</i> con la moda (1 pasajero, recortada al rango
+1–6), <i>RatecodeID</i> con la tarifa estándar (aplicada al 89,8 % de los viajes),
+<i>store_and_fwd_flag</i> con "N", y <i>payment_type = 0</i> se conservó como categoría
+"Desconocido" por ser informativa en sí misma. Las imputaciones usan valores fijos y no estadísticos
+del conjunto completo, de modo que no transfieren información del conjunto de prueba. No se
+detectaron registros duplicados, ni por todas las columnas ni por la llave de negocio.</p>
+
+<p><b>Ingeniería de características.</b> Se construyeron 22 predictores a partir de
+las marcas de tiempo, de la tabla oficial de zonas TLC y de la relación origen-destino: hora, día de
+la semana, día del mes, indicadores de fin de semana y hora punta, franja horaria, comuna
+(<i>borough</i>) y tipo de zona de origen y destino, indicador de aeropuerto, coincidencia de zona y
+de comuna, y el logaritmo de la distancia. Todas se calculan con información disponible antes de
+iniciar el viaje.</p>
+
+<div class="destacado">
+<b>Exclusión deliberada por fuga de información (<i>data leakage</i>).</b> Las variables monetarias
+(<i>fare_amount</i>, <i>total_amount</i>, <i>tip_amount</i>, <i>tolls_amount</i> y recargos) se
+excluyeron del modelo: la tarifa de un taxi se calcula <b>en función del tiempo y la distancia
+recorridos</b>, por lo que conocerla equivale a conocer parcialmente la respuesta, y solo existe una
+vez terminado el viaje. Incluirlas habría producido métricas excelentes en el cuaderno y un modelo
+inútil en producción. Por la misma razón se excluyó la velocidad implícita, derivada de la duración.
+</div>
+
+<p><b>Codificación, escalamiento y división.</b> Se integró todo en un <i>Pipeline</i> de
+scikit-learn con tres tratamientos diferenciados: <i>StandardScaler</i> para las variables numéricas
+(indispensable para PCA y para la regresión lineal), <i>OneHotEncoder</i> para las categóricas de
+baja cardinalidad —con <i>handle_unknown="ignore"</i> para tolerar categorías nuevas en producción— y
+<i>TargetEncoder</i> con validación cruzada interna para las zonas de origen y destino
+(252 y 258 categorías), que con codificación <i>one-hot</i> habrían
+generado más de 500 columnas dispersas. El resultado son 53 características.
+El modelamiento se realizó sobre una <b>muestra aleatoria de 400.000 viajes</b>
+(14,3 % del total depurado), cuya representatividad se verificó comparando medias y
+desviaciones estándar con la población (diferencias inferiores a 0,5 %), con división
+<b>80 % entrenamiento / 20 % prueba</b> y semilla fija.</p>
+
+<h2>4. Reducción de dimensionalidad</h2>
+
+<p>Se aplicaron y compararon dos técnicas estudiadas en el diplomado. <b>PCA</b>, con el criterio de
+conservar el 95 % de la varianza acumulada, comprimió las 53 características en
+<b>8 componentes</b> (reducción del 84,9 %). La <b>selección por
+información mutua</b> —que a diferencia de la correlación de Pearson detecta relaciones no
+lineales— retuvo las 15 características con mayor dependencia respecto del
+objetivo, fijando K en el punto donde el <i>ranking</i> entra en su zona plana.</p>
+
+<table><colgroup><col width="46%"/><col width="14%"/><col width="13%"/><col width="13%"/><col width="14%"/></colgroup><tr><th>Representación de los datos</th><th>Dimensiones</th><th>MAE (min)</th><th>RMSE (min)</th><th>R²</th></tr><tr><td>Sin reducción — 53 características</td><td>53</td><td>2,886</td><td>4,412</td><td>0,8382</td></tr><tr class="par"><td>PCA — 8 componentes (95,9 % de varianza)</td><td>8</td><td>3,263</td><td>4,966</td><td>0,7951</td></tr><tr><td>Información mutua — 15 características</td><td>15</td><td>3,536</td><td>5,439</td><td>0,7541</td></tr></table>
+
+<div class="figura"><img src="C:/Users/valeria.luna/AppData/Local/Temp/claude/C--Repos-diplomado-data-engineer-modulo10/1faee442-35b4-44d6-b95d-97dd74726b1d/scratchpad/figuras/pca_varianza.png" style="width: 428pt"/></div><p class="pie-figura">Figura 3. Gráfico de sedimentación: el 95 % de la varianza se concentra en muy pocas componentes, producto de la redundancia entre columnas del one-hot.</p>
+
+<div class="destacado">
+<b>Impacto de la reducción de dimensionalidad.</b> <b>Ninguna de las dos técnicas mejoró el
+desempeño.</b> PCA redujo la matriz un 84,9 % pero el R² cayó de
+0,838 a 0,795 y el MAE aumentó de 2,886 a
+3,263 minutos: PCA maximiza varianza, no capacidad predictiva, y sus combinaciones lineales
+destruyen la estructura original que los modelos de árboles aprovechan mediante cortes sobre
+variables individuales. La selección por información mutua resultó <b>aún menos favorable</b>
+(R² = 0,754, MAE 3,536 min) por una razón instructiva: al ordenar las variables por su
+aporte <i>marginal</i>, descartó <i>hora</i>, <i>día de la semana</i> y <i>franja horaria</i>, cuya
+correlación individual con la duración es casi nula (0,010) pero que resultan decisivas
+<b>en interacción</b> con la distancia y la zona —como confirma después la importancia por
+permutación, donde <i>hora</i> aparece en segundo lugar—. <b>Decisión:</b> el modelo final se entrena
+sin reducción de dimensionalidad; con 53 características el costo computacional
+es bajo y el negocio requiere explicar sus estimaciones, algo imposible con componentes principales.
+</div>
+
+<h2>5. Construcción del modelo</h2>
+
+<p>Se compararon cinco alternativas de complejidad creciente, todas de scikit-learn, sobre el mismo
+preprocesamiento: la media histórica como línea base (representa la práctica actual), regresión
+lineal, árbol de decisión, <i>Random Forest</i> y <i>gradient boosting</i> por histogramas. El
+problema presenta relaciones claramente no lineales —el efecto de la hora depende del día y el de la
+distancia depende de la zona—, por lo que se anticipaba un mejor desempeño de los modelos de
+árboles.</p>
+
+<table><colgroup><col width="30%"/><col width="12%"/><col width="12%"/><col width="12%"/><col width="12%"/><col width="10%"/><col width="12%"/></colgroup><tr><th>Modelo</th><th>MAE (min)</th><th>RMSE (min)</th><th>R² prueba</th><th>R² entren.</th><th>Brecha</th><th>Ajuste (s)</th></tr><tr><td>Random Forest</td><td>2,817</td><td>4,333</td><td>0,8440</td><td>0,9203</td><td>0,0763</td><td>56,4</td></tr><tr class="par"><td>Gradient Boosting (Hist)</td><td>2,886</td><td>4,412</td><td>0,8382</td><td>0,8461</td><td>0,0079</td><td>4,0</td></tr><tr><td>Árbol de decisión</td><td>3,093</td><td>4,771</td><td>0,8108</td><td>0,8249</td><td>0,0142</td><td>2,1</td></tr><tr class="par"><td>Regresión lineal</td><td>3,535</td><td>5,367</td><td>0,7606</td><td>0,7640</td><td>0,0034</td><td>0,7</td></tr><tr><td>Línea base (media)</td><td>7,837</td><td>10,969</td><td>0,0000</td><td>0,0000</td><td>0,0000</td><td>0,0</td></tr></table>
+
+<p>La línea base de la media obtiene un error medio de 7,84 minutos: ese es el costo de
+estimar con promedios. La regresión lineal explica cerca del 76 % de la varianza
+—buena parte de la señal es lineal por efecto de la distancia—, pero no captura las interacciones.</p>
+
+<p>Con parámetros por defecto, <i>Random Forest</i> obtiene un R² levemente superior
+(0,844 frente a 0,838). Se seleccionó igualmente el <i>gradient
+boosting</i> por tres razones: <b>sobreajuste</b> —Random Forest alcanza 0,920 en entrenamiento
+contra 0,844 en prueba, una brecha de 0,076, mientras el <i>boosting</i> mantiene
+0,0079—; <b>costo computacional</b> —14 veces más rápido, lo que resulta
+determinante para la búsqueda de hiperparámetros y el reentrenamiento periódico—; y <b>margen de
+mejora</b>, ya que al ajustar sus hiperparámetros supera a Random Forest y alcanza un R² de
+0,8532 en prueba. El criterio aplicado es que el mejor modelo no es el que obtiene la mejor
+métrica en una única corrida sin ajustar, sino el que equilibra exactitud, generalización y
+viabilidad operacional.</p>
+
+<p><b>Validación cruzada e hiperparámetros.</b> Con <i>K-Fold</i> de 5 particiones sobre el conjunto
+de entrenamiento, el modelo seleccionado obtuvo <b>R² = 0,8396 ± 0,0018</b>: una
+desviación estándar de milésimas indica que el desempeño no depende de la partición particular de los
+datos. El ajuste con <i>GridSearchCV</i> (validación cruzada de 3 particiones, 24 entrenamientos
+sobre una grilla de tasa de aprendizaje, complejidad del árbol y regularización) elevó el R² de
+validación a 0,8595 y seleccionó <b>learning_rate = 0,1 · max_leaf_nodes = 63 · min_samples_leaf = 50 · max_iter = 300</b>. El modelo definitivo se
+encapsuló en un <i>Pipeline</i> completo —preprocesamiento más estimador— de modo que recibe los
+datos crudos de un viaje y devuelve la duración estimada. El cuaderno completo se ejecuta en
+7,8 minutos.</p>
+
+<h2>6. Evaluación del modelo</h2>
+
+<table class="kpi">
+<tr>
+  <td><span class="valor">2,744</span><br/><span class="etiqueta">MAE (minutos)</span></td>
+  <td><span class="valor">4,202</span><br/><span class="etiqueta">RMSE (minutos)</span></td>
+  <td><span class="valor">0,8532</span><br/><span class="etiqueta">R² en prueba</span></td>
+  <td><span class="valor">17,66</span><br/><span class="etiqueta">MSE (min²)</span></td>
+  <td><span class="valor">69,3 %</span><br/><span class="etiqueta">error ≤ 3 minutos</span></td>
+</tr>
+</table>
+
+<p>El modelo explica el <b>85,3 % de la variabilidad</b> de la duración de los viajes, con un
+error medio de <b>2,744 minutos</b> sobre una duración promedio de 14,65
+minutos (18,7 % en términos relativos) y un MAPE de 22,2 %. Frente a la práctica
+de estimar con el promedio histórico, <b>el error se reduce en 65 %</b>. Alrededor de
+69,3 % de las predicciones se equivoca en 3 minutos o menos y 85,6 % en 5
+minutos o menos, precisión suficiente para programar servicios y comunicar tiempos al cliente. El
+RMSE (4,202 min) supera al MAE (2,744 min) porque penaliza los errores grandes: existe un
+grupo minoritario de viajes con desvíos importantes. La brecha de R² entre entrenamiento y prueba es
+de 0,0152, lo que confirma que el modelo <b>generaliza correctamente</b>.</p>
+
+<div class="figura"><img src="C:/Users/valeria.luna/AppData/Local/Temp/claude/C--Repos-diplomado-data-engineer-modulo10/1faee442-35b4-44d6-b95d-97dd74726b1d/scratchpad/figuras/eval_observado_predicho.png" style="width: 399pt"/></div><p class="pie-figura">Figura 4. Duración observada frente a predicha en el conjunto de prueba: los puntos se agrupan en torno a la recta de predicción perfecta, con dispersión creciente en los viajes largos.</p>
+
+<div class="figura"><img src="C:/Users/valeria.luna/AppData/Local/Temp/claude/C--Repos-diplomado-data-engineer-modulo10/1faee442-35b4-44d6-b95d-97dd74726b1d/scratchpad/figuras/eval_residuos_histograma.png" style="width: 399pt"/></div><p class="pie-figura">Figura 5. Los residuos se distribuyen en torno a cero de forma aproximadamente simétrica (residuo promedio 0,06 min): el modelo no tiende a subestimar ni a sobreestimar sistemáticamente.</p>
+
+<p><b>Análisis por segmento.</b> El error global puede ocultar comportamientos distintos entre
+segmentos, información necesaria para saber en qué condiciones el modelo es confiable. El error es
+menor de madrugada y mayor en las horas de máxima congestión; crece con la distancia en términos
+absolutos, pero el <b>error relativo disminuye</b>: en viajes largos el modelo se equivoca en más
+minutos, aunque en menor proporción del tiempo total. El gráfico de residuos frente a predicciones
+muestra un abanico creciente (heterocedasticidad): los viajes largos son intrínsecamente menos
+predecibles y así debe comunicarse el resultado.</p>
+
+<table><colgroup><col width="22%"/><col width="18%"/><col width="18%"/><col width="24%"/><col width="18%"/></colgroup><tr><th>Rango de distancia</th><th>Viajes</th><th>MAE (min)</th><th>Duración promedio (min)</th><th>Error relativo</th></tr><tr><td>≤ 1 milla</td><td>19.415</td><td>1,57</td><td>6,0</td><td>26,1 %</td></tr><tr class="par"><td>1–2 millas</td><td>27.211</td><td>2,19</td><td>10,7</td><td>20,5 %</td></tr><tr><td>2–5 millas</td><td>21.105</td><td>3,21</td><td>17,6</td><td>18,2 %</td></tr><tr class="par"><td>5–10 millas</td><td>6.433</td><td>4,54</td><td>25,0</td><td>18,2 %</td></tr><tr><td>Más de 10 millas</td><td>5.836</td><td>5,58</td><td>39,7</td><td>14,1 %</td></tr></table>
+
+<h2>7. Interpretación del modelo y conclusiones</h2>
+
+<p><b>Variables más importantes.</b> Se utilizó importancia por permutación —medida sobre datos no
+vistos y respecto del modelo ya entrenado— por ser más confiable que las importancias internas del
+algoritmo. La <b>distancia</b> es el determinante absolutamente dominante: permutarla hace caer el R²
+en 2,05 puntos, un orden de magnitud por sobre cualquier otra variable. Le
+sigue, en segundo lugar, la <b>hora de inicio</b> (0,127), pese a que su
+correlación lineal con la duración es de apenas 0,010: es la confirmación cuantitativa de
+que su efecto es no lineal e interactivo, y explica por qué la selección univariada de variables
+perjudicó el desempeño. Completan el <i>ranking</i> el <b>día de la semana</b>
+(0,053) y las <b>zonas de origen y destino</b> (0,036), que
+capturan la geografía real de la congestión.</p>
+
+<p>Los indicadores geográficos derivados (tipo de zona, comuna, coincidencia de comuna, paso por
+aeropuerto) y las variables administrativas cierran la lista. En el primer caso no por irrelevancia
+—su correlación con la duración es alta— sino por <b>redundancia</b>: su información ya está contenida
+en la codificación de las zonas, y la importancia por permutación mide aporte marginal dado el resto
+del modelo. En el segundo, el resultado era esperable: describen el registro del viaje, no su
+naturaleza física. <b>Lectura de negocio:</b> después de la distancia, lo que más determina el tiempo
+de un viaje es <i>cuándo</i> se realiza, no dónde.</p>
+
+<div class="figura"><img src="C:/Users/valeria.luna/AppData/Local/Temp/claude/C--Repos-diplomado-data-engineer-modulo10/1faee442-35b4-44d6-b95d-97dd74726b1d/scratchpad/figuras/interpretacion_importancia.png" style="width: 428pt"/></div><p class="pie-figura">Figura 6. Importancia por permutación: caída del R² al permutar aleatoriamente cada variable en el conjunto de prueba.</p>
+
+<h3>Fortalezas</h3>
+<ul>
+<li><b>Desempeño validado:</b> R² de 0,8532 con validación cruzada de 5 particiones y desviación
+estándar de milésimas; el resultado no depende de la partición de los datos.</li>
+<li><b>Sin fuga de información:</b> usa solo variables conocidas al iniciar el viaje, por lo que el
+desempeño medido es el esperable en producción.</li>
+<li><b>Error interpretable:</b> se expresa en minutos, lo que permite negociar niveles de servicio.</li>
+<li><b>Eficiencia y escala:</b> entrena en segundos sobre cientos de miles de registros; el diseño se
+probó sobre casi tres millones de viajes con muestreo justificado y verificado.</li>
+<li><b>Robustez operacional:</b> el <i>Pipeline</i> incorpora el preprocesamiento y tolera categorías
+no vistas, evitando fallas ante datos nuevos.</li>
+</ul>
+
+<h3>Limitaciones</h3>
+<ul>
+<li><b>Sin variables de contexto:</b> no incorpora clima, accidentes, cortes de calles, eventos
+masivos ni estado del tráfico en tiempo real, que son determinantes reales del tiempo de viaje.</li>
+<li><b>Ventana temporal acotada:</b> un solo mes (enero de 2024), por lo que no captura
+estacionalidad anual.</li>
+<li><b>Heterocedasticidad:</b> el error crece con la duración estimada; los viajes largos son menos
+predecibles.</li>
+<li><b>Granularidad geográfica:</b> trabaja con zonas administrativas, no con rutas ni coordenadas;
+dos viajes entre las mismas zonas pueden seguir trayectos distintos.</li>
+<li><b>Transferibilidad:</b> está entrenado con datos de Nueva York; aplicarlo a otra ciudad exige
+reentrenamiento con datos locales, aunque la metodología es directamente replicable.</li>
+</ul>
+
+<h3>Posibles mejoras</h3>
+<ul>
+<li>Enriquecer con <b>datos externos</b>: clima por hora, calendario de feriados y eventos, e
+indicadores de tráfico. Es la mejora con mayor potencial esperado.</li>
+<li>Ampliar la ventana a <b>doce meses</b> para capturar estacionalidad y evaluar la deriva del
+modelo.</li>
+<li><b>Modelos especializados por segmento</b> (viajes urbanos versus aeropuerto), cuyos
+comportamientos son estructuralmente distintos.</li>
+<li>Evaluar <b>XGBoost o LightGBM</b> y optimización bayesiana de hiperparámetros.</li>
+<li><b>Predicción por intervalos</b> mediante regresión por cuantiles, para entregar un rango
+("entre 12 y 18 minutos") que refleje la incertidumbre real.</li>
+<li>Prácticas de <b>MLOps</b>: monitoreo de deriva, reentrenamiento programado y versionado del
+modelo.</li>
+</ul>
+
+<h3>Aplicaciones prácticas</h3>
+<ul>
+<li><b>Estimación de tiempo de llegada (ETA)</b> informada al pasajero al solicitar el servicio.</li>
+<li><b>Programación de turnos y dimensionamiento de flota</b> por franja horaria y zona.</li>
+<li><b>Cotización de traslados</b>, convirtiendo duración estimada en costo esperado.</li>
+<li><b>Control de gestión</b>: comparar duración real versus estimada para detectar desvíos.</li>
+<li><b>Simulación de escenarios</b>: cuantificar el impacto de mover un servicio de las 18:00 a las
+20:00.</li>
+<li><b>Acuerdos de nivel de servicio</b> basados en la distribución real del error.</li>
+</ul>
+
+<h3>Conclusiones</h3>
+<ul>
+<li><b>Es posible predecir la duración de un viaje urbano con precisión operacionalmente útil</b>
+usando solo información previa al servicio: R² de 0,8532 y error medio de 2,744 minutos.</li>
+<li><b>La preparación de datos determinó el resultado:</b> la correlación entre distancia y duración
+pasó de 0,005 a 0,810 tras depurar registros inconsistentes. Sin ese trabajo
+previo, el análisis habría descartado la variable más predictiva.</li>
+<li><b>Reducir dimensionalidad no siempre mejora un modelo:</b> PCA comprimió
+53 características en 8 componentes conservando el
+95,9 % de la varianza, pero el R² cayó a 0,795, porque la varianza no equivale a
+información sobre el objetivo. La selección univariada por información mutua fue peor
+(0,754): los filtros marginales son riesgosos cuando el fenómeno es interactivo, como ocurre
+en movilidad urbana.</li>
+<li><b>El tiempo de viaje no depende solo de la distancia:</b> la hora de inicio es la segunda
+variable más importante del modelo aun teniendo correlación lineal casi nula con el objetivo. La
+duración promedio varía cerca de 40 % entre la hora más rápida y la más lenta del día con distancias
+equivalentes: exactamente lo que una estimación por promedios no captura.</li>
+<li><b>La disciplina metodológica es lo que hace utilizable al modelo:</b> excluir las variables
+monetarias —tentadoras por su alta correlación con el objetivo— fue indispensable para que el
+desempeño medido sea el desempeño real.</li>
+<li><b>Aporte de negocio:</b> el error se reduce 65 % respecto del promedio histórico,
+lo que se traduce en programación más ajustada, mejores compromisos de tiempo y menor holgura
+improductiva.</li>
+</ul>
+
+<h2>Anexo · Fuentes y entregables</h2>
+
+<p class="nota"><b>Enlace oficial del dataset:</b>
+https://www.nyc.gov/site/tlc/about/tlc-trip-record-data.page<br/>
+<b>Archivo utilizado:</b>
+https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2024-01.parquet<br/>
+<b>Tabla de zonas:</b> https://d37ci6vzurychx.cloudfront.net/misc/taxi_zone_lookup.csv<br/>
+<b>Diccionario oficial:</b>
+https://www.nyc.gov/assets/tlc/downloads/pdf/data_dictionary_trip_records_yellow.pdf<br/>
+<b>Entregables:</b> <i>Luna_Valeria_EvaluacionFinal.ipynb</i> (cuaderno ejecutado),
+<i>Luna_Valeria_Informe.pdf</i> (este informe),
+<i>Luna_Valeria_modelo_duracion_viaje.joblib</i> (Pipeline entrenado) y
+<i>Luna_Valeria_modelo_metadatos.json</i> (trazabilidad de versiones, variables y métricas).<br/>
+<b>Entorno:</b> Python, scikit-learn 1.7.2, pandas 2.3.3;
+semilla fija 42 en todos los procesos aleatorios.<br/>
+<b>Uso de Inteligencia Artificial:</b> se utilizaron herramientas de IA como apoyo para la escritura
+y revisión del código, conforme lo autoriza la evaluación. Las decisiones metodológicas —selección
+del problema y del dataset, criterios de depuración, exclusión de variables por fuga de información,
+técnicas de reducción de dimensionalidad, elección del algoritmo e interpretación de resultados— son
+propias y pueden ser explicadas y justificadas íntegramente.</p>
+</body></html>

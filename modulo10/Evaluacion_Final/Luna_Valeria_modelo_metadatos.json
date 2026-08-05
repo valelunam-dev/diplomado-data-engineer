@@ -1,0 +1,51 @@
+{
+  "nombre_modelo": "Predicción de duración de viajes urbanos",
+  "estudiante": "Valeria Luna",
+  "fecha_entrenamiento": "2026-08-01 19:00",
+  "dataset": "NYC TLC Yellow Taxi Trip Records — enero 2024",
+  "enlace_dataset": "https://www.nyc.gov/site/tlc/about/tlc-trip-record-data.page",
+  "registros_originales": 2964624,
+  "registros_depurados": 2804049,
+  "registros_entrenamiento": 320000,
+  "algoritmo": "HistGradientBoostingRegressor",
+  "hiperparametros": {
+    "learning_rate": 0.1,
+    "max_iter": 300,
+    "max_leaf_nodes": 63,
+    "min_samples_leaf": 50
+  },
+  "variables_esperadas": [
+    "trip_distance",
+    "log_distancia",
+    "hora",
+    "dia_semana",
+    "dia_mes",
+    "passenger_count",
+    "es_fin_semana",
+    "es_hora_punta",
+    "es_aeropuerto",
+    "misma_zona",
+    "mismo_borough",
+    "pu_borough",
+    "do_borough",
+    "pu_servicio",
+    "do_servicio",
+    "franja_horaria",
+    "VendorID",
+    "RatecodeID",
+    "payment_type",
+    "store_and_fwd_flag",
+    "PULocationID",
+    "DOLocationID"
+  ],
+  "variable_objetivo": "duracion_min",
+  "metricas_prueba": {
+    "MAE": 2.7444444186460997,
+    "MSE": 17.656473107192095,
+    "RMSE": 4.201960626563759,
+    "R2": 0.8532462650454428
+  },
+  "version_sklearn": "1.7.2",
+  "version_pandas": "2.3.3",
+  "semilla": 42
+}
